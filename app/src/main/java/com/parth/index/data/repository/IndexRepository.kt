@@ -1,1 +1,70 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXguZGF0YS5yZXBvc2l0b3J5CgppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuQ2hhdE1lc3NhZ2VFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLkRlYWRsaW5lRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5NYXRlcmlhbEZpbGVFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsUmVxdWVzdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTm90aWNlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5TdWJqZWN0RW50aXR5CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5GbG93CgovKiogRXZlcnkgc2NyZWVuIHRhbGtzIE9OTFkgdG8gdGhpcyBpbnRlcmZhY2Ug4oCUIG5ldmVyIHRvIGEgZGF0YWJhc2Ugb3IgYQogKiAgbmV0d29yayBjYWxsIGRpcmVjdGx5LiBUb2RheSBbTG9jYWxSZXBvc2l0b3J5XSBhbnN3ZXJzIGV2ZXJ5dGhpbmcgZnJvbQogKiAgdGhlIG9uLXBob25lIFJvb20gZGF0YWJhc2UuIFdoZW4gdGhlIEZpcmViYXNlIHByb2plY3QgaXMgcmVhZHksCiAqICBGaXJlYmFzZVJlcG9zaXRvcnkgKHNlZSB0aGUgZmlyZWJhc2UgcGFja2FnZSArIEZJUkVCQVNFX1NFVFVQLm1kKQogKiAgaW1wbGVtZW50cyB0aGlzIHNhbWUgaW50ZXJmYWNlIGFnYWluc3QgRmlyZXN0b3JlL1N0b3JhZ2UgYW5kIHRoZSBzY3JlZW5zCiAqICBkbyBub3QgY2hhbmdlIGF0IGFsbC4gVGhhdCBpcyB0aGUgd2hvbGUgcG9pbnQgb2YgdGhlIGludGVyZmFjZS4gKi8KaW50ZXJmYWNlIEluZGV4UmVwb3NpdG9yeSB7CgogICAgLy8gU3ViamVjdHMKICAgIGZ1biBvYnNlcnZlU3ViamVjdHMoKTogRmxvdzxMaXN0PFN1YmplY3RFbnRpdHk+PgogICAgZnVuIG9ic2VydmVUcmFzaGVkU3ViamVjdHMoKTogRmxvdzxMaXN0PFN1YmplY3RFbnRpdHk+PgogICAgc3VzcGVuZCBmdW4gc3ViamVjdEJ5SWQoaWQ6IExvbmcpOiBTdWJqZWN0RW50aXR5PwogICAgc3VzcGVuZCBmdW4gYWRkU3ViamVjdChuYW1lOiBTdHJpbmcsIGNvbG9ySGV4OiBTdHJpbmcpOiBMb25nCiAgICBzdXNwZW5kIGZ1biByZW5hbWVTdWJqZWN0KGlkOiBMb25nLCBuYW1lOiBTdHJpbmcpCiAgICBzdXNwZW5kIGZ1biBkZWxldGVTdWJqZWN0KGlkOiBMb25nKSAgICAgICAgICAgIC8vIHNvZnQgZGVsZXRlIC0+IFRyYXNoCiAgICBzdXNwZW5kIGZ1biByZXN0b3JlU3ViamVjdChpZDogTG9uZykKICAgIHN1c3BlbmQgZnVuIGRlbGV0ZVN1YmplY3RQZXJtYW5lbnRseShpZDogTG9uZykKCiAgICAvLyBGaWxlcyAvIG1hdGVyaWFsCiAgICBmdW4gb2JzZXJ2ZUZpbGVzKCk6IEZsb3c8TGlzdDxNYXRlcmlhbEZpbGVFbnRpdHk+PgogICAgZnVuIG9ic2VydmVGaWxlc0ZvclN1YmplY3Qoc3ViamVjdElkOiBMb25nKTogRmxvdzxMaXN0PE1hdGVyaWFsRmlsZUVudGl0eT4+CiAgICBmdW4gb2JzZXJ2ZVRyYXNoZWRGaWxlcygpOiBGbG93PExpc3Q8TWF0ZXJpYWxGaWxlRW50aXR5Pj4KICAgIHN1c3BlbmQgZnVuIGZpbGVCeUlkKGlkOiBMb25nKTogTWF0ZXJpYWxGaWxlRW50aXR5PwogICAgc3VzcGVuZCBmdW4gZmlsZUNvdW50Rm9yU3ViamVjdChzdWJqZWN0SWQ6IExvbmcpOiBJbnQKICAgIHN1c3BlbmQgZnVuIGZpbmREdXBsaWNhdGVzKHN1YmplY3RJZDogTG9uZywgZmlsZU5hbWU6IFN0cmluZywgc2l6ZUJ5dGVzOiBMb25nKTogTGlzdDxNYXRlcmlhbEZpbGVFbnRpdHk+CiAgICBzdXNwZW5kIGZ1biBhZGRGaWxlKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSk6IExvbmcKICAgIHN1c3BlbmQgZnVuIHVwZGF0ZUZpbGUoZmlsZTogTWF0ZXJpYWxGaWxlRW50aXR5KQogICAgc3VzcGVuZCBmdW4gZGVsZXRlRmlsZShpZDogTG9uZykgICAgICAgICAgICAgICAvLyBzb2Z0IGRlbGV0ZSAtPiBUcmFzaAogICAgc3VzcGVuZCBmdW4gcmVzdG9yZUZpbGUoaWQ6IExvbmcpCiAgICBzdXNwZW5kIGZ1biBkZWxldGVGaWxlUGVybWFuZW50bHkoaWQ6IExvbmcpCiAgICBzdXNwZW5kIGZ1biB0b3RhbFN0b3JlZEJ5dGVzKCk6IExvbmcKCiAgICAvLyBEZWFkbGluZXMKICAgIGZ1biBvYnNlcnZlRGVhZGxpbmVzKCk6IEZsb3c8TGlzdDxEZWFkbGluZUVudGl0eT4+CiAgICBzdXNwZW5kIGZ1biBhZGREZWFkbGluZShkZWFkbGluZTogRGVhZGxpbmVFbnRpdHkpOiBMb25nCiAgICBzdXNwZW5kIGZ1biB1cGRhdGVEZWFkbGluZShkZWFkbGluZTogRGVhZGxpbmVFbnRpdHkpCiAgICBzdXNwZW5kIGZ1biBkZWxldGVEZWFkbGluZShpZDogTG9uZykKCiAgICAvLyBDaGF0CiAgICBmdW4gb2JzZXJ2ZUNoYXQoKTogRmxvdzxMaXN0PENoYXRNZXNzYWdlRW50aXR5Pj4KICAgIHN1c3BlbmQgZnVuIHNlbmRDaGF0KHRleHQ6IFN0cmluZywgc2VuZGVyTmFtZTogU3RyaW5nLCBzZW5kZXJSb2xlOiBTdHJpbmcpOiBMb25nCiAgICBzdXNwZW5kIGZ1biBwb3N0VXBsb2FkTm90aWNlKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSwgc3ViamVjdE5hbWU6IFN0cmluZykKICAgIHN1c3BlbmQgZnVuIHVwZGF0ZUNoYXRNZXNzYWdlKG1lc3NhZ2U6IENoYXRNZXNzYWdlRW50aXR5KQoKICAgIC8vIE5vdGljZXMKICAgIGZ1biBvYnNlcnZlTm90aWNlcygpOiBGbG93PExpc3Q8Tm90aWNlRW50aXR5Pj4KICAgIHN1c3BlbmQgZnVuIGFkZE5vdGljZShub3RpY2U6IE5vdGljZUVudGl0eSk6IExvbmcKICAgIHN1c3BlbmQgZnVuIG1hcmtOb3RpY2VzU2VlbigpCgogICAgLy8gUmVxdWVzdHMKICAgIGZ1biBvYnNlcnZlUmVxdWVzdHMoKTogRmxvdzxMaXN0PE1hdGVyaWFsUmVxdWVzdEVudGl0eT4+CiAgICBzdXNwZW5kIGZ1biByZXF1ZXN0QnlJZChpZDogTG9uZyk6IE1hdGVyaWFsUmVxdWVzdEVudGl0eT8KICAgIHN1c3BlbmQgZnVuIGFkZFJlcXVlc3QocmVxdWVzdDogTWF0ZXJpYWxSZXF1ZXN0RW50aXR5KTogTG9uZwogICAgc3VzcGVuZCBmdW4gZnVsZmlsUmVxdWVzdChyZXF1ZXN0SWQ6IExvbmcsIGZpbGVJZDogTG9uZywgZnVsZmlsbGVkQnk6IFN0cmluZykKCiAgICAvKiogRmlyc3QtcnVuIHNldHVwOiBjcmVhdGVzIHRoZSBjbGFzcyBzdWJqZWN0cyBhbmQgdGhlIHN0YXJ0ZXIgZGVtbwogICAgICogIGNvbnRlbnQgKG9uZSBkZWFkbGluZSwgc2FtcGxlIG5vdGljZXMsIGNoYXQgbWVzc2FnZXMsIG1hdGVyaWFscyBhbmQKICAgICAqICBvbmUgb3BlbiByZXF1ZXN0KSBzbyBhIGZyZXNoIGluc3RhbGwgaXMgZXhwbG9yYWJsZSBpbW1lZGlhdGVseS4gKi8KICAgIHN1c3BlbmQgZnVuIGNvbXBsZXRlU2V0dXAoY2xhc3NOYW1lOiBTdHJpbmcsIHN1YmplY3RzOiBMaXN0PFBhaXI8U3RyaW5nLCBTdHJpbmc+PikKfQo=
+package com.parth.index.data.repository
+
+import com.parth.index.data.model.ChatMessageEntity
+import com.parth.index.data.model.DeadlineEntity
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.data.model.MaterialRequestEntity
+import com.parth.index.data.model.NoticeEntity
+import com.parth.index.data.model.SubjectEntity
+import kotlinx.coroutines.flow.Flow
+
+/** Every screen talks ONLY to this interface — never to a database or a
+ *  network call directly. Today [LocalRepository] answers everything from
+ *  the on-phone Room database. When the Firebase project is ready,
+ *  FirebaseRepository (see the firebase package + FIREBASE_SETUP.md)
+ *  implements this same interface against Firestore/Storage and the screens
+ *  do not change at all. That is the whole point of the interface. */
+interface IndexRepository {
+
+    // Subjects
+    fun observeSubjects(): Flow<List<SubjectEntity>>
+    fun observeTrashedSubjects(): Flow<List<SubjectEntity>>
+    suspend fun subjectById(id: Long): SubjectEntity?
+    suspend fun addSubject(name: String, colorHex: String): Long
+    suspend fun renameSubject(id: Long, name: String)
+    suspend fun deleteSubject(id: Long)            // soft delete -> Trash
+    suspend fun restoreSubject(id: Long)
+    suspend fun deleteSubjectPermanently(id: Long)
+
+    // Files / material
+    fun observeFiles(): Flow<List<MaterialFileEntity>>
+    fun observeFilesForSubject(subjectId: Long): Flow<List<MaterialFileEntity>>
+    fun observeTrashedFiles(): Flow<List<MaterialFileEntity>>
+    suspend fun fileById(id: Long): MaterialFileEntity?
+    suspend fun fileCountForSubject(subjectId: Long): Int
+    suspend fun findDuplicates(subjectId: Long, fileName: String, sizeBytes: Long): List<MaterialFileEntity>
+    suspend fun addFile(file: MaterialFileEntity): Long
+    suspend fun updateFile(file: MaterialFileEntity)
+    suspend fun deleteFile(id: Long)               // soft delete -> Trash
+    suspend fun restoreFile(id: Long)
+    suspend fun deleteFilePermanently(id: Long)
+    suspend fun totalStoredBytes(): Long
+
+    // Deadlines
+    fun observeDeadlines(): Flow<List<DeadlineEntity>>
+    suspend fun addDeadline(deadline: DeadlineEntity): Long
+    suspend fun updateDeadline(deadline: DeadlineEntity)
+    suspend fun deleteDeadline(id: Long)
+
+    // Chat
+    fun observeChat(): Flow<List<ChatMessageEntity>>
+    suspend fun sendChat(text: String, senderName: String, senderRole: String): Long
+    suspend fun postUploadNotice(file: MaterialFileEntity, subjectName: String)
+    suspend fun updateChatMessage(message: ChatMessageEntity)
+
+    // Notices
+    fun observeNotices(): Flow<List<NoticeEntity>>
+    suspend fun addNotice(notice: NoticeEntity): Long
+    suspend fun markNoticesSeen()
+
+    // Requests
+    fun observeRequests(): Flow<List<MaterialRequestEntity>>
+    suspend fun requestById(id: Long): MaterialRequestEntity?
+    suspend fun addRequest(request: MaterialRequestEntity): Long
+    suspend fun fulfilRequest(requestId: Long, fileId: Long, fulfilledBy: String)
+
+    /** First-run setup: creates the class subjects and the starter demo
+     *  content (one deadline, sample notices, chat messages, materials and
+     *  one open request) so a fresh install is explorable immediately. */
+    suspend fun completeSetup(className: String, subjects: List<Pair<String, String>>)
+}
