@@ -1,1 +1,75 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkucHJldmlldwoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLmdyYXBoaWNzLkJpdG1hcEZhY3RvcnkKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLndpZGdldC5Ub2FzdAppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLmxpZmVjeWNsZVNjb3BlCmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhYmluZGluZy5BY3Rpdml0eUltYWdlVmlld2VyQmluZGluZwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkRpc3BhdGNoZXJzCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMud2l0aENvbnRleHQKaW1wb3J0IGphdmEuaW8uRmlsZQppbXBvcnQgamF2YS5pby5GaWxlSW5wdXRTdHJlYW0KCi8qKiBGdWxsLXNjcmVlbiBpbWFnZSB2aWV3LiBUaGUgcGhvdG8gaXMgZGVjb2RlZCBzaHJ1bmsgdG8gdGhlIHNjcmVlbiBzaXplCiAqICAobmV2ZXIgYXQgZnVsbCBjYW1lcmEgcmVzb2x1dGlvbiksIHNvIGV2ZW4gYSA0OCBNUCBwaG90byBvcGVucyBmYXN0IGFuZAogKiAgbGlnaHQuICovCmNsYXNzIEltYWdlVmlld2VyQWN0aXZpdHkgOiBBcHBDb21wYXRBY3Rpdml0eSgpIHsKCiAgICBwcml2YXRlIGxhdGVpbml0IHZhciBiaW5kaW5nOiBBY3Rpdml0eUltYWdlVmlld2VyQmluZGluZwogICAgcHJpdmF0ZSB2YWwgYXBwIGdldCgpID0gYXBwbGljYXRpb24gYXMgSW5kZXhBcHAKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIGJpbmRpbmcgPSBBY3Rpdml0eUltYWdlVmlld2VyQmluZGluZy5pbmZsYXRlKGxheW91dEluZmxhdGVyKQogICAgICAgIHNldENvbnRlbnRWaWV3KGJpbmRpbmcucm9vdCkKCiAgICAgICAgYmluZGluZy50dkltYWdlVGl0bGUudGV4dCA9IGludGVudC5nZXRTdHJpbmdFeHRyYShFWFRSQV9USVRMRSkgPzogIlBob3RvIgogICAgICAgIHZhbCBmaWxlSWQgPSBpbnRlbnQuZ2V0TG9uZ0V4dHJhKEVYVFJBX0ZJTEVfSUQsIC0xKQoKICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2YWwgZmlsZSA9IGFwcC5yZXBvc2l0b3J5LmZpbGVCeUlkKGZpbGVJZCkKICAgICAgICAgICAgdmFsIHBhdGggPSBmaWxlPy5sb2NhbFBhdGgub3JFbXB0eSgpCiAgICAgICAgICAgIGlmIChwYXRoLmlzRW1wdHkoKSB8fCAhRmlsZShwYXRoKS5leGlzdHMoKSkgewogICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoCiAgICAgICAgICAgICAgICAgICAgdGhpc0BJbWFnZVZpZXdlckFjdGl2aXR5LAogICAgICAgICAgICAgICAgICAgICJUaGlzIGlzIGEgc2FtcGxlIGVudHJ5IOKAlCB1cGxvYWQgYSByZWFsIHBob3RvIHRvIHZpZXcgaXQgaGVyZS4iLAogICAgICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9MT05HCiAgICAgICAgICAgICAgICApLnNob3coKQogICAgICAgICAgICAgICAgcmV0dXJuQGxhdW5jaAogICAgICAgICAgICB9CiAgICAgICAgICAgIHZhbCBiaXRtYXAgPSB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICAgICAgcnVuQ2F0Y2hpbmcgewogICAgICAgICAgICAgICAgICAgIHZhbCBib3VuZHMgPSBCaXRtYXBGYWN0b3J5Lk9wdGlvbnMoKS5hcHBseSB7IGluSnVzdERlY29kZUJvdW5kcyA9IHRydWUgfQogICAgICAgICAgICAgICAgICAgIEZpbGVJbnB1dFN0cmVhbShwYXRoKS51c2UgeyBCaXRtYXBGYWN0b3J5LmRlY29kZVN0cmVhbShpdCwgbnVsbCwgYm91bmRzKSB9CiAgICAgICAgICAgICAgICAgICAgdmFsIHRhcmdldCA9IDE0NDAKICAgICAgICAgICAgICAgICAgICB2YXIgc2FtcGxlID0gMQogICAgICAgICAgICAgICAgICAgIHdoaWxlIChib3VuZHMub3V0V2lkdGggLyAoc2FtcGxlICogMikgPj0gdGFyZ2V0IHx8CiAgICAgICAgICAgICAgICAgICAgICAgIGJvdW5kcy5vdXRIZWlnaHQgLyAoc2FtcGxlICogMikgPj0gdGFyZ2V0CiAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIHNhbXBsZSAqPSAyCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIHZhbCBvcHRzID0gQml0bWFwRmFjdG9yeS5PcHRpb25zKCkuYXBwbHkgeyBpblNhbXBsZVNpemUgPSBzYW1wbGUgfQogICAgICAgICAgICAgICAgICAgIEZpbGVJbnB1dFN0cmVhbShwYXRoKS51c2UgeyBCaXRtYXBGYWN0b3J5LmRlY29kZVN0cmVhbShpdCwgbnVsbCwgb3B0cykgfQogICAgICAgICAgICAgICAgfS5nZXRPck51bGwoKQogICAgICAgICAgICB9CiAgICAgICAgICAgIGlmIChiaXRtYXAgIT0gbnVsbCkgYmluZGluZy5pdkZ1bGxJbWFnZS5zZXRJbWFnZUJpdG1hcChiaXRtYXApCiAgICAgICAgICAgIGVsc2UgVG9hc3QubWFrZVRleHQodGhpc0BJbWFnZVZpZXdlckFjdGl2aXR5LCAiQ291bGQgbm90IG9wZW4gdGhpcyBpbWFnZS4iLCBUb2FzdC5MRU5HVEhfU0hPUlQpLnNob3coKQogICAgICAgIH0KICAgIH0KCiAgICBjb21wYW5pb24gb2JqZWN0IHsKICAgICAgICBwcml2YXRlIGNvbnN0IHZhbCBFWFRSQV9GSUxFX0lEID0gImZpbGVfaWQiCiAgICAgICAgcHJpdmF0ZSBjb25zdCB2YWwgRVhUUkFfVElUTEUgPSAidGl0bGUiCgogICAgICAgIGZ1biBpbnRlbnQoY29udGV4dDogQ29udGV4dCwgZmlsZUlkOiBMb25nLCB0aXRsZTogU3RyaW5nKTogSW50ZW50ID0KICAgICAgICAgICAgSW50ZW50KGNvbnRleHQsIEltYWdlVmlld2VyQWN0aXZpdHk6OmNsYXNzLmphdmEpLmFwcGx5IHsKICAgICAgICAgICAgICAgIHB1dEV4dHJhKEVYVFJBX0ZJTEVfSUQsIGZpbGVJZCkKICAgICAgICAgICAgICAgIHB1dEV4dHJhKEVYVFJBX1RJVExFLCB0aXRsZSkKICAgICAgICAgICAgfQogICAgfQp9Cg==
+package com.parth.index.ui.preview
+
+import android.content.Context
+import android.content.Intent
+import android.graphics.BitmapFactory
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.parth.index.IndexApp
+import com.parth.index.databinding.ActivityImageViewerBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
+import java.io.FileInputStream
+
+/** Full-screen image view. The photo is decoded shrunk to the screen size
+ *  (never at full camera resolution), so even a 48 MP photo opens fast and
+ *  light. */
+class ImageViewerActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityImageViewerBinding
+    private val app get() = application as IndexApp
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityImageViewerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.tvImageTitle.text = intent.getStringExtra(EXTRA_TITLE) ?: "Photo"
+        val fileId = intent.getLongExtra(EXTRA_FILE_ID, -1)
+
+        lifecycleScope.launch {
+            val file = app.repository.fileById(fileId)
+            val path = file?.localPath.orEmpty()
+            if (path.isEmpty() || !File(path).exists()) {
+                Toast.makeText(
+                    this@ImageViewerActivity,
+                    "This is a sample entry — upload a real photo to view it here.",
+                    Toast.LENGTH_LONG
+                ).show()
+                return@launch
+            }
+            val bitmap = withContext(Dispatchers.IO) {
+                runCatching {
+                    val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                    FileInputStream(path).use { BitmapFactory.decodeStream(it, null, bounds) }
+                    val target = 1440
+                    var sample = 1
+                    while (bounds.outWidth / (sample * 2) >= target ||
+                        bounds.outHeight / (sample * 2) >= target
+                    ) {
+                        sample *= 2
+                    }
+                    val opts = BitmapFactory.Options().apply { inSampleSize = sample }
+                    FileInputStream(path).use { BitmapFactory.decodeStream(it, null, opts) }
+                }.getOrNull()
+            }
+            if (bitmap != null) binding.ivFullImage.setImageBitmap(bitmap)
+            else Toast.makeText(this@ImageViewerActivity, "Could not open this image.", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    companion object {
+        private const val EXTRA_FILE_ID = "file_id"
+        private const val EXTRA_TITLE = "title"
+
+        fun intent(context: Context, fileId: Long, title: String): Intent =
+            Intent(context, ImageViewerActivity::class.java).apply {
+                putExtra(EXTRA_FILE_ID, fileId)
+                putExtra(EXTRA_TITLE, title)
+            }
+    }
+}
