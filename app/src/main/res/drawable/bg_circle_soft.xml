@@ -1,1 +1,4 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHNoYXBlIHhtbG5zOmFuZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCIgYW5kcm9pZDpzaGFwZT0ib3ZhbCI+CiAgICA8c29saWQgYW5kcm9pZDpjb2xvcj0iQGNvbG9yL3ByaW1hcnlfc29mdCIgLz4KPC9zaGFwZT4K
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/primary_soft" />
+</shape>
