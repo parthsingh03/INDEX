@@ -1,1 +1,64 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudXRpbAoKaW1wb3J0IGphdmEudGV4dC5TaW1wbGVEYXRlRm9ybWF0CmltcG9ydCBqYXZhLnV0aWwuRGF0ZQppbXBvcnQgamF2YS51dGlsLkxvY2FsZQppbXBvcnQgamF2YS51dGlsLmNvbmN1cnJlbnQuVGltZVVuaXQKCi8qKiBTbWFsbCBkaXNwbGF5IGhlbHBlcnMgc2hhcmVkIGJ5IGV2ZXJ5IHNjcmVlbi4gKi8Kb2JqZWN0IEZvcm1hdCB7CgogICAgZnVuIHNpemUoYnl0ZXM6IExvbmcpOiBTdHJpbmcgPSB3aGVuIHsKICAgICAgICBieXRlcyA8PSAwIC0+ICLigJQiCiAgICAgICAgYnl0ZXMgPCAxMDI0IC0+ICIkYnl0ZXMgQiIKICAgICAgICBieXRlcyA8IDEwMjQgKiAxMDI0IC0+ICIlLjBmIEtCIi5mb3JtYXQoYnl0ZXMgLyAxMDI0LjApCiAgICAgICAgZWxzZSAtPiAiJS4xZiBNQiIuZm9ybWF0KGJ5dGVzIC8gKDEwMjQuMCAqIDEwMjQuMCkpCiAgICB9CgogICAgZnVuIGRhdGUobWlsbGlzOiBMb25nKTogU3RyaW5nID0KICAgICAgICBTaW1wbGVEYXRlRm9ybWF0KCJFRUUsIGQgTU1NIiwgTG9jYWxlLkVOR0xJU0gpLmZvcm1hdChEYXRlKG1pbGxpcykpCgogICAgZnVuIGRhdGVUaW1lKG1pbGxpczogTG9uZyk6IFN0cmluZyA9CiAgICAgICAgU2ltcGxlRGF0ZUZvcm1hdCgiZCBNTU0sIGg6bW0gYSIsIExvY2FsZS5FTkdMSVNIKS5mb3JtYXQoRGF0ZShtaWxsaXMpKQoKICAgIGZ1biB0aW1lKG1pbGxpczogTG9uZyk6IFN0cmluZyA9CiAgICAgICAgU2ltcGxlRGF0ZUZvcm1hdCgiaDptbSBhIiwgTG9jYWxlLkVOR0xJU0gpLmZvcm1hdChEYXRlKG1pbGxpcykpCgogICAgLyoqIFdob2xlIGRheXMgZnJvbSB0b2RheSAoc3RhcnQgb2YgZGF5KSB0byB0aGUgZHVlIGRhdGU6IDAgPSB0b2RheS4gKi8KICAgIGZ1biBkYXlzTGVmdChkdWVNaWxsaXM6IExvbmcsIG5vdzogTG9uZyA9IFN5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpKTogTG9uZyB7CiAgICAgICAgdmFsIGRheU1zID0gVGltZVVuaXQuREFZUy50b01pbGxpcygxKQogICAgICAgIHZhbCBzdGFydE9mVG9kYXkgPSBub3cgLSAobm93ICUgZGF5TXMpCiAgICAgICAgdmFsIHN0YXJ0T2ZEdWUgPSBkdWVNaWxsaXMgLSAoZHVlTWlsbGlzICUgZGF5TXMpCiAgICAgICAgcmV0dXJuIFRpbWVVbml0Lk1JTExJU0VDT05EUy50b0RheXMoc3RhcnRPZkR1ZSAtIHN0YXJ0T2ZUb2RheSkKICAgIH0KCiAgICBmdW4gZGF5c0xlZnRMYWJlbChkdWVNaWxsaXM6IExvbmcpOiBTdHJpbmcgewogICAgICAgIHZhbCBkID0gZGF5c0xlZnQoZHVlTWlsbGlzKQogICAgICAgIHJldHVybiB3aGVuIHsKICAgICAgICAgICAgZCA8IDBMIC0+ICIkey1kfSBkYXkke2lmICgtZCA9PSAxTCkgIiIgZWxzZSAicyJ9IG92ZXJkdWUiCiAgICAgICAgICAgIGQgPT0gMEwgLT4gIkR1ZSB0b2RheSIKICAgICAgICAgICAgZCA9PSAxTCAtPiAiMSBkYXkgbGVmdCIKICAgICAgICAgICAgZWxzZSAtPiAiJGQgZGF5cyBsZWZ0IgogICAgICAgIH0KICAgIH0KCiAgICBmdW4gcmVsYXRpdmUobWlsbGlzOiBMb25nKTogU3RyaW5nIHsKICAgICAgICB2YWwgZGlmZiA9IFN5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpIC0gbWlsbGlzCiAgICAgICAgdmFsIG1pbnMgPSBUaW1lVW5pdC5NSUxMSVNFQ09ORFMudG9NaW51dGVzKGRpZmYpCiAgICAgICAgdmFsIGhvdXJzID0gVGltZVVuaXQuTUlMTElTRUNPTkRTLnRvSG91cnMoZGlmZikKICAgICAgICB2YWwgZGF5cyA9IFRpbWVVbml0Lk1JTExJU0VDT05EUy50b0RheXMoZGlmZikKICAgICAgICByZXR1cm4gd2hlbiB7CiAgICAgICAgICAgIG1pbnMgPCAxIC0+ICJKdXN0IG5vdyIKICAgICAgICAgICAgbWlucyA8IDYwIC0+ICIke21pbnN9bSBhZ28iCiAgICAgICAgICAgIGhvdXJzIDwgMjQgLT4gIiR7aG91cnN9aCBhZ28iCiAgICAgICAgICAgIGRheXMgPT0gMUwgLT4gIlllc3RlcmRheSIKICAgICAgICAgICAgZGF5cyA8IDcgLT4gIiR7ZGF5c31kIGFnbyIKICAgICAgICAgICAgZWxzZSAtPiBkYXRlKG1pbGxpcykKICAgICAgICB9CiAgICB9CgogICAgLyoqIEZpcnN0IGxldHRlcihzKSBmb3IgdGhlIGNvbG91cmVkIHN1YmplY3QgY2lyY2xlOiAiTWVjaGFuaWNhbCBFbmdnLiIgLT4gIk0iLAogICAgICogIHR3by13b3JkIG5hbWVzIGtlZXAgdGhlaXIgZmlyc3QgbGV0dGVyIG9ubHkgZm9yIGEgY2xlYW4gbG9vay4gKi8KICAgIGZ1biBpbml0aWFsKG5hbWU6IFN0cmluZyk6IFN0cmluZyA9CiAgICAgICAgbmFtZS50cmltKCkuZmlyc3RPck51bGwoKT8udXBwZXJjYXNlQ2hhcigpPy50b1N0cmluZygpID86ICI/Igp9Cg==
+package com.parth.index.util
+
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import java.util.concurrent.TimeUnit
+
+/** Small display helpers shared by every screen. */
+object Format {
+
+    fun size(bytes: Long): String = when {
+        bytes <= 0 -> "—"
+        bytes < 1024 -> "$bytes B"
+        bytes < 1024 * 1024 -> "%.0f KB".format(bytes / 1024.0)
+        else -> "%.1f MB".format(bytes / (1024.0 * 1024.0))
+    }
+
+    fun date(millis: Long): String =
+        SimpleDateFormat("EEE, d MMM", Locale.ENGLISH).format(Date(millis))
+
+    fun dateTime(millis: Long): String =
+        SimpleDateFormat("d MMM, h:mm a", Locale.ENGLISH).format(Date(millis))
+
+    fun time(millis: Long): String =
+        SimpleDateFormat("h:mm a", Locale.ENGLISH).format(Date(millis))
+
+    /** Whole days from today (start of day) to the due date: 0 = today. */
+    fun daysLeft(dueMillis: Long, now: Long = System.currentTimeMillis()): Long {
+        val dayMs = TimeUnit.DAYS.toMillis(1)
+        val startOfToday = now - (now % dayMs)
+        val startOfDue = dueMillis - (dueMillis % dayMs)
+        return TimeUnit.MILLISECONDS.toDays(startOfDue - startOfToday)
+    }
+
+    fun daysLeftLabel(dueMillis: Long): String {
+        val d = daysLeft(dueMillis)
+        return when {
+            d < 0L -> "${-d} day${if (-d == 1L) "" else "s"} overdue"
+            d == 0L -> "Due today"
+            d == 1L -> "1 day left"
+            else -> "$d days left"
+        }
+    }
+
+    fun relative(millis: Long): String {
+        val diff = System.currentTimeMillis() - millis
+        val mins = TimeUnit.MILLISECONDS.toMinutes(diff)
+        val hours = TimeUnit.MILLISECONDS.toHours(diff)
+        val days = TimeUnit.MILLISECONDS.toDays(diff)
+        return when {
+            mins < 1 -> "Just now"
+            mins < 60 -> "${mins}m ago"
+            hours < 24 -> "${hours}h ago"
+            days == 1L -> "Yesterday"
+            days < 7 -> "${days}d ago"
+            else -> date(millis)
+        }
+    }
+
+    /** First letter(s) for the coloured subject circle: "Mechanical Engg." -> "M",
+     *  two-word names keep their first letter only for a clean look. */
+    fun initial(name: String): String =
+        name.trim().firstOrNull()?.uppercaseChar()?.toString() ?: "?"
+}
