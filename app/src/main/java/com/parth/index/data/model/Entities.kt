@@ -1,1 +1,116 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbAoKaW1wb3J0IGFuZHJvaWR4LnJvb20uRW50aXR5CmltcG9ydCBhbmRyb2lkeC5yb29tLlByaW1hcnlLZXkKCi8qKiBSb2xlcyBpbiB0aGUgY2xhc3MuIFRoZSBPd25lciBydW5zIHRoZSBjbGFzcywgQWRtaW5zIGhlbHAgbWFuYWdlIGl0LAogKiAgTWVtYmVycyBqdXN0IHVzZSBpdC4gU3RvcmVkIGFzIHBsYWluIHRleHQgc28gdGhlIGRhdGFiYXNlIHN0YXlzIHJlYWRhYmxlLiAqLwpvYmplY3QgUm9sZXMgewogICAgY29uc3QgdmFsIE9XTkVSID0gIk9XTkVSIgogICAgY29uc3QgdmFsIEFETUlOID0gIkFETUlOIgogICAgY29uc3QgdmFsIE1FTUJFUiA9ICJNRU1CRVIiCgogICAgLyoqIE93bmVyIGFuZCBBZG1pbiB0b2dldGhlciBhcmUgInRoZSBhZG1pbnMiIGluIGV2ZXJ5ZGF5IGxhbmd1YWdlLiAqLwogICAgZnVuIGNhbk1hbmFnZShyb2xlOiBTdHJpbmcpOiBCb29sZWFuID0gcm9sZSA9PSBPV05FUiB8fCByb2xlID09IEFETUlOCn0KCi8qKiBBIHN1YmplY3QgZm9sZGVyLCBlLmcuICJNYXRoZW1hdGljcyIuIFNvZnQgZGVsZXRlOiBbZGVsZXRlZF0gaGlkZXMgaXQgYW5kCiAqICBbZGVsZXRlZEF0XSBzdGFydHMgdGhlIDMwLWRheSBUcmFzaCBjbG9jayDigJQgbm90aGluZyBpcyB3aXBlZCBpbnN0YW50bHkuICovCkBFbnRpdHkodGFibGVOYW1lID0gInN1YmplY3RzIikKZGF0YSBjbGFzcyBTdWJqZWN0RW50aXR5KAogICAgQFByaW1hcnlLZXkoYXV0b0dlbmVyYXRlID0gdHJ1ZSkgdmFsIGlkOiBMb25nID0gMCwKICAgIHZhbCBuYW1lOiBTdHJpbmcsCiAgICB2YWwgY29sb3JIZXg6IFN0cmluZywKICAgIHZhbCBjcmVhdGVkQXQ6IExvbmcgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSwKICAgIHZhbCBkZWxldGVkOiBCb29sZWFuID0gZmFsc2UsCiAgICB2YWwgZGVsZXRlZEF0OiBMb25nID0gMAopCgovKiogT25lIHN0dWR5LW1hdGVyaWFsIGZpbGUgaW5zaWRlIGEgc3ViamVjdC4gVGhlIGFjdHVhbCBmaWxlIGJ5dGVzIGFyZSBjb3BpZWQKICogIGludG8gdGhlIGFwcCdzIHByaXZhdGUgc3RvcmFnZTsgW2xvY2FsUGF0aF0gcG9pbnRzIGF0IHRoYXQgY29weS4gU2FtcGxlIC8KICogIGRlbW8gcm93cyBoYXZlIGFuIGVtcHR5IFtsb2NhbFBhdGhdIGFuZCBjYW5ub3QgYmUgcHJldmlld2VkLgogKiAgW25vdGVdIGlzIHRoZSB1cGxvYWRlcidzIG93biBjYXB0aW9uIOKAlCB0aGUgT05MWSB0ZXh0IGF0dGFjaGVkIHRvIGEgZmlsZS4KICogIFRoZXJlIGFyZSBkZWxpYmVyYXRlbHkgbm8gY29tbWVudHMgb24gZmlsZXMuICovCkBFbnRpdHkodGFibGVOYW1lID0gImZpbGVzIikKZGF0YSBjbGFzcyBNYXRlcmlhbEZpbGVFbnRpdHkoCiAgICBAUHJpbWFyeUtleShhdXRvR2VuZXJhdGUgPSB0cnVlKSB2YWwgaWQ6IExvbmcgPSAwLAogICAgdmFsIHN1YmplY3RJZDogTG9uZywKICAgIHZhbCB0aXRsZTogU3RyaW5nLAogICAgdmFsIG5vdGU6IFN0cmluZyA9ICIiLAogICAgdmFsIHRhZ3M6IFN0cmluZyA9ICIiLAogICAgdmFsIGZpbGVOYW1lOiBTdHJpbmcsCiAgICB2YWwgbWltZVR5cGU6IFN0cmluZyA9ICIiLAogICAgdmFsIHNpemVCeXRlczogTG9uZyA9IDAsCiAgICB2YWwgbG9jYWxQYXRoOiBTdHJpbmcgPSAiIiwKICAgIHZhbCB1cGxvYWRlck5hbWU6IFN0cmluZywKICAgIHZhbCB1cGxvYWRlclJvbGU6IFN0cmluZyA9IFJvbGVzLk1FTUJFUiwKICAgIHZhbCBjcmVhdGVkQXQ6IExvbmcgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSwKICAgIHZhbCBwaW5uZWQ6IEJvb2xlYW4gPSBmYWxzZSwKICAgIHZhbCBkZWxldGVkOiBCb29sZWFuID0gZmFsc2UsCiAgICB2YWwgZGVsZXRlZEF0OiBMb25nID0gMCwKICAgIC8qKiBTZXQgd2hlbiB0aGlzIGZpbGUgZnVsZmlsbGVkIGEgbWF0ZXJpYWwgcmVxdWVzdC4gKi8KICAgIHZhbCByZXF1ZXN0SWQ6IExvbmcgPSAwCikKCi8qKiBBIGRlYWRsaW5lIGNhcmQgc2hvd24gb24gSG9tZS4gRGF5cy1sZWZ0IGlzIG5ldmVyIHN0b3JlZCDigJQgaXQgaXMgYWx3YXlzCiAqICB3b3JrZWQgb3V0IGZyb20gW2R1ZURhdGVNaWxsaXNdIHNvIHRoZSBjb3VudGRvd24gaXMgbmV2ZXIgc3RhbGUuICovCkBFbnRpdHkodGFibGVOYW1lID0gImRlYWRsaW5lcyIpCmRhdGEgY2xhc3MgRGVhZGxpbmVFbnRpdHkoCiAgICBAUHJpbWFyeUtleShhdXRvR2VuZXJhdGUgPSB0cnVlKSB2YWwgaWQ6IExvbmcgPSAwLAogICAgdmFsIHRpdGxlOiBTdHJpbmcsCiAgICB2YWwgc3ViamVjdE5hbWU6IFN0cmluZyA9ICIiLAogICAgdmFsIGR1ZURhdGVNaWxsaXM6IExvbmcsCiAgICB2YWwgY3JlYXRlZEJ5OiBTdHJpbmcsCiAgICB2YWwgY3JlYXRlZEF0OiBMb25nID0gU3lzdGVtLmN1cnJlbnRUaW1lTWlsbGlzKCkKKQoKLyoqIE9uZSBncm91cC1jaGF0IG1lc3NhZ2UuIERlbGV0ZS1mb3ItZXZlcnlvbmUgaXMgYSB0b21ic3RvbmU6IHRoZSB0ZXh0IGlzCiAqICByZXBsYWNlZCBhbmQgW2RlbGV0ZWRGb3JFdmVyeW9uZV0gc2V0LCBzbyBldmVyeSBwaG9uZSBzaG93cwogKiAgIlRoaXMgbWVzc2FnZSB3YXMgZGVsZXRlZCIg4oCUIHRoZSBvcmlnaW5hbCB3b3JkcyBhcmUgZ29uZS4KICogIFtoaWRkZW5Gb3JNZV0gaXMgZGVsZXRlLWZvci1tZTogb25seSB0aGlzIHBob25lIGhpZGVzIGl0LgogKiAgW3N5c3RlbUZpbGVJZF0gPiAwIG1hcmtzIHRoZSBhdXRvbWF0aWMgIlggYWRkZWQgPGZpbGU+IHRvIDxzdWJqZWN0PiIKICogIG1lc3NhZ2UgcG9zdGVkIG9uIGV2ZXJ5IHVwbG9hZDsgdGFwcGluZyBpdCBvcGVucyB0aGF0IGZpbGUuICovCkBFbnRpdHkodGFibGVOYW1lID0gImNoYXRfbWVzc2FnZXMiKQpkYXRhIGNsYXNzIENoYXRNZXNzYWdlRW50aXR5KAogICAgQFByaW1hcnlLZXkoYXV0b0dlbmVyYXRlID0gdHJ1ZSkgdmFsIGlkOiBMb25nID0gMCwKICAgIHZhbCBzZW5kZXJOYW1lOiBTdHJpbmcsCiAgICB2YWwgc2VuZGVyUm9sZTogU3RyaW5nID0gUm9sZXMuTUVNQkVSLAogICAgdmFsIHRleHQ6IFN0cmluZywKICAgIHZhbCB0aW1lc3RhbXA6IExvbmcgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSwKICAgIHZhbCBkZWxldGVkRm9yRXZlcnlvbmU6IEJvb2xlYW4gPSBmYWxzZSwKICAgIHZhbCBoaWRkZW5Gb3JNZTogQm9vbGVhbiA9IGZhbHNlLAogICAgdmFsIHN5c3RlbUZpbGVJZDogTG9uZyA9IDAKKQoKLyoqIEFuIGFkbWluLW9ubHkgbm90aWNlLiBNZW1iZXJzIGNhbiByZWFkLCBuZXZlciBwb3N0LiAqLwpARW50aXR5KHRhYmxlTmFtZSA9ICJub3RpY2VzIikKZGF0YSBjbGFzcyBOb3RpY2VFbnRpdHkoCiAgICBAUHJpbWFyeUtleShhdXRvR2VuZXJhdGUgPSB0cnVlKSB2YWwgaWQ6IExvbmcgPSAwLAogICAgdmFsIGF1dGhvck5hbWU6IFN0cmluZywKICAgIHZhbCBhdXRob3JSb2xlOiBTdHJpbmcgPSBSb2xlcy5BRE1JTiwKICAgIHZhbCB0aXRsZTogU3RyaW5nLAogICAgdmFsIGJvZHk6IFN0cmluZywKICAgIHZhbCB0aW1lc3RhbXA6IExvbmcgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSwKICAgIHZhbCBzZWVuQnlDb3VudDogSW50ID0gMCwKICAgIHZhbCBzZWVuQnlNZTogQm9vbGVhbiA9IGZhbHNlCikKCi8qKiAiUGxlYXNlIHVwbG9hZCBYIiBvbiB0aGUgUmVxdWVzdCBib2FyZC4gRnVsZmlsID0gdXBsb2FkIGEgZmlsZSBhZ2FpbnN0CiAqICBpdCwgd2hpY2ggY2xvc2VzIGl0IGFuZCByZWNvcmRzIHdobyBmdWxmaWxsZWQgaXQuICovCkBFbnRpdHkodGFibGVOYW1lID0gInJlcXVlc3RzIikKZGF0YSBjbGFzcyBNYXRlcmlhbFJlcXVlc3RFbnRpdHkoCiAgICBAUHJpbWFyeUtleShhdXRvR2VuZXJhdGUgPSB0cnVlKSB2YWwgaWQ6IExvbmcgPSAwLAogICAgdmFsIHRpdGxlOiBTdHJpbmcsCiAgICB2YWwgc3ViamVjdElkOiBMb25nID0gMCwKICAgIHZhbCBzdWJqZWN0TmFtZTogU3RyaW5nID0gIiIsCiAgICB2YWwgcmVxdWVzdGVyTmFtZTogU3RyaW5nLAogICAgdmFsIHN0YXR1czogU3RyaW5nID0gU1RBVFVTX09QRU4sCiAgICB2YWwgZnVsZmlsbGVkQnk6IFN0cmluZyA9ICIiLAogICAgdmFsIGZ1bGZpbGxlZEZpbGVJZDogTG9uZyA9IDAsCiAgICB2YWwgY3JlYXRlZEF0OiBMb25nID0gU3lzdGVtLmN1cnJlbnRUaW1lTWlsbGlzKCkKKSB7CiAgICBjb21wYW5pb24gb2JqZWN0IHsKICAgICAgICBjb25zdCB2YWwgU1RBVFVTX09QRU4gPSAiT1BFTiIKICAgICAgICBjb25zdCB2YWwgU1RBVFVTX0ZVTEZJTExFRCA9ICJGVUxGSUxMRUQiCiAgICB9Cn0K
+package com.parth.index.data.model
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+/** Roles in the class. The Owner runs the class, Admins help manage it,
+ *  Members just use it. Stored as plain text so the database stays readable. */
+object Roles {
+    const val OWNER = "OWNER"
+    const val ADMIN = "ADMIN"
+    const val MEMBER = "MEMBER"
+
+    /** Owner and Admin together are "the admins" in everyday language. */
+    fun canManage(role: String): Boolean = role == OWNER || role == ADMIN
+}
+
+/** A subject folder, e.g. "Mathematics". Soft delete: [deleted] hides it and
+ *  [deletedAt] starts the 30-day Trash clock — nothing is wiped instantly. */
+@Entity(tableName = "subjects")
+data class SubjectEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val name: String,
+    val colorHex: String,
+    val createdAt: Long = System.currentTimeMillis(),
+    val deleted: Boolean = false,
+    val deletedAt: Long = 0
+)
+
+/** One study-material file inside a subject. The actual file bytes are copied
+ *  into the app's private storage; [localPath] points at that copy. Sample /
+ *  demo rows have an empty [localPath] and cannot be previewed.
+ *  [note] is the uploader's own caption — the ONLY text attached to a file.
+ *  There are deliberately no comments on files. */
+@Entity(tableName = "files")
+data class MaterialFileEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val subjectId: Long,
+    val title: String,
+    val note: String = "",
+    val tags: String = "",
+    val fileName: String,
+    val mimeType: String = "",
+    val sizeBytes: Long = 0,
+    val localPath: String = "",
+    val uploaderName: String,
+    val uploaderRole: String = Roles.MEMBER,
+    val createdAt: Long = System.currentTimeMillis(),
+    val pinned: Boolean = false,
+    val deleted: Boolean = false,
+    val deletedAt: Long = 0,
+    /** Set when this file fulfilled a material request. */
+    val requestId: Long = 0
+)
+
+/** A deadline card shown on Home. Days-left is never stored — it is always
+ *  worked out from [dueDateMillis] so the countdown is never stale. */
+@Entity(tableName = "deadlines")
+data class DeadlineEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val title: String,
+    val subjectName: String = "",
+    val dueDateMillis: Long,
+    val createdBy: String,
+    val createdAt: Long = System.currentTimeMillis()
+)
+
+/** One group-chat message. Delete-for-everyone is a tombstone: the text is
+ *  replaced and [deletedForEveryone] set, so every phone shows
+ *  "This message was deleted" — the original words are gone.
+ *  [hiddenForMe] is delete-for-me: only this phone hides it.
+ *  [systemFileId] > 0 marks the automatic "X added <file> to <subject>"
+ *  message posted on every upload; tapping it opens that file. */
+@Entity(tableName = "chat_messages")
+data class ChatMessageEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val senderName: String,
+    val senderRole: String = Roles.MEMBER,
+    val text: String,
+    val timestamp: Long = System.currentTimeMillis(),
+    val deletedForEveryone: Boolean = false,
+    val hiddenForMe: Boolean = false,
+    val systemFileId: Long = 0
+)
+
+/** An admin-only notice. Members can read, never post. */
+@Entity(tableName = "notices")
+data class NoticeEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val authorName: String,
+    val authorRole: String = Roles.ADMIN,
+    val title: String,
+    val body: String,
+    val timestamp: Long = System.currentTimeMillis(),
+    val seenByCount: Int = 0,
+    val seenByMe: Boolean = false
+)
+
+/** "Please upload X" on the Request board. Fulfil = upload a file against
+ *  it, which closes it and records who fulfilled it. */
+@Entity(tableName = "requests")
+data class MaterialRequestEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val title: String,
+    val subjectId: Long = 0,
+    val subjectName: String = "",
+    val requesterName: String,
+    val status: String = STATUS_OPEN,
+    val fulfilledBy: String = "",
+    val fulfilledFileId: Long = 0,
+    val createdAt: Long = System.currentTimeMillis()
+) {
+    companion object {
+        const val STATUS_OPEN = "OPEN"
+        const val STATUS_FULFILLED = "FULFILLED"
+    }
+}
