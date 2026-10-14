@@ -1,1 +1,58 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMKCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuRGVhZGxpbmVFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhYmluZGluZy5JdGVtRGVhZGxpbmVCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudXRpbC5Gb3JtYXQKaW1wb3J0IGtvdGxpbi5tYXRoLmFicwoKLyoqIEhvbWUgZGVhZGxpbmUgY2FyZHMuIFRoZSBiaWcgbnVtYmVyIGlzIHRoZSB3aG9sZSBkYXlzIGxlZnQsIHdvcmtlZCBvdXQKICogIGZyZXNoIGF0IGJpbmQgdGltZSDigJQgbmV2ZXIgc3RvcmVkLCBzbyBpdCBjYW4gbmV2ZXIgZ28gc3RhbGUuIEVkaXQvRGVsZXRlCiAqICBvbmx5IGV4aXN0IGZvciBPd25lci9BZG1pbjsgdGhlIHNjcmVlbiBjb250cm9scyB0aGF0IGZsYWcuICovCmNsYXNzIERlYWRsaW5lQWRhcHRlcigKICAgIHByaXZhdGUgdmFsIGNhbk1hbmFnZTogQm9vbGVhbiwKICAgIHByaXZhdGUgdmFsIG9uRWRpdDogKERlYWRsaW5lRW50aXR5KSAtPiBVbml0LAogICAgcHJpdmF0ZSB2YWwgb25EZWxldGU6IChEZWFkbGluZUVudGl0eSkgLT4gVW5pdAopIDogUmVjeWNsZXJWaWV3LkFkYXB0ZXI8RGVhZGxpbmVBZGFwdGVyLkhvbGRlcj4oKSB7CgogICAgcHJpdmF0ZSB2YXIgaXRlbXM6IExpc3Q8RGVhZGxpbmVFbnRpdHk+ID0gZW1wdHlMaXN0KCkKCiAgICBmdW4gc3VibWl0KGxpc3Q6IExpc3Q8RGVhZGxpbmVFbnRpdHk+KSB7CiAgICAgICAgaXRlbXMgPSBsaXN0CiAgICAgICAgbm90aWZ5RGF0YVNldENoYW5nZWQoKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZVZpZXdIb2xkZXIocGFyZW50OiBWaWV3R3JvdXAsIHZpZXdUeXBlOiBJbnQpOiBIb2xkZXIgewogICAgICAgIHZhbCBiaW5kaW5nID0gSXRlbURlYWRsaW5lQmluZGluZy5pbmZsYXRlKAogICAgICAgICAgICBMYXlvdXRJbmZsYXRlci5mcm9tKHBhcmVudC5jb250ZXh0KSwgcGFyZW50LCBmYWxzZQogICAgICAgICkKICAgICAgICByZXR1cm4gSG9sZGVyKGJpbmRpbmcpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIGdldEl0ZW1Db3VudCgpOiBJbnQgPSBpdGVtcy5zaXplCgogICAgb3ZlcnJpZGUgZnVuIG9uQmluZFZpZXdIb2xkZXIoaG9sZGVyOiBIb2xkZXIsIHBvc2l0aW9uOiBJbnQpIHsKICAgICAgICB2YWwgZGVhZGxpbmUgPSBpdGVtc1twb3NpdGlvbl0KICAgICAgICB3aXRoKGhvbGRlci5iaW5kaW5nKSB7CiAgICAgICAgICAgIHR2RGVhZGxpbmVUaXRsZS50ZXh0ID0gZGVhZGxpbmUudGl0bGUKICAgICAgICAgICAgdmFsIHN1YmplY3RQYXJ0ID0gaWYgKGRlYWRsaW5lLnN1YmplY3ROYW1lLmlzTm90RW1wdHkoKSkgIiDCtyAke2RlYWRsaW5lLnN1YmplY3ROYW1lfSIgZWxzZSAiIgogICAgICAgICAgICB0dkRlYWRsaW5lRHVlLnRleHQgPSAiRHVlICR7Rm9ybWF0LmRhdGUoZGVhZGxpbmUuZHVlRGF0ZU1pbGxpcyl9JHN1YmplY3RQYXJ0IgogICAgICAgICAgICB2YWwgZGF5cyA9IEZvcm1hdC5kYXlzTGVmdChkZWFkbGluZS5kdWVEYXRlTWlsbGlzKQogICAgICAgICAgICB0dkRlYWRsaW5lRGF5cy50ZXh0ID0gYWJzKGRheXMpLnRvU3RyaW5nKCkKICAgICAgICAgICAgdHZEZWFkbGluZURheXNMYWJlbC50ZXh0ID0gd2hlbiB7CiAgICAgICAgICAgICAgICBkYXlzIDwgMCAtPiAiZGF5c1xub3ZlcmR1ZSIKICAgICAgICAgICAgICAgIGRheXMgPT0gMEwgLT4gImR1ZVxudG9kYXkiCiAgICAgICAgICAgICAgICBkYXlzID09IDFMIC0+ICJkYXlcbmxlZnQiCiAgICAgICAgICAgICAgICBlbHNlIC0+ICJkYXlzXG5sZWZ0IgogICAgICAgICAgICB9CiAgICAgICAgICAgIGxheW91dERlYWRsaW5lQWN0aW9ucy52aXNpYmlsaXR5ID0gaWYgKGNhbk1hbmFnZSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgIGJ0bkVkaXREZWFkbGluZS5zZXRPbkNsaWNrTGlzdGVuZXIgeyBvbkVkaXQoZGVhZGxpbmUpIH0KICAgICAgICAgICAgYnRuRGVsZXRlRGVhZGxpbmUuc2V0T25DbGlja0xpc3RlbmVyIHsgb25EZWxldGUoZGVhZGxpbmUpIH0KICAgICAgICB9CiAgICB9CgogICAgY2xhc3MgSG9sZGVyKHZhbCBiaW5kaW5nOiBJdGVtRGVhZGxpbmVCaW5kaW5nKSA6IFJlY3ljbGVyVmlldy5WaWV3SG9sZGVyKGJpbmRpbmcucm9vdCkKfQo=
+package com.parth.index.ui.adapters
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.parth.index.data.model.DeadlineEntity
+import com.parth.index.databinding.ItemDeadlineBinding
+import com.parth.index.util.Format
+import kotlin.math.abs
+
+/** Home deadline cards. The big number is the whole days left, worked out
+ *  fresh at bind time — never stored, so it can never go stale. Edit/Delete
+ *  only exist for Owner/Admin; the screen controls that flag. */
+class DeadlineAdapter(
+    private val canManage: Boolean,
+    private val onEdit: (DeadlineEntity) -> Unit,
+    private val onDelete: (DeadlineEntity) -> Unit
+) : RecyclerView.Adapter<DeadlineAdapter.Holder>() {
+
+    private var items: List<DeadlineEntity> = emptyList()
+
+    fun submit(list: List<DeadlineEntity>) {
+        items = list
+        notifyDataSetChanged()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val binding = ItemDeadlineBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return Holder(binding)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val deadline = items[position]
+        with(holder.binding) {
+            tvDeadlineTitle.text = deadline.title
+            val subjectPart = if (deadline.subjectName.isNotEmpty()) " · ${deadline.subjectName}" else ""
+            tvDeadlineDue.text = "Due ${Format.date(deadline.dueDateMillis)}$subjectPart"
+            val days = Format.daysLeft(deadline.dueDateMillis)
+            tvDeadlineDays.text = abs(days).toString()
+            tvDeadlineDaysLabel.text = when {
+                days < 0 -> "days\noverdue"
+                days == 0L -> "due\ntoday"
+                days == 1L -> "day\nleft"
+                else -> "days\nleft"
+            }
+            layoutDeadlineActions.visibility = if (canManage) View.VISIBLE else View.GONE
+            btnEditDeadline.setOnClickListener { onEdit(deadline) }
+            btnDeleteDeadline.setOnClickListener { onDelete(deadline) }
+        }
+    }
+
+    class Holder(val binding: ItemDeadlineBinding) : RecyclerView.ViewHolder(binding.root)
+}
