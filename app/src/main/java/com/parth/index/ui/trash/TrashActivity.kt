@@ -1,1 +1,82 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkudHJhc2gKCmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZC52aWV3LlZpZXcKaW1wb3J0IGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQWxlcnREaWFsb2cKaW1wb3J0IGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQXBwQ29tcGF0QWN0aXZpdHkKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5saWZlY3ljbGVTY29wZQppbXBvcnQgYW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5MaW5lYXJMYXlvdXRNYW5hZ2VyCmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhYmluZGluZy5BY3Rpdml0eVRyYXNoQmluZGluZwppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLmFkYXB0ZXJzLlRyYXNoQWRhcHRlcgppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLmFkYXB0ZXJzLlRyYXNoUm93CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5jb21iaW5lCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCmltcG9ydCBqYXZhLmlvLkZpbGUKCi8qKiBUcmFzaDogc29mdC1kZWxldGVkIHN1YmplY3RzIGFuZCBmaWxlcywgcmVzdG9yYWJsZS4gTm90aGluZyBpbiBJTkRFWCBpcwogKiAgd2lwZWQgdGhlIG1vbWVudCB5b3UgdGFwIGRlbGV0ZSDigJQgaXQgbGFuZHMgaGVyZSBmaXJzdC4gIkRlbGV0ZSBmb3JldmVyIgogKiAgaXMgdGhlIG9ubHkgcGVybWFuZW50IGFjdGlvbiBpbiB0aGUgYXBwLCBhbmQgaXQgYXNrcyBmaXJzdC4gSW4gY2xvdWQKICogIG1vZGUgdGhpcyBzY3JlZW4gaXMgb3duZXItZm9jdXNlZDsgbG9jYWxseSBhbnlvbmUgcHJldmlld2luZyBhIHJvbGUgY2FuCiAqICBsb29rLCB3aGljaCBpcyBmaW5lIGZvciB0ZXN0aW5nIHRoZSBmbG93LiAqLwpjbGFzcyBUcmFzaEFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgcHJpdmF0ZSBsYXRlaW5pdCB2YXIgYmluZGluZzogQWN0aXZpdHlUcmFzaEJpbmRpbmcKICAgIHByaXZhdGUgdmFsIGFwcCBnZXQoKSA9IGFwcGxpY2F0aW9uIGFzIEluZGV4QXBwCgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZTogQnVuZGxlPykgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZSkKICAgICAgICBiaW5kaW5nID0gQWN0aXZpdHlUcmFzaEJpbmRpbmcuaW5mbGF0ZShsYXlvdXRJbmZsYXRlcikKICAgICAgICBzZXRDb250ZW50VmlldyhiaW5kaW5nLnJvb3QpCgogICAgICAgIHZhbCBzdWJqZWN0QWRhcHRlciA9IFRyYXNoQWRhcHRlcigKICAgICAgICAgICAgb25SZXN0b3JlID0geyByb3cgLT4gbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsgYXBwLnJlcG9zaXRvcnkucmVzdG9yZVN1YmplY3Qocm93LmlkKSB9IH0sCiAgICAgICAgICAgIG9uRGVsZXRlRm9yZXZlciA9IHsgcm93IC0+IGNvbmZpcm1Gb3JldmVyKHJvdykgfQogICAgICAgICkKICAgICAgICB2YWwgZmlsZUFkYXB0ZXIgPSBUcmFzaEFkYXB0ZXIoCiAgICAgICAgICAgIG9uUmVzdG9yZSA9IHsgcm93IC0+IGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7IGFwcC5yZXBvc2l0b3J5LnJlc3RvcmVGaWxlKHJvdy5pZCkgfSB9LAogICAgICAgICAgICBvbkRlbGV0ZUZvcmV2ZXIgPSB7IHJvdyAtPiBjb25maXJtRm9yZXZlcihyb3cpIH0KICAgICAgICApCiAgICAgICAgYmluZGluZy5ydlRyYXNoU3ViamVjdHMubGF5b3V0TWFuYWdlciA9IExpbmVhckxheW91dE1hbmFnZXIodGhpcykKICAgICAgICBiaW5kaW5nLnJ2VHJhc2hTdWJqZWN0cy5hZGFwdGVyID0gc3ViamVjdEFkYXB0ZXIKICAgICAgICBiaW5kaW5nLnJ2VHJhc2hGaWxlcy5sYXlvdXRNYW5hZ2VyID0gTGluZWFyTGF5b3V0TWFuYWdlcih0aGlzKQogICAgICAgIGJpbmRpbmcucnZUcmFzaEZpbGVzLmFkYXB0ZXIgPSBmaWxlQWRhcHRlcgoKICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICBjb21iaW5lKAogICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZVRyYXNoZWRTdWJqZWN0cygpLAogICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZVRyYXNoZWRGaWxlcygpCiAgICAgICAgICAgICkgeyBzdWJqZWN0cywgZmlsZXMgLT4gc3ViamVjdHMgdG8gZmlsZXMgfS5jb2xsZWN0IHsgKHN1YmplY3RzLCBmaWxlcykgLT4KICAgICAgICAgICAgICAgIHN1YmplY3RBZGFwdGVyLnN1Ym1pdChzdWJqZWN0cy5tYXAgewogICAgICAgICAgICAgICAgICAgIFRyYXNoUm93KGl0LmlkLCBpc1N1YmplY3QgPSB0cnVlLCB0aXRsZSA9IGl0Lm5hbWUsIGRlbGV0ZWRBdCA9IGl0LmRlbGV0ZWRBdCkKICAgICAgICAgICAgICAgIH0pCiAgICAgICAgICAgICAgICBmaWxlQWRhcHRlci5zdWJtaXQoZmlsZXMubWFwIHsKICAgICAgICAgICAgICAgICAgICBUcmFzaFJvdyhpdC5pZCwgaXNTdWJqZWN0ID0gZmFsc2UsIHRpdGxlID0gaXQudGl0bGUsIGRlbGV0ZWRBdCA9IGl0LmRlbGV0ZWRBdCkKICAgICAgICAgICAgICAgIH0pCiAgICAgICAgICAgICAgICBiaW5kaW5nLnR2VHJhc2hFbXB0eS52aXNpYmlsaXR5ID0KICAgICAgICAgICAgICAgICAgICBpZiAoc3ViamVjdHMuaXNFbXB0eSgpICYmIGZpbGVzLmlzRW1wdHkoKSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gY29uZmlybUZvcmV2ZXIocm93OiBUcmFzaFJvdykgewogICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIodGhpcykKICAgICAgICAgICAgLnNldFRpdGxlKCJEZWxldGUgZm9yZXZlcj8iKQogICAgICAgICAgICAuc2V0TWVzc2FnZSgi4oCcJHtyb3cudGl0bGV94oCdIHdpbGwgYmUgcGVybWFuZW50bHkgcmVtb3ZlZC4gVGhpcyBvbmUgY2Fubm90IGJlIHVuZG9uZS4iKQogICAgICAgICAgICAuc2V0UG9zaXRpdmVCdXR0b24oIkRlbGV0ZSBmb3JldmVyIikgeyBfLCBfIC0+CiAgICAgICAgICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICAgICAgICAgIGlmIChyb3cuaXNTdWJqZWN0KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmRlbGV0ZVN1YmplY3RQZXJtYW5lbnRseShyb3cuaWQpCiAgICAgICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICAgICAgdmFsIGZpbGUgPSBhcHAucmVwb3NpdG9yeS5maWxlQnlJZChyb3cuaWQpCiAgICAgICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmRlbGV0ZUZpbGVQZXJtYW5lbnRseShyb3cuaWQpCiAgICAgICAgICAgICAgICAgICAgICAgIGZpbGU/LmxvY2FsUGF0aD8udGFrZUlmIHsgaXQuaXNOb3RFbXB0eSgpIH0/LmxldCB7IHBhdGggLT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJ1bkNhdGNoaW5nIHsgRmlsZShwYXRoKS5kZWxldGUoKSB9CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgLnNldE5lZ2F0aXZlQnV0dG9uKCJDYW5jZWwiLCBudWxsKQogICAgICAgICAgICAuc2hvdygpCiAgICB9Cn0K
+package com.parth.index.ui.trash
+
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.parth.index.IndexApp
+import com.parth.index.databinding.ActivityTrashBinding
+import com.parth.index.ui.adapters.TrashAdapter
+import com.parth.index.ui.adapters.TrashRow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.launch
+import java.io.File
+
+/** Trash: soft-deleted subjects and files, restorable. Nothing in INDEX is
+ *  wiped the moment you tap delete — it lands here first. "Delete forever"
+ *  is the only permanent action in the app, and it asks first. In cloud
+ *  mode this screen is owner-focused; locally anyone previewing a role can
+ *  look, which is fine for testing the flow. */
+class TrashActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityTrashBinding
+    private val app get() = application as IndexApp
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityTrashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val subjectAdapter = TrashAdapter(
+            onRestore = { row -> lifecycleScope.launch { app.repository.restoreSubject(row.id) } },
+            onDeleteForever = { row -> confirmForever(row) }
+        )
+        val fileAdapter = TrashAdapter(
+            onRestore = { row -> lifecycleScope.launch { app.repository.restoreFile(row.id) } },
+            onDeleteForever = { row -> confirmForever(row) }
+        )
+        binding.rvTrashSubjects.layoutManager = LinearLayoutManager(this)
+        binding.rvTrashSubjects.adapter = subjectAdapter
+        binding.rvTrashFiles.layoutManager = LinearLayoutManager(this)
+        binding.rvTrashFiles.adapter = fileAdapter
+
+        lifecycleScope.launch {
+            combine(
+                app.repository.observeTrashedSubjects(),
+                app.repository.observeTrashedFiles()
+            ) { subjects, files -> subjects to files }.collect { (subjects, files) ->
+                subjectAdapter.submit(subjects.map {
+                    TrashRow(it.id, isSubject = true, title = it.name, deletedAt = it.deletedAt)
+                })
+                fileAdapter.submit(files.map {
+                    TrashRow(it.id, isSubject = false, title = it.title, deletedAt = it.deletedAt)
+                })
+                binding.tvTrashEmpty.visibility =
+                    if (subjects.isEmpty() && files.isEmpty()) View.VISIBLE else View.GONE
+            }
+        }
+    }
+
+    private fun confirmForever(row: TrashRow) {
+        AlertDialog.Builder(this)
+            .setTitle("Delete forever?")
+            .setMessage("“${row.title}” will be permanently removed. This one cannot be undone.")
+            .setPositiveButton("Delete forever") { _, _ ->
+                lifecycleScope.launch {
+                    if (row.isSubject) {
+                        app.repository.deleteSubjectPermanently(row.id)
+                    } else {
+                        val file = app.repository.fileById(row.id)
+                        app.repository.deleteFilePermanently(row.id)
+                        file?.localPath?.takeIf { it.isNotEmpty() }?.let { path ->
+                            runCatching { File(path).delete() }
+                        }
+                    }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+}
