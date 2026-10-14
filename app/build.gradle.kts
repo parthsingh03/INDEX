@@ -1,1 +1,95 @@
-cGx1Z2lucyB7CiAgICBpZCgiY29tLmFuZHJvaWQuYXBwbGljYXRpb24iKQogICAgaWQoIm9yZy5qZXRicmFpbnMua290bGluLmFuZHJvaWQiKQogICAgaWQoIm9yZy5qZXRicmFpbnMua290bGluLmthcHQiKQp9CgovLyBOT1RFIGZvciB0aGUgbmV4dCBwZXJzb246IHRoZSBnb29nbGUtc2VydmljZXMgcGx1Z2luIGlzIGludGVudGlvbmFsbHkgTk9UCi8vIGFwcGxpZWQgeWV0LiBJTkRFWCBydW5zIGZ1bGx5IGluIGxvY2FsIG1vZGUgKFJvb20gZGF0YWJhc2Ugb24gdGhlIHBob25lKQovLyB1bnRpbCB0aGUgRmlyZWJhc2UgcHJvamVjdCBleGlzdHMgYW5kIGdvb2dsZS1zZXJ2aWNlcy5qc29uIGlzIGFkZGVkLgovLyBTZWUgRklSRUJBU0VfU0VUVVAubWQgYXQgdGhlIHByb2plY3Qgcm9vdCBmb3IgdGhlIGV4YWN0IHdpcmluZyBzdGVwcy4KCi8vIC0tLSBSZWxlYXNlIHNpZ25pbmcgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCi8vIElOREVYIGlzIHNpZ25lZCB3aXRoIE9ORSBmaXhlZCByZWxlYXNlIGtleSBmb3IgaXRzIHdob2xlIGxpZmUsIHNvIGV2ZXJ5Ci8vIGZ1dHVyZSBBUEsgaW5zdGFsbHMgb3ZlciB0aGUgb2xkIG9uZSBhcyBhbiB1cGRhdGUgYW5kIG5vYm9keSBsb3NlcyBkYXRhLgovLyBUaGUga2V5IGl0c2VsZiBpcyBuZXZlciBjb21taXR0ZWQuIEl0cyBsb2NhdGlvbiBhbmQgcGFzc3dvcmRzIGNvbWUgZnJvbQovLyBncmFkbGUgcHJvcGVydGllcyBvciBlbnZpcm9ubWVudCB2YXJpYWJsZXM6Ci8vICAgSU5ERVhfU1RPUkVfRklMRSwgSU5ERVhfU1RPUkVfUEFTU1dPUkQsIElOREVYX0tFWV9BTElBUywgSU5ERVhfS0VZX1BBU1NXT1JECi8vIChncmFkbGUgcHJvcGVydHkgbmFtZXM6IGluZGV4U3RvcmVGaWxlLCBpbmRleFN0b3JlUGFzc3dvcmQsIGluZGV4S2V5QWxpYXMsCi8vICBpbmRleEtleVBhc3N3b3JkKS4gSWYgdGhleSBhcmUgYWJzZW50IChlLmcuIENJIGRlYnVnIGJ1aWxkcyksIHRoZSByZWxlYXNlCi8vIGJ1aWxkIHNpbXBseSBzdGF5cyB1bnNpZ25lZCBpbnN0ZWFkIG9mIGZhaWxpbmcuCnZhbCBpbmRleFN0b3JlRmlsZSA9IChmaW5kUHJvcGVydHkoImluZGV4U3RvcmVGaWxlIikgYXMgU3RyaW5nPykgPzogU3lzdGVtLmdldGVudigiSU5ERVhfU1RPUkVfRklMRSIpCnZhbCBpbmRleFN0b3JlUGFzc3dvcmQgPSAoZmluZFByb3BlcnR5KCJpbmRleFN0b3JlUGFzc3dvcmQiKSBhcyBTdHJpbmc/KSA/OiBTeXN0ZW0uZ2V0ZW52KCJJTkRFWF9TVE9SRV9QQVNTV09SRCIpCnZhbCBpbmRleEtleUFsaWFzID0gKGZpbmRQcm9wZXJ0eSgiaW5kZXhLZXlBbGlhcyIpIGFzIFN0cmluZz8pID86IFN5c3RlbS5nZXRlbnYoIklOREVYX0tFWV9BTElBUyIpCnZhbCBpbmRleEtleVBhc3N3b3JkID0gKGZpbmRQcm9wZXJ0eSgiaW5kZXhLZXlQYXNzd29yZCIpIGFzIFN0cmluZz8pID86IFN5c3RlbS5nZXRlbnYoIklOREVYX0tFWV9QQVNTV09SRCIpCgphbmRyb2lkIHsKICAgIG5hbWVzcGFjZSA9ICJjb20ucGFydGguaW5kZXgiCiAgICBjb21waWxlU2RrID0gMzQKCiAgICBkZWZhdWx0Q29uZmlnIHsKICAgICAgICBhcHBsaWNhdGlvbklkID0gImNvbS5wYXJ0aC5pbmRleCIKICAgICAgICBtaW5TZGsgPSAyNgogICAgICAgIHRhcmdldFNkayA9IDM0CiAgICAgICAgdmVyc2lvbkNvZGUgPSAxCiAgICAgICAgdmVyc2lvbk5hbWUgPSAiMS4wIgogICAgfQoKICAgIHNpZ25pbmdDb25maWdzIHsKICAgICAgICBjcmVhdGUoImluZGV4UmVsZWFzZSIpIHsKICAgICAgICAgICAgaWYgKGluZGV4U3RvcmVGaWxlICE9IG51bGwpIHsKICAgICAgICAgICAgICAgIHN0b3JlRmlsZSA9IGZpbGUoaW5kZXhTdG9yZUZpbGUpCiAgICAgICAgICAgICAgICBzdG9yZVBhc3N3b3JkID0gaW5kZXhTdG9yZVBhc3N3b3JkCiAgICAgICAgICAgICAgICBrZXlBbGlhcyA9IGluZGV4S2V5QWxpYXMKICAgICAgICAgICAgICAgIGtleVBhc3N3b3JkID0gaW5kZXhLZXlQYXNzd29yZAogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGJ1aWxkVHlwZXMgewogICAgICAgIHJlbGVhc2UgewogICAgICAgICAgICBpc01pbmlmeUVuYWJsZWQgPSB0cnVlCiAgICAgICAgICAgIGlzU2hyaW5rUmVzb3VyY2VzID0gdHJ1ZQogICAgICAgICAgICBwcm9ndWFyZEZpbGVzKAogICAgICAgICAgICAgICAgZ2V0RGVmYXVsdFByb2d1YXJkRmlsZSgicHJvZ3VhcmQtYW5kcm9pZC1vcHRpbWl6ZS50eHQiKSwKICAgICAgICAgICAgICAgICJwcm9ndWFyZC1ydWxlcy5wcm8iCiAgICAgICAgICAgICkKICAgICAgICAgICAgaWYgKGluZGV4U3RvcmVGaWxlICE9IG51bGwpIHsKICAgICAgICAgICAgICAgIHNpZ25pbmdDb25maWcgPSBzaWduaW5nQ29uZmlncy5nZXRCeU5hbWUoImluZGV4UmVsZWFzZSIpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgZGVidWcgewogICAgICAgICAgICBpc01pbmlmeUVuYWJsZWQgPSBmYWxzZQogICAgICAgIH0KICAgIH0KCiAgICBjb21waWxlT3B0aW9ucyB7CiAgICAgICAgc291cmNlQ29tcGF0aWJpbGl0eSA9IEphdmFWZXJzaW9uLlZFUlNJT05fMTcKICAgICAgICB0YXJnZXRDb21wYXRpYmlsaXR5ID0gSmF2YVZlcnNpb24uVkVSU0lPTl8xNwogICAgfQogICAga290bGluT3B0aW9ucyB7CiAgICAgICAganZtVGFyZ2V0ID0gIjE3IgogICAgfQogICAgYnVpbGRGZWF0dXJlcyB7CiAgICAgICAgdmlld0JpbmRpbmcgPSB0cnVlCiAgICAgICAgYnVpbGRDb25maWcgPSB0cnVlCiAgICB9Cn0KCmRlcGVuZGVuY2llcyB7CiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29yZTpjb3JlLWt0eDoxLjEzLjEiKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmFwcGNvbXBhdDphcHBjb21wYXQ6MS43LjAiKQogICAgaW1wbGVtZW50YXRpb24oImNvbS5nb29nbGUuYW5kcm9pZC5tYXRlcmlhbDptYXRlcmlhbDoxLjEyLjAiKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LnJlY3ljbGVydmlldzpyZWN5Y2xlcnZpZXc6MS4zLjIiKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmNvbnN0cmFpbnRsYXlvdXQ6Y29uc3RyYWludGxheW91dDoyLjEuNCIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHgubGlmZWN5Y2xlOmxpZmVjeWNsZS1ydW50aW1lLWt0eDoyLjcuMCIpCgogICAgLy8gUm9vbSDigJQgdGhlIG9uLXBob25lIGRhdGFiYXNlIHVzZWQgaW4gbG9jYWwgbW9kZS4KICAgIGltcGxlbWVudGF0aW9uKCJhbmRyb2lkeC5yb29tOnJvb20tcnVudGltZToyLjYuMSIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHgucm9vbTpyb29tLWt0eDoyLjYuMSIpCiAgICBrYXB0KCJhbmRyb2lkeC5yb29tOnJvb20tY29tcGlsZXI6Mi42LjEiKQoKICAgIC8vIENvcm91dGluZXMg4oCUIGFsbCBoZWF2eSB3b3JrIChmaWxlIGNvcGllcywgUERGIGJ1aWxkaW5nKSBydW5zIG9mZiB0aGUKICAgIC8vIG1haW4gdGhyZWFkIHNvIHRoZSBhcHAgbmV2ZXIgaGFuZ3MuCiAgICBpbXBsZW1lbnRhdGlvbigib3JnLmpldGJyYWlucy5rb3RsaW54OmtvdGxpbngtY29yb3V0aW5lcy1hbmRyb2lkOjEuNy4zIikKfQo=
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
+}
+
+// NOTE for the next person: the google-services plugin is intentionally NOT
+// applied yet. INDEX runs fully in local mode (Room database on the phone)
+// until the Firebase project exists and google-services.json is added.
+// See FIREBASE_SETUP.md at the project root for the exact wiring steps.
+
+// --- Release signing ---------------------------------------------------------
+// INDEX is signed with ONE fixed release key for its whole life, so every
+// future APK installs over the old one as an update and nobody loses data.
+// The key itself is never committed. Its location and passwords come from
+// gradle properties or environment variables:
+//   INDEX_STORE_FILE, INDEX_STORE_PASSWORD, INDEX_KEY_ALIAS, INDEX_KEY_PASSWORD
+// (gradle property names: indexStoreFile, indexStorePassword, indexKeyAlias,
+//  indexKeyPassword). If they are absent (e.g. CI debug builds), the release
+// build simply stays unsigned instead of failing.
+val indexStoreFile = (findProperty("indexStoreFile") as String?) ?: System.getenv("INDEX_STORE_FILE")
+val indexStorePassword = (findProperty("indexStorePassword") as String?) ?: System.getenv("INDEX_STORE_PASSWORD")
+val indexKeyAlias = (findProperty("indexKeyAlias") as String?) ?: System.getenv("INDEX_KEY_ALIAS")
+val indexKeyPassword = (findProperty("indexKeyPassword") as String?) ?: System.getenv("INDEX_KEY_PASSWORD")
+
+android {
+    namespace = "com.parth.index"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.parth.index"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    signingConfigs {
+        create("indexRelease") {
+            if (indexStoreFile != null) {
+                storeFile = file(indexStoreFile)
+                storePassword = indexStorePassword
+                keyAlias = indexKeyAlias
+                keyPassword = indexKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            if (indexStoreFile != null) {
+                signingConfig = signingConfigs.getByName("indexRelease")
+            }
+        }
+        debug {
+            isMinifyEnabled = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+
+    // Room — the on-phone database used in local mode.
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+
+    // Coroutines — all heavy work (file copies, PDF building) runs off the
+    // main thread so the app never hangs.
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+}
