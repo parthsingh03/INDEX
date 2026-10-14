@@ -1,1 +1,95 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuc2V0dXAKCmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZC53aWRnZXQuQ2hlY2tCb3gKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LlRvYXN0CmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUubGlmZWN5Y2xlU2NvcGUKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5JbmRleEFwcAppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkFjdGl2aXR5U2V0dXBCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuTWFpbkFjdGl2aXR5CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCgovKiogRmlyc3QgbGF1bmNoLCBzZWVuIG9uY2UgYnkgdGhlIE93bmVyOiBuYW1lIHRoZSBjbGFzcywgdGljayB0aGUgc3ViamVjdHMKICogIHRoZSBjbGFzcyBhY3R1YWxseSBoYXMgKHNlbnNpYmxlIGZpcnN0LXNlbWVzdGVyIGRlZmF1bHRzIGFyZSBwcmVmaWxsZWQKICogIGFuZCBwcmUtdGlja2VkIOKAlCBkcm9wIHRoZSBvbmVzIHlvdSBkbyBub3QgaGF2ZSwgYWRkIHlvdXIgb3duKSwgYW5kIHRoZQogKiAgY2xhc3MgZXhpc3RzLiBFdmVyeXRoaW5nIGhlcmUgY2FuIGJlIGNoYW5nZWQgbGF0ZXIgaW4gTWFuYWdlIFN1YmplY3RzLiAqLwpjbGFzcyBTZXR1cEFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgcHJpdmF0ZSBsYXRlaW5pdCB2YXIgYmluZGluZzogQWN0aXZpdHlTZXR1cEJpbmRpbmcKICAgIHByaXZhdGUgdmFsIGFwcCBnZXQoKSA9IGFwcGxpY2F0aW9uIGFzIEluZGV4QXBwCgogICAgcHJpdmF0ZSB2YWwgc3ViamVjdENoZWNrcyA9IG11dGFibGVMaXN0T2Y8UGFpcjxDaGVja0JveCwgU3RyaW5nPj4oKQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8pIHsKICAgICAgICBzdXBlci5vbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGUpCiAgICAgICAgYmluZGluZyA9IEFjdGl2aXR5U2V0dXBCaW5kaW5nLmluZmxhdGUobGF5b3V0SW5mbGF0ZXIpCiAgICAgICAgc2V0Q29udGVudFZpZXcoYmluZGluZy5yb290KQoKICAgICAgICBiaW5kaW5nLmV0WW91ck5hbWUuc2V0VGV4dChhcHAucHJlZnMudXNlck5hbWUpCiAgICAgICAgYmluZGluZy5ldENsYXNzTmFtZS5zZXRUZXh0KGFwcC5wcmVmcy5jbGFzc05hbWUpCgogICAgICAgIGZvciAoKG5hbWUsIF8pIGluIERFRkFVTFRfU1VCSkVDVFMpIGFkZFN1YmplY3RDaGVjayhuYW1lLCBjaGVja2VkID0gdHJ1ZSkKCiAgICAgICAgYmluZGluZy5idG5BZGRDdXN0b21TdWJqZWN0LnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIHZhbCBuYW1lID0gYmluZGluZy5ldEN1c3RvbVN1YmplY3QudGV4dC50b1N0cmluZygpLnRyaW0oKQogICAgICAgICAgICBpZiAobmFtZS5pc0VtcHR5KCkpIHJldHVybkBzZXRPbkNsaWNrTGlzdGVuZXIKICAgICAgICAgICAgYWRkU3ViamVjdENoZWNrKG5hbWUsIGNoZWNrZWQgPSB0cnVlKQogICAgICAgICAgICBiaW5kaW5nLmV0Q3VzdG9tU3ViamVjdC50ZXh0LmNsZWFyKCkKICAgICAgICB9CgogICAgICAgIGJpbmRpbmcuYnRuRmluaXNoU2V0dXAuc2V0T25DbGlja0xpc3RlbmVyIHsKICAgICAgICAgICAgdmFsIGNob3NlbiA9IHN1YmplY3RDaGVja3MKICAgICAgICAgICAgICAgIC5maWx0ZXIgeyBpdC5maXJzdC5pc0NoZWNrZWQgfQogICAgICAgICAgICAgICAgLm1hcCB7IChfLCBuYW1lKSAtPiBuYW1lIHRvIGNvbG9yRm9yKG5hbWUpIH0KICAgICAgICAgICAgaWYgKGNob3Nlbi5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgICAgIFRvYXN0Lm1ha2VUZXh0KHRoaXMsICJLZWVwIGF0IGxlYXN0IG9uZSBzdWJqZWN0LiIsIFRvYXN0LkxFTkdUSF9TSE9SVCkuc2hvdygpCiAgICAgICAgICAgICAgICByZXR1cm5Ac2V0T25DbGlja0xpc3RlbmVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgdmFsIHlvdXJOYW1lID0gYmluZGluZy5ldFlvdXJOYW1lLnRleHQudG9TdHJpbmcoKS50cmltKCkKICAgICAgICAgICAgICAgIC5pZkVtcHR5IHsgYXBwLnByZWZzLnVzZXJOYW1lIH0KICAgICAgICAgICAgdmFsIGNsYXNzTmFtZSA9IGJpbmRpbmcuZXRDbGFzc05hbWUudGV4dC50b1N0cmluZygpLnRyaW0oKQogICAgICAgICAgICAgICAgLmlmRW1wdHkgeyBhcHAucHJlZnMuY2xhc3NOYW1lIH0KICAgICAgICAgICAgYXBwLnByZWZzLnVzZXJOYW1lID0geW91ck5hbWUKICAgICAgICAgICAgYXBwLnByZWZzLmNsYXNzTmFtZSA9IGNsYXNzTmFtZQogICAgICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkuY29tcGxldGVTZXR1cChjbGFzc05hbWUsIGNob3NlbikKICAgICAgICAgICAgICAgIGFwcC5wcmVmcy5zZXR1cERvbmUgPSB0cnVlCiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KAogICAgICAgICAgICAgICAgICAgIEludGVudCh0aGlzQFNldHVwQWN0aXZpdHksIE1haW5BY3Rpdml0eTo6Y2xhc3MuamF2YSkuYXBwbHkgewogICAgICAgICAgICAgICAgICAgICAgICBmbGFncyA9IEludGVudC5GTEFHX0FDVElWSVRZX05FV19UQVNLIG9yIEludGVudC5GTEFHX0FDVElWSVRZX0NMRUFSX1RBU0sKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICBmaW5pc2goKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGFkZFN1YmplY3RDaGVjayhuYW1lOiBTdHJpbmcsIGNoZWNrZWQ6IEJvb2xlYW4pIHsKICAgICAgICB2YWwgY2hlY2tCb3ggPSBDaGVja0JveCh0aGlzKS5hcHBseSB7CiAgICAgICAgICAgIHRleHQgPSBuYW1lCiAgICAgICAgICAgIGlzQ2hlY2tlZCA9IGNoZWNrZWQKICAgICAgICAgICAgdGV4dFNpemUgPSAxNWYKICAgICAgICAgICAgc2V0UGFkZGluZyg4LCAxNCwgOCwgMTQpCiAgICAgICAgfQogICAgICAgIGJpbmRpbmcubGxTZXR1cFN1YmplY3RzLmFkZFZpZXcoY2hlY2tCb3gpCiAgICAgICAgc3ViamVjdENoZWNrcy5hZGQoY2hlY2tCb3ggdG8gbmFtZSkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBjb2xvckZvcihuYW1lOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIERFRkFVTFRfU1VCSkVDVFMuZmlyc3RPck51bGwgeyBpdC5maXJzdCA9PSBuYW1lIH0/LnNlY29uZAogICAgICAgICAgICA/OiBFWFRSQV9DT0xPUlNbbmFtZS5oYXNoQ29kZSgpLm1vZChFWFRSQV9DT0xPUlMuc2l6ZSldCgogICAgY29tcGFuaW9uIG9iamVjdCB7CiAgICAgICAgdmFsIERFRkFVTFRfU1VCSkVDVFMgPSBsaXN0T2YoCiAgICAgICAgICAgICJNYXRoZW1hdGljcyIgdG8gIiMyNTYzRUIiLAogICAgICAgICAgICAiUHJvZ3JhbW1pbmcgaW4gQyIgdG8gIiM3QzNBRUQiLAogICAgICAgICAgICAiTWVjaGFuaWNhbCBFbmdnLiIgdG8gIiNFMTcwNTUiLAogICAgICAgICAgICAiUGh5c2ljcyIgdG8gIiM3QzNBRUQiLAogICAgICAgICAgICAiRWxlY3Ryb25pY3MiIHRvICIjMEQ5NDg4IiwKICAgICAgICAgICAgIkNoZW1pc3RyeSIgdG8gIiNEQjI3NzciCiAgICAgICAgKQogICAgICAgIHByaXZhdGUgdmFsIEVYVFJBX0NPTE9SUyA9IGxpc3RPZigiIzI1NjNFQiIsICIjMEQ5NDg4IiwgIiNEOTc3MDYiLCAiI0RCMjc3NyIsICIjMDU5NjY5IikKICAgIH0KfQo=
+package com.parth.index.ui.setup
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.CheckBox
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.parth.index.IndexApp
+import com.parth.index.databinding.ActivitySetupBinding
+import com.parth.index.ui.MainActivity
+import kotlinx.coroutines.launch
+
+/** First launch, seen once by the Owner: name the class, tick the subjects
+ *  the class actually has (sensible first-semester defaults are prefilled
+ *  and pre-ticked — drop the ones you do not have, add your own), and the
+ *  class exists. Everything here can be changed later in Manage Subjects. */
+class SetupActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySetupBinding
+    private val app get() = application as IndexApp
+
+    private val subjectChecks = mutableListOf<Pair<CheckBox, String>>()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivitySetupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.etYourName.setText(app.prefs.userName)
+        binding.etClassName.setText(app.prefs.className)
+
+        for ((name, _) in DEFAULT_SUBJECTS) addSubjectCheck(name, checked = true)
+
+        binding.btnAddCustomSubject.setOnClickListener {
+            val name = binding.etCustomSubject.text.toString().trim()
+            if (name.isEmpty()) return@setOnClickListener
+            addSubjectCheck(name, checked = true)
+            binding.etCustomSubject.text.clear()
+        }
+
+        binding.btnFinishSetup.setOnClickListener {
+            val chosen = subjectChecks
+                .filter { it.first.isChecked }
+                .map { (_, name) -> name to colorFor(name) }
+            if (chosen.isEmpty()) {
+                Toast.makeText(this, "Keep at least one subject.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            val yourName = binding.etYourName.text.toString().trim()
+                .ifEmpty { app.prefs.userName }
+            val className = binding.etClassName.text.toString().trim()
+                .ifEmpty { app.prefs.className }
+            app.prefs.userName = yourName
+            app.prefs.className = className
+            lifecycleScope.launch {
+                app.repository.completeSetup(className, chosen)
+                app.prefs.setupDone = true
+                startActivity(
+                    Intent(this@SetupActivity, MainActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    }
+                )
+                finish()
+            }
+        }
+    }
+
+    private fun addSubjectCheck(name: String, checked: Boolean) {
+        val checkBox = CheckBox(this).apply {
+            text = name
+            isChecked = checked
+            textSize = 15f
+            setPadding(8, 14, 8, 14)
+        }
+        binding.llSetupSubjects.addView(checkBox)
+        subjectChecks.add(checkBox to name)
+    }
+
+    private fun colorFor(name: String): String =
+        DEFAULT_SUBJECTS.firstOrNull { it.first == name }?.second
+            ?: EXTRA_COLORS[name.hashCode().mod(EXTRA_COLORS.size)]
+
+    companion object {
+        val DEFAULT_SUBJECTS = listOf(
+            "Mathematics" to "#2563EB",
+            "Programming in C" to "#7C3AED",
+            "Mechanical Engg." to "#E17055",
+            "Physics" to "#7C3AED",
+            "Electronics" to "#0D9488",
+            "Chemistry" to "#DB2777"
+        )
+        private val EXTRA_COLORS = listOf("#2563EB", "#0D9488", "#D97706", "#DB2777", "#059669")
+    }
+}
