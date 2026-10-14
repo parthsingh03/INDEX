@@ -1,1 +1,231 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuaG9tZQoKaW1wb3J0IGFuZHJvaWQuYXBwLkRhdGVQaWNrZXJEaWFsb2cKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkLndpZGdldC5FZGl0VGV4dAppbXBvcnQgYW5kcm9pZC53aWRnZXQuTGluZWFyTGF5b3V0CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZC53aWRnZXQuVG9hc3QKaW1wb3J0IGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQWxlcnREaWFsb2cKaW1wb3J0IGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQXBwQ29tcGF0RGVsZWdhdGUKaW1wb3J0IGFuZHJvaWR4LmZyYWdtZW50LmFwcC5GcmFnbWVudAppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLkxpZmVjeWNsZQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLmxpZmVjeWNsZVNjb3BlCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUucmVwZWF0T25MaWZlY3ljbGUKaW1wb3J0IGFuZHJvaWR4LnJlY3ljbGVydmlldy53aWRnZXQuR3JpZExheW91dE1hbmFnZXIKaW1wb3J0IGFuZHJvaWR4LnJlY3ljbGVydmlldy53aWRnZXQuTGluZWFyTGF5b3V0TWFuYWdlcgppbXBvcnQgY29tLnBhcnRoLmluZGV4LkluZGV4QXBwCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5EZWFkbGluZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuUm9sZXMKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhYmluZGluZy5GcmFnbWVudEhvbWVCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMuRGVhZGxpbmVBZGFwdGVyCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMuRmlsZUFkYXB0ZXIKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS5hZGFwdGVycy5TdWJqZWN0Q2FyZEFkYXB0ZXIKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS5wcm9maWxlLlByb2ZpbGVBY3Rpdml0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLnNlYXJjaC5TZWFyY2hBY3Rpdml0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLnN1YmplY3QuU3ViamVjdERldGFpbEFjdGl2aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXgudXRpbC5GaWxlQWN0aW9ucwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuY29tYmluZQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmxhdW5jaAppbXBvcnQgamF2YS51dGlsLkNhbGVuZGFyCgovKiogSG9tZTogZ3JlZXRpbmcsIHNlYXJjaCBlbnRyeSwgZGVhZGxpbmVzICh3aXRoIGNvdW50ZG93biksIHRoZSBzdWJqZWN0CiAqICBncmlkIGFuZCByZWNlbnQgdXBsb2FkcyDigJQgdGhlIENsZWFuIENhbXB1cyBkZXNpZ24sIHBsdXMgdGhlIE9OTFkgZGFyawogKiAgbW9kZSB0b2dnbGUgaW4gdGhlIGFwcCwgaW4gdGhpcyBoZWFkZXIgYmVzaWRlIHRoZSBhdmF0YXIuICovCmNsYXNzIEhvbWVGcmFnbWVudCA6IEZyYWdtZW50KCkgewoKICAgIHByaXZhdGUgdmFyIF9iaW5kaW5nOiBGcmFnbWVudEhvbWVCaW5kaW5nPyA9IG51bGwKICAgIHByaXZhdGUgdmFsIGJpbmRpbmcgZ2V0KCkgPSBfYmluZGluZyEhCiAgICBwcml2YXRlIHZhbCBhcHAgZ2V0KCkgPSByZXF1aXJlQWN0aXZpdHkoKS5hcHBsaWNhdGlvbiBhcyBJbmRleEFwcAoKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGRlYWRsaW5lQWRhcHRlcjogRGVhZGxpbmVBZGFwdGVyCiAgICBwcml2YXRlIGxhdGVpbml0IHZhciBzdWJqZWN0QWRhcHRlcjogU3ViamVjdENhcmRBZGFwdGVyCiAgICBwcml2YXRlIGxhdGVpbml0IHZhciByZWNlbnRBZGFwdGVyOiBGaWxlQWRhcHRlcgogICAgcHJpdmF0ZSB2YXIgc3ViamVjdE5hbWVzOiBNYXA8TG9uZywgU3RyaW5nPiA9IGVtcHR5TWFwKCkKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGVWaWV3KAogICAgICAgIGluZmxhdGVyOiBMYXlvdXRJbmZsYXRlciwgY29udGFpbmVyOiBWaWV3R3JvdXA/LCBzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8KICAgICk6IFZpZXcgewogICAgICAgIF9iaW5kaW5nID0gRnJhZ21lbnRIb21lQmluZGluZy5pbmZsYXRlKGluZmxhdGVyLCBjb250YWluZXIsIGZhbHNlKQogICAgICAgIHJldHVybiBiaW5kaW5nLnJvb3QKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25WaWV3Q3JlYXRlZCh2aWV3OiBWaWV3LCBzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8pIHsKICAgICAgICBzdXBlci5vblZpZXdDcmVhdGVkKHZpZXcsIHNhdmVkSW5zdGFuY2VTdGF0ZSkKICAgICAgICB2YWwgcHJlZnMgPSBhcHAucHJlZnMKICAgICAgICB2YWwgY2FuTWFuYWdlID0gUm9sZXMuY2FuTWFuYWdlKHByZWZzLnJvbGUpCgogICAgICAgIGJpbmRpbmcudHZDbGFzc05hbWUudGV4dCA9IHByZWZzLmNsYXNzTmFtZQogICAgICAgIGJpbmRpbmcudHZHcmVldGluZy50ZXh0ID0gZ3JlZXRpbmdGb3JOb3cocHJlZnMudXNlck5hbWUpCiAgICAgICAgYmluZGluZy50dkF2YXRhci50ZXh0ID0gcHJlZnMudXNlck5hbWUudHJpbSgpLmZpcnN0T3JOdWxsKCk/LnVwcGVyY2FzZUNoYXIoKT8udG9TdHJpbmcoKSA/OiAiPyIKICAgICAgICBiaW5kaW5nLnR2QXZhdGFyLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIHN0YXJ0QWN0aXZpdHkoSW50ZW50KHJlcXVpcmVDb250ZXh0KCksIFByb2ZpbGVBY3Rpdml0eTo6Y2xhc3MuamF2YSkpCiAgICAgICAgfQoKICAgICAgICAvLyBEYXJrIG1vZGUgbGl2ZXMgSEVSRSBhbmQgbm93aGVyZSBlbHNlLCBleGFjdGx5IGFzIGRlc2lnbmVkOiB0aGUKICAgICAgICAvLyBtb29uIGJlc2lkZSB0aGUgYXZhdGFyIG9uIEhvbWUuIEl0IGZsaXBzIHRoZSB3aG9sZSBhcHAgcGFsZXR0ZS4KICAgICAgICBiaW5kaW5nLmJ0bkRhcmtNb2RlLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIHByZWZzLmRhcmtNb2RlID0gIXByZWZzLmRhcmtNb2RlCiAgICAgICAgICAgIEFwcENvbXBhdERlbGVnYXRlLnNldERlZmF1bHROaWdodE1vZGUoCiAgICAgICAgICAgICAgICBpZiAocHJlZnMuZGFya01vZGUpIEFwcENvbXBhdERlbGVnYXRlLk1PREVfTklHSFRfWUVTCiAgICAgICAgICAgICAgICBlbHNlIEFwcENvbXBhdERlbGVnYXRlLk1PREVfTklHSFRfTk8KICAgICAgICAgICAgKQogICAgICAgIH0KCiAgICAgICAgYmluZGluZy5zZWFyY2hCYXIuc2V0T25DbGlja0xpc3RlbmVyIHsKICAgICAgICAgICAgc3RhcnRBY3Rpdml0eShJbnRlbnQocmVxdWlyZUNvbnRleHQoKSwgU2VhcmNoQWN0aXZpdHk6OmNsYXNzLmphdmEpKQogICAgICAgIH0KCiAgICAgICAgZGVhZGxpbmVBZGFwdGVyID0gRGVhZGxpbmVBZGFwdGVyKAogICAgICAgICAgICBjYW5NYW5hZ2UgPSBjYW5NYW5hZ2UsCiAgICAgICAgICAgIG9uRWRpdCA9IHsgc2hvd0RlYWRsaW5lRGlhbG9nKGl0KSB9LAogICAgICAgICAgICBvbkRlbGV0ZSA9IHsgZGVhZGxpbmUgLT4KICAgICAgICAgICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIocmVxdWlyZUNvbnRleHQoKSkKICAgICAgICAgICAgICAgICAgICAuc2V0VGl0bGUoIkRlbGV0ZSB0aGlzIGRlYWRsaW5lPyIpCiAgICAgICAgICAgICAgICAgICAgLnNldE1lc3NhZ2UoZGVhZGxpbmUudGl0bGUpCiAgICAgICAgICAgICAgICAgICAgLnNldFBvc2l0aXZlQnV0dG9uKCJEZWxldGUiKSB7IF8sIF8gLT4KICAgICAgICAgICAgICAgICAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsgYXBwLnJlcG9zaXRvcnkuZGVsZXRlRGVhZGxpbmUoZGVhZGxpbmUuaWQpIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgLnNldE5lZ2F0aXZlQnV0dG9uKCJDYW5jZWwiLCBudWxsKQogICAgICAgICAgICAgICAgICAgIC5zaG93KCkKICAgICAgICAgICAgfQogICAgICAgICkKICAgICAgICBiaW5kaW5nLnJ2RGVhZGxpbmVzLmxheW91dE1hbmFnZXIgPSBMaW5lYXJMYXlvdXRNYW5hZ2VyKHJlcXVpcmVDb250ZXh0KCkpCiAgICAgICAgYmluZGluZy5ydkRlYWRsaW5lcy5hZGFwdGVyID0gZGVhZGxpbmVBZGFwdGVyCiAgICAgICAgYmluZGluZy5idG5DcmVhdGVEZWFkbGluZS52aXNpYmlsaXR5ID0gaWYgKGNhbk1hbmFnZSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgYmluZGluZy5idG5DcmVhdGVEZWFkbGluZS5zZXRPbkNsaWNrTGlzdGVuZXIgeyBzaG93RGVhZGxpbmVEaWFsb2cobnVsbCkgfQoKICAgICAgICBzdWJqZWN0QWRhcHRlciA9IFN1YmplY3RDYXJkQWRhcHRlciB7IHN1YmplY3QgLT4KICAgICAgICAgICAgc3RhcnRBY3Rpdml0eShTdWJqZWN0RGV0YWlsQWN0aXZpdHkuaW50ZW50KHJlcXVpcmVDb250ZXh0KCksIHN1YmplY3QuaWQpKQogICAgICAgIH0KICAgICAgICBiaW5kaW5nLnJ2U3ViamVjdHMubGF5b3V0TWFuYWdlciA9IEdyaWRMYXlvdXRNYW5hZ2VyKHJlcXVpcmVDb250ZXh0KCksIDIpCiAgICAgICAgYmluZGluZy5ydlN1YmplY3RzLmFkYXB0ZXIgPSBzdWJqZWN0QWRhcHRlcgogICAgICAgIGJpbmRpbmcucnZTdWJqZWN0cy5pc05lc3RlZFNjcm9sbGluZ0VuYWJsZWQgPSBmYWxzZQoKICAgICAgICByZWNlbnRBZGFwdGVyID0gRmlsZUFkYXB0ZXIoCiAgICAgICAgICAgIHN1YmplY3ROYW1lcyA9IHsgc3ViamVjdE5hbWVzIH0sCiAgICAgICAgICAgIG9uQ2xpY2sgPSB7IGZpbGUgLT4gRmlsZUFjdGlvbnMub3BlbihyZXF1aXJlQWN0aXZpdHkoKSwgZmlsZSkgfQogICAgICAgICkKICAgICAgICBiaW5kaW5nLnJ2UmVjZW50LmxheW91dE1hbmFnZXIgPSBMaW5lYXJMYXlvdXRNYW5hZ2VyKHJlcXVpcmVDb250ZXh0KCkpCiAgICAgICAgYmluZGluZy5ydlJlY2VudC5hZGFwdGVyID0gcmVjZW50QWRhcHRlcgogICAgICAgIGJpbmRpbmcucnZSZWNlbnQuaXNOZXN0ZWRTY3JvbGxpbmdFbmFibGVkID0gZmFsc2UKCiAgICAgICAgdmlld0xpZmVjeWNsZU93bmVyLmxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIHZpZXdMaWZlY3ljbGVPd25lci5yZXBlYXRPbkxpZmVjeWNsZShMaWZlY3ljbGUuU3RhdGUuU1RBUlRFRCkgewogICAgICAgICAgICAgICAgbGF1bmNoIHsKICAgICAgICAgICAgICAgICAgICBhcHAucmVwb3NpdG9yeS5vYnNlcnZlRGVhZGxpbmVzKCkuY29sbGVjdCB7IGRlYWRsaW5lcyAtPgogICAgICAgICAgICAgICAgICAgICAgICBkZWFkbGluZUFkYXB0ZXIuc3VibWl0KGRlYWRsaW5lcykKICAgICAgICAgICAgICAgICAgICAgICAgYmluZGluZy50dk5vRGVhZGxpbmVzLnZpc2liaWxpdHkgPQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGRlYWRsaW5lcy5pc0VtcHR5KCkpIFZpZXcuVklTSUJMRSBlbHNlIFZpZXcuR09ORQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGxhdW5jaCB7CiAgICAgICAgICAgICAgICAgICAgY29tYmluZSgKICAgICAgICAgICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZVN1YmplY3RzKCksCiAgICAgICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5Lm9ic2VydmVGaWxlcygpCiAgICAgICAgICAgICAgICAgICAgKSB7IHN1YmplY3RzLCBmaWxlcyAtPiBzdWJqZWN0cyB0byBmaWxlcyB9LmNvbGxlY3QgeyAoc3ViamVjdHMsIGZpbGVzKSAtPgogICAgICAgICAgICAgICAgICAgICAgICBzdWJqZWN0TmFtZXMgPSBzdWJqZWN0cy5hc3NvY2lhdGUgeyBpdC5pZCB0byBpdC5uYW1lIH0KICAgICAgICAgICAgICAgICAgICAgICAgdmFsIGNvdW50cyA9IGZpbGVzLmdyb3VwaW5nQnkgeyBpdC5zdWJqZWN0SWQgfS5lYWNoQ291bnQoKQogICAgICAgICAgICAgICAgICAgICAgICBzdWJqZWN0QWRhcHRlci5zdWJtaXQoc3ViamVjdHMsIGNvdW50cykKICAgICAgICAgICAgICAgICAgICAgICAgdmFsIHJlY2VudCA9IGZpbGVzLnNvcnRlZEJ5RGVzY2VuZGluZyB7IGl0LmNyZWF0ZWRBdCB9LnRha2UoNSkKICAgICAgICAgICAgICAgICAgICAgICAgcmVjZW50QWRhcHRlci5zdWJtaXQocmVjZW50KQogICAgICAgICAgICAgICAgICAgICAgICBiaW5kaW5nLnR2UmVjZW50RW1wdHkudmlzaWJpbGl0eSA9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiAocmVjZW50LmlzRW1wdHkoKSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGdyZWV0aW5nRm9yTm93KHVzZXJOYW1lOiBTdHJpbmcpOiBTdHJpbmcgewogICAgICAgIHZhbCBmaXJzdCA9IHVzZXJOYW1lLnRyaW0oKS5zcGxpdCgiICIpLmZpcnN0T3JOdWxsKCkgPzogdXNlck5hbWUKICAgICAgICB2YWwgaG91ciA9IENhbGVuZGFyLmdldEluc3RhbmNlKCkuZ2V0KENhbGVuZGFyLkhPVVJfT0ZfREFZKQogICAgICAgIHZhbCBwYXJ0ID0gd2hlbiAoaG91cikgewogICAgICAgICAgICBpbiA1Li4xMSAtPiAiR29vZCBtb3JuaW5nIgogICAgICAgICAgICBpbiAxMi4uMTYgLT4gIkdvb2QgYWZ0ZXJub29uIgogICAgICAgICAgICBlbHNlIC0+ICJHb29kIGV2ZW5pbmciCiAgICAgICAgfQogICAgICAgIHJldHVybiAiJHBhcnQsICRmaXJzdCIKICAgIH0KCiAgICAvKiogQ3JlYXRlL2VkaXQgZGVhZGxpbmUuIERhdGUgaXMgcGlja2VkIHdpdGggdGhlIHN5c3RlbSBkYXRlIHBpY2tlciBhbmQKICAgICAqICBzdG9yZWQgYXMgYSB0aW1lc3RhbXA7IEhvbWUgd29ya3MgdGhlIGNvdW50ZG93biBvdXQgZnJvbSBpdC4gKi8KICAgIHByaXZhdGUgZnVuIHNob3dEZWFkbGluZURpYWxvZyhleGlzdGluZzogRGVhZGxpbmVFbnRpdHk/KSB7CiAgICAgICAgdmFsIGN0eCA9IHJlcXVpcmVDb250ZXh0KCkKICAgICAgICB2YWwgY29udGFpbmVyID0gTGluZWFyTGF5b3V0KGN0eCkuYXBwbHkgewogICAgICAgICAgICBvcmllbnRhdGlvbiA9IExpbmVhckxheW91dC5WRVJUSUNBTAogICAgICAgICAgICBzZXRQYWRkaW5nKDQ4LCAyNCwgNDgsIDgpCiAgICAgICAgfQogICAgICAgIHZhbCBldFRpdGxlID0gRWRpdFRleHQoY3R4KS5hcHBseSB7CiAgICAgICAgICAgIGhpbnQgPSAiVGl0bGUgKGUuZy4gTWVjaGFuaWNhbCBhc3NpZ25tZW50KSIKICAgICAgICAgICAgc2V0VGV4dChleGlzdGluZz8udGl0bGUgPzogIiIpCiAgICAgICAgfQogICAgICAgIHZhbCBldFN1YmplY3QgPSBFZGl0VGV4dChjdHgpLmFwcGx5IHsKICAgICAgICAgICAgaGludCA9ICJTdWJqZWN0IChvcHRpb25hbCkiCiAgICAgICAgICAgIHNldFRleHQoZXhpc3Rpbmc/LnN1YmplY3ROYW1lID86ICIiKQogICAgICAgIH0KICAgICAgICB2YWwgcGlja2VkID0gQ2FsZW5kYXIuZ2V0SW5zdGFuY2UoKS5hcHBseSB7CiAgICAgICAgICAgIHRpbWVJbk1pbGxpcyA9IGV4aXN0aW5nPy5kdWVEYXRlTWlsbGlzID86IChTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSArIDIgKiA4Nl80MDBfMDAwTCkKICAgICAgICB9CiAgICAgICAgdmFsIHR2RGF0ZSA9IFRleHRWaWV3KGN0eCkuYXBwbHkgewogICAgICAgICAgICB0ZXh0ID0gIkR1ZTogJHtjb20ucGFydGguaW5kZXgudXRpbC5Gb3JtYXQuZGF0ZShwaWNrZWQudGltZUluTWlsbGlzKX0iCiAgICAgICAgICAgIHNldFBhZGRpbmcoMCwgMjQsIDAsIDgpCiAgICAgICAgICAgIHNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgICAgICBEYXRlUGlja2VyRGlhbG9nKAogICAgICAgICAgICAgICAgICAgIGN0eCwKICAgICAgICAgICAgICAgICAgICB7IF8sIHllYXIsIG1vbnRoLCBkYXkgLT4KICAgICAgICAgICAgICAgICAgICAgICAgcGlja2VkLnNldCh5ZWFyLCBtb250aCwgZGF5LCAxMiwgMCwgMCkKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICJEdWU6ICR7Y29tLnBhcnRoLmluZGV4LnV0aWwuRm9ybWF0LmRhdGUocGlja2VkLnRpbWVJbk1pbGxpcyl9IgogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgcGlja2VkLmdldChDYWxlbmRhci5ZRUFSKSwgcGlja2VkLmdldChDYWxlbmRhci5NT05USCksCiAgICAgICAgICAgICAgICAgICAgcGlja2VkLmdldChDYWxlbmRhci5EQVlfT0ZfTU9OVEgpCiAgICAgICAgICAgICAgICApLnNob3coKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGNvbnRhaW5lci5hZGRWaWV3KGV0VGl0bGUpCiAgICAgICAgY29udGFpbmVyLmFkZFZpZXcoZXRTdWJqZWN0KQogICAgICAgIGNvbnRhaW5lci5hZGRWaWV3KHR2RGF0ZSkKCiAgICAgICAgQWxlcnREaWFsb2cuQnVpbGRlcihjdHgpCiAgICAgICAgICAgIC5zZXRUaXRsZShpZiAoZXhpc3RpbmcgPT0gbnVsbCkgIkNyZWF0ZSBkZWFkbGluZSIgZWxzZSAiRWRpdCBkZWFkbGluZSIpCiAgICAgICAgICAgIC5zZXRWaWV3KGNvbnRhaW5lcikKICAgICAgICAgICAgLnNldFBvc2l0aXZlQnV0dG9uKCJTYXZlIikgeyBfLCBfIC0+CiAgICAgICAgICAgICAgICB2YWwgdGl0bGUgPSBldFRpdGxlLnRleHQudG9TdHJpbmcoKS50cmltKCkKICAgICAgICAgICAgICAgIGlmICh0aXRsZS5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgICAgICAgICBUb2FzdC5tYWtlVGV4dChjdHgsICJHaXZlIHRoZSBkZWFkbGluZSBhIHRpdGxlLiIsIFRvYXN0LkxFTkdUSF9TSE9SVCkuc2hvdygpCiAgICAgICAgICAgICAgICAgICAgcmV0dXJuQHNldFBvc2l0aXZlQnV0dG9uCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICAgICAgICAgIGlmIChleGlzdGluZyA9PSBudWxsKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmFkZERlYWRsaW5lKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgRGVhZGxpbmVFbnRpdHkoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGUgPSB0aXRsZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdWJqZWN0TmFtZSA9IGV0U3ViamVjdC50ZXh0LnRvU3RyaW5nKCkudHJpbSgpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGR1ZURhdGVNaWxsaXMgPSBwaWNrZWQudGltZUluTWlsbGlzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNyZWF0ZWRCeSA9IGFwcC5wcmVmcy51c2VyTmFtZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkudXBkYXRlRGVhZGxpbmUoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBleGlzdGluZy5jb3B5KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpdGxlID0gdGl0bGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3ViamVjdE5hbWUgPSBldFN1YmplY3QudGV4dC50b1N0cmluZygpLnRyaW0oKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkdWVEYXRlTWlsbGlzID0gcGlja2VkLnRpbWVJbk1pbGxpcwogICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIC5zZXROZWdhdGl2ZUJ1dHRvbigiQ2FuY2VsIiwgbnVsbCkKICAgICAgICAgICAgLnNob3coKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkRlc3Ryb3lWaWV3KCkgewogICAgICAgIHN1cGVyLm9uRGVzdHJveVZpZXcoKQogICAgICAgIF9iaW5kaW5nID0gbnVsbAogICAgfQp9Cg==
+package com.parth.index.ui.home
+
+import android.app.DatePickerDialog
+import android.content.Intent
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.parth.index.IndexApp
+import com.parth.index.data.model.DeadlineEntity
+import com.parth.index.data.model.Roles
+import com.parth.index.databinding.FragmentHomeBinding
+import com.parth.index.ui.adapters.DeadlineAdapter
+import com.parth.index.ui.adapters.FileAdapter
+import com.parth.index.ui.adapters.SubjectCardAdapter
+import com.parth.index.ui.profile.ProfileActivity
+import com.parth.index.ui.search.SearchActivity
+import com.parth.index.ui.subject.SubjectDetailActivity
+import com.parth.index.util.FileActions
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.launch
+import java.util.Calendar
+
+/** Home: greeting, search entry, deadlines (with countdown), the subject
+ *  grid and recent uploads — the Clean Campus design, plus the ONLY dark
+ *  mode toggle in the app, in this header beside the avatar. */
+class HomeFragment : Fragment() {
+
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+    private val app get() = requireActivity().application as IndexApp
+
+    private lateinit var deadlineAdapter: DeadlineAdapter
+    private lateinit var subjectAdapter: SubjectCardAdapter
+    private lateinit var recentAdapter: FileAdapter
+    private var subjectNames: Map<Long, String> = emptyMap()
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val prefs = app.prefs
+        val canManage = Roles.canManage(prefs.role)
+
+        binding.tvClassName.text = prefs.className
+        binding.tvGreeting.text = greetingForNow(prefs.userName)
+        binding.tvAvatar.text = prefs.userName.trim().firstOrNull()?.uppercaseChar()?.toString() ?: "?"
+        binding.tvAvatar.setOnClickListener {
+            startActivity(Intent(requireContext(), ProfileActivity::class.java))
+        }
+
+        // Dark mode lives HERE and nowhere else, exactly as designed: the
+        // moon beside the avatar on Home. It flips the whole app palette.
+        binding.btnDarkMode.setOnClickListener {
+            prefs.darkMode = !prefs.darkMode
+            AppCompatDelegate.setDefaultNightMode(
+                if (prefs.darkMode) AppCompatDelegate.MODE_NIGHT_YES
+                else AppCompatDelegate.MODE_NIGHT_NO
+            )
+        }
+
+        binding.searchBar.setOnClickListener {
+            startActivity(Intent(requireContext(), SearchActivity::class.java))
+        }
+
+        deadlineAdapter = DeadlineAdapter(
+            canManage = canManage,
+            onEdit = { showDeadlineDialog(it) },
+            onDelete = { deadline ->
+                AlertDialog.Builder(requireContext())
+                    .setTitle("Delete this deadline?")
+                    .setMessage(deadline.title)
+                    .setPositiveButton("Delete") { _, _ ->
+                        lifecycleScope.launch { app.repository.deleteDeadline(deadline.id) }
+                    }
+                    .setNegativeButton("Cancel", null)
+                    .show()
+            }
+        )
+        binding.rvDeadlines.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvDeadlines.adapter = deadlineAdapter
+        binding.btnCreateDeadline.visibility = if (canManage) View.VISIBLE else View.GONE
+        binding.btnCreateDeadline.setOnClickListener { showDeadlineDialog(null) }
+
+        subjectAdapter = SubjectCardAdapter { subject ->
+            startActivity(SubjectDetailActivity.intent(requireContext(), subject.id))
+        }
+        binding.rvSubjects.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.rvSubjects.adapter = subjectAdapter
+        binding.rvSubjects.isNestedScrollingEnabled = false
+
+        recentAdapter = FileAdapter(
+            subjectNames = { subjectNames },
+            onClick = { file -> FileActions.open(requireActivity(), file) }
+        )
+        binding.rvRecent.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvRecent.adapter = recentAdapter
+        binding.rvRecent.isNestedScrollingEnabled = false
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch {
+                    app.repository.observeDeadlines().collect { deadlines ->
+                        deadlineAdapter.submit(deadlines)
+                        binding.tvNoDeadlines.visibility =
+                            if (deadlines.isEmpty()) View.VISIBLE else View.GONE
+                    }
+                }
+                launch {
+                    combine(
+                        app.repository.observeSubjects(),
+                        app.repository.observeFiles()
+                    ) { subjects, files -> subjects to files }.collect { (subjects, files) ->
+                        subjectNames = subjects.associate { it.id to it.name }
+                        val counts = files.groupingBy { it.subjectId }.eachCount()
+                        subjectAdapter.submit(subjects, counts)
+                        val recent = files.sortedByDescending { it.createdAt }.take(5)
+                        recentAdapter.submit(recent)
+                        binding.tvRecentEmpty.visibility =
+                            if (recent.isEmpty()) View.VISIBLE else View.GONE
+                    }
+                }
+            }
+        }
+    }
+
+    private fun greetingForNow(userName: String): String {
+        val first = userName.trim().split(" ").firstOrNull() ?: userName
+        val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+        val part = when (hour) {
+            in 5..11 -> "Good morning"
+            in 12..16 -> "Good afternoon"
+            else -> "Good evening"
+        }
+        return "$part, $first"
+    }
+
+    /** Create/edit deadline. Date is picked with the system date picker and
+     *  stored as a timestamp; Home works the countdown out from it. */
+    private fun showDeadlineDialog(existing: DeadlineEntity?) {
+        val ctx = requireContext()
+        val container = LinearLayout(ctx).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(48, 24, 48, 8)
+        }
+        val etTitle = EditText(ctx).apply {
+            hint = "Title (e.g. Mechanical assignment)"
+            setText(existing?.title ?: "")
+        }
+        val etSubject = EditText(ctx).apply {
+            hint = "Subject (optional)"
+            setText(existing?.subjectName ?: "")
+        }
+        val picked = Calendar.getInstance().apply {
+            timeInMillis = existing?.dueDateMillis ?: (System.currentTimeMillis() + 2 * 86_400_000L)
+        }
+        val tvDate = TextView(ctx).apply {
+            text = "Due: ${com.parth.index.util.Format.date(picked.timeInMillis)}"
+            setPadding(0, 24, 0, 8)
+            setOnClickListener {
+                DatePickerDialog(
+                    ctx,
+                    { _, year, month, day ->
+                        picked.set(year, month, day, 12, 0, 0)
+                        text = "Due: ${com.parth.index.util.Format.date(picked.timeInMillis)}"
+                    },
+                    picked.get(Calendar.YEAR), picked.get(Calendar.MONTH),
+                    picked.get(Calendar.DAY_OF_MONTH)
+                ).show()
+            }
+        }
+        container.addView(etTitle)
+        container.addView(etSubject)
+        container.addView(tvDate)
+
+        AlertDialog.Builder(ctx)
+            .setTitle(if (existing == null) "Create deadline" else "Edit deadline")
+            .setView(container)
+            .setPositiveButton("Save") { _, _ ->
+                val title = etTitle.text.toString().trim()
+                if (title.isEmpty()) {
+                    Toast.makeText(ctx, "Give the deadline a title.", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+                lifecycleScope.launch {
+                    if (existing == null) {
+                        app.repository.addDeadline(
+                            DeadlineEntity(
+                                title = title,
+                                subjectName = etSubject.text.toString().trim(),
+                                dueDateMillis = picked.timeInMillis,
+                                createdBy = app.prefs.userName
+                            )
+                        )
+                    } else {
+                        app.repository.updateDeadline(
+                            existing.copy(
+                                title = title,
+                                subjectName = etSubject.text.toString().trim(),
+                                dueDateMillis = picked.timeInMillis
+                            )
+                        )
+                    }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
