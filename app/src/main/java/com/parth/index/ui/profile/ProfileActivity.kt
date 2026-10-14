@@ -1,1 +1,148 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkucHJvZmlsZQoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLndpZGdldC5Ub2FzdAppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLmxpZmVjeWNsZVNjb3BlCmltcG9ydCBjb20ucGFydGguaW5kZXguQnVpbGRDb25maWcKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5JbmRleEFwcAppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuUm9sZXMKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhYmluZGluZy5BY3Rpdml0eVByb2ZpbGVCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkudHJhc2guVHJhc2hBY3Rpdml0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LnV0aWwuRm9ybWF0CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuRGlzcGF0Y2hlcnMKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy53aXRoQ29udGV4dAppbXBvcnQgamF2YS5pby5GaWxlCmltcG9ydCBqYXZhLm5ldC5IdHRwVVJMQ29ubmVjdGlvbgppbXBvcnQgamF2YS5uZXQuVVJMCgovKiogUHJvZmlsZSAmIHNldHRpbmdzOiB3aG8geW91IGFyZSwgdGhlIGRlbW8gcm9sZSBwcmV2aWV3IHN3aXRjaGVyIChsb2NhbAogKiAgbW9kZSBvbmx5IOKAlCByZWFsIHJvbGVzIGNvbWUgZnJvbSBHb29nbGUgc2lnbi1pbiBsYXRlciksIHN0b3JhZ2UgdXNhZ2UsCiAqICBUcmFzaCwgY2FjaGUgY2xlYXJpbmcsIGFuZCB0aGUgdXBkYXRlIGNoZWNrLgogKgogKiAgVXBkYXRlIGNoZWNrOiBJTkRFWCByZWxlYXNlcyBsaXZlIG9uIEdpdEh1YiBSZWxlYXNlcy4gVGhlIGNoZWNrIHJlYWRzIGEKICogIHRpbnkgdmVyc2lvbiBmaWxlIG5leHQgdG8gdGhlIHJlbGVhc2VzIGFuZCBjb21wYXJlcyB2ZXJzaW9uIGNvZGVzLiBJbgogKiAgbG9jYWwgbW9kZSAobm8gcHVibGlzaGVkIHJlbGVhc2UgeWV0KSBpdCBzaW1wbHkgcmVwb3J0cyB0aGF0IHRoZSBjaGVjawogKiAgaXMgdW5hdmFpbGFibGUg4oCUIGl0IG11c3QgbmV2ZXIgY3Jhc2ggb3IgbmFnLiAqLwpjbGFzcyBQcm9maWxlQWN0aXZpdHkgOiBBcHBDb21wYXRBY3Rpdml0eSgpIHsKCiAgICBwcml2YXRlIGxhdGVpbml0IHZhciBiaW5kaW5nOiBBY3Rpdml0eVByb2ZpbGVCaW5kaW5nCiAgICBwcml2YXRlIHZhbCBhcHAgZ2V0KCkgPSBhcHBsaWNhdGlvbiBhcyBJbmRleEFwcAoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8pIHsKICAgICAgICBzdXBlci5vbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGUpCiAgICAgICAgYmluZGluZyA9IEFjdGl2aXR5UHJvZmlsZUJpbmRpbmcuaW5mbGF0ZShsYXlvdXRJbmZsYXRlcikKICAgICAgICBzZXRDb250ZW50VmlldyhiaW5kaW5nLnJvb3QpCgogICAgICAgIHZhbCBwcmVmcyA9IGFwcC5wcmVmcwogICAgICAgIGJpbmRpbmcudHZQcm9maWxlTmFtZS50ZXh0ID0gcHJlZnMudXNlck5hbWUKICAgICAgICBiaW5kaW5nLnR2UHJvZmlsZUNsYXNzLnRleHQgPSAiJHtwcmVmcy5jbGFzc05hbWV9IMK3ICR7cm9sZUxhYmVsKHByZWZzLnJvbGUpfSIKICAgICAgICBiaW5kaW5nLnR2QXBwVmVyc2lvbi50ZXh0ID0gIklOREVYICR7QnVpbGRDb25maWcuVkVSU0lPTl9OQU1FfSAoYnVpbGQgJHtCdWlsZENvbmZpZy5WRVJTSU9OX0NPREV9KSIKCiAgICAgICAgd2hlbiAocHJlZnMucm9sZSkgewogICAgICAgICAgICBSb2xlcy5BRE1JTiAtPiBiaW5kaW5nLnJiQWRtaW4uaXNDaGVja2VkID0gdHJ1ZQogICAgICAgICAgICBSb2xlcy5NRU1CRVIgLT4gYmluZGluZy5yYk1lbWJlci5pc0NoZWNrZWQgPSB0cnVlCiAgICAgICAgICAgIGVsc2UgLT4gYmluZGluZy5yYk93bmVyLmlzQ2hlY2tlZCA9IHRydWUKICAgICAgICB9CiAgICAgICAgYmluZGluZy5yZ1JvbGVQcmV2aWV3LnNldE9uQ2hlY2tlZENoYW5nZUxpc3RlbmVyIHsgXywgY2hlY2tlZElkIC0+CiAgICAgICAgICAgIHByZWZzLnJvbGUgPSB3aGVuIChjaGVja2VkSWQpIHsKICAgICAgICAgICAgICAgIGJpbmRpbmcucmJBZG1pbi5pZCAtPiBSb2xlcy5BRE1JTgogICAgICAgICAgICAgICAgYmluZGluZy5yYk1lbWJlci5pZCAtPiBSb2xlcy5NRU1CRVIKICAgICAgICAgICAgICAgIGVsc2UgLT4gUm9sZXMuT1dORVIKICAgICAgICAgICAgfQogICAgICAgICAgICBiaW5kaW5nLnR2UHJvZmlsZUNsYXNzLnRleHQgPSAiJHtwcmVmcy5jbGFzc05hbWV9IMK3ICR7cm9sZUxhYmVsKHByZWZzLnJvbGUpfSIKICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoCiAgICAgICAgICAgICAgICB0aGlzLAogICAgICAgICAgICAgICAgIlJvbGUgcHJldmlldzogJHtyb2xlTGFiZWwocHJlZnMucm9sZSl9LiBHbyBiYWNrIGFuZCBsb29rIGF0IEhvbWUgLyBGb2xkZXJzIC8gTm90aWNlcyDigJQgdGhlIGJ1dHRvbnMgY2hhbmdlIHdpdGggdGhlIHJvbGUuIiwKICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9MT05HCiAgICAgICAgICAgICkuc2hvdygpCiAgICAgICAgfQoKICAgICAgICBiaW5kaW5nLmJ0bk9wZW5UcmFzaC5zZXRPbkNsaWNrTGlzdGVuZXIgewogICAgICAgICAgICBzdGFydEFjdGl2aXR5KEludGVudCh0aGlzLCBUcmFzaEFjdGl2aXR5OjpjbGFzcy5qYXZhKSkKICAgICAgICB9CiAgICAgICAgYmluZGluZy5idG5DbGVhckNhY2hlLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgICAgICB2YWwgZnJlZWQgPSB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICAgICAgICAgIHZhbCBiZWZvcmUgPSBjYWNoZURpci53YWxrQm90dG9tVXAoKS5zdW1PZiB7IGlmIChpdC5pc0ZpbGUpIGl0Lmxlbmd0aCgpIGVsc2UgMEwgfQogICAgICAgICAgICAgICAgICAgIGNhY2hlRGlyLmRlbGV0ZVJlY3Vyc2l2ZWx5KCkKICAgICAgICAgICAgICAgICAgICBjYWNoZURpci5ta2RpcnMoKQogICAgICAgICAgICAgICAgICAgIGJlZm9yZQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoCiAgICAgICAgICAgICAgICAgICAgdGhpc0BQcm9maWxlQWN0aXZpdHksCiAgICAgICAgICAgICAgICAgICAgIkNhY2hlIGNsZWFyZWQgKCR7Rm9ybWF0LnNpemUoZnJlZWQpfSBmcmVlZCkuIFlvdXIgZmlsZXMgYXJlIHVudG91Y2hlZC4iLAogICAgICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9TSE9SVAogICAgICAgICAgICAgICAgKS5zaG93KCkKICAgICAgICAgICAgICAgIHJlZnJlc2hTdG9yYWdlKCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBiaW5kaW5nLmJ0bkNoZWNrVXBkYXRlcy5zZXRPbkNsaWNrTGlzdGVuZXIgeyBjaGVja0ZvclVwZGF0ZXMoKSB9CgogICAgICAgIHJlZnJlc2hTdG9yYWdlKCkKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25SZXN1bWUoKSB7CiAgICAgICAgc3VwZXIub25SZXN1bWUoKQogICAgICAgIHJlZnJlc2hTdG9yYWdlKCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biByZWZyZXNoU3RvcmFnZSgpIHsKICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2YWwgc3RvcmVkID0gYXBwLnJlcG9zaXRvcnkudG90YWxTdG9yZWRCeXRlcygpCiAgICAgICAgICAgIHZhbCBsb2NhbEZpbGVzID0gd2l0aENvbnRleHQoRGlzcGF0Y2hlcnMuSU8pIHsKICAgICAgICAgICAgICAgIEZpbGUoZmlsZXNEaXIsICJtYXRlcmlhbHMiKS53YWxrQm90dG9tVXAoKQogICAgICAgICAgICAgICAgICAgIC5zdW1PZiB7IGlmIChpdC5pc0ZpbGUpIGl0Lmxlbmd0aCgpIGVsc2UgMEwgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGJpbmRpbmcudHZTdG9yYWdlVXNhZ2UudGV4dCA9CiAgICAgICAgICAgICAgICAiTWF0ZXJpYWwgc3RvcmVkIGZvciB0aGUgY2xhc3M6ICR7Rm9ybWF0LnNpemUoc3RvcmVkKX0gwrcgIiArCiAgICAgICAgICAgICAgICAgICAgImNvcGllcyBvbiB0aGlzIHBob25lOiAke0Zvcm1hdC5zaXplKGxvY2FsRmlsZXMpfSIKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gcm9sZUxhYmVsKHJvbGU6IFN0cmluZyk6IFN0cmluZyA9IHdoZW4gKHJvbGUpIHsKICAgICAgICBSb2xlcy5PV05FUiAtPiAiT3duZXIiCiAgICAgICAgUm9sZXMuQURNSU4gLT4gIkFkbWluIgogICAgICAgIGVsc2UgLT4gIk1lbWJlciIKICAgIH0KCiAgICBwcml2YXRlIGZ1biBjaGVja0ZvclVwZGF0ZXMoKSB7CiAgICAgICAgYmluZGluZy50dlVwZGF0ZVN0YXR1cy50ZXh0ID0gIkNoZWNraW5n4oCmIgogICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIHZhbCBsYXRlc3QgPSBydW5DYXRjaGluZyB7CiAgICAgICAgICAgICAgICB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICAgICAgICAgIHZhbCBjb25uID0gVVJMKExBVEVTVF9WRVJTSU9OX1VSTCkub3BlbkNvbm5lY3Rpb24oKSBhcyBIdHRwVVJMQ29ubmVjdGlvbgogICAgICAgICAgICAgICAgICAgIGNvbm4uY29ubmVjdFRpbWVvdXQgPSA1MDAwCiAgICAgICAgICAgICAgICAgICAgY29ubi5yZWFkVGltZW91dCA9IDUwMDAKICAgICAgICAgICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgICAgICAgICBpZiAoY29ubi5yZXNwb25zZUNvZGUgIT0gMjAwKSBlcnJvcigiSFRUUCAke2Nvbm4ucmVzcG9uc2VDb2RlfSIpCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbm4uaW5wdXRTdHJlYW0uYnVmZmVyZWRSZWFkZXIoKS5yZWFkVGV4dCgpLnRyaW0oKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgLmxpbmVTZXF1ZW5jZSgpLmZpcnN0T3JOdWxsKCk/LnRyaW0oKT8udG9JbnRPck51bGwoKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPzogZXJyb3IoIkJhZCB2ZXJzaW9uIGZpbGUiKQogICAgICAgICAgICAgICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbm4uZGlzY29ubmVjdCgpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9LmdldE9yTnVsbCgpCiAgICAgICAgICAgIGJpbmRpbmcudHZVcGRhdGVTdGF0dXMudGV4dCA9IHdoZW4gewogICAgICAgICAgICAgICAgbGF0ZXN0ID09IG51bGwgLT4KICAgICAgICAgICAgICAgICAgICAiVXBkYXRlIGNoZWNrIHVuYXZhaWxhYmxlIGluIGxvY2FsIG1vZGUuIFdoZW4gSU5ERVggaXMgcHVibGlzaGVkLCAiICsKICAgICAgICAgICAgICAgICAgICAgICAgIm5ldyB2ZXJzaW9ucyB3aWxsIGFwcGVhciBoZXJlIGFzIGFuIFVwZGF0ZSBidXR0b24g4oCUIHlvdXIgZGF0YSBzdGF5cy4iCiAgICAgICAgICAgICAgICBsYXRlc3QgPiBCdWlsZENvbmZpZy5WRVJTSU9OX0NPREUgLT4KICAgICAgICAgICAgICAgICAgICAiQSBuZXcgdmVyc2lvbiBvZiBJTkRFWCBpcyBhdmFpbGFibGUuIEdldCBpdCBmcm9tIHRoZSBJTkRFWCByZWxlYXNlcyBwYWdlIOKAlCAiICsKICAgICAgICAgICAgICAgICAgICAgICAgIml0IGluc3RhbGxzIG92ZXIgdGhpcyBvbmUgYW5kIGFsbCB5b3VyIGRhdGEgc3RheXMuIgogICAgICAgICAgICAgICAgZWxzZSAtPiAiWW91J3JlIHVwIHRvIGRhdGUuIgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGNvbXBhbmlvbiBvYmplY3QgewogICAgICAgIC8qKiBQb2ludHMgYXQgYSBvbmUtbGluZSB0ZXh0IGZpbGUgKHRoZSBsYXRlc3QgdmVyc2lvbkNvZGUpIGhvc3RlZAogICAgICAgICAqICBuZXh0IHRvIHRoZSBHaXRIdWIgUmVsZWFzZXMgZm9yIHBhcnRoc2luZ2gwMy9JTkRFWC4gVW50aWwgdGhhdAogICAgICAgICAqICByZXBvICsgZmlsZSBleGlzdCwgdGhlIGNoZWNrIGFib3ZlIGRlZ3JhZGVzIGdyYWNlZnVsbHkuICovCiAgICAgICAgY29uc3QgdmFsIExBVEVTVF9WRVJTSU9OX1VSTCA9CiAgICAgICAgICAgICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vcGFydGhzaW5naDAzL0lOREVYL21haW4vbGF0ZXN0LXZlcnNpb24udHh0IgogICAgfQp9Cg==
+package com.parth.index.ui.profile
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.parth.index.BuildConfig
+import com.parth.index.IndexApp
+import com.parth.index.data.model.Roles
+import com.parth.index.databinding.ActivityProfileBinding
+import com.parth.index.ui.trash.TrashActivity
+import com.parth.index.util.Format
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
+import java.net.HttpURLConnection
+import java.net.URL
+
+/** Profile & settings: who you are, the demo role preview switcher (local
+ *  mode only — real roles come from Google sign-in later), storage usage,
+ *  Trash, cache clearing, and the update check.
+ *
+ *  Update check: INDEX releases live on GitHub Releases. The check reads a
+ *  tiny version file next to the releases and compares version codes. In
+ *  local mode (no published release yet) it simply reports that the check
+ *  is unavailable — it must never crash or nag. */
+class ProfileActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityProfileBinding
+    private val app get() = application as IndexApp
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val prefs = app.prefs
+        binding.tvProfileName.text = prefs.userName
+        binding.tvProfileClass.text = "${prefs.className} · ${roleLabel(prefs.role)}"
+        binding.tvAppVersion.text = "INDEX ${BuildConfig.VERSION_NAME} (build ${BuildConfig.VERSION_CODE})"
+
+        when (prefs.role) {
+            Roles.ADMIN -> binding.rbAdmin.isChecked = true
+            Roles.MEMBER -> binding.rbMember.isChecked = true
+            else -> binding.rbOwner.isChecked = true
+        }
+        binding.rgRolePreview.setOnCheckedChangeListener { _, checkedId ->
+            prefs.role = when (checkedId) {
+                binding.rbAdmin.id -> Roles.ADMIN
+                binding.rbMember.id -> Roles.MEMBER
+                else -> Roles.OWNER
+            }
+            binding.tvProfileClass.text = "${prefs.className} · ${roleLabel(prefs.role)}"
+            Toast.makeText(
+                this,
+                "Role preview: ${roleLabel(prefs.role)}. Go back and look at Home / Folders / Notices — the buttons change with the role.",
+                Toast.LENGTH_LONG
+            ).show()
+        }
+
+        binding.btnOpenTrash.setOnClickListener {
+            startActivity(Intent(this, TrashActivity::class.java))
+        }
+        binding.btnClearCache.setOnClickListener {
+            lifecycleScope.launch {
+                val freed = withContext(Dispatchers.IO) {
+                    val before = cacheDir.walkBottomUp().sumOf { if (it.isFile) it.length() else 0L }
+                    cacheDir.deleteRecursively()
+                    cacheDir.mkdirs()
+                    before
+                }
+                Toast.makeText(
+                    this@ProfileActivity,
+                    "Cache cleared (${Format.size(freed)} freed). Your files are untouched.",
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStorage()
+            }
+        }
+        binding.btnCheckUpdates.setOnClickListener { checkForUpdates() }
+
+        refreshStorage()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        refreshStorage()
+    }
+
+    private fun refreshStorage() {
+        lifecycleScope.launch {
+            val stored = app.repository.totalStoredBytes()
+            val localFiles = withContext(Dispatchers.IO) {
+                File(filesDir, "materials").walkBottomUp()
+                    .sumOf { if (it.isFile) it.length() else 0L }
+            }
+            binding.tvStorageUsage.text =
+                "Material stored for the class: ${Format.size(stored)} · " +
+                    "copies on this phone: ${Format.size(localFiles)}"
+        }
+    }
+
+    private fun roleLabel(role: String): String = when (role) {
+        Roles.OWNER -> "Owner"
+        Roles.ADMIN -> "Admin"
+        else -> "Member"
+    }
+
+    private fun checkForUpdates() {
+        binding.tvUpdateStatus.text = "Checking…"
+        lifecycleScope.launch {
+            val latest = runCatching {
+                withContext(Dispatchers.IO) {
+                    val conn = URL(LATEST_VERSION_URL).openConnection() as HttpURLConnection
+                    conn.connectTimeout = 5000
+                    conn.readTimeout = 5000
+                    try {
+                        if (conn.responseCode != 200) error("HTTP ${conn.responseCode}")
+                        conn.inputStream.bufferedReader().readText().trim()
+                            .lineSequence().firstOrNull()?.trim()?.toIntOrNull()
+                            ?: error("Bad version file")
+                    } finally {
+                        conn.disconnect()
+                    }
+                }
+            }.getOrNull()
+            binding.tvUpdateStatus.text = when {
+                latest == null ->
+                    "Update check unavailable in local mode. When INDEX is published, " +
+                        "new versions will appear here as an Update button — your data stays."
+                latest > BuildConfig.VERSION_CODE ->
+                    "A new version of INDEX is available. Get it from the INDEX releases page — " +
+                        "it installs over this one and all your data stays."
+                else -> "You're up to date."
+            }
+        }
+    }
+
+    companion object {
+        /** Points at a one-line text file (the latest versionCode) hosted
+         *  next to the GitHub Releases for parthsingh03/INDEX. Until that
+         *  repo + file exist, the check above degrades gracefully. */
+        const val LATEST_VERSION_URL =
+            "https://raw.githubusercontent.com/parthsingh03/INDEX/main/latest-version.txt"
+    }
+}
