@@ -1,1 +1,157 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPExpbmVhckxheW91dCB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJtYXRjaF9wYXJlbnQiCiAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9iYWNrZ3JvdW5kIgogICAgYW5kcm9pZDpvcmllbnRhdGlvbj0idmVydGljYWwiPgoKICAgIDxGcmFtZUxheW91dAogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvZnJhZ21lbnRDb250YWluZXIiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9Im1hdGNoX3BhcmVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IjBkcCIKICAgICAgICBhbmRyb2lkOmxheW91dF93ZWlnaHQ9IjEiIC8+CgogICAgPCEtLSBDdXN0b20gYm90dG9tIGJhciAoQ2xlYW4gQ2FtcHVzKTogZm91ciBsYWJlbGxlZCB0YWJzIGFuZCB0aGUgYmlnCiAgICAgICAgIHJvdW5kIE1BS0UgUERGIGJ1dHRvbiBpbiB0aGUgY2VudHJlLiBTZWxlY3Rpb24gaXMgc2hvd24gYnkgdGhlCiAgICAgICAgIGJsdWUgZG90ICsgYmx1ZSBsYWJlbCwgc2V0IGZyb20gTWFpbkFjdGl2aXR5LiAtLT4KICAgIDxMaW5lYXJMYXlvdXQKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6YmFja2dyb3VuZD0iQGNvbG9yL3N1cmZhY2UiCiAgICAgICAgYW5kcm9pZDplbGV2YXRpb249IjhkcCIKICAgICAgICBhbmRyb2lkOmdyYXZpdHk9ImNlbnRlcl92ZXJ0aWNhbCIKICAgICAgICBhbmRyb2lkOm9yaWVudGF0aW9uPSJob3Jpem9udGFsIgogICAgICAgIGFuZHJvaWQ6cGFkZGluZ1RvcD0iNmRwIgogICAgICAgIGFuZHJvaWQ6cGFkZGluZ0JvdHRvbT0iOGRwIj4KCiAgICAgICAgPExpbmVhckxheW91dAogICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL25hdkhvbWUiCiAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSIwZHAiCiAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF93ZWlnaHQ9IjEiCiAgICAgICAgICAgIGFuZHJvaWQ6Z3Jhdml0eT0iY2VudGVyIgogICAgICAgICAgICBhbmRyb2lkOm9yaWVudGF0aW9uPSJ2ZXJ0aWNhbCIKICAgICAgICAgICAgYW5kcm9pZDpwYWRkaW5nPSI2ZHAiPgoKICAgICAgICAgICAgPFZpZXcKICAgICAgICAgICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvZG90SG9tZSIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSI3ZHAiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IjdkcCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6YmFja2dyb3VuZD0iQGRyYXdhYmxlL2JnX2NpcmNsZV9wcmltYXJ5IiAvPgoKICAgICAgICAgICAgPFRleHRWaWV3CiAgICAgICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL2xhYmVsSG9tZSIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iNWRwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0PSJIT01FIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0U2l6ZT0iMTFzcCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dFN0eWxlPSJib2xkIiAvPgogICAgICAgIDwvTGluZWFyTGF5b3V0PgoKICAgICAgICA8TGluZWFyTGF5b3V0CiAgICAgICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvbmF2Rm9sZGVycyIKICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IjBkcCIKICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dlaWdodD0iMSIKICAgICAgICAgICAgYW5kcm9pZDpncmF2aXR5PSJjZW50ZXIiCiAgICAgICAgICAgIGFuZHJvaWQ6b3JpZW50YXRpb249InZlcnRpY2FsIgogICAgICAgICAgICBhbmRyb2lkOnBhZGRpbmc9IjZkcCI+CgogICAgICAgICAgICA8VmlldwogICAgICAgICAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9kb3RGb2xkZXJzIgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IjdkcCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0iN2RwIgogICAgICAgICAgICAgICAgYW5kcm9pZDpiYWNrZ3JvdW5kPSJAZHJhd2FibGUvYmdfY2lyY2xlX3ByaW1hcnkiIC8+CgogICAgICAgICAgICA8VGV4dFZpZXcKICAgICAgICAgICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvbGFiZWxGb2xkZXJzIgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IndyYXBfY29udGVudCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfbWFyZ2luVG9wPSI1ZHAiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHQ9IkZPTERFUlMiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIxMXNwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0U3R5bGU9ImJvbGQiIC8+CiAgICAgICAgPC9MaW5lYXJMYXlvdXQ+CgogICAgICAgIDxMaW5lYXJMYXlvdXQKICAgICAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9uYXZQZGYiCiAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSIwZHAiCiAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF93ZWlnaHQ9IjEiCiAgICAgICAgICAgIGFuZHJvaWQ6Z3Jhdml0eT0iY2VudGVyIgogICAgICAgICAgICBhbmRyb2lkOm9yaWVudGF0aW9uPSJ2ZXJ0aWNhbCIKICAgICAgICAgICAgYW5kcm9pZDpwYWRkaW5nPSIyZHAiPgoKICAgICAgICAgICAgPFRleHRWaWV3CiAgICAgICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL2J0blBkZkNpcmNsZSIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSI1NGRwIgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSI1NGRwIgogICAgICAgICAgICAgICAgYW5kcm9pZDpiYWNrZ3JvdW5kPSJAZHJhd2FibGUvYmdfY2lyY2xlX3ByaW1hcnkiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmdyYXZpdHk9ImNlbnRlciIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dD0iKyIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3Ivd2hpdGUiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIzMHNwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0U3R5bGU9ImJvbGQiIC8+CgogICAgICAgICAgICA8VGV4dFZpZXcKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iM2RwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0PSJNQUtFIFBERiIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3IvbXV0ZWQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIxMXNwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0U3R5bGU9ImJvbGQiIC8+CiAgICAgICAgPC9MaW5lYXJMYXlvdXQ+CgogICAgICAgIDxMaW5lYXJMYXlvdXQKICAgICAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9uYXZDaGF0IgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0iMGRwIgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2VpZ2h0PSIxIgogICAgICAgICAgICBhbmRyb2lkOmdyYXZpdHk9ImNlbnRlciIKICAgICAgICAgICAgYW5kcm9pZDpvcmllbnRhdGlvbj0idmVydGljYWwiCiAgICAgICAgICAgIGFuZHJvaWQ6cGFkZGluZz0iNmRwIj4KCiAgICAgICAgICAgIDxWaWV3CiAgICAgICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL2RvdENoYXQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0iN2RwIgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSI3ZHAiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBkcmF3YWJsZS9iZ19jaXJjbGVfcHJpbWFyeSIgLz4KCiAgICAgICAgICAgIDxUZXh0VmlldwogICAgICAgICAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9sYWJlbENoYXQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0id3JhcF9jb250ZW50IgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF9tYXJnaW5Ub3A9IjVkcCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dD0iQ0hBVCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dFNpemU9IjExc3AiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHRTdHlsZT0iYm9sZCIgLz4KICAgICAgICA8L0xpbmVhckxheW91dD4KCiAgICAgICAgPExpbmVhckxheW91dAogICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL25hdlJlcXVlc3RzIgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0iMGRwIgogICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2VpZ2h0PSIxIgogICAgICAgICAgICBhbmRyb2lkOmdyYXZpdHk9ImNlbnRlciIKICAgICAgICAgICAgYW5kcm9pZDpvcmllbnRhdGlvbj0idmVydGljYWwiCiAgICAgICAgICAgIGFuZHJvaWQ6cGFkZGluZz0iNmRwIj4KCiAgICAgICAgICAgIDxWaWV3CiAgICAgICAgICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL2RvdFJlcXVlc3RzIgogICAgICAgICAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IjdkcCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0iN2RwIgogICAgICAgICAgICAgICAgYW5kcm9pZDpiYWNrZ3JvdW5kPSJAZHJhd2FibGUvYmdfY2lyY2xlX3ByaW1hcnkiIC8+CgogICAgICAgICAgICA8VGV4dFZpZXcKICAgICAgICAgICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvbGFiZWxSZXF1ZXN0cyIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iNWRwIgogICAgICAgICAgICAgICAgYW5kcm9pZDp0ZXh0PSJSRVFVRVNUUyIKICAgICAgICAgICAgICAgIGFuZHJvaWQ6dGV4dFNpemU9IjEwc3AiCiAgICAgICAgICAgICAgICBhbmRyb2lkOnRleHRTdHlsZT0iYm9sZCIgLz4KICAgICAgICA8L0xpbmVhckxheW91dD4KICAgIDwvTGluZWFyTGF5b3V0Pgo8L0xpbmVhckxheW91dD4K
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Custom bottom bar (Clean Campus): four labelled tabs and the big
+         round MAKE PDF button in the centre. Selection is shown by the
+         blue dot + blue label, set from MainActivity. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <View
+                android:id="@+id/dotHome"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_circle_primary" />
+
+            <TextView
+                android:id="@+id/labelHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="HOME"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navFolders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <View
+                android:id="@+id/dotFolders"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_circle_primary" />
+
+            <TextView
+                android:id="@+id/labelFolders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="FOLDERS"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navPdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/btnPdfCircle"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_circle_primary"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="MAKE PDF"
+                android:textColor="@color/muted"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <View
+                android:id="@+id/dotChat"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_circle_primary" />
+
+            <TextView
+                android:id="@+id/labelChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="CHAT"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navRequests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <View
+                android:id="@+id/dotRequests"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_circle_primary" />
+
+            <TextView
+                android:id="@+id/labelRequests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="REQUESTS"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
