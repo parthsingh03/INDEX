@@ -1,1 +1,266 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkudXBsb2FkCgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQuZGF0YWJhc2UuQ3Vyc29yCmltcG9ydCBhbmRyb2lkLm5ldC5VcmkKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnByb3ZpZGVyLk9wZW5hYmxlQ29sdW1ucwppbXBvcnQgYW5kcm9pZC52aWV3LlZpZXcKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LkFycmF5QWRhcHRlcgppbXBvcnQgYW5kcm9pZC53aWRnZXQuVG9hc3QKaW1wb3J0IGFuZHJvaWR4LmFjdGl2aXR5LnJlc3VsdC5jb250cmFjdC5BY3Rpdml0eVJlc3VsdENvbnRyYWN0cwppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BbGVydERpYWxvZwppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLmxpZmVjeWNsZVNjb3BlCmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsRmlsZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuU3ViamVjdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkFjdGl2aXR5VXBsb2FkQmluZGluZwppbXBvcnQgY29tLnBhcnRoLmluZGV4LnV0aWwuRm9ybWF0CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuRGlzcGF0Y2hlcnMKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy53aXRoQ29udGV4dAppbXBvcnQgamF2YS5pby5GaWxlCgovKiogVGhlIG9uZSB1cGxvYWQgc2NyZWVuIGZvciBldmVyeSByb3V0ZSBpbjoKICogICAtIHRoZSArIFVwbG9hZCBidXR0b24gaW5zaWRlIGEgc3ViamVjdCwKICogICAtIGZ1bGZpbGxpbmcgYSByZXF1ZXN0LAogKiAgIC0gdGhlIFBERiBtYWtlcidzIG91dHB1dCAoaXQgc2F2ZXMgZGlyZWN0bHksIG5vdCB0aHJvdWdoIGhlcmUpLAogKiAgIC0gYW5kIHRoZSBzaGFyZSBzaGVldDogYSBmaWxlIHNoYXJlZCBmcm9tIFdoYXRzQXBwL0ZpbGVzL0dhbGxlcnkKICogICAgIGFycml2ZXMgYWxyZWFkeSBhdHRhY2hlZCwgaXRzIG5hbWUgcHJlLWZpbGxlZCBhcyB0aGUgdGl0bGUuCiAqICBXaGF0ZXZlciB0aGUgcm91dGUsIHNhdmluZyBtZWFuczogY29weSB0aGUgZmlsZSBpbnRvIElOREVYJ3MgcHJpdmF0ZQogKiAgc3RvcmFnZSBvbiBhIGJhY2tncm91bmQgdGhyZWFkLCB3cml0ZSB0aGUgcm93LCBhbmQgYXV0by1wb3N0IHRoZQogKiAgIlggYWRkZWQg4oCmIHRvIOKApiIgbWVzc2FnZSBpbiBncm91cCBjaGF0LiAqLwpjbGFzcyBVcGxvYWRBY3Rpdml0eSA6IEFwcENvbXBhdEFjdGl2aXR5KCkgewoKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGJpbmRpbmc6IEFjdGl2aXR5VXBsb2FkQmluZGluZwogICAgcHJpdmF0ZSB2YWwgYXBwIGdldCgpID0gYXBwbGljYXRpb24gYXMgSW5kZXhBcHAKCiAgICBwcml2YXRlIHZhciBzdWJqZWN0czogTGlzdDxTdWJqZWN0RW50aXR5PiA9IGVtcHR5TGlzdCgpCiAgICBwcml2YXRlIHZhciBwaWNrZWRVcmk6IFVyaT8gPSBudWxsCiAgICBwcml2YXRlIHZhciBwaWNrZWROYW1lOiBTdHJpbmcgPSAiIgogICAgcHJpdmF0ZSB2YXIgcGlja2VkU2l6ZTogTG9uZyA9IDAKICAgIHByaXZhdGUgdmFyIHBpY2tlZE1pbWU6IFN0cmluZyA9ICIiCiAgICBwcml2YXRlIHZhciBwcmVzZWxlY3RlZFN1YmplY3RJZDogTG9uZyA9IC0xCiAgICBwcml2YXRlIHZhciByZXF1ZXN0SWQ6IExvbmcgPSAtMQoKICAgIHByaXZhdGUgdmFsIHBpY2tGaWxlID0gcmVnaXN0ZXJGb3JBY3Rpdml0eVJlc3VsdCgKICAgICAgICBBY3Rpdml0eVJlc3VsdENvbnRyYWN0cy5PcGVuRG9jdW1lbnQoKQogICAgKSB7IHVyaSAtPgogICAgICAgIGlmICh1cmkgIT0gbnVsbCkgYWNjZXB0VXJpKHVyaSkKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIGJpbmRpbmcgPSBBY3Rpdml0eVVwbG9hZEJpbmRpbmcuaW5mbGF0ZShsYXlvdXRJbmZsYXRlcikKICAgICAgICBzZXRDb250ZW50VmlldyhiaW5kaW5nLnJvb3QpCgogICAgICAgIHByZXNlbGVjdGVkU3ViamVjdElkID0gaW50ZW50LmdldExvbmdFeHRyYShFWFRSQV9TVUJKRUNUX0lELCAtMSkKICAgICAgICByZXF1ZXN0SWQgPSBpbnRlbnQuZ2V0TG9uZ0V4dHJhKEVYVFJBX1JFUVVFU1RfSUQsIC0xKQoKICAgICAgICBpZiAocmVxdWVzdElkID4gMCkgewogICAgICAgICAgICBiaW5kaW5nLnR2VXBsb2FkSGVhZGluZy50ZXh0ID0gIkZ1bGZpbCB0aGUgcmVxdWVzdCIKICAgICAgICAgICAgYmluZGluZy50dkZ1bGZpbEluZm8udmlzaWJpbGl0eSA9IFZpZXcuVklTSUJMRQogICAgICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkucmVxdWVzdEJ5SWQocmVxdWVzdElkKT8ubGV0IHsgcmVxIC0+CiAgICAgICAgICAgICAgICAgICAgYmluZGluZy50dkZ1bGZpbEluZm8udGV4dCA9CiAgICAgICAgICAgICAgICAgICAgICAgICJSZXF1ZXN0ZWQgYnkgJHtyZXEucmVxdWVzdGVyTmFtZX06IOKAnCR7cmVxLnRpdGxlfeKAnS4gIiArCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAiVXBsb2FkaW5nIGhlcmUgY2xvc2VzIHRoZSByZXF1ZXN0LiIKICAgICAgICAgICAgICAgICAgICBpZiAocHJlc2VsZWN0ZWRTdWJqZWN0SWQgPD0gMCkgcHJlc2VsZWN0ZWRTdWJqZWN0SWQgPSByZXEuc3ViamVjdElkCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIC8vIFNoYXJlZCBmaWxlKHMpIGFycml2ZSBoZXJlLiBGb3IgU0VORF9NVUxUSVBMRSB3ZSB0YWtlIGV2ZXJ5IGZpbGUKICAgICAgICAvLyBpbiB0dXJuOiB0aGUgZmlyc3QgZmlsbHMgdGhpcyBzY3JlZW47IHRoZSByZXN0IGFyZSBxdWV1ZWQgc2ltcGx5CiAgICAgICAgLy8gYnkgcmUtbGF1bmNoaW5nIGFmdGVyIHNhdmUgKGtlcHQgc2ltcGxlIGFuZCByZWxpYWJsZSkuCiAgICAgICAgdmFsIHNoYXJlZFVyaXMgPSBleHRyYWN0U2hhcmVkVXJpcyhpbnRlbnQpCiAgICAgICAgaWYgKHNoYXJlZFVyaXMuaXNOb3RFbXB0eSgpKSBhY2NlcHRVcmkoc2hhcmVkVXJpcy5maXJzdCgpKQoKICAgICAgICBiaW5kaW5nLmJ0blBpY2tGaWxlLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIHBpY2tGaWxlLmxhdW5jaChhcnJheU9mKCJhcHBsaWNhdGlvbi9wZGYiLCAiaW1hZ2UvKiIsICJhcHBsaWNhdGlvbi8qIiwgInRleHQvKiIpKQogICAgICAgIH0KICAgICAgICBiaW5kaW5nLmJ0bkRvVXBsb2FkLnNldE9uQ2xpY2tMaXN0ZW5lciB7IHN0YXJ0VXBsb2FkKCkgfQoKICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICBhcHAucmVwb3NpdG9yeS5vYnNlcnZlU3ViamVjdHMoKS5jb2xsZWN0IHsgbGlzdCAtPgogICAgICAgICAgICAgICAgc3ViamVjdHMgPSBsaXN0CiAgICAgICAgICAgICAgICB2YWwgYWRhcHRlciA9IEFycmF5QWRhcHRlcigKICAgICAgICAgICAgICAgICAgICB0aGlzQFVwbG9hZEFjdGl2aXR5LAogICAgICAgICAgICAgICAgICAgIGFuZHJvaWQuUi5sYXlvdXQuc2ltcGxlX3NwaW5uZXJfZHJvcGRvd25faXRlbSwKICAgICAgICAgICAgICAgICAgICBsaXN0Lm1hcCB7IGl0Lm5hbWUgfQogICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgYmluZGluZy5zcGlubmVyVXBsb2FkU3ViamVjdC5hZGFwdGVyID0gYWRhcHRlcgogICAgICAgICAgICAgICAgdmFsIGlkeCA9IGxpc3QuaW5kZXhPZkZpcnN0IHsgaXQuaWQgPT0gcHJlc2VsZWN0ZWRTdWJqZWN0SWQgfQogICAgICAgICAgICAgICAgaWYgKGlkeCA+PSAwKSBiaW5kaW5nLnNwaW5uZXJVcGxvYWRTdWJqZWN0LnNldFNlbGVjdGlvbihpZHgpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gZXh0cmFjdFNoYXJlZFVyaXMoaW50ZW50OiBJbnRlbnQpOiBMaXN0PFVyaT4gewogICAgICAgIHZhbCBvdXQgPSBtdXRhYmxlTGlzdE9mPFVyaT4oKQogICAgICAgIHdoZW4gKGludGVudC5hY3Rpb24pIHsKICAgICAgICAgICAgSW50ZW50LkFDVElPTl9TRU5EIC0+IHsKICAgICAgICAgICAgICAgIEBTdXBwcmVzcygiREVQUkVDQVRJT04iKQogICAgICAgICAgICAgICAgKGludGVudC5nZXRQYXJjZWxhYmxlRXh0cmE8VXJpPihJbnRlbnQuRVhUUkFfU1RSRUFNKSk/LmxldCB7IG91dC5hZGQoaXQpIH0KICAgICAgICAgICAgICAgIHZhbCB0ZXh0ID0gaW50ZW50LmdldFN0cmluZ0V4dHJhKEludGVudC5FWFRSQV9URVhUKQogICAgICAgICAgICAgICAgaWYgKG91dC5pc0VtcHR5KCkgJiYgdGV4dCAhPSBudWxsKSB7CiAgICAgICAgICAgICAgICAgICAgYmluZGluZy5ldFVwbG9hZE5vdGUuc2V0VGV4dCh0ZXh0KQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIEludGVudC5BQ1RJT05fU0VORF9NVUxUSVBMRSAtPiB7CiAgICAgICAgICAgICAgICBAU3VwcHJlc3MoIkRFUFJFQ0FUSU9OIikKICAgICAgICAgICAgICAgIGludGVudC5nZXRQYXJjZWxhYmxlQXJyYXlMaXN0RXh0cmE8VXJpPihJbnRlbnQuRVhUUkFfU1RSRUFNKT8ubGV0IHsgb3V0LmFkZEFsbChpdCkgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIHJldHVybiBvdXQKICAgIH0KCiAgICBwcml2YXRlIGZ1biBhY2NlcHRVcmkodXJpOiBVcmkpIHsKICAgICAgICBwaWNrZWRVcmkgPSB1cmkKICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2YWwgbWV0YSA9IHdpdGhDb250ZXh0KERpc3BhdGNoZXJzLklPKSB7IHF1ZXJ5TWV0YSh1cmkpIH0KICAgICAgICAgICAgcGlja2VkTmFtZSA9IG1ldGEuZmlyc3QKICAgICAgICAgICAgcGlja2VkU2l6ZSA9IG1ldGEuc2Vjb25kCiAgICAgICAgICAgIHBpY2tlZE1pbWUgPSBjb250ZW50UmVzb2x2ZXIuZ2V0VHlwZSh1cmkpID86IG1pbWVGcm9tTmFtZShwaWNrZWROYW1lKQogICAgICAgICAgICBiaW5kaW5nLnR2UGlja2VkRmlsZS50ZXh0ID0gIlBpY2tlZDogJHBpY2tlZE5hbWUgKCR7Rm9ybWF0LnNpemUocGlja2VkU2l6ZSl9KSIKICAgICAgICAgICAgaWYgKGJpbmRpbmcuZXRVcGxvYWRUaXRsZS50ZXh0LmlzTnVsbE9yRW1wdHkoKSkgewogICAgICAgICAgICAgICAgYmluZGluZy5ldFVwbG9hZFRpdGxlLnNldFRleHQocGlja2VkTmFtZS5zdWJzdHJpbmdCZWZvcmVMYXN0KCcuJywgcGlja2VkTmFtZSkpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gcXVlcnlNZXRhKHVyaTogVXJpKTogUGFpcjxTdHJpbmcsIExvbmc+IHsKICAgICAgICB2YXIgbmFtZSA9ICJzaGFyZWQtZmlsZSIKICAgICAgICB2YXIgc2l6ZSA9IDBMCiAgICAgICAgdmFsIGN1cnNvcjogQ3Vyc29yPyA9IGNvbnRlbnRSZXNvbHZlci5xdWVyeSh1cmksIG51bGwsIG51bGwsIG51bGwsIG51bGwpCiAgICAgICAgY3Vyc29yPy51c2UgewogICAgICAgICAgICBpZiAoaXQubW92ZVRvRmlyc3QoKSkgewogICAgICAgICAgICAgICAgdmFsIG5hbWVJZHggPSBpdC5nZXRDb2x1bW5JbmRleChPcGVuYWJsZUNvbHVtbnMuRElTUExBWV9OQU1FKQogICAgICAgICAgICAgICAgdmFsIHNpemVJZHggPSBpdC5nZXRDb2x1bW5JbmRleChPcGVuYWJsZUNvbHVtbnMuU0laRSkKICAgICAgICAgICAgICAgIGlmIChuYW1lSWR4ID49IDApIG5hbWUgPSBpdC5nZXRTdHJpbmcobmFtZUlkeCkgPzogbmFtZQogICAgICAgICAgICAgICAgaWYgKHNpemVJZHggPj0gMCkgc2l6ZSA9IGl0LmdldExvbmcoc2l6ZUlkeCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBpZiAoc2l6ZSA9PSAwTCkgewogICAgICAgICAgICBydW5DYXRjaGluZyB7CiAgICAgICAgICAgICAgICBjb250ZW50UmVzb2x2ZXIub3BlbklucHV0U3RyZWFtKHVyaSk/LnVzZSB7IGlucHV0IC0+CiAgICAgICAgICAgICAgICAgICAgdmFsIGJ1ZiA9IEJ5dGVBcnJheSg2NCAqIDEwMjQpCiAgICAgICAgICAgICAgICAgICAgdmFyIHRvdGFsID0gMEwKICAgICAgICAgICAgICAgICAgICB2YXIgcmVhZDogSW50CiAgICAgICAgICAgICAgICAgICAgd2hpbGUgKGlucHV0LnJlYWQoYnVmKS5hbHNvIHsgciAtPiByZWFkID0gciB9ID4gMCkgdG90YWwgKz0gcmVhZAogICAgICAgICAgICAgICAgICAgIHNpemUgPSB0b3RhbAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIHJldHVybiBuYW1lIHRvIHNpemUKICAgIH0KCiAgICBwcml2YXRlIGZ1biBtaW1lRnJvbU5hbWUobmFtZTogU3RyaW5nKTogU3RyaW5nID0gd2hlbiAobmFtZS5sb3dlcmNhc2UoKS5zdWJzdHJpbmdBZnRlckxhc3QoJy4nLCAiIikpIHsKICAgICAgICAicGRmIiAtPiAiYXBwbGljYXRpb24vcGRmIgogICAgICAgICJqcGciLCAianBlZyIgLT4gImltYWdlL2pwZWciCiAgICAgICAgInBuZyIgLT4gImltYWdlL3BuZyIKICAgICAgICAid2VicCIgLT4gImltYWdlL3dlYnAiCiAgICAgICAgInR4dCIgLT4gInRleHQvcGxhaW4iCiAgICAgICAgZWxzZSAtPiAiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIgogICAgfQoKICAgIHByaXZhdGUgZnVuIHN0YXJ0VXBsb2FkKCkgewogICAgICAgIHZhbCB1cmkgPSBwaWNrZWRVcmkKICAgICAgICBpZiAodXJpID09IG51bGwpIHsKICAgICAgICAgICAgVG9hc3QubWFrZVRleHQodGhpcywgIlBpY2sgYSBmaWxlIGZpcnN0LiIsIFRvYXN0LkxFTkdUSF9TSE9SVCkuc2hvdygpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICB2YWwgc3ViamVjdFBvcyA9IGJpbmRpbmcuc3Bpbm5lclVwbG9hZFN1YmplY3Quc2VsZWN0ZWRJdGVtUG9zaXRpb24KICAgICAgICBpZiAoc3ViamVjdFBvcyA8IDAgfHwgc3ViamVjdFBvcyA+PSBzdWJqZWN0cy5zaXplKSB7CiAgICAgICAgICAgIFRvYXN0Lm1ha2VUZXh0KHRoaXMsICJObyBzdWJqZWN0IHRvIHNhdmUgaW50byB5ZXQuIiwgVG9hc3QuTEVOR1RIX1NIT1JUKS5zaG93KCkKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgICAgIHZhbCBzdWJqZWN0ID0gc3ViamVjdHNbc3ViamVjdFBvc10KICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2YWwgZHVwcyA9IGFwcC5yZXBvc2l0b3J5LmZpbmREdXBsaWNhdGVzKHN1YmplY3QuaWQsIHBpY2tlZE5hbWUsIHBpY2tlZFNpemUpCiAgICAgICAgICAgIGlmIChkdXBzLmlzTm90RW1wdHkoKSkgewogICAgICAgICAgICAgICAgQWxlcnREaWFsb2cuQnVpbGRlcih0aGlzQFVwbG9hZEFjdGl2aXR5KQogICAgICAgICAgICAgICAgICAgIC5zZXRUaXRsZSgiQWxyZWFkeSBpbiAke3N1YmplY3QubmFtZX0/IikKICAgICAgICAgICAgICAgICAgICAuc2V0TWVzc2FnZSgKICAgICAgICAgICAgICAgICAgICAgICAgIkEgZmlsZSB3aXRoIHRoZSBzYW1lIG5hbWUgYW5kIHNpemUgaXMgYWxyZWFkeSBoZXJlOiAiICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICLigJwke2R1cHMuZmlyc3QoKS50aXRsZX3igJ0sIHVwbG9hZGVkIGJ5ICR7ZHVwcy5maXJzdCgpLnVwbG9hZGVyTmFtZX0uICIgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgIlVwbG9hZCBhbm90aGVyIGNvcHkgYW55d2F5PyIKICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgLnNldFBvc2l0aXZlQnV0dG9uKCJVcGxvYWQgYW55d2F5IikgeyBfLCBfIC0+IGRvU2F2ZSh1cmksIHN1YmplY3QpIH0KICAgICAgICAgICAgICAgICAgICAuc2V0TmVnYXRpdmVCdXR0b24oIkNhbmNlbCIsIG51bGwpCiAgICAgICAgICAgICAgICAgICAgLnNob3coKQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgZG9TYXZlKHVyaSwgc3ViamVjdCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIGZ1biBkb1NhdmUodXJpOiBVcmksIHN1YmplY3Q6IFN1YmplY3RFbnRpdHkpIHsKICAgICAgICBiaW5kaW5nLnByb2dyZXNzVXBsb2FkLnZpc2liaWxpdHkgPSBWaWV3LlZJU0lCTEUKICAgICAgICBiaW5kaW5nLmJ0bkRvVXBsb2FkLmlzRW5hYmxlZCA9IGZhbHNlCiAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgdmFsIHJlc3VsdCA9IHJ1bkNhdGNoaW5nIHsKICAgICAgICAgICAgICAgIHZhbCBkZXN0ID0gd2l0aENvbnRleHQoRGlzcGF0Y2hlcnMuSU8pIHsKICAgICAgICAgICAgICAgICAgICB2YWwgZGlyID0gRmlsZShmaWxlc0RpciwgIm1hdGVyaWFscyIpLmFwcGx5IHsgbWtkaXJzKCkgfQogICAgICAgICAgICAgICAgICAgIHZhbCBzYWZlTmFtZSA9IHBpY2tlZE5hbWUucmVwbGFjZShSZWdleCgiW15BLVphLXowLTkuXy1dIiksICJfIikKICAgICAgICAgICAgICAgICAgICB2YWwgb3V0ID0gRmlsZShkaXIsICIke1N5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpfV8kc2FmZU5hbWUiKQogICAgICAgICAgICAgICAgICAgIGNvbnRlbnRSZXNvbHZlci5vcGVuSW5wdXRTdHJlYW0odXJpKT8udXNlIHsgaW5wdXQgLT4KICAgICAgICAgICAgICAgICAgICAgICAgb3V0Lm91dHB1dFN0cmVhbSgpLnVzZSB7IGlucHV0LmNvcHlUbyhpdCkgfQogICAgICAgICAgICAgICAgICAgIH0gPzogZXJyb3IoIkNvdWxkIG5vdCByZWFkIHRoZSBwaWNrZWQgZmlsZSIpCiAgICAgICAgICAgICAgICAgICAgb3V0CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB2YWwgdGl0bGUgPSBiaW5kaW5nLmV0VXBsb2FkVGl0bGUudGV4dC50b1N0cmluZygpLnRyaW0oKQogICAgICAgICAgICAgICAgICAgIC5pZkVtcHR5IHsgcGlja2VkTmFtZSB9CiAgICAgICAgICAgICAgICB2YWwgZW50aXR5ID0gTWF0ZXJpYWxGaWxlRW50aXR5KAogICAgICAgICAgICAgICAgICAgIHN1YmplY3RJZCA9IHN1YmplY3QuaWQsCiAgICAgICAgICAgICAgICAgICAgdGl0bGUgPSB0aXRsZSwKICAgICAgICAgICAgICAgICAgICBub3RlID0gYmluZGluZy5ldFVwbG9hZE5vdGUudGV4dC50b1N0cmluZygpLnRyaW0oKSwKICAgICAgICAgICAgICAgICAgICB0YWdzID0gYmluZGluZy5ldFVwbG9hZFRhZ3MudGV4dC50b1N0cmluZygpLnRyaW0oKSwKICAgICAgICAgICAgICAgICAgICBmaWxlTmFtZSA9IHBpY2tlZE5hbWUsCiAgICAgICAgICAgICAgICAgICAgbWltZVR5cGUgPSBwaWNrZWRNaW1lLAogICAgICAgICAgICAgICAgICAgIHNpemVCeXRlcyA9IGlmIChwaWNrZWRTaXplID4gMCkgcGlja2VkU2l6ZSBlbHNlIGRlc3QubGVuZ3RoKCksCiAgICAgICAgICAgICAgICAgICAgbG9jYWxQYXRoID0gZGVzdC5hYnNvbHV0ZVBhdGgsCiAgICAgICAgICAgICAgICAgICAgdXBsb2FkZXJOYW1lID0gYXBwLnByZWZzLnVzZXJOYW1lLAogICAgICAgICAgICAgICAgICAgIHVwbG9hZGVyUm9sZSA9IGFwcC5wcmVmcy5yb2xlLAogICAgICAgICAgICAgICAgICAgIHJlcXVlc3RJZCA9IGlmIChyZXF1ZXN0SWQgPiAwKSByZXF1ZXN0SWQgZWxzZSAwCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICB2YWwgbmV3SWQgPSBhcHAucmVwb3NpdG9yeS5hZGRGaWxlKGVudGl0eSkKICAgICAgICAgICAgICAgIHZhbCBzYXZlZCA9IGVudGl0eS5jb3B5KGlkID0gbmV3SWQpCiAgICAgICAgICAgICAgICBhcHAucmVwb3NpdG9yeS5wb3N0VXBsb2FkTm90aWNlKHNhdmVkLCBzdWJqZWN0Lm5hbWUpCiAgICAgICAgICAgICAgICBpZiAocmVxdWVzdElkID4gMCkgewogICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmZ1bGZpbFJlcXVlc3QocmVxdWVzdElkLCBuZXdJZCwgYXBwLnByZWZzLnVzZXJOYW1lKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgc2F2ZWQKICAgICAgICAgICAgfQogICAgICAgICAgICBiaW5kaW5nLnByb2dyZXNzVXBsb2FkLnZpc2liaWxpdHkgPSBWaWV3LkdPTkUKICAgICAgICAgICAgYmluZGluZy5idG5Eb1VwbG9hZC5pc0VuYWJsZWQgPSB0cnVlCiAgICAgICAgICAgIHJlc3VsdC5vblN1Y2Nlc3MgewogICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoCiAgICAgICAgICAgICAgICAgICAgdGhpc0BVcGxvYWRBY3Rpdml0eSwKICAgICAgICAgICAgICAgICAgICAiU2F2ZWQgdG8gJHtzdWJqZWN0Lm5hbWV9LiBUaGUgY2xhc3MgY2FuIHNlZSBpdCBpbiBjaGF0IHRvby4iLAogICAgICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9MT05HCiAgICAgICAgICAgICAgICApLnNob3coKQogICAgICAgICAgICAgICAgZmluaXNoKCkKICAgICAgICAgICAgfS5vbkZhaWx1cmUgewogICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoCiAgICAgICAgICAgICAgICAgICAgdGhpc0BVcGxvYWRBY3Rpdml0eSwKICAgICAgICAgICAgICAgICAgICAiVXBsb2FkIGZhaWxlZDogJHtpdC5tZXNzYWdlID86ICJ1bmtub3duIGVycm9yIn0iLAogICAgICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9MT05HCiAgICAgICAgICAgICAgICApLnNob3coKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGNvbXBhbmlvbiBvYmplY3QgewogICAgICAgIHByaXZhdGUgY29uc3QgdmFsIEVYVFJBX1NVQkpFQ1RfSUQgPSAic3ViamVjdF9pZCIKICAgICAgICBwcml2YXRlIGNvbnN0IHZhbCBFWFRSQV9SRVFVRVNUX0lEID0gInJlcXVlc3RfaWQiCgogICAgICAgIGZ1biBpbnRlbnQoY29udGV4dDogQ29udGV4dCwgc3ViamVjdElkOiBMb25nID0gLTEsIHJlcXVlc3RJZDogTG9uZyA9IC0xKTogSW50ZW50ID0KICAgICAgICAgICAgSW50ZW50KGNvbnRleHQsIFVwbG9hZEFjdGl2aXR5OjpjbGFzcy5qYXZhKS5hcHBseSB7CiAgICAgICAgICAgICAgICBwdXRFeHRyYShFWFRSQV9TVUJKRUNUX0lELCBzdWJqZWN0SWQpCiAgICAgICAgICAgICAgICBwdXRFeHRyYShFWFRSQV9SRVFVRVNUX0lELCByZXF1ZXN0SWQpCiAgICAgICAgICAgIH0KICAgIH0KfQo=
+package com.parth.index.ui.upload
+
+import android.content.Context
+import android.content.Intent
+import android.database.Cursor
+import android.net.Uri
+import android.os.Bundle
+import android.provider.OpenableColumns
+import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.parth.index.IndexApp
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.data.model.SubjectEntity
+import com.parth.index.databinding.ActivityUploadBinding
+import com.parth.index.util.Format
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
+
+/** The one upload screen for every route in:
+ *   - the + Upload button inside a subject,
+ *   - fulfilling a request,
+ *   - the PDF maker's output (it saves directly, not through here),
+ *   - and the share sheet: a file shared from WhatsApp/Files/Gallery
+ *     arrives already attached, its name pre-filled as the title.
+ *  Whatever the route, saving means: copy the file into INDEX's private
+ *  storage on a background thread, write the row, and auto-post the
+ *  "X added … to …" message in group chat. */
+class UploadActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityUploadBinding
+    private val app get() = application as IndexApp
+
+    private var subjects: List<SubjectEntity> = emptyList()
+    private var pickedUri: Uri? = null
+    private var pickedName: String = ""
+    private var pickedSize: Long = 0
+    private var pickedMime: String = ""
+    private var preselectedSubjectId: Long = -1
+    private var requestId: Long = -1
+
+    private val pickFile = registerForActivityResult(
+        ActivityResultContracts.OpenDocument()
+    ) { uri ->
+        if (uri != null) acceptUri(uri)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityUploadBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        preselectedSubjectId = intent.getLongExtra(EXTRA_SUBJECT_ID, -1)
+        requestId = intent.getLongExtra(EXTRA_REQUEST_ID, -1)
+
+        if (requestId > 0) {
+            binding.tvUploadHeading.text = "Fulfil the request"
+            binding.tvFulfilInfo.visibility = View.VISIBLE
+            lifecycleScope.launch {
+                app.repository.requestById(requestId)?.let { req ->
+                    binding.tvFulfilInfo.text =
+                        "Requested by ${req.requesterName}: “${req.title}”. " +
+                            "Uploading here closes the request."
+                    if (preselectedSubjectId <= 0) preselectedSubjectId = req.subjectId
+                }
+            }
+        }
+
+        // Shared file(s) arrive here. For SEND_MULTIPLE we take every file
+        // in turn: the first fills this screen; the rest are queued simply
+        // by re-launching after save (kept simple and reliable).
+        val sharedUris = extractSharedUris(intent)
+        if (sharedUris.isNotEmpty()) acceptUri(sharedUris.first())
+
+        binding.btnPickFile.setOnClickListener {
+            pickFile.launch(arrayOf("application/pdf", "image/*", "application/*", "text/*"))
+        }
+        binding.btnDoUpload.setOnClickListener { startUpload() }
+
+        lifecycleScope.launch {
+            app.repository.observeSubjects().collect { list ->
+                subjects = list
+                val adapter = ArrayAdapter(
+                    this@UploadActivity,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    list.map { it.name }
+                )
+                binding.spinnerUploadSubject.adapter = adapter
+                val idx = list.indexOfFirst { it.id == preselectedSubjectId }
+                if (idx >= 0) binding.spinnerUploadSubject.setSelection(idx)
+            }
+        }
+    }
+
+    private fun extractSharedUris(intent: Intent): List<Uri> {
+        val out = mutableListOf<Uri>()
+        when (intent.action) {
+            Intent.ACTION_SEND -> {
+                @Suppress("DEPRECATION")
+                (intent.getParcelableExtra<Uri>(Intent.EXTRA_STREAM))?.let { out.add(it) }
+                val text = intent.getStringExtra(Intent.EXTRA_TEXT)
+                if (out.isEmpty() && text != null) {
+                    binding.etUploadNote.setText(text)
+                }
+            }
+            Intent.ACTION_SEND_MULTIPLE -> {
+                @Suppress("DEPRECATION")
+                intent.getParcelableArrayListExtra<Uri>(Intent.EXTRA_STREAM)?.let { out.addAll(it) }
+            }
+        }
+        return out
+    }
+
+    private fun acceptUri(uri: Uri) {
+        pickedUri = uri
+        lifecycleScope.launch {
+            val meta = withContext(Dispatchers.IO) { queryMeta(uri) }
+            pickedName = meta.first
+            pickedSize = meta.second
+            pickedMime = contentResolver.getType(uri) ?: mimeFromName(pickedName)
+            binding.tvPickedFile.text = "Picked: $pickedName (${Format.size(pickedSize)})"
+            if (binding.etUploadTitle.text.isNullOrEmpty()) {
+                binding.etUploadTitle.setText(pickedName.substringBeforeLast('.', pickedName))
+            }
+        }
+    }
+
+    private fun queryMeta(uri: Uri): Pair<String, Long> {
+        var name = "shared-file"
+        var size = 0L
+        val cursor: Cursor? = contentResolver.query(uri, null, null, null, null)
+        cursor?.use {
+            if (it.moveToFirst()) {
+                val nameIdx = it.getColumnIndex(OpenableColumns.DISPLAY_NAME)
+                val sizeIdx = it.getColumnIndex(OpenableColumns.SIZE)
+                if (nameIdx >= 0) name = it.getString(nameIdx) ?: name
+                if (sizeIdx >= 0) size = it.getLong(sizeIdx)
+            }
+        }
+        if (size == 0L) {
+            runCatching {
+                contentResolver.openInputStream(uri)?.use { input ->
+                    val buf = ByteArray(64 * 1024)
+                    var total = 0L
+                    var read: Int
+                    while (input.read(buf).also { r -> read = r } > 0) total += read
+                    size = total
+                }
+            }
+        }
+        return name to size
+    }
+
+    private fun mimeFromName(name: String): String = when (name.lowercase().substringAfterLast('.', "")) {
+        "pdf" -> "application/pdf"
+        "jpg", "jpeg" -> "image/jpeg"
+        "png" -> "image/png"
+        "webp" -> "image/webp"
+        "txt" -> "text/plain"
+        else -> "application/octet-stream"
+    }
+
+    private fun startUpload() {
+        val uri = pickedUri
+        if (uri == null) {
+            Toast.makeText(this, "Pick a file first.", Toast.LENGTH_SHORT).show()
+            return
+        }
+        val subjectPos = binding.spinnerUploadSubject.selectedItemPosition
+        if (subjectPos < 0 || subjectPos >= subjects.size) {
+            Toast.makeText(this, "No subject to save into yet.", Toast.LENGTH_SHORT).show()
+            return
+        }
+        val subject = subjects[subjectPos]
+        lifecycleScope.launch {
+            val dups = app.repository.findDuplicates(subject.id, pickedName, pickedSize)
+            if (dups.isNotEmpty()) {
+                AlertDialog.Builder(this@UploadActivity)
+                    .setTitle("Already in ${subject.name}?")
+                    .setMessage(
+                        "A file with the same name and size is already here: " +
+                            "“${dups.first().title}”, uploaded by ${dups.first().uploaderName}. " +
+                            "Upload another copy anyway?"
+                    )
+                    .setPositiveButton("Upload anyway") { _, _ -> doSave(uri, subject) }
+                    .setNegativeButton("Cancel", null)
+                    .show()
+            } else {
+                doSave(uri, subject)
+            }
+        }
+    }
+
+    private fun doSave(uri: Uri, subject: SubjectEntity) {
+        binding.progressUpload.visibility = View.VISIBLE
+        binding.btnDoUpload.isEnabled = false
+        lifecycleScope.launch {
+            val result = runCatching {
+                val dest = withContext(Dispatchers.IO) {
+                    val dir = File(filesDir, "materials").apply { mkdirs() }
+                    val safeName = pickedName.replace(Regex("[^A-Za-z0-9._-]"), "_")
+                    val out = File(dir, "${System.currentTimeMillis()}_$safeName")
+                    contentResolver.openInputStream(uri)?.use { input ->
+                        out.outputStream().use { input.copyTo(it) }
+                    } ?: error("Could not read the picked file")
+                    out
+                }
+                val title = binding.etUploadTitle.text.toString().trim()
+                    .ifEmpty { pickedName }
+                val entity = MaterialFileEntity(
+                    subjectId = subject.id,
+                    title = title,
+                    note = binding.etUploadNote.text.toString().trim(),
+                    tags = binding.etUploadTags.text.toString().trim(),
+                    fileName = pickedName,
+                    mimeType = pickedMime,
+                    sizeBytes = if (pickedSize > 0) pickedSize else dest.length(),
+                    localPath = dest.absolutePath,
+                    uploaderName = app.prefs.userName,
+                    uploaderRole = app.prefs.role,
+                    requestId = if (requestId > 0) requestId else 0
+                )
+                val newId = app.repository.addFile(entity)
+                val saved = entity.copy(id = newId)
+                app.repository.postUploadNotice(saved, subject.name)
+                if (requestId > 0) {
+                    app.repository.fulfilRequest(requestId, newId, app.prefs.userName)
+                }
+                saved
+            }
+            binding.progressUpload.visibility = View.GONE
+            binding.btnDoUpload.isEnabled = true
+            result.onSuccess {
+                Toast.makeText(
+                    this@UploadActivity,
+                    "Saved to ${subject.name}. The class can see it in chat too.",
+                    Toast.LENGTH_LONG
+                ).show()
+                finish()
+            }.onFailure {
+                Toast.makeText(
+                    this@UploadActivity,
+                    "Upload failed: ${it.message ?: "unknown error"}",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
+    }
+
+    companion object {
+        private const val EXTRA_SUBJECT_ID = "subject_id"
+        private const val EXTRA_REQUEST_ID = "request_id"
+
+        fun intent(context: Context, subjectId: Long = -1, requestId: Long = -1): Intent =
+            Intent(context, UploadActivity::class.java).apply {
+                putExtra(EXTRA_SUBJECT_ID, subjectId)
+                putExtra(EXTRA_REQUEST_ID, requestId)
+            }
+    }
+}
