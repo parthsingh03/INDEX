@@ -1,1 +1,31 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgKCmltcG9ydCBhbmRyb2lkLmFwcC5BcHBsaWNhdGlvbgppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXREZWxlZ2F0ZQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEuUHJlZnMKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLmxvY2FsLkFwcERhdGFiYXNlCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5yZXBvc2l0b3J5LkluZGV4UmVwb3NpdG9yeQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEucmVwb3NpdG9yeS5Mb2NhbFJlcG9zaXRvcnkKCi8qKiBBcHAtd2lkZSBzaW5nbGV0b25zLiBTY3JlZW5zIHJlYWNoIHRoZSBkYXRhIGxheWVyIHRocm91Z2gKICogIChhcHBsaWNhdGlvbiBhcyBJbmRleEFwcCkucmVwb3NpdG9yeSDigJQgYWx3YXlzIHRoZSBpbnRlcmZhY2UsIG5ldmVyIHRoZQogKiAgY29uY3JldGUgY2xhc3Mg4oCUIGFuZCBzZXR0aW5ncyB0aHJvdWdoIHByZWZzLiAqLwpjbGFzcyBJbmRleEFwcCA6IEFwcGxpY2F0aW9uKCkgewoKICAgIGxhdGVpbml0IHZhciBwcmVmczogUHJlZnMKICAgICAgICBwcml2YXRlIHNldAoKICAgIGxhdGVpbml0IHZhciByZXBvc2l0b3J5OiBJbmRleFJlcG9zaXRvcnkKICAgICAgICBwcml2YXRlIHNldAoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZSgpIHsKICAgICAgICBzdXBlci5vbkNyZWF0ZSgpCiAgICAgICAgcHJlZnMgPSBQcmVmcyh0aGlzKQogICAgICAgIHJlcG9zaXRvcnkgPSBMb2NhbFJlcG9zaXRvcnkoQXBwRGF0YWJhc2UuZ2V0KHRoaXMpKQogICAgICAgIC8vIEFwcGx5IHRoZSBzYXZlZCBkYXJrLW1vZGUgY2hvaWNlIGJlZm9yZSBhbnkgc2NyZWVuIGRyYXdzLgogICAgICAgIEFwcENvbXBhdERlbGVnYXRlLnNldERlZmF1bHROaWdodE1vZGUoCiAgICAgICAgICAgIGlmIChwcmVmcy5kYXJrTW9kZSkgQXBwQ29tcGF0RGVsZWdhdGUuTU9ERV9OSUdIVF9ZRVMKICAgICAgICAgICAgZWxzZSBBcHBDb21wYXREZWxlZ2F0ZS5NT0RFX05JR0hUX05PCiAgICAgICAgKQogICAgfQp9Cg==
+package com.parth.index
+
+import android.app.Application
+import androidx.appcompat.app.AppCompatDelegate
+import com.parth.index.data.Prefs
+import com.parth.index.data.local.AppDatabase
+import com.parth.index.data.repository.IndexRepository
+import com.parth.index.data.repository.LocalRepository
+
+/** App-wide singletons. Screens reach the data layer through
+ *  (application as IndexApp).repository — always the interface, never the
+ *  concrete class — and settings through prefs. */
+class IndexApp : Application() {
+
+    lateinit var prefs: Prefs
+        private set
+
+    lateinit var repository: IndexRepository
+        private set
+
+    override fun onCreate() {
+        super.onCreate()
+        prefs = Prefs(this)
+        repository = LocalRepository(AppDatabase.get(this))
+        // Apply the saved dark-mode choice before any screen draws.
+        AppCompatDelegate.setDefaultNightMode(
+            if (prefs.darkMode) AppCompatDelegate.MODE_NIGHT_YES
+            else AppCompatDelegate.MODE_NIGHT_NO
+        )
+    }
+}
