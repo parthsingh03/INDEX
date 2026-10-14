@@ -1,1 +1,122 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXguZGF0YS5sb2NhbAoKaW1wb3J0IGFuZHJvaWR4LnJvb20uRGFvCmltcG9ydCBhbmRyb2lkeC5yb29tLkluc2VydAppbXBvcnQgYW5kcm9pZHgucm9vbS5RdWVyeQppbXBvcnQgYW5kcm9pZHgucm9vbS5VcGRhdGUKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLkNoYXRNZXNzYWdlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5EZWFkbGluZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTWF0ZXJpYWxGaWxlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5NYXRlcmlhbFJlcXVlc3RFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk5vdGljZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuU3ViamVjdEVudGl0eQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuRmxvdwoKQERhbwppbnRlcmZhY2UgU3ViamVjdERhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gc3ViamVjdHMgV0hFUkUgZGVsZXRlZCA9IDAgT1JERVIgQlkgbmFtZSBBU0MiKQogICAgZnVuIG9ic2VydmVBbGwoKTogRmxvdzxMaXN0PFN1YmplY3RFbnRpdHk+PgoKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBzdWJqZWN0cyBXSEVSRSBkZWxldGVkID0gMSBPUkRFUiBCWSBkZWxldGVkQXQgREVTQyIpCiAgICBmdW4gb2JzZXJ2ZVRyYXNoZWQoKTogRmxvdzxMaXN0PFN1YmplY3RFbnRpdHk+PgoKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBzdWJqZWN0cyBXSEVSRSBpZCA9IDppZCIpCiAgICBzdXNwZW5kIGZ1biBieUlkKGlkOiBMb25nKTogU3ViamVjdEVudGl0eT8KCiAgICBASW5zZXJ0IHN1c3BlbmQgZnVuIGluc2VydChzdWJqZWN0OiBTdWJqZWN0RW50aXR5KTogTG9uZwogICAgQFVwZGF0ZSBzdXNwZW5kIGZ1biB1cGRhdGUoc3ViamVjdDogU3ViamVjdEVudGl0eSkKCiAgICBAUXVlcnkoIlVQREFURSBzdWJqZWN0cyBTRVQgZGVsZXRlZCA9IDEsIGRlbGV0ZWRBdCA9IDpub3cgV0hFUkUgaWQgPSA6aWQiKQogICAgc3VzcGVuZCBmdW4gc29mdERlbGV0ZShpZDogTG9uZywgbm93OiBMb25nKQoKICAgIEBRdWVyeSgiVVBEQVRFIHN1YmplY3RzIFNFVCBkZWxldGVkID0gMCwgZGVsZXRlZEF0ID0gMCBXSEVSRSBpZCA9IDppZCIpCiAgICBzdXNwZW5kIGZ1biByZXN0b3JlKGlkOiBMb25nKQoKICAgIEBRdWVyeSgiREVMRVRFIEZST00gc3ViamVjdHMgV0hFUkUgaWQgPSA6aWQiKQogICAgc3VzcGVuZCBmdW4gZGVsZXRlUGVybWFuZW50bHkoaWQ6IExvbmcpCgogICAgQFF1ZXJ5KCJTRUxFQ1QgQ09VTlQoKikgRlJPTSBzdWJqZWN0cyIpCiAgICBzdXNwZW5kIGZ1biBjb3VudEFsbCgpOiBJbnQKfQoKQERhbwppbnRlcmZhY2UgRmlsZURhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gZmlsZXMgV0hFUkUgZGVsZXRlZCA9IDAgT1JERVIgQlkgcGlubmVkIERFU0MsIGNyZWF0ZWRBdCBERVNDIikKICAgIGZ1biBvYnNlcnZlQWxsKCk6IEZsb3c8TGlzdDxNYXRlcmlhbEZpbGVFbnRpdHk+PgoKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBmaWxlcyBXSEVSRSBzdWJqZWN0SWQgPSA6c3ViamVjdElkIEFORCBkZWxldGVkID0gMCBPUkRFUiBCWSBwaW5uZWQgREVTQywgY3JlYXRlZEF0IERFU0MiKQogICAgZnVuIG9ic2VydmVGb3JTdWJqZWN0KHN1YmplY3RJZDogTG9uZyk6IEZsb3c8TGlzdDxNYXRlcmlhbEZpbGVFbnRpdHk+PgoKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBmaWxlcyBXSEVSRSBkZWxldGVkID0gMSBPUkRFUiBCWSBkZWxldGVkQXQgREVTQyIpCiAgICBmdW4gb2JzZXJ2ZVRyYXNoZWQoKTogRmxvdzxMaXN0PE1hdGVyaWFsRmlsZUVudGl0eT4+CgogICAgQFF1ZXJ5KCJTRUxFQ1QgKiBGUk9NIGZpbGVzIFdIRVJFIGlkID0gOmlkIikKICAgIHN1c3BlbmQgZnVuIGJ5SWQoaWQ6IExvbmcpOiBNYXRlcmlhbEZpbGVFbnRpdHk/CgogICAgQFF1ZXJ5KCJTRUxFQ1QgQ09VTlQoKikgRlJPTSBmaWxlcyBXSEVSRSBzdWJqZWN0SWQgPSA6c3ViamVjdElkIEFORCBkZWxldGVkID0gMCIpCiAgICBmdW4gb2JzZXJ2ZUNvdW50Rm9yU3ViamVjdChzdWJqZWN0SWQ6IExvbmcpOiBGbG93PEludD4KCiAgICBAUXVlcnkoIlNFTEVDVCBDT1VOVCgqKSBGUk9NIGZpbGVzIFdIRVJFIHN1YmplY3RJZCA9IDpzdWJqZWN0SWQgQU5EIGRlbGV0ZWQgPSAwIikKICAgIHN1c3BlbmQgZnVuIGNvdW50Rm9yU3ViamVjdChzdWJqZWN0SWQ6IExvbmcpOiBJbnQKCiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gZmlsZXMgV0hFUkUgc3ViamVjdElkID0gOnN1YmplY3RJZCBBTkQgZGVsZXRlZCA9IDAgQU5EIGZpbGVOYW1lID0gOm5hbWUgQU5EIHNpemVCeXRlcyA9IDpzaXplIikKICAgIHN1c3BlbmQgZnVuIHNhbWVOYW1lQW5kU2l6ZShzdWJqZWN0SWQ6IExvbmcsIG5hbWU6IFN0cmluZywgc2l6ZTogTG9uZyk6IExpc3Q8TWF0ZXJpYWxGaWxlRW50aXR5PgoKICAgIEBJbnNlcnQgc3VzcGVuZCBmdW4gaW5zZXJ0KGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSk6IExvbmcKICAgIEBVcGRhdGUgc3VzcGVuZCBmdW4gdXBkYXRlKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSkKCiAgICBAUXVlcnkoIlVQREFURSBmaWxlcyBTRVQgZGVsZXRlZCA9IDEsIGRlbGV0ZWRBdCA9IDpub3cgV0hFUkUgaWQgPSA6aWQiKQogICAgc3VzcGVuZCBmdW4gc29mdERlbGV0ZShpZDogTG9uZywgbm93OiBMb25nKQoKICAgIEBRdWVyeSgiVVBEQVRFIGZpbGVzIFNFVCBkZWxldGVkID0gMCwgZGVsZXRlZEF0ID0gMCBXSEVSRSBpZCA9IDppZCIpCiAgICBzdXNwZW5kIGZ1biByZXN0b3JlKGlkOiBMb25nKQoKICAgIEBRdWVyeSgiREVMRVRFIEZST00gZmlsZXMgV0hFUkUgaWQgPSA6aWQiKQogICAgc3VzcGVuZCBmdW4gZGVsZXRlUGVybWFuZW50bHkoaWQ6IExvbmcpCgogICAgQFF1ZXJ5KCJTRUxFQ1QgQ09BTEVTQ0UoU1VNKHNpemVCeXRlcyksIDApIEZST00gZmlsZXMgV0hFUkUgZGVsZXRlZCA9IDAiKQogICAgc3VzcGVuZCBmdW4gdG90YWxTdG9yZWRCeXRlcygpOiBMb25nCn0KCkBEYW8KaW50ZXJmYWNlIERlYWRsaW5lRGFvIHsKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBkZWFkbGluZXMgT1JERVIgQlkgZHVlRGF0ZU1pbGxpcyBBU0MiKQogICAgZnVuIG9ic2VydmVBbGwoKTogRmxvdzxMaXN0PERlYWRsaW5lRW50aXR5Pj4KCiAgICBASW5zZXJ0IHN1c3BlbmQgZnVuIGluc2VydChkZWFkbGluZTogRGVhZGxpbmVFbnRpdHkpOiBMb25nCiAgICBAVXBkYXRlIHN1c3BlbmQgZnVuIHVwZGF0ZShkZWFkbGluZTogRGVhZGxpbmVFbnRpdHkpCiAgICBAUXVlcnkoIkRFTEVURSBGUk9NIGRlYWRsaW5lcyBXSEVSRSBpZCA9IDppZCIpIHN1c3BlbmQgZnVuIGRlbGV0ZShpZDogTG9uZykKfQoKQERhbwppbnRlcmZhY2UgQ2hhdERhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gY2hhdF9tZXNzYWdlcyBXSEVSRSBoaWRkZW5Gb3JNZSA9IDAgT1JERVIgQlkgdGltZXN0YW1wIEFTQyIpCiAgICBmdW4gb2JzZXJ2ZUFsbCgpOiBGbG93PExpc3Q8Q2hhdE1lc3NhZ2VFbnRpdHk+PgoKICAgIEBJbnNlcnQgc3VzcGVuZCBmdW4gaW5zZXJ0KG1lc3NhZ2U6IENoYXRNZXNzYWdlRW50aXR5KTogTG9uZwogICAgQFVwZGF0ZSBzdXNwZW5kIGZ1biB1cGRhdGUobWVzc2FnZTogQ2hhdE1lc3NhZ2VFbnRpdHkpCn0KCkBEYW8KaW50ZXJmYWNlIE5vdGljZURhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gbm90aWNlcyBPUkRFUiBCWSB0aW1lc3RhbXAgREVTQyIpCiAgICBmdW4gb2JzZXJ2ZUFsbCgpOiBGbG93PExpc3Q8Tm90aWNlRW50aXR5Pj4KCiAgICBASW5zZXJ0IHN1c3BlbmQgZnVuIGluc2VydChub3RpY2U6IE5vdGljZUVudGl0eSk6IExvbmcKICAgIEBVcGRhdGUgc3VzcGVuZCBmdW4gdXBkYXRlKG5vdGljZTogTm90aWNlRW50aXR5KQoKICAgIEBRdWVyeSgiVVBEQVRFIG5vdGljZXMgU0VUIHNlZW5CeU1lID0gMSwgc2VlbkJ5Q291bnQgPSBzZWVuQnlDb3VudCArIDEgV0hFUkUgc2VlbkJ5TWUgPSAwIikKICAgIHN1c3BlbmQgZnVuIG1hcmtBbGxTZWVuKCkKfQoKQERhbwppbnRlcmZhY2UgUmVxdWVzdERhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gcmVxdWVzdHMgT1JERVIgQlkgQ0FTRSBXSEVOIHN0YXR1cyA9ICdPUEVOJyBUSEVOIDAgRUxTRSAxIEVORCwgY3JlYXRlZEF0IERFU0MiKQogICAgZnVuIG9ic2VydmVBbGwoKTogRmxvdzxMaXN0PE1hdGVyaWFsUmVxdWVzdEVudGl0eT4+CgogICAgQFF1ZXJ5KCJTRUxFQ1QgKiBGUk9NIHJlcXVlc3RzIFdIRVJFIGlkID0gOmlkIikKICAgIHN1c3BlbmQgZnVuIGJ5SWQoaWQ6IExvbmcpOiBNYXRlcmlhbFJlcXVlc3RFbnRpdHk/CgogICAgQEluc2VydCBzdXNwZW5kIGZ1biBpbnNlcnQocmVxdWVzdDogTWF0ZXJpYWxSZXF1ZXN0RW50aXR5KTogTG9uZwogICAgQFVwZGF0ZSBzdXNwZW5kIGZ1biB1cGRhdGUocmVxdWVzdDogTWF0ZXJpYWxSZXF1ZXN0RW50aXR5KQp9Cg==
+package com.parth.index.data.local
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+import androidx.room.Update
+import com.parth.index.data.model.ChatMessageEntity
+import com.parth.index.data.model.DeadlineEntity
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.data.model.MaterialRequestEntity
+import com.parth.index.data.model.NoticeEntity
+import com.parth.index.data.model.SubjectEntity
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface SubjectDao {
+    @Query("SELECT * FROM subjects WHERE deleted = 0 ORDER BY name ASC")
+    fun observeAll(): Flow<List<SubjectEntity>>
+
+    @Query("SELECT * FROM subjects WHERE deleted = 1 ORDER BY deletedAt DESC")
+    fun observeTrashed(): Flow<List<SubjectEntity>>
+
+    @Query("SELECT * FROM subjects WHERE id = :id")
+    suspend fun byId(id: Long): SubjectEntity?
+
+    @Insert suspend fun insert(subject: SubjectEntity): Long
+    @Update suspend fun update(subject: SubjectEntity)
+
+    @Query("UPDATE subjects SET deleted = 1, deletedAt = :now WHERE id = :id")
+    suspend fun softDelete(id: Long, now: Long)
+
+    @Query("UPDATE subjects SET deleted = 0, deletedAt = 0 WHERE id = :id")
+    suspend fun restore(id: Long)
+
+    @Query("DELETE FROM subjects WHERE id = :id")
+    suspend fun deletePermanently(id: Long)
+
+    @Query("SELECT COUNT(*) FROM subjects")
+    suspend fun countAll(): Int
+}
+
+@Dao
+interface FileDao {
+    @Query("SELECT * FROM files WHERE deleted = 0 ORDER BY pinned DESC, createdAt DESC")
+    fun observeAll(): Flow<List<MaterialFileEntity>>
+
+    @Query("SELECT * FROM files WHERE subjectId = :subjectId AND deleted = 0 ORDER BY pinned DESC, createdAt DESC")
+    fun observeForSubject(subjectId: Long): Flow<List<MaterialFileEntity>>
+
+    @Query("SELECT * FROM files WHERE deleted = 1 ORDER BY deletedAt DESC")
+    fun observeTrashed(): Flow<List<MaterialFileEntity>>
+
+    @Query("SELECT * FROM files WHERE id = :id")
+    suspend fun byId(id: Long): MaterialFileEntity?
+
+    @Query("SELECT COUNT(*) FROM files WHERE subjectId = :subjectId AND deleted = 0")
+    fun observeCountForSubject(subjectId: Long): Flow<Int>
+
+    @Query("SELECT COUNT(*) FROM files WHERE subjectId = :subjectId AND deleted = 0")
+    suspend fun countForSubject(subjectId: Long): Int
+
+    @Query("SELECT * FROM files WHERE subjectId = :subjectId AND deleted = 0 AND fileName = :name AND sizeBytes = :size")
+    suspend fun sameNameAndSize(subjectId: Long, name: String, size: Long): List<MaterialFileEntity>
+
+    @Insert suspend fun insert(file: MaterialFileEntity): Long
+    @Update suspend fun update(file: MaterialFileEntity)
+
+    @Query("UPDATE files SET deleted = 1, deletedAt = :now WHERE id = :id")
+    suspend fun softDelete(id: Long, now: Long)
+
+    @Query("UPDATE files SET deleted = 0, deletedAt = 0 WHERE id = :id")
+    suspend fun restore(id: Long)
+
+    @Query("DELETE FROM files WHERE id = :id")
+    suspend fun deletePermanently(id: Long)
+
+    @Query("SELECT COALESCE(SUM(sizeBytes), 0) FROM files WHERE deleted = 0")
+    suspend fun totalStoredBytes(): Long
+}
+
+@Dao
+interface DeadlineDao {
+    @Query("SELECT * FROM deadlines ORDER BY dueDateMillis ASC")
+    fun observeAll(): Flow<List<DeadlineEntity>>
+
+    @Insert suspend fun insert(deadline: DeadlineEntity): Long
+    @Update suspend fun update(deadline: DeadlineEntity)
+    @Query("DELETE FROM deadlines WHERE id = :id") suspend fun delete(id: Long)
+}
+
+@Dao
+interface ChatDao {
+    @Query("SELECT * FROM chat_messages WHERE hiddenForMe = 0 ORDER BY timestamp ASC")
+    fun observeAll(): Flow<List<ChatMessageEntity>>
+
+    @Insert suspend fun insert(message: ChatMessageEntity): Long
+    @Update suspend fun update(message: ChatMessageEntity)
+}
+
+@Dao
+interface NoticeDao {
+    @Query("SELECT * FROM notices ORDER BY timestamp DESC")
+    fun observeAll(): Flow<List<NoticeEntity>>
+
+    @Insert suspend fun insert(notice: NoticeEntity): Long
+    @Update suspend fun update(notice: NoticeEntity)
+
+    @Query("UPDATE notices SET seenByMe = 1, seenByCount = seenByCount + 1 WHERE seenByMe = 0")
+    suspend fun markAllSeen()
+}
+
+@Dao
+interface RequestDao {
+    @Query("SELECT * FROM requests ORDER BY CASE WHEN status = 'OPEN' THEN 0 ELSE 1 END, createdAt DESC")
+    fun observeAll(): Flow<List<MaterialRequestEntity>>
+
+    @Query("SELECT * FROM requests WHERE id = :id")
+    suspend fun byId(id: Long): MaterialRequestEntity?
+
+    @Insert suspend fun insert(request: MaterialRequestEntity): Long
+    @Update suspend fun update(request: MaterialRequestEntity)
+}
