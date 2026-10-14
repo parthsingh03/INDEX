@@ -1,1 +1,7 @@
-IyBJTkRFWCBwcm9ndWFyZCBydWxlcy4KIyBSb29tIGdlbmVyYXRlcyBkYXRhYmFzZSBjb2RlIGF0IGJ1aWxkIHRpbWU7IGtlZXAgdGhlIGdlbmVyYXRlZCBjbGFzc2VzIGFuZAojIHRoZSBlbnRpdHkgY2xhc3NlcyBzbyBtaW5pZmllZCByZWxlYXNlIGJ1aWxkcyBrZWVwIHdvcmtpbmcuCi1rZWVwIGNsYXNzIGNvbS5wYXJ0aC5pbmRleC5kYXRhLmxvY2FsLioqIHsgKjsgfQota2VlcCBjbGFzcyBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC4qKiB7ICo7IH0KLWtlZXAgY2xhc3MgYW5kcm9pZHgucm9vbS4qKiB7ICo7IH0KLWRvbnR3YXJuIGFuZHJvaWR4LnJvb20uKioK
+# INDEX proguard rules.
+# Room generates database code at build time; keep the generated classes and
+# the entity classes so minified release builds keep working.
+-keep class com.parth.index.data.local.** { *; }
+-keep class com.parth.index.data.model.** { *; }
+-keep class androidx.room.** { *; }
+-dontwarn androidx.room.**
