@@ -1,1 +1,21 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlcz4KICAgIDwhLS0gQ2xlYW4gQ2FtcHVzLCBhZnRlciBkYXJrOiBpZGVudGljYWwgbGF5b3V0LCBkYXJrIHBhbGV0dGUuIC0tPgogICAgPGNvbG9yIG5hbWU9InByaW1hcnkiPiM1QjhDRkY8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9InByaW1hcnlfZGFyayI+IzI1NjNFQjwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0icHJpbWFyeV9zb2Z0Ij4jMUUyQTQ3PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJiYWNrZ3JvdW5kIj4jMEMxMDE3PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJzdXJmYWNlIj4jMTcxQzI2PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJzdXJmYWNlX2FsdCI+IzIwMjYzNDwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0ib25fYmFja2dyb3VuZCI+I0VERjFGNzwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0ib25fc3VyZmFjZSI+I0VERjFGNzwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0ibXV0ZWQiPiM5OEEyQjM8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImRpdmlkZXIiPiMyQTMxNDA8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImRlYWRsaW5lX2JnIj4jM0EyRTEyPC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJkZWFkbGluZV9hY2NlbnQiPiNGNUM2NkI8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImRlYWRsaW5lX2JpZyI+I0ZCQkYyNDwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0icGRmX3JlZCI+I0U1NTM0QjwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0iY2hpcF9iZyI+IzIzMkIzQTwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0id2hpdGUiPiNGRkZGRkY8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImJsYWNrIj4jMDAwMDAwPC9jb2xvcj4KPC9yZXNvdXJjZXM+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clean Campus, after dark: identical layout, dark palette. -->
+    <color name="primary">#5B8CFF</color>
+    <color name="primary_dark">#2563EB</color>
+    <color name="primary_soft">#1E2A47</color>
+    <color name="background">#0C1017</color>
+    <color name="surface">#171C26</color>
+    <color name="surface_alt">#202634</color>
+    <color name="on_background">#EDF1F7</color>
+    <color name="on_surface">#EDF1F7</color>
+    <color name="muted">#98A2B3</color>
+    <color name="divider">#2A3140</color>
+    <color name="deadline_bg">#3A2E12</color>
+    <color name="deadline_accent">#F5C66B</color>
+    <color name="deadline_big">#FBBF24</color>
+    <color name="pdf_red">#E5534B</color>
+    <color name="chip_bg">#232B3A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
