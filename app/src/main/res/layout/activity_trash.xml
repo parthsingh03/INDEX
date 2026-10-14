@@ -1,1 +1,65 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPExpbmVhckxheW91dCB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJtYXRjaF9wYXJlbnQiCiAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9iYWNrZ3JvdW5kIgogICAgYW5kcm9pZDpvcmllbnRhdGlvbj0idmVydGljYWwiCiAgICBhbmRyb2lkOnBhZGRpbmc9IjE2ZHAiPgoKICAgIDxUZXh0VmlldwogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgYW5kcm9pZDp0ZXh0PSJUcmFzaCIKICAgICAgICBhbmRyb2lkOnRleHRDb2xvcj0iQGNvbG9yL29uX2JhY2tncm91bmQiCiAgICAgICAgYW5kcm9pZDp0ZXh0U2l6ZT0iMjJzcCIKICAgICAgICBhbmRyb2lkOnRleHRTdHlsZT0iYm9sZCIgLz4KCiAgICA8VGV4dFZpZXcKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iNGRwIgogICAgICAgIGFuZHJvaWQ6dGV4dD0iTm90aGluZyBpbiBJTkRFWCBpcyBkZWxldGVkIGluc3RhbnRseS4gVGhpbmdzIGRlbGV0ZWQgYnkgbWlzdGFrZSBjYW4gYmUgcmVzdG9yZWQgaGVyZSBmb3IgMzAgZGF5czsgYWZ0ZXIgdGhhdCB0aGV5IGNhbiBiZSByZW1vdmVkIGZvciBnb29kLiIKICAgICAgICBhbmRyb2lkOnRleHRDb2xvcj0iQGNvbG9yL211dGVkIgogICAgICAgIGFuZHJvaWQ6dGV4dFNpemU9IjEzc3AiIC8+CgogICAgPFRleHRWaWV3CiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9tYXJnaW5Ub3A9IjE2ZHAiCiAgICAgICAgYW5kcm9pZDp0ZXh0PSJEZWxldGVkIHN1YmplY3RzIgogICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3Ivb25fYmFja2dyb3VuZCIKICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIxNXNwIgogICAgICAgIGFuZHJvaWQ6dGV4dFN0eWxlPSJib2xkIiAvPgoKICAgIDxhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvcnZUcmFzaFN1YmplY3RzIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJtYXRjaF9wYXJlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfbWFyZ2luVG9wPSI4ZHAiIC8+CgogICAgPFRleHRWaWV3CiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9tYXJnaW5Ub3A9IjE2ZHAiCiAgICAgICAgYW5kcm9pZDp0ZXh0PSJEZWxldGVkIGZpbGVzIgogICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3Ivb25fYmFja2dyb3VuZCIKICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIxNXNwIgogICAgICAgIGFuZHJvaWQ6dGV4dFN0eWxlPSJib2xkIiAvPgoKICAgIDxhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvcnZUcmFzaEZpbGVzIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJtYXRjaF9wYXJlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSIwZHAiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfbWFyZ2luVG9wPSI4ZHAiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2VpZ2h0PSIxIiAvPgoKICAgIDxUZXh0VmlldwogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvdHZUcmFzaEVtcHR5IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJ3cmFwX2NvbnRlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfbWFyZ2luVG9wPSIxMmRwIgogICAgICAgIGFuZHJvaWQ6dGV4dD0iVHJhc2ggaXMgZW1wdHkuIgogICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3IvbXV0ZWQiCiAgICAgICAgYW5kcm9pZDp0ZXh0U2l6ZT0iMTNzcCIKICAgICAgICBhbmRyb2lkOnZpc2liaWxpdHk9ImdvbmUiIC8+CjwvTGluZWFyTGF5b3V0Pgo=
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trash"
+        android:textColor="@color/on_background"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nothing in INDEX is deleted instantly. Things deleted by mistake can be restored here for 30 days; after that they can be removed for good."
+        android:textColor="@color/muted"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deleted subjects"
+        android:textColor="@color/on_background"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrashSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deleted files"
+        android:textColor="@color/on_background"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrashFiles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvTrashEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Trash is empty."
+        android:textColor="@color/muted"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>
