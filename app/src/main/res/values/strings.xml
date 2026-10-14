@@ -1,1 +1,5 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlcz4KICAgIDxzdHJpbmcgbmFtZT0iYXBwX25hbWUiPklOREVYPC9zdHJpbmc+CiAgICA8c3RyaW5nIG5hbWU9InRhZ2xpbmUiPkV2ZXJ5IG5vdGUgeW91ciBjbGFzcyBzaGFyZXMuIE9uZSBwbGFjZSwgYWx3YXlzIGZpbmRhYmxlLjwvc3RyaW5nPgo8L3Jlc291cmNlcz4K
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">INDEX</string>
+    <string name="tagline">Every note your class shares. One place, always findable.</string>
+</resources>
