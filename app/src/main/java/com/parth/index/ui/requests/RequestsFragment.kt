@@ -1,1 +1,133 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkucmVxdWVzdHMKCmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZC52aWV3LkxheW91dEluZmxhdGVyCmltcG9ydCBhbmRyb2lkLnZpZXcuVmlldwppbXBvcnQgYW5kcm9pZC52aWV3LlZpZXdHcm91cAppbXBvcnQgYW5kcm9pZC53aWRnZXQuQXJyYXlBZGFwdGVyCmltcG9ydCBhbmRyb2lkLndpZGdldC5FZGl0VGV4dAppbXBvcnQgYW5kcm9pZC53aWRnZXQuTGluZWFyTGF5b3V0CmltcG9ydCBhbmRyb2lkLndpZGdldC5TcGlubmVyCmltcG9ydCBhbmRyb2lkLndpZGdldC5Ub2FzdAppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BbGVydERpYWxvZwppbXBvcnQgYW5kcm9pZHguZnJhZ21lbnQuYXBwLkZyYWdtZW50CmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUuTGlmZWN5Y2xlCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUubGlmZWN5Y2xlU2NvcGUKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5yZXBlYXRPbkxpZmVjeWNsZQppbXBvcnQgYW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5MaW5lYXJMYXlvdXRNYW5hZ2VyCmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsUmVxdWVzdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuU3ViamVjdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkZyYWdtZW50UmVxdWVzdHNCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMuUmVxdWVzdEFkYXB0ZXIKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS51cGxvYWQuVXBsb2FkQWN0aXZpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51dGlsLkZpbGVBY3Rpb25zCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCgovKiogVGhlIFJlcXVlc3QgYm9hcmQ6ICJJIG5lZWQgWCIgcG9zdHMgdGhhdCBjbG9zZSB3aGVuIHNvbWVvbmUgdXBsb2FkcyB0aGUKICogIG1hdGVyaWFsIGFnYWluc3QgdGhlbS4gVGhpcyBpcyB0aGUgeWVzdGVyZGF5IHByb2JsZW0sIHJldmVyc2VkIOKAlCBpbnN0ZWFkCiAqICBvZiBodW50aW5nIFdoYXRzQXBwLCB5b3UgYXNrIGhlcmUgYW5kIHRoZSBmaWxlIGNvbWVzIHRvIHRoZSByZXF1ZXN0LiAqLwpjbGFzcyBSZXF1ZXN0c0ZyYWdtZW50IDogRnJhZ21lbnQoKSB7CgogICAgcHJpdmF0ZSB2YXIgX2JpbmRpbmc6IEZyYWdtZW50UmVxdWVzdHNCaW5kaW5nPyA9IG51bGwKICAgIHByaXZhdGUgdmFsIGJpbmRpbmcgZ2V0KCkgPSBfYmluZGluZyEhCiAgICBwcml2YXRlIHZhbCBhcHAgZ2V0KCkgPSByZXF1aXJlQWN0aXZpdHkoKS5hcHBsaWNhdGlvbiBhcyBJbmRleEFwcAoKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGFkYXB0ZXI6IFJlcXVlc3RBZGFwdGVyCiAgICBwcml2YXRlIHZhciBzdWJqZWN0czogTGlzdDxTdWJqZWN0RW50aXR5PiA9IGVtcHR5TGlzdCgpCgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlVmlldygKICAgICAgICBpbmZsYXRlcjogTGF5b3V0SW5mbGF0ZXIsIGNvbnRhaW5lcjogVmlld0dyb3VwPywgc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/CiAgICApOiBWaWV3IHsKICAgICAgICBfYmluZGluZyA9IEZyYWdtZW50UmVxdWVzdHNCaW5kaW5nLmluZmxhdGUoaW5mbGF0ZXIsIGNvbnRhaW5lciwgZmFsc2UpCiAgICAgICAgcmV0dXJuIGJpbmRpbmcucm9vdAogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvblZpZXdDcmVhdGVkKHZpZXc6IFZpZXcsIHNhdmVkSW5zdGFuY2VTdGF0ZTogQnVuZGxlPykgewogICAgICAgIHN1cGVyLm9uVmlld0NyZWF0ZWQodmlldywgc2F2ZWRJbnN0YW5jZVN0YXRlKQoKICAgICAgICBhZGFwdGVyID0gUmVxdWVzdEFkYXB0ZXIoCiAgICAgICAgICAgIG9uRnVsZmlsID0geyByZXF1ZXN0IC0+CiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KAogICAgICAgICAgICAgICAgICAgIFVwbG9hZEFjdGl2aXR5LmludGVudChyZXF1aXJlQ29udGV4dCgpLCByZXF1ZXN0LnN1YmplY3RJZCwgcmVxdWVzdC5pZCkKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgfSwKICAgICAgICAgICAgb25PcGVuRmlsZSA9IHsgcmVxdWVzdCAtPgogICAgICAgICAgICAgICAgaWYgKHJlcXVlc3QuZnVsZmlsbGVkRmlsZUlkID4gMCkgewogICAgICAgICAgICAgICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmZpbGVCeUlkKHJlcXVlc3QuZnVsZmlsbGVkRmlsZUlkKT8ubGV0IHsgZmlsZSAtPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgRmlsZUFjdGlvbnMub3BlbihyZXF1aXJlQWN0aXZpdHkoKSwgZmlsZSkKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICkKICAgICAgICBiaW5kaW5nLnJ2UmVxdWVzdHMubGF5b3V0TWFuYWdlciA9IExpbmVhckxheW91dE1hbmFnZXIocmVxdWlyZUNvbnRleHQoKSkKICAgICAgICBiaW5kaW5nLnJ2UmVxdWVzdHMuYWRhcHRlciA9IGFkYXB0ZXIKICAgICAgICBiaW5kaW5nLmJ0bkNyZWF0ZVJlcXVlc3Quc2V0T25DbGlja0xpc3RlbmVyIHsgc2hvd0NyZWF0ZURpYWxvZygpIH0KCiAgICAgICAgdmlld0xpZmVjeWNsZU93bmVyLmxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIHZpZXdMaWZlY3ljbGVPd25lci5yZXBlYXRPbkxpZmVjeWNsZShMaWZlY3ljbGUuU3RhdGUuU1RBUlRFRCkgewogICAgICAgICAgICAgICAgbGF1bmNoIHsKICAgICAgICAgICAgICAgICAgICBhcHAucmVwb3NpdG9yeS5vYnNlcnZlUmVxdWVzdHMoKS5jb2xsZWN0IHsgcmVxdWVzdHMgLT4KICAgICAgICAgICAgICAgICAgICAgICAgYWRhcHRlci5zdWJtaXQocmVxdWVzdHMpCiAgICAgICAgICAgICAgICAgICAgICAgIGJpbmRpbmcudHZSZXF1ZXN0c0VtcHR5LnZpc2liaWxpdHkgPQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHJlcXVlc3RzLmlzRW1wdHkoKSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgbGF1bmNoIHsKICAgICAgICAgICAgICAgICAgICBhcHAucmVwb3NpdG9yeS5vYnNlcnZlU3ViamVjdHMoKS5jb2xsZWN0IHsgc3ViamVjdHMgPSBpdCB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gc2hvd0NyZWF0ZURpYWxvZygpIHsKICAgICAgICB2YWwgY3R4ID0gcmVxdWlyZUNvbnRleHQoKQogICAgICAgIGlmIChzdWJqZWN0cy5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoY3R4LCAiQ3JlYXRlIGEgc3ViamVjdCBmaXJzdC4iLCBUb2FzdC5MRU5HVEhfU0hPUlQpLnNob3coKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgdmFsIGNvbnRhaW5lciA9IExpbmVhckxheW91dChjdHgpLmFwcGx5IHsKICAgICAgICAgICAgb3JpZW50YXRpb24gPSBMaW5lYXJMYXlvdXQuVkVSVElDQUwKICAgICAgICAgICAgc2V0UGFkZGluZyg0OCwgMjQsIDQ4LCA4KQogICAgICAgIH0KICAgICAgICB2YWwgZXRUaXRsZSA9IEVkaXRUZXh0KGN0eCkuYXBwbHkgeyBoaW50ID0gIldoYXQgZG8geW91IG5lZWQ/IChlLmcuIFVuaXQgMiBoYW5kd3JpdHRlbiBub3RlcykiIH0KICAgICAgICB2YWwgc3Bpbm5lciA9IFNwaW5uZXIoY3R4KQogICAgICAgIHNwaW5uZXIuYWRhcHRlciA9IEFycmF5QWRhcHRlcigKICAgICAgICAgICAgY3R4LCBhbmRyb2lkLlIubGF5b3V0LnNpbXBsZV9zcGlubmVyX2Ryb3Bkb3duX2l0ZW0sIHN1YmplY3RzLm1hcCB7IGl0Lm5hbWUgfQogICAgICAgICkKICAgICAgICBjb250YWluZXIuYWRkVmlldyhldFRpdGxlKQogICAgICAgIGNvbnRhaW5lci5hZGRWaWV3KHNwaW5uZXIpCgogICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIoY3R4KQogICAgICAgICAgICAuc2V0VGl0bGUoIlJlcXVlc3QgbWF0ZXJpYWwiKQogICAgICAgICAgICAuc2V0Vmlldyhjb250YWluZXIpCiAgICAgICAgICAgIC5zZXRQb3NpdGl2ZUJ1dHRvbigiUG9zdCByZXF1ZXN0IikgeyBfLCBfIC0+CiAgICAgICAgICAgICAgICB2YWwgdGl0bGUgPSBldFRpdGxlLnRleHQudG9TdHJpbmcoKS50cmltKCkKICAgICAgICAgICAgICAgIGlmICh0aXRsZS5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgICAgICAgICBUb2FzdC5tYWtlVGV4dChjdHgsICJEZXNjcmliZSB3aGF0IHlvdSBuZWVkLiIsIFRvYXN0LkxFTkdUSF9TSE9SVCkuc2hvdygpCiAgICAgICAgICAgICAgICAgICAgcmV0dXJuQHNldFBvc2l0aXZlQnV0dG9uCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB2YWwgc3ViamVjdCA9IHN1YmplY3RzW3NwaW5uZXIuc2VsZWN0ZWRJdGVtUG9zaXRpb25dCiAgICAgICAgICAgICAgICBsaWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICAgICAgICAgIGFwcC5yZXBvc2l0b3J5LmFkZFJlcXVlc3QoCiAgICAgICAgICAgICAgICAgICAgICAgIE1hdGVyaWFsUmVxdWVzdEVudGl0eSgKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpdGxlID0gdGl0bGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdWJqZWN0SWQgPSBzdWJqZWN0LmlkLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3ViamVjdE5hbWUgPSBzdWJqZWN0Lm5hbWUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXF1ZXN0ZXJOYW1lID0gYXBwLnByZWZzLnVzZXJOYW1lCiAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoY3R4LCAiUmVxdWVzdCBwb3N0ZWQuIiwgVG9hc3QuTEVOR1RIX1NIT1JUKS5zaG93KCkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAuc2V0TmVnYXRpdmVCdXR0b24oIkNhbmNlbCIsIG51bGwpCiAgICAgICAgICAgIC5zaG93KCkKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25EZXN0cm95VmlldygpIHsKICAgICAgICBzdXBlci5vbkRlc3Ryb3lWaWV3KCkKICAgICAgICBfYmluZGluZyA9IG51bGwKICAgIH0KfQo=
+package com.parth.index.ui.requests
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.Spinner
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.parth.index.IndexApp
+import com.parth.index.data.model.MaterialRequestEntity
+import com.parth.index.data.model.SubjectEntity
+import com.parth.index.databinding.FragmentRequestsBinding
+import com.parth.index.ui.adapters.RequestAdapter
+import com.parth.index.ui.upload.UploadActivity
+import com.parth.index.util.FileActions
+import kotlinx.coroutines.launch
+
+/** The Request board: "I need X" posts that close when someone uploads the
+ *  material against them. This is the yesterday problem, reversed — instead
+ *  of hunting WhatsApp, you ask here and the file comes to the request. */
+class RequestsFragment : Fragment() {
+
+    private var _binding: FragmentRequestsBinding? = null
+    private val binding get() = _binding!!
+    private val app get() = requireActivity().application as IndexApp
+
+    private lateinit var adapter: RequestAdapter
+    private var subjects: List<SubjectEntity> = emptyList()
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentRequestsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        adapter = RequestAdapter(
+            onFulfil = { request ->
+                startActivity(
+                    UploadActivity.intent(requireContext(), request.subjectId, request.id)
+                )
+            },
+            onOpenFile = { request ->
+                if (request.fulfilledFileId > 0) {
+                    lifecycleScope.launch {
+                        app.repository.fileById(request.fulfilledFileId)?.let { file ->
+                            FileActions.open(requireActivity(), file)
+                        }
+                    }
+                }
+            }
+        )
+        binding.rvRequests.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvRequests.adapter = adapter
+        binding.btnCreateRequest.setOnClickListener { showCreateDialog() }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch {
+                    app.repository.observeRequests().collect { requests ->
+                        adapter.submit(requests)
+                        binding.tvRequestsEmpty.visibility =
+                            if (requests.isEmpty()) View.VISIBLE else View.GONE
+                    }
+                }
+                launch {
+                    app.repository.observeSubjects().collect { subjects = it }
+                }
+            }
+        }
+    }
+
+    private fun showCreateDialog() {
+        val ctx = requireContext()
+        if (subjects.isEmpty()) {
+            Toast.makeText(ctx, "Create a subject first.", Toast.LENGTH_SHORT).show()
+            return
+        }
+        val container = LinearLayout(ctx).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(48, 24, 48, 8)
+        }
+        val etTitle = EditText(ctx).apply { hint = "What do you need? (e.g. Unit 2 handwritten notes)" }
+        val spinner = Spinner(ctx)
+        spinner.adapter = ArrayAdapter(
+            ctx, android.R.layout.simple_spinner_dropdown_item, subjects.map { it.name }
+        )
+        container.addView(etTitle)
+        container.addView(spinner)
+
+        AlertDialog.Builder(ctx)
+            .setTitle("Request material")
+            .setView(container)
+            .setPositiveButton("Post request") { _, _ ->
+                val title = etTitle.text.toString().trim()
+                if (title.isEmpty()) {
+                    Toast.makeText(ctx, "Describe what you need.", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+                val subject = subjects[spinner.selectedItemPosition]
+                lifecycleScope.launch {
+                    app.repository.addRequest(
+                        MaterialRequestEntity(
+                            title = title,
+                            subjectId = subject.id,
+                            subjectName = subject.name,
+                            requesterName = app.prefs.userName
+                        )
+                    )
+                    Toast.makeText(ctx, "Request posted.", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
