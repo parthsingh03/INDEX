@@ -1,1 +1,89 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudXRpbAoKaW1wb3J0IGFuZHJvaWQuYXBwLkFjdGl2aXR5CmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZC53aWRnZXQuVG9hc3QKaW1wb3J0IGFuZHJvaWR4LmNvcmUuY29udGVudC5Db250ZXh0Q29tcGF0CmltcG9ydCBhbmRyb2lkeC5jb3JlLmNvbnRlbnQuRmlsZVByb3ZpZGVyCmltcG9ydCBjb20ucGFydGguaW5kZXguUgppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTWF0ZXJpYWxGaWxlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXgudWkucHJldmlldy5JbWFnZVZpZXdlckFjdGl2aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXgudWkucHJldmlldy5QZGZQcmV2aWV3QWN0aXZpdHkKaW1wb3J0IGphdmEuaW8uRmlsZQoKLyoqIFdoYXQgaGFwcGVucyB3aGVuIGFueSBmaWxlIHJvdyBhbnl3aGVyZSBpbiB0aGUgYXBwIGlzIHRhcHBlZDogaW1hZ2VzIG9wZW4KICogIGluIHRoZSBidWlsdC1pbiB2aWV3ZXIsIFBERnMgaW4gdGhlIGJ1aWx0LWluIG9uZS1wYWdlLWF0LWEtdGltZSBwcmV2aWV3LAogKiAgZXZlcnl0aGluZyBlbHNlIGlzIGhhbmRlZCB0byBhbm90aGVyIGFwcCB0aHJvdWdoIEZpbGVQcm92aWRlci4gKi8Kb2JqZWN0IEZpbGVBY3Rpb25zIHsKCiAgICAvKiogU2hvcnQgYmFkZ2UgdGV4dCArIGNvbG91ciBmb3IgYSBmaWxlLCBmcm9tIGl0cyB0eXBlLiAqLwogICAgZnVuIGJhZGdlKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSk6IFBhaXI8U3RyaW5nLCBJbnQ+IHsKICAgICAgICB2YWwgbmFtZSA9IGZpbGUuZmlsZU5hbWUubG93ZXJjYXNlKCkKICAgICAgICByZXR1cm4gd2hlbiB7CiAgICAgICAgICAgIGZpbGUubWltZVR5cGUgPT0gImFwcGxpY2F0aW9uL3BkZiIgfHwgbmFtZS5lbmRzV2l0aCgiLnBkZiIpIC0+CiAgICAgICAgICAgICAgICAiUERGIiB0byAweEZGRDYzMDMxLnRvSW50KCkKICAgICAgICAgICAgZmlsZS5taW1lVHlwZS5zdGFydHNXaXRoKCJpbWFnZS8iKSB8fAogICAgICAgICAgICAgICAgbmFtZS5lbmRzV2l0aCgiLmpwZyIpIHx8IG5hbWUuZW5kc1dpdGgoIi5qcGVnIikgfHwKICAgICAgICAgICAgICAgIG5hbWUuZW5kc1dpdGgoIi5wbmciKSB8fCBuYW1lLmVuZHNXaXRoKCIud2VicCIpIC0+CiAgICAgICAgICAgICAgICAiSU1HIiB0byAweEZGMEQ5NDg4LnRvSW50KCkKICAgICAgICAgICAgbmFtZS5lbmRzV2l0aCgiLmRvYyIpIHx8IG5hbWUuZW5kc1dpdGgoIi5kb2N4IikgLT4gIkRPQyIgdG8gMHhGRjI1NjNFQi50b0ludCgpCiAgICAgICAgICAgIG5hbWUuZW5kc1dpdGgoIi5wcHQiKSB8fCBuYW1lLmVuZHNXaXRoKCIucHB0eCIpIC0+ICJQUFQiIHRvIDB4RkZFMTcwNTUudG9JbnQoKQogICAgICAgICAgICBuYW1lLmVuZHNXaXRoKCIueGxzIikgfHwgbmFtZS5lbmRzV2l0aCgiLnhsc3giKSAtPiAiWExTIiB0byAweEZGMDBCODk0LnRvSW50KCkKICAgICAgICAgICAgbmFtZS5lbmRzV2l0aCgiLnppcCIpIC0+ICJaSVAiIHRvIDB4RkY2QzVDRTcudG9JbnQoKQogICAgICAgICAgICBuYW1lLmVuZHNXaXRoKCIudHh0IikgLT4gIlRYVCIgdG8gMHhGRjYzNkU3Mi50b0ludCgpCiAgICAgICAgICAgIGVsc2UgLT4gIkZJTEUiIHRvIDB4RkY2MzZFNzIudG9JbnQoKQogICAgICAgIH0KICAgIH0KCiAgICBmdW4gc3R5bGVCYWRnZSh2aWV3OiBUZXh0VmlldywgZmlsZTogTWF0ZXJpYWxGaWxlRW50aXR5KSB7CiAgICAgICAgdmFsIChsYWJlbCwgY29sb3IpID0gYmFkZ2UoZmlsZSkKICAgICAgICB2aWV3LnRleHQgPSBsYWJlbAogICAgICAgIHZpZXcuYmFja2dyb3VuZFRpbnRMaXN0ID0gYW5kcm9pZC5jb250ZW50LnJlcy5Db2xvclN0YXRlTGlzdC52YWx1ZU9mKGNvbG9yKQogICAgfQoKICAgIGZ1biBpc0ltYWdlKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSk6IEJvb2xlYW4gPSBiYWRnZShmaWxlKS5maXJzdCA9PSAiSU1HIgogICAgZnVuIGlzUGRmKGZpbGU6IE1hdGVyaWFsRmlsZUVudGl0eSk6IEJvb2xlYW4gPSBiYWRnZShmaWxlKS5maXJzdCA9PSAiUERGIgoKICAgIGZ1biBvcGVuKGFjdGl2aXR5OiBBY3Rpdml0eSwgZmlsZTogTWF0ZXJpYWxGaWxlRW50aXR5KSB7CiAgICAgICAgaWYgKGZpbGUubG9jYWxQYXRoLmlzRW1wdHkoKSkgewogICAgICAgICAgICBUb2FzdC5tYWtlVGV4dCgKICAgICAgICAgICAgICAgIGFjdGl2aXR5LAogICAgICAgICAgICAgICAgIlRoaXMgaXMgYSBzYW1wbGUgZW50cnkuIFVwbG9hZCBhIHJlYWwgZmlsZSBhbmQgaXQgd2lsbCBvcGVuIHJpZ2h0IGhlcmUuIiwKICAgICAgICAgICAgICAgIFRvYXN0LkxFTkdUSF9MT05HCiAgICAgICAgICAgICkuc2hvdygpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICB2YWwgbG9jYWwgPSBGaWxlKGZpbGUubG9jYWxQYXRoKQogICAgICAgIGlmICghbG9jYWwuZXhpc3RzKCkpIHsKICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoYWN0aXZpdHksICJUaGUgY29weSBvbiB0aGlzIHBob25lIGlzIG1pc3NpbmcuIiwgVG9hc3QuTEVOR1RIX1NIT1JUKS5zaG93KCkKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgICAgIHdoZW4gewogICAgICAgICAgICBpc0ltYWdlKGZpbGUpIC0+IGFjdGl2aXR5LnN0YXJ0QWN0aXZpdHkoCiAgICAgICAgICAgICAgICBJbWFnZVZpZXdlckFjdGl2aXR5LmludGVudChhY3Rpdml0eSwgZmlsZS5pZCwgZmlsZS50aXRsZSkKICAgICAgICAgICAgKQogICAgICAgICAgICBpc1BkZihmaWxlKSAtPiBhY3Rpdml0eS5zdGFydEFjdGl2aXR5KAogICAgICAgICAgICAgICAgUGRmUHJldmlld0FjdGl2aXR5LmludGVudChhY3Rpdml0eSwgZmlsZS5pZCwgZmlsZS50aXRsZSwgZmlsZS5sb2NhbFBhdGgpCiAgICAgICAgICAgICkKICAgICAgICAgICAgZWxzZSAtPiB7CiAgICAgICAgICAgICAgICBydW5DYXRjaGluZyB7CiAgICAgICAgICAgICAgICAgICAgdmFsIHVyaSA9IEZpbGVQcm92aWRlci5nZXRVcmlGb3JGaWxlKAogICAgICAgICAgICAgICAgICAgICAgICBhY3Rpdml0eSwgYWN0aXZpdHkucGFja2FnZU5hbWUgKyAiLmZpbGVwcm92aWRlciIsIGxvY2FsCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIHZhbCBpbnRlbnQgPSBJbnRlbnQoSW50ZW50LkFDVElPTl9WSUVXKS5hcHBseSB7CiAgICAgICAgICAgICAgICAgICAgICAgIHNldERhdGFBbmRUeXBlKHVyaSwgZmlsZS5taW1lVHlwZS5pZkVtcHR5IHsgIiovKiIgfSkKICAgICAgICAgICAgICAgICAgICAgICAgYWRkRmxhZ3MoSW50ZW50LkZMQUdfR1JBTlRfUkVBRF9VUklfUEVSTUlTU0lPTikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgYWN0aXZpdHkuc3RhcnRBY3Rpdml0eShJbnRlbnQuY3JlYXRlQ2hvb3NlcihpbnRlbnQsICJPcGVuIHdpdGgiKSkKICAgICAgICAgICAgICAgIH0ub25GYWlsdXJlIHsKICAgICAgICAgICAgICAgICAgICBUb2FzdC5tYWtlVGV4dChhY3Rpdml0eSwgIk5vIGFwcCBvbiB0aGlzIHBob25lIGNhbiBvcGVuIHRoYXQgZmlsZSB0eXBlLiIsIFRvYXN0LkxFTkdUSF9MT05HKS5zaG93KCkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICAvKiogQ29sb3VyIGZvciB0ZXh0IGRyYXduIG9uIHRoZSBhcHAgc3VyZmFjZSAodXNlZCBieSBhIGNvdXBsZSBvZiByb3dzKS4gKi8KICAgIGZ1biBzdXJmYWNlQ29sb3IoYWN0aXZpdHk6IEFjdGl2aXR5KTogSW50ID0KICAgICAgICBDb250ZXh0Q29tcGF0LmdldENvbG9yKGFjdGl2aXR5LCBSLmNvbG9yLm9uX3N1cmZhY2UpCn0K
+package com.parth.index.util
+
+import android.app.Activity
+import android.content.Intent
+import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
+import com.parth.index.R
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.ui.preview.ImageViewerActivity
+import com.parth.index.ui.preview.PdfPreviewActivity
+import java.io.File
+
+/** What happens when any file row anywhere in the app is tapped: images open
+ *  in the built-in viewer, PDFs in the built-in one-page-at-a-time preview,
+ *  everything else is handed to another app through FileProvider. */
+object FileActions {
+
+    /** Short badge text + colour for a file, from its type. */
+    fun badge(file: MaterialFileEntity): Pair<String, Int> {
+        val name = file.fileName.lowercase()
+        return when {
+            file.mimeType == "application/pdf" || name.endsWith(".pdf") ->
+                "PDF" to 0xFFD63031.toInt()
+            file.mimeType.startsWith("image/") ||
+                name.endsWith(".jpg") || name.endsWith(".jpeg") ||
+                name.endsWith(".png") || name.endsWith(".webp") ->
+                "IMG" to 0xFF0D9488.toInt()
+            name.endsWith(".doc") || name.endsWith(".docx") -> "DOC" to 0xFF2563EB.toInt()
+            name.endsWith(".ppt") || name.endsWith(".pptx") -> "PPT" to 0xFFE17055.toInt()
+            name.endsWith(".xls") || name.endsWith(".xlsx") -> "XLS" to 0xFF00B894.toInt()
+            name.endsWith(".zip") -> "ZIP" to 0xFF6C5CE7.toInt()
+            name.endsWith(".txt") -> "TXT" to 0xFF636E72.toInt()
+            else -> "FILE" to 0xFF636E72.toInt()
+        }
+    }
+
+    fun styleBadge(view: TextView, file: MaterialFileEntity) {
+        val (label, color) = badge(file)
+        view.text = label
+        view.backgroundTintList = android.content.res.ColorStateList.valueOf(color)
+    }
+
+    fun isImage(file: MaterialFileEntity): Boolean = badge(file).first == "IMG"
+    fun isPdf(file: MaterialFileEntity): Boolean = badge(file).first == "PDF"
+
+    fun open(activity: Activity, file: MaterialFileEntity) {
+        if (file.localPath.isEmpty()) {
+            Toast.makeText(
+                activity,
+                "This is a sample entry. Upload a real file and it will open right here.",
+                Toast.LENGTH_LONG
+            ).show()
+            return
+        }
+        val local = File(file.localPath)
+        if (!local.exists()) {
+            Toast.makeText(activity, "The copy on this phone is missing.", Toast.LENGTH_SHORT).show()
+            return
+        }
+        when {
+            isImage(file) -> activity.startActivity(
+                ImageViewerActivity.intent(activity, file.id, file.title)
+            )
+            isPdf(file) -> activity.startActivity(
+                PdfPreviewActivity.intent(activity, file.id, file.title, file.localPath)
+            )
+            else -> {
+                runCatching {
+                    val uri = FileProvider.getUriForFile(
+                        activity, activity.packageName + ".fileprovider", local
+                    )
+                    val intent = Intent(Intent.ACTION_VIEW).apply {
+                        setDataAndType(uri, file.mimeType.ifEmpty { "*/*" })
+                        addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    }
+                    activity.startActivity(Intent.createChooser(intent, "Open with"))
+                }.onFailure {
+                    Toast.makeText(activity, "No app on this phone can open that file type.", Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+    }
+
+    /** Colour for text drawn on the app surface (used by a couple of rows). */
+    fun surfaceColor(activity: Activity): Int =
+        ContextCompat.getColor(activity, R.color.on_surface)
+}
