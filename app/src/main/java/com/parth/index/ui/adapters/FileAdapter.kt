@@ -1,1 +1,61 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMKCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTWF0ZXJpYWxGaWxlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YWJpbmRpbmcuSXRlbUZpbGVCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudXRpbC5GaWxlQWN0aW9ucwppbXBvcnQgY29tLnBhcnRoLmluZGV4LnV0aWwuRm9ybWF0CgovKiogT25lIG1hdGVyaWFsIGZpbGUgcm93IOKAlCB1c2VkIGJ5IEhvbWUgKHJlY2VudCksIHN1YmplY3QgZGV0YWlsIGFuZCBzZWFyY2gKICogIHJlc3VsdHMgc28gYSBmaWxlIGxvb2tzIHRoZSBzYW1lIGV2ZXJ5d2hlcmUuIFRoZSB1cGxvYWRlcidzIG5vdGUgc2hvd3MKICogIHVuZGVyIHRoZSB0aXRsZTsgdGhlcmUgaXMgaW50ZW50aW9uYWxseSBubyBjb21tZW50IGFmZm9yZGFuY2UuICovCmNsYXNzIEZpbGVBZGFwdGVyKAogICAgcHJpdmF0ZSB2YWwgc3ViamVjdE5hbWVzOiAoKSAtPiBNYXA8TG9uZywgU3RyaW5nPiwKICAgIHByaXZhdGUgdmFsIG9uQ2xpY2s6IChNYXRlcmlhbEZpbGVFbnRpdHkpIC0+IFVuaXQsCiAgICBwcml2YXRlIHZhbCBvbkxvbmdDbGljazogKE1hdGVyaWFsRmlsZUVudGl0eSkgLT4gVW5pdCA9IHt9CikgOiBSZWN5Y2xlclZpZXcuQWRhcHRlcjxGaWxlQWRhcHRlci5Ib2xkZXI+KCkgewoKICAgIHByaXZhdGUgdmFyIGl0ZW1zOiBMaXN0PE1hdGVyaWFsRmlsZUVudGl0eT4gPSBlbXB0eUxpc3QoKQoKICAgIGZ1biBzdWJtaXQobGlzdDogTGlzdDxNYXRlcmlhbEZpbGVFbnRpdHk+KSB7CiAgICAgICAgaXRlbXMgPSBsaXN0CiAgICAgICAgbm90aWZ5RGF0YVNldENoYW5nZWQoKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZVZpZXdIb2xkZXIocGFyZW50OiBWaWV3R3JvdXAsIHZpZXdUeXBlOiBJbnQpOiBIb2xkZXIgewogICAgICAgIHZhbCBiaW5kaW5nID0gSXRlbUZpbGVCaW5kaW5nLmluZmxhdGUoTGF5b3V0SW5mbGF0ZXIuZnJvbShwYXJlbnQuY29udGV4dCksIHBhcmVudCwgZmFsc2UpCiAgICAgICAgcmV0dXJuIEhvbGRlcihiaW5kaW5nKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBnZXRJdGVtQ291bnQoKTogSW50ID0gaXRlbXMuc2l6ZQoKICAgIG92ZXJyaWRlIGZ1biBvbkJpbmRWaWV3SG9sZGVyKGhvbGRlcjogSG9sZGVyLCBwb3NpdGlvbjogSW50KSB7CiAgICAgICAgdmFsIGZpbGUgPSBpdGVtc1twb3NpdGlvbl0KICAgICAgICB3aXRoKGhvbGRlci5iaW5kaW5nKSB7CiAgICAgICAgICAgIEZpbGVBY3Rpb25zLnN0eWxlQmFkZ2UodHZGaWxlQmFkZ2UsIGZpbGUpCiAgICAgICAgICAgIHR2RmlsZVRpdGxlLnRleHQgPSBmaWxlLnRpdGxlCiAgICAgICAgICAgIHR2RmlsZVBpbm5lZC52aXNpYmlsaXR5ID0gaWYgKGZpbGUucGlubmVkKSBWaWV3LlZJU0lCTEUgZWxzZSBWaWV3LkdPTkUKICAgICAgICAgICAgdmFsIHN1YmplY3QgPSBzdWJqZWN0TmFtZXMoKVtmaWxlLnN1YmplY3RJZF0KICAgICAgICAgICAgdmFsIHBhcnRzID0gbGlzdE9mTm90TnVsbCgKICAgICAgICAgICAgICAgIHN1YmplY3QsCiAgICAgICAgICAgICAgICBmaWxlLnVwbG9hZGVyTmFtZSwKICAgICAgICAgICAgICAgIEZvcm1hdC5yZWxhdGl2ZShmaWxlLmNyZWF0ZWRBdCksCiAgICAgICAgICAgICAgICBpZiAoZmlsZS5zaXplQnl0ZXMgPiAwKSBGb3JtYXQuc2l6ZShmaWxlLnNpemVCeXRlcykgZWxzZSBudWxsCiAgICAgICAgICAgICkKICAgICAgICAgICAgdHZGaWxlTWV0YS50ZXh0ID0gcGFydHMuam9pblRvU3RyaW5nKCIgwrcgIikKICAgICAgICAgICAgaWYgKGZpbGUubm90ZS5pc05vdEJsYW5rKCkpIHsKICAgICAgICAgICAgICAgIHR2RmlsZU5vdGUudmlzaWJpbGl0eSA9IFZpZXcuVklTSUJMRQogICAgICAgICAgICAgICAgdHZGaWxlTm90ZS50ZXh0ID0gIuKAnCR7ZmlsZS5ub3RlfeKAnSDigJQgJHtmaWxlLnVwbG9hZGVyTmFtZX0iCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICB0dkZpbGVOb3RlLnZpc2liaWxpdHkgPSBWaWV3LkdPTkUKICAgICAgICAgICAgfQogICAgICAgICAgICByb290LnNldE9uQ2xpY2tMaXN0ZW5lciB7IG9uQ2xpY2soZmlsZSkgfQogICAgICAgICAgICByb290LnNldE9uTG9uZ0NsaWNrTGlzdGVuZXIgeyBvbkxvbmdDbGljayhmaWxlKTsgdHJ1ZSB9CiAgICAgICAgfQogICAgfQoKICAgIGNsYXNzIEhvbGRlcih2YWwgYmluZGluZzogSXRlbUZpbGVCaW5kaW5nKSA6IFJlY3ljbGVyVmlldy5WaWV3SG9sZGVyKGJpbmRpbmcucm9vdCkKfQo=
+package com.parth.index.ui.adapters
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.databinding.ItemFileBinding
+import com.parth.index.util.FileActions
+import com.parth.index.util.Format
+
+/** One material file row — used by Home (recent), subject detail and search
+ *  results so a file looks the same everywhere. The uploader's note shows
+ *  under the title; there is intentionally no comment affordance. */
+class FileAdapter(
+    private val subjectNames: () -> Map<Long, String>,
+    private val onClick: (MaterialFileEntity) -> Unit,
+    private val onLongClick: (MaterialFileEntity) -> Unit = {}
+) : RecyclerView.Adapter<FileAdapter.Holder>() {
+
+    private var items: List<MaterialFileEntity> = emptyList()
+
+    fun submit(list: List<MaterialFileEntity>) {
+        items = list
+        notifyDataSetChanged()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val binding = ItemFileBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return Holder(binding)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val file = items[position]
+        with(holder.binding) {
+            FileActions.styleBadge(tvFileBadge, file)
+            tvFileTitle.text = file.title
+            tvFilePinned.visibility = if (file.pinned) View.VISIBLE else View.GONE
+            val subject = subjectNames()[file.subjectId]
+            val parts = listOfNotNull(
+                subject,
+                file.uploaderName,
+                Format.relative(file.createdAt),
+                if (file.sizeBytes > 0) Format.size(file.sizeBytes) else null
+            )
+            tvFileMeta.text = parts.joinToString(" · ")
+            if (file.note.isNotBlank()) {
+                tvFileNote.visibility = View.VISIBLE
+                tvFileNote.text = "“${file.note}” — ${file.uploaderName}"
+            } else {
+                tvFileNote.visibility = View.GONE
+            }
+            root.setOnClickListener { onClick(file) }
+            root.setOnLongClickListener { onLongClick(file); true }
+        }
+    }
+
+    class Holder(val binding: ItemFileBinding) : RecyclerView.ViewHolder(binding.root)
+}
