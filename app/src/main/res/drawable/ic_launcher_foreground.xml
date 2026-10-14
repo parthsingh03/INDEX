@@ -1,1 +1,18 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHZlY3RvciB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOndpZHRoPSIxMDhkcCIKICAgIGFuZHJvaWQ6aGVpZ2h0PSIxMDhkcCIKICAgIGFuZHJvaWQ6dmlld3BvcnRXaWR0aD0iMTA4IgogICAgYW5kcm9pZDp2aWV3cG9ydEhlaWdodD0iMTA4Ij4KICAgIDwhLS0gQSBwYWdlIHdpdGggaW5kZXggbGluZXMgYW5kIGEgdGFiOiB0aGUgIkluIiBvZiBJTkRFWCwgZHJhd24gYXMgcGFwZXIuCiAgICAgICAgIEtlcHQgaW5zaWRlIHRoZSBhZGFwdGl2ZS1pY29uIHNhZmUgem9uZSAoY2VudHJlIDY2ZHAgY2lyY2xlKS4gLS0+CiAgICA8cGF0aAogICAgICAgIGFuZHJvaWQ6ZmlsbENvbG9yPSIjRkZGRkZGIgogICAgICAgIGFuZHJvaWQ6cGF0aERhdGE9Ik0zNiwyNCBoMzYgdjYwIGgtMzYgeiIgLz4KICAgIDxwYXRoCiAgICAgICAgYW5kcm9pZDpmaWxsQ29sb3I9IiMyNTYzRUIiCiAgICAgICAgYW5kcm9pZDpwYXRoRGF0YT0iTTM2LDI0IGgxMCB2MTYgbC01LC00IGwtNSw0IHoiIC8+CiAgICA8cGF0aAogICAgICAgIGFuZHJvaWQ6ZmlsbENvbG9yPSIjMjU2M0VCIgogICAgICAgIGFuZHJvaWQ6cGF0aERhdGE9Ik01MCw0MCBoMTYgdjQgaC0xNiB6IE01MCw1MiBoMTYgdjQgaC0xNiB6IE01MCw2NCBoMTEgdjQgaC0xMSB6IiAvPgo8L3ZlY3Rvcj4K
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- A page with index lines and a tab: the "In" of INDEX, drawn as paper.
+         Kept inside the adaptive-icon safe zone (centre 66dp circle). -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,24 h36 v60 h-36 z" />
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M36,24 h10 v16 l-5,-4 l-5,4 z" />
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M50,40 h16 v4 h-16 z M50,52 h16 v4 h-16 z M50,64 h11 v4 h-11 z" />
+</vector>
