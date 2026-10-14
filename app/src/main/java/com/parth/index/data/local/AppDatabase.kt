@@ -1,1 +1,50 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXguZGF0YS5sb2NhbAoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkeC5yb29tLkRhdGFiYXNlCmltcG9ydCBhbmRyb2lkeC5yb29tLlJvb20KaW1wb3J0IGFuZHJvaWR4LnJvb20uUm9vbURhdGFiYXNlCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5DaGF0TWVzc2FnZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuRGVhZGxpbmVFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsRmlsZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTWF0ZXJpYWxSZXF1ZXN0RW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5Ob3RpY2VFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLlN1YmplY3RFbnRpdHkKCi8qKiBUaGUgb24tcGhvbmUgZGF0YWJhc2UgKFJvb20gaXMganVzdCBhIHRpZHkgbGF5ZXIgb3ZlciBTUUxpdGUsIHRoZQogKiAgZGF0YWJhc2UgYnVpbHQgaW50byBldmVyeSBBbmRyb2lkIHBob25lKS4gSW4gbG9jYWwgbW9kZSB0aGlzIElTIHRoZQogKiAgYmFja2VuZC4gV2hlbiBGaXJlYmFzZSBpcyB3aXJlZCBpbiwgdGhlIHJlcG9zaXRvcnkgc3dhcHMgd2hlcmUgcmVhZHMgYW5kCiAqICB3cml0ZXMgZ28g4oCUIHRoaXMgZGF0YWJhc2Ugc3RheXMgYXMgdGhlIG9mZmxpbmUgY2FjaGUuICovCkBEYXRhYmFzZSgKICAgIGVudGl0aWVzID0gWwogICAgICAgIFN1YmplY3RFbnRpdHk6OmNsYXNzLAogICAgICAgIE1hdGVyaWFsRmlsZUVudGl0eTo6Y2xhc3MsCiAgICAgICAgRGVhZGxpbmVFbnRpdHk6OmNsYXNzLAogICAgICAgIENoYXRNZXNzYWdlRW50aXR5OjpjbGFzcywKICAgICAgICBOb3RpY2VFbnRpdHk6OmNsYXNzLAogICAgICAgIE1hdGVyaWFsUmVxdWVzdEVudGl0eTo6Y2xhc3MKICAgIF0sCiAgICB2ZXJzaW9uID0gMSwKICAgIGV4cG9ydFNjaGVtYSA9IGZhbHNlCikKYWJzdHJhY3QgY2xhc3MgQXBwRGF0YWJhc2UgOiBSb29tRGF0YWJhc2UoKSB7CiAgICBhYnN0cmFjdCBmdW4gc3ViamVjdERhbygpOiBTdWJqZWN0RGFvCiAgICBhYnN0cmFjdCBmdW4gZmlsZURhbygpOiBGaWxlRGFvCiAgICBhYnN0cmFjdCBmdW4gZGVhZGxpbmVEYW8oKTogRGVhZGxpbmVEYW8KICAgIGFic3RyYWN0IGZ1biBjaGF0RGFvKCk6IENoYXREYW8KICAgIGFic3RyYWN0IGZ1biBub3RpY2VEYW8oKTogTm90aWNlRGFvCiAgICBhYnN0cmFjdCBmdW4gcmVxdWVzdERhbygpOiBSZXF1ZXN0RGFvCgogICAgY29tcGFuaW9uIG9iamVjdCB7CiAgICAgICAgQFZvbGF0aWxlIHByaXZhdGUgdmFyIGluc3RhbmNlOiBBcHBEYXRhYmFzZT8gPSBudWxsCgogICAgICAgIGZ1biBnZXQoY29udGV4dDogQ29udGV4dCk6IEFwcERhdGFiYXNlID0KICAgICAgICAgICAgaW5zdGFuY2UgPzogc3luY2hyb25pemVkKHRoaXMpIHsKICAgICAgICAgICAgICAgIGluc3RhbmNlID86IFJvb20uZGF0YWJhc2VCdWlsZGVyKAogICAgICAgICAgICAgICAgICAgIGNvbnRleHQuYXBwbGljYXRpb25Db250ZXh0LAogICAgICAgICAgICAgICAgICAgIEFwcERhdGFiYXNlOjpjbGFzcy5qYXZhLAogICAgICAgICAgICAgICAgICAgICJpbmRleC5kYiIKICAgICAgICAgICAgICAgICkuYnVpbGQoKS5hbHNvIHsgaW5zdGFuY2UgPSBpdCB9CiAgICAgICAgICAgIH0KICAgIH0KfQo=
+package com.parth.index.data.local
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.parth.index.data.model.ChatMessageEntity
+import com.parth.index.data.model.DeadlineEntity
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.data.model.MaterialRequestEntity
+import com.parth.index.data.model.NoticeEntity
+import com.parth.index.data.model.SubjectEntity
+
+/** The on-phone database (Room is just a tidy layer over SQLite, the
+ *  database built into every Android phone). In local mode this IS the
+ *  backend. When Firebase is wired in, the repository swaps where reads and
+ *  writes go — this database stays as the offline cache. */
+@Database(
+    entities = [
+        SubjectEntity::class,
+        MaterialFileEntity::class,
+        DeadlineEntity::class,
+        ChatMessageEntity::class,
+        NoticeEntity::class,
+        MaterialRequestEntity::class
+    ],
+    version = 1,
+    exportSchema = false
+)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun subjectDao(): SubjectDao
+    abstract fun fileDao(): FileDao
+    abstract fun deadlineDao(): DeadlineDao
+    abstract fun chatDao(): ChatDao
+    abstract fun noticeDao(): NoticeDao
+    abstract fun requestDao(): RequestDao
+
+    companion object {
+        @Volatile private var instance: AppDatabase? = null
+
+        fun get(context: Context): AppDatabase =
+            instance ?: synchronized(this) {
+                instance ?: Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "index.db"
+                ).build().also { instance = it }
+            }
+    }
+}
