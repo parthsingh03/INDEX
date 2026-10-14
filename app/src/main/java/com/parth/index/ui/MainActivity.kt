@@ -1,1 +1,124 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkKCmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZC52aWV3LlZpZXcKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LlRleHRWaWV3CmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5jb3JlLmNvbnRlbnQuQ29udGV4dENvbXBhdAppbXBvcnQgYW5kcm9pZHguZnJhZ21lbnQuYXBwLkZyYWdtZW50CmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5SCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YWJpbmRpbmcuQWN0aXZpdHlNYWluQmluZGluZwppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLmNoYXQuQ2hhdEZyYWdtZW50CmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuaG9tZS5Ib21lRnJhZ21lbnQKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS5wZGYuUGRmTWFrZXJGcmFnbWVudAppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLnJlcXVlc3RzLlJlcXVlc3RzRnJhZ21lbnQKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS5zZXR1cC5TZXR1cEFjdGl2aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuc3ViamVjdHMuU3ViamVjdHNGcmFnbWVudAppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLnVwbG9hZC5VcGxvYWRBY3Rpdml0eQoKLyoqIFRoZSBzaGVsbDogZml2ZSB0YWJzIChIb21lLCBGb2xkZXJzLCBNYWtlIFBERiwgQ2hhdCwgUmVxdWVzdHMpIG92ZXIgb25lCiAqICBmcmFnbWVudCBjb250YWluZXIsIHdpdGggdGhlIENsZWFuIENhbXB1cyBib3R0b20gYmFyLiBBbHNvIHRoZSBmaXJzdAogKiAgc3RvcCBmb3Igc2hhcmUtc2hlZXQgaW50ZW50cyBhbmQgdGhlIGdhdGUgZm9yIGZpcnN0LXJ1biBzZXR1cC4gKi8KY2xhc3MgTWFpbkFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgcHJpdmF0ZSBsYXRlaW5pdCB2YXIgYmluZGluZzogQWN0aXZpdHlNYWluQmluZGluZwogICAgcHJpdmF0ZSB2YWwgZnJhZ21lbnRzID0gbXV0YWJsZU1hcE9mPEludCwgRnJhZ21lbnQ+KCkKICAgIHByaXZhdGUgdmFyIGN1cnJlbnRUYWIgPSBUQUJfSE9NRQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8pIHsKICAgICAgICBzdXBlci5vbkNyZWF0ZShzYXZlZEluc3RhbmNlU3RhdGUpCiAgICAgICAgdmFsIGFwcCA9IGFwcGxpY2F0aW9uIGFzIEluZGV4QXBwCgogICAgICAgIC8vIEZpcnN0IHJ1biBldmVyOiB0aGUgb3duZXIgc2V0cyB0aGUgY2xhc3MgdXAgYmVmb3JlIGFueXRoaW5nIGVsc2UuCiAgICAgICAgaWYgKCFhcHAucHJlZnMuc2V0dXBEb25lKSB7CiAgICAgICAgICAgIHN0YXJ0QWN0aXZpdHkoSW50ZW50KHRoaXMsIFNldHVwQWN0aXZpdHk6OmNsYXNzLmphdmEpKQogICAgICAgICAgICBmaW5pc2goKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CgogICAgICAgIGJpbmRpbmcgPSBBY3Rpdml0eU1haW5CaW5kaW5nLmluZmxhdGUobGF5b3V0SW5mbGF0ZXIpCiAgICAgICAgc2V0Q29udGVudFZpZXcoYmluZGluZy5yb290KQoKICAgICAgICAvLyBBIGZpbGUgc2hhcmVkIGZyb20gV2hhdHNBcHAgLyBGaWxlcyAvIEdhbGxlcnkgY2FuIGxhbmQgaGVyZSB0b28g4oCUCiAgICAgICAgLy8gaGFuZCBpdCBzdHJhaWdodCB0byB0aGUgdXBsb2FkIHNjcmVlbiwgd2hpY2ggZG9lcyB0aGUgcmVhbCB3b3JrLgogICAgICAgIGlmIChpbnRlbnQ/LmFjdGlvbiA9PSBJbnRlbnQuQUNUSU9OX1NFTkQgfHwgaW50ZW50Py5hY3Rpb24gPT0gSW50ZW50LkFDVElPTl9TRU5EX01VTFRJUExFKSB7CiAgICAgICAgICAgIHN0YXJ0QWN0aXZpdHkoCiAgICAgICAgICAgICAgICBJbnRlbnQodGhpcywgVXBsb2FkQWN0aXZpdHk6OmNsYXNzLmphdmEpLmFwcGx5IHsKICAgICAgICAgICAgICAgICAgICBhY3Rpb24gPSBpbnRlbnQuYWN0aW9uCiAgICAgICAgICAgICAgICAgICAgdHlwZSA9IGludGVudC50eXBlCiAgICAgICAgICAgICAgICAgICAgcHV0RXh0cmFzKGludGVudCkKICAgICAgICAgICAgICAgICAgICBhZGRGbGFncyhJbnRlbnQuRkxBR19HUkFOVF9SRUFEX1VSSV9QRVJNSVNTSU9OKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICApCiAgICAgICAgfQoKICAgICAgICBiaW5kaW5nLm5hdkhvbWUuc2V0T25DbGlja0xpc3RlbmVyIHsgc2VsZWN0VGFiKFRBQl9IT01FKSB9CiAgICAgICAgYmluZGluZy5uYXZGb2xkZXJzLnNldE9uQ2xpY2tMaXN0ZW5lciB7IHNlbGVjdFRhYihUQUJfRk9MREVSUykgfQogICAgICAgIGJpbmRpbmcubmF2UGRmLnNldE9uQ2xpY2tMaXN0ZW5lciB7IHNlbGVjdFRhYihUQUJfUERGKSB9CiAgICAgICAgYmluZGluZy5uYXZDaGF0LnNldE9uQ2xpY2tMaXN0ZW5lciB7IHNlbGVjdFRhYihUQUJfQ0hBVCkgfQogICAgICAgIGJpbmRpbmcubmF2UmVxdWVzdHMuc2V0T25DbGlja0xpc3RlbmVyIHsgc2VsZWN0VGFiKFRBQl9SRVFVRVNUUykgfQoKICAgICAgICAvLyBBZnRlciBhIHJlY3JlYXRpb24gKGUuZy4gdGhlIGRhcmstbW9kZSB0b2dnbGUgcmVzdGFydHMgdGhpcwogICAgICAgIC8vIGFjdGl2aXR5IHNvIHRoZSBuZXcgcGFsZXR0ZSBjYW4gYXBwbHkpLCB0aGUgRnJhZ21lbnRNYW5hZ2VyIGhhcwogICAgICAgIC8vIGFscmVhZHkgcmVzdG9yZWQgdGhlIHRhYiBmcmFnbWVudHMg4oCUIGFkb3B0IHRoZW0gYmFjayBpbnRvIHRoZSBtYXAKICAgICAgICAvLyBpbnN0ZWFkIG9mIGFkZGluZyBkdXBsaWNhdGVzLCBhbmQgcmVzdG9yZSB0aGUgb3BlbiB0YWIuCiAgICAgICAgZm9yICh0YWIgaW4gVEFCX0hPTUUuLlRBQl9SRVFVRVNUUykgewogICAgICAgICAgICBzdXBwb3J0RnJhZ21lbnRNYW5hZ2VyLmZpbmRGcmFnbWVudEJ5VGFnKCJ0YWIkdGFiIik/LmxldCB7IGZyYWdtZW50c1t0YWJdID0gaXQgfQogICAgICAgIH0KICAgICAgICBzZWxlY3RUYWIoc2F2ZWRJbnN0YW5jZVN0YXRlPy5nZXRJbnQoU1RBVEVfVEFCLCBUQUJfSE9NRSkgPzogVEFCX0hPTUUpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uU2F2ZUluc3RhbmNlU3RhdGUob3V0U3RhdGU6IEJ1bmRsZSkgewogICAgICAgIHN1cGVyLm9uU2F2ZUluc3RhbmNlU3RhdGUob3V0U3RhdGUpCiAgICAgICAgb3V0U3RhdGUucHV0SW50KFNUQVRFX1RBQiwgY3VycmVudFRhYikKICAgIH0KCiAgICBmdW4gb3BlbkNoYXQoKSA9IHNlbGVjdFRhYihUQUJfQ0hBVCkKICAgIGZ1biBvcGVuUmVxdWVzdHMoKSA9IHNlbGVjdFRhYihUQUJfUkVRVUVTVFMpCgogICAgcHJpdmF0ZSBmdW4gZnJhZ21lbnRGb3IodGFiOiBJbnQpOiBGcmFnbWVudCA9IGZyYWdtZW50cy5nZXRPclB1dCh0YWIpIHsKICAgICAgICB3aGVuICh0YWIpIHsKICAgICAgICAgICAgVEFCX0hPTUUgLT4gSG9tZUZyYWdtZW50KCkKICAgICAgICAgICAgVEFCX0ZPTERFUlMgLT4gU3ViamVjdHNGcmFnbWVudCgpCiAgICAgICAgICAgIFRBQl9QREYgLT4gUGRmTWFrZXJGcmFnbWVudCgpCiAgICAgICAgICAgIFRBQl9DSEFUIC0+IENoYXRGcmFnbWVudCgpCiAgICAgICAgICAgIGVsc2UgLT4gUmVxdWVzdHNGcmFnbWVudCgpCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIHNlbGVjdFRhYih0YWI6IEludCkgewogICAgICAgIGN1cnJlbnRUYWIgPSB0YWIKICAgICAgICB2YWwgdGFyZ2V0ID0gZnJhZ21lbnRGb3IodGFiKQogICAgICAgIHZhbCB0eCA9IHN1cHBvcnRGcmFnbWVudE1hbmFnZXIuYmVnaW5UcmFuc2FjdGlvbigpCiAgICAgICAgZm9yICgoa2V5LCBmcmFnbWVudCkgaW4gZnJhZ21lbnRzKSB7CiAgICAgICAgICAgIGlmIChrZXkgIT0gdGFiKSB0eC5oaWRlKGZyYWdtZW50KQogICAgICAgIH0KICAgICAgICBpZiAodGFyZ2V0LmlzQWRkZWQpIHR4LnNob3codGFyZ2V0KSBlbHNlIHR4LmFkZChSLmlkLmZyYWdtZW50Q29udGFpbmVyLCB0YXJnZXQsICJ0YWIkdGFiIikKICAgICAgICB0eC5jb21taXQoKQogICAgICAgIHN0eWxlTmF2KCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBzdHlsZU5hdigpIHsKICAgICAgICB2YWwgcHJpbWFyeSA9IENvbnRleHRDb21wYXQuZ2V0Q29sb3IodGhpcywgUi5jb2xvci5wcmltYXJ5KQogICAgICAgIHZhbCBtdXRlZCA9IENvbnRleHRDb21wYXQuZ2V0Q29sb3IodGhpcywgUi5jb2xvci5tdXRlZCkKICAgICAgICBmdW4gc3R5bGUobGFiZWw6IFRleHRWaWV3LCBkb3Q6IFZpZXcsIHNlbGVjdGVkOiBCb29sZWFuKSB7CiAgICAgICAgICAgIGxhYmVsLnNldFRleHRDb2xvcihpZiAoc2VsZWN0ZWQpIHByaW1hcnkgZWxzZSBtdXRlZCkKICAgICAgICAgICAgZG90LnZpc2liaWxpdHkgPSBpZiAoc2VsZWN0ZWQpIFZpZXcuVklTSUJMRSBlbHNlIFZpZXcuSU5WSVNJQkxFCiAgICAgICAgfQogICAgICAgIHN0eWxlKGJpbmRpbmcubGFiZWxIb21lLCBiaW5kaW5nLmRvdEhvbWUsIGN1cnJlbnRUYWIgPT0gVEFCX0hPTUUpCiAgICAgICAgc3R5bGUoYmluZGluZy5sYWJlbEZvbGRlcnMsIGJpbmRpbmcuZG90Rm9sZGVycywgY3VycmVudFRhYiA9PSBUQUJfRk9MREVSUykKICAgICAgICBzdHlsZShiaW5kaW5nLmxhYmVsQ2hhdCwgYmluZGluZy5kb3RDaGF0LCBjdXJyZW50VGFiID09IFRBQl9DSEFUKQogICAgICAgIHN0eWxlKGJpbmRpbmcubGFiZWxSZXF1ZXN0cywgYmluZGluZy5kb3RSZXF1ZXN0cywgY3VycmVudFRhYiA9PSBUQUJfUkVRVUVTVFMpCiAgICB9CgogICAgY29tcGFuaW9uIG9iamVjdCB7CiAgICAgICAgcHJpdmF0ZSBjb25zdCB2YWwgU1RBVEVfVEFCID0gInN0YXRlX3RhYiIKICAgICAgICBjb25zdCB2YWwgVEFCX0hPTUUgPSAwCiAgICAgICAgY29uc3QgdmFsIFRBQl9GT0xERVJTID0gMQogICAgICAgIGNvbnN0IHZhbCBUQUJfUERGID0gMgogICAgICAgIGNvbnN0IHZhbCBUQUJfQ0hBVCA9IDMKICAgICAgICBjb25zdCB2YWwgVEFCX1JFUVVFU1RTID0gNAogICAgfQp9Cg==
+package com.parth.index.ui
+
+import android.content.Intent
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import com.parth.index.IndexApp
+import com.parth.index.R
+import com.parth.index.databinding.ActivityMainBinding
+import com.parth.index.ui.chat.ChatFragment
+import com.parth.index.ui.home.HomeFragment
+import com.parth.index.ui.pdf.PdfMakerFragment
+import com.parth.index.ui.requests.RequestsFragment
+import com.parth.index.ui.setup.SetupActivity
+import com.parth.index.ui.subjects.SubjectsFragment
+import com.parth.index.ui.upload.UploadActivity
+
+/** The shell: five tabs (Home, Folders, Make PDF, Chat, Requests) over one
+ *  fragment container, with the Clean Campus bottom bar. Also the first
+ *  stop for share-sheet intents and the gate for first-run setup. */
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    private val fragments = mutableMapOf<Int, Fragment>()
+    private var currentTab = TAB_HOME
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val app = application as IndexApp
+
+        // First run ever: the owner sets the class up before anything else.
+        if (!app.prefs.setupDone) {
+            startActivity(Intent(this, SetupActivity::class.java))
+            finish()
+            return
+        }
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // A file shared from WhatsApp / Files / Gallery can land here too —
+        // hand it straight to the upload screen, which does the real work.
+        if (intent?.action == Intent.ACTION_SEND || intent?.action == Intent.ACTION_SEND_MULTIPLE) {
+            startActivity(
+                Intent(this, UploadActivity::class.java).apply {
+                    action = intent.action
+                    type = intent.type
+                    putExtras(intent)
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+            )
+        }
+
+        binding.navHome.setOnClickListener { selectTab(TAB_HOME) }
+        binding.navFolders.setOnClickListener { selectTab(TAB_FOLDERS) }
+        binding.navPdf.setOnClickListener { selectTab(TAB_PDF) }
+        binding.navChat.setOnClickListener { selectTab(TAB_CHAT) }
+        binding.navRequests.setOnClickListener { selectTab(TAB_REQUESTS) }
+
+        // After a recreation (e.g. the dark-mode toggle restarts this
+        // activity so the new palette can apply), the FragmentManager has
+        // already restored the tab fragments — adopt them back into the map
+        // instead of adding duplicates, and restore the open tab.
+        for (tab in TAB_HOME..TAB_REQUESTS) {
+            supportFragmentManager.findFragmentByTag("tab$tab")?.let { fragments[tab] = it }
+        }
+        selectTab(savedInstanceState?.getInt(STATE_TAB, TAB_HOME) ?: TAB_HOME)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(STATE_TAB, currentTab)
+    }
+
+    fun openChat() = selectTab(TAB_CHAT)
+    fun openRequests() = selectTab(TAB_REQUESTS)
+
+    private fun fragmentFor(tab: Int): Fragment = fragments.getOrPut(tab) {
+        when (tab) {
+            TAB_HOME -> HomeFragment()
+            TAB_FOLDERS -> SubjectsFragment()
+            TAB_PDF -> PdfMakerFragment()
+            TAB_CHAT -> ChatFragment()
+            else -> RequestsFragment()
+        }
+    }
+
+    private fun selectTab(tab: Int) {
+        currentTab = tab
+        val target = fragmentFor(tab)
+        val tx = supportFragmentManager.beginTransaction()
+        for ((key, fragment) in fragments) {
+            if (key != tab) tx.hide(fragment)
+        }
+        if (target.isAdded) tx.show(target) else tx.add(R.id.fragmentContainer, target, "tab$tab")
+        tx.commit()
+        styleNav()
+    }
+
+    private fun styleNav() {
+        val primary = ContextCompat.getColor(this, R.color.primary)
+        val muted = ContextCompat.getColor(this, R.color.muted)
+        fun style(label: TextView, dot: View, selected: Boolean) {
+            label.setTextColor(if (selected) primary else muted)
+            dot.visibility = if (selected) View.VISIBLE else View.INVISIBLE
+        }
+        style(binding.labelHome, binding.dotHome, currentTab == TAB_HOME)
+        style(binding.labelFolders, binding.dotFolders, currentTab == TAB_FOLDERS)
+        style(binding.labelChat, binding.dotChat, currentTab == TAB_CHAT)
+        style(binding.labelRequests, binding.dotRequests, currentTab == TAB_REQUESTS)
+    }
+
+    companion object {
+        private const val STATE_TAB = "state_tab"
+        const val TAB_HOME = 0
+        const val TAB_FOLDERS = 1
+        const val TAB_PDF = 2
+        const val TAB_CHAT = 3
+        const val TAB_REQUESTS = 4
+    }
+}
