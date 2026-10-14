@@ -1,1 +1,25 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPExpbmVhckxheW91dCB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJtYXRjaF9wYXJlbnQiCiAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9ibGFjayIKICAgIGFuZHJvaWQ6b3JpZW50YXRpb249InZlcnRpY2FsIgogICAgYW5kcm9pZDpwYWRkaW5nPSIxMmRwIj4KCiAgICA8VGV4dFZpZXcKICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL3R2SW1hZ2VUaXRsZSIKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3Ivd2hpdGUiCiAgICAgICAgYW5kcm9pZDp0ZXh0U2l6ZT0iMTVzcCIKICAgICAgICBhbmRyb2lkOnRleHRTdHlsZT0iYm9sZCIgLz4KCiAgICA8SW1hZ2VWaWV3CiAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9pdkZ1bGxJbWFnZSIKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0iMGRwIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iMTBkcCIKICAgICAgICBhbmRyb2lkOmxheW91dF93ZWlnaHQ9IjEiCiAgICAgICAgYW5kcm9pZDpjb250ZW50RGVzY3JpcHRpb249IkZ1bGwgaW1hZ2UiCiAgICAgICAgYW5kcm9pZDpzY2FsZVR5cGU9ImZpdENlbnRlciIgLz4KPC9MaW5lYXJMYXlvdXQ+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvImageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivFullImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:contentDescription="Full image"
+        android:scaleType="fitCenter" />
+</LinearLayout>
