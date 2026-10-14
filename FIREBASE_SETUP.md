@@ -1,1 +1,106 @@
-IyBXaXJpbmcgSU5ERVggdG8gRmlyZWJhc2Ug4oCUIHRoZSBvd25lcidzIGNoZWNrbGlzdAoKSU5ERVggc2hpcHMgaW4gKipsb2NhbCBtb2RlKio6IGV2ZXJ5dGhpbmcgd29ya3Mgb24gb25lIHBob25lLCBzdG9yZWQgaW4gaXRzCm93biBkYXRhYmFzZS4gVGhhdCBpcyBkZWxpYmVyYXRlLiBUaGUgc2hhcmVkIGNsYXNzIHZlcnNpb24gbmVlZHMgYSBGaXJlYmFzZQpwcm9qZWN0LCBhbmQgdGhhdCBwcm9qZWN0IG11c3QgYmVsb25nIHRvIHRoZSBjbGFzcyBvd25lciDigJQgY3JlYXRlZCB1bmRlciB0aGUKb3duZXIncyBvd24gR29vZ2xlIGFjY291bnQsIHdpdGggdGhlIG93bmVyJ3Mgb3duIGxvZ2luLiBOb2JvZHkgZWxzZSBzaG91bGQKY3JlYXRlIGl0LCBiZWNhdXNlIHdob2V2ZXIgb3ducyB0aGUgRmlyZWJhc2UgcHJvamVjdCBvd25zIHRoZSBjbGFzcydzIGRhdGEuCgpEbyB0aGVzZSBzdGVwcyB3aGVuIHlvdSBhcmUgcmVhZHkgdG8gZ28gZnJvbSAid29ya3Mgb24gbXkgcGhvbmUiIHRvICJ3b3Jrcwpmb3IgdGhlIHdob2xlIGNsYXNzIi4gTm8gYXBwIGNvZGUgY2hhbmdlcyBhcmUgbmVlZGVkIHVudGlsIHN0ZXAgNS4KCiMjIDEuIENyZWF0ZSB0aGUgcHJvamVjdCAoYWJvdXQgMTAgbWludXRlcywgZnJlZSkKCjEuIEdvIHRvIGh0dHBzOi8vY29uc29sZS5maXJlYmFzZS5nb29nbGUuY29tIGFuZCBzaWduIGluIHdpdGggdGhlIEdvb2dsZQogICBhY2NvdW50IHRoYXQgc2hvdWxkIG93biB0aGUgY2xhc3MgZGF0YS4KMi4gIkFkZCBwcm9qZWN0IiDihpIgbmFtZSBpdCBgaW5kZXgtY2xhc3NgIChhbnkgbmFtZSBpcyBmaW5lKSDihpIgY29udGludWUuCiAgIEdvb2dsZSBBbmFseXRpY3MgaXMgb3B0aW9uYWw7IHNraXBwaW5nIGl0IGtlZXBzIHRoaW5ncyBzaW1wbGUuCjMuIEluc2lkZSB0aGUgcHJvamVjdDogKipCdWlsZCDihpIgQXV0aGVudGljYXRpb24g4oaSIEdldCBzdGFydGVkIOKGkiBHb29nbGUqKgogICDihpIgRW5hYmxlLiBUaGlzIGlzIHRoZSBzaWduLWluOiBzdHVkZW50cyB3aWxsIGxvZyBpbiB3aXRoIEdvb2dsZSwgc28KICAgdGhlcmUgYXJlIG5vIG5ldyBwYXNzd29yZHMgdG8gZm9yZ2V0LCBhbmQgYWNjb3VudCByZWNvdmVyeSBpcyBHb29nbGUncwogICBwcm9ibGVtLCBub3QgeW91cnMuCjQuICoqQnVpbGQg4oaSIEZpcmVzdG9yZSBEYXRhYmFzZSDihpIgQ3JlYXRlIGRhdGFiYXNlKiogKHByb2R1Y3Rpb24gbW9kZSkuCjUuICoqQnVpbGQg4oaSIFN0b3JhZ2Ug4oaSIEdldCBzdGFydGVkKiogKGRlZmF1bHQgcnVsZXMgZm9yIG5vdzsgc3RlcCA0IGJlbG93CiAgIHJlcGxhY2VzIHRoZW0pLgoKIyMgMi4gQ29ubmVjdCB0aGlzIGFwcAoKMS4gSW4gdGhlIEZpcmViYXNlIHByb2plY3Q6IOKamSAqKlByb2plY3Qgc2V0dGluZ3Mg4oaSIFlvdXIgYXBwcyDihpIgQW5kcm9pZCoqCiAgIOKGkiByZWdpc3RlciB0aGUgYXBwIHdpdGggcGFja2FnZSBuYW1lICoqYGNvbS5wYXJ0aC5pbmRleGAqKiAoaXQgbXVzdAogICBtYXRjaCBleGFjdGx5KS4KMi4gRG93bmxvYWQgdGhlIGBnb29nbGUtc2VydmljZXMuanNvbmAgaXQgZ2l2ZXMgeW91IGFuZCBwdXQgaXQgYXQKICAgKipgYXBwL2dvb2dsZS1zZXJ2aWNlcy5qc29uYCoqIGluIHRoaXMgcHJvamVjdC4gSXQgaXMgYWxyZWFkeSBpbgogICBgLmdpdGlnbm9yZWAg4oCUIG5ldmVyIGNvbW1pdCBpdCBmcm9tIGEgc2hhcmVkIG1hY2hpbmUuCjMuIEFkZCB0aGUgU0hBLTEgZmluZ2VycHJpbnQgb2YgdGhlIHJlbGVhc2Uga2V5IChhbmQgdGhlIGRlYnVnIGtleSkgaW4gdGhlCiAgIHNhbWUgc2V0dGluZ3MgcGFnZSwgb3IgR29vZ2xlIHNpZ24taW4gd2lsbCByZWZ1c2UgdG8gd29yay4KCiMjIDMuIFR1cm4gb24gdGhlIHBsdWdpbiArIGxpYnJhcmllcyAoYnVpbGQuZ3JhZGxlLmt0cykKCkluIHRoZSAqKnJvb3QqKiBgYnVpbGQuZ3JhZGxlLmt0c2AgYWRkICh2ZXJzaW9ucyBrbm93biB0byB3b3JrIHdpdGggdGhlCkFHUC9Lb3RsaW4gdmVyc2lvbnMgdGhpcyBwcm9qZWN0IGFscmVhZHkgdXNlcyk6CgpgYGBrb3RsaW4KaWQoImNvbS5nb29nbGUuZ21zLmdvb2dsZS1zZXJ2aWNlcyIpIHZlcnNpb24gIjQuNC4yIiBhcHBseSBmYWxzZQppZCgiY29tLmdvb2dsZS5maXJlYmFzZS5maXJlYmFzZS1ib20iKSB2ZXJzaW9uICIzMy4zLjAiIGFwcGx5IGZhbHNlCmBgYAoKSW4gKipgYXBwL2J1aWxkLmdyYWRsZS5rdHNgKio6IGFwcGx5IGBpZCgiY29tLmdvb2dsZS5nbXMuZ29vZ2xlLXNlcnZpY2VzIilgCmFuZCBhZGQ6CgpgYGBrb3RsaW4KaW1wbGVtZW50YXRpb24ocGxhdGZvcm0oImNvbS5nb29nbGUuZmlyZWJhc2U6ZmlyZWJhc2UtYm9tOjMzLjMuMCIpKQppbXBsZW1lbnRhdGlvbigiY29tLmdvb2dsZS5maXJlYmFzZTpmaXJlYmFzZS1hdXRoLWt0eCIpCmltcGxlbWVudGF0aW9uKCJjb20uZ29vZ2xlLmZpcmViYXNlOmZpcmViYXNlLWZpcmVzdG9yZS1rdHgiKQppbXBsZW1lbnRhdGlvbigiY29tLmdvb2dsZS5maXJlYmFzZTpmaXJlYmFzZS1zdG9yYWdlLWt0eCIpCmltcGxlbWVudGF0aW9uKCJjb20uZ29vZ2xlLmFuZHJvaWQuZ21zOnBsYXktc2VydmljZXMtYXV0aDoyMS4yLjAiKQpgYGAKCiMjIDQuIFNlY3VyaXR5IHJ1bGVzIChkbyB0aGlzIGJlZm9yZSBpbnZpdGluZyBhbnlvbmUpCgpEYXRhIGxheW91dCAob25lIGNsYXNzIHBlciBkb2N1bWVudCB0cmVlKToKCmBgYApjbGFzc2VzL3tjbGFzc0lkfSAgICAgICAgICAgICAgICAgICAgICA8LSB7IG5hbWUsIG93bmVyVWlkIH0KY2xhc3Nlcy97Y2xhc3NJZH0vbWVtYmVycy97dWlkfSAgICAgICAgPC0geyBuYW1lLCByb2xlOiBPV05FUnxBRE1JTnxNRU1CRVIgfQpjbGFzc2VzL3tjbGFzc0lkfS9zdWJqZWN0cy97aWR9CmNsYXNzZXMve2NsYXNzSWR9L2ZpbGVzL3tpZH0KY2xhc3Nlcy97Y2xhc3NJZH0vZGVhZGxpbmVzL3tpZH0KY2xhc3Nlcy97Y2xhc3NJZH0vY2hhdC97aWR9CmNsYXNzZXMve2NsYXNzSWR9L25vdGljZXMve2lkfQpjbGFzc2VzL3tjbGFzc0lkfS9yZXF1ZXN0cy97aWR9CmBgYAoKUnVsZXMgdGhhdCBtdXN0IGhvbGQgKHdyaXRlIHRoZW0gaW4gRmlyZXN0b3JlIFJ1bGVzIC8gU3RvcmFnZSBSdWxlcyk6CgotIE9ubHkgc2lnbmVkLWluIHVzZXJzIHdobyBhcmUgKiptZW1iZXJzIG9mIHRoYXQgY2xhc3MqKiBjYW4gcmVhZCBhbnl0aGluZy4KLSBPbmx5IG1lbWJlcnMgY2FuIGNyZWF0ZSBmaWxlcywgY2hhdCBtZXNzYWdlcyBhbmQgcmVxdWVzdHMuCi0gKipEZWxldGluZyBhIHN1YmplY3QgaXMgb3duZXItb25seS4qKiBBZG1pbnMgY2FuIGFkZCBzdWJqZWN0cywgbmV2ZXIKICBkZWxldGUgb25lLiAoVGhpcyBpcyBhIHByb2R1Y3QgcnVsZSwgbm90IGEgc3VnZ2VzdGlvbi4pCi0gTm90aWNlcyBjYW4gYmUgY3JlYXRlZCBvbmx5IGJ5IE9XTkVSL0FETUlOIG1lbWJlcnMuCi0gRGVsZXRlcyBpbnNpZGUgdGhlIGFwcCBhcmUgc29mdCAoYSBgZGVsZXRlZGAgZmxhZyArIFRyYXNoIGZvciAzMCBkYXlzKSwKICBzbyBydWxlcyBvbmx5IG5lZWQgaGFyZCBkZWxldGUgZm9yIHRoZSBwZXJtYW5lbnQtZW1wdHktVHJhc2ggYWN0aW9uLAogIHJlc3RyaWN0ZWQgdG8gdGhlIGZpbGUncyB1cGxvYWRlciBvciB0aGUgb3duZXIuCgojIyA1LiBTd2l0Y2ggdGhlIGFwcCBvdmVyCgpgRmlyZWJhc2VSZXBvc2l0b3J5YCAoYXBwL3NyYy9tYWluL2phdmEvY29tL3BhcnRoL2luZGV4L2ZpcmViYXNlLykgYWxyZWFkeQppbXBsZW1lbnRzIHRoZSBzYW1lIGludGVyZmFjZSBhcyB0aGUgbG9jYWwgcmVwb3NpdG9yeS4gRmlsbCBpbiBpdHMgbWV0aG9kcwp3aXRoIEZpcmVzdG9yZS9TdG9yYWdlIGNhbGxzIChGaXJlc3RvcmUgZG9jdW1lbnQgaWRzIGNhbiByaWRlIGluIHRoZSBlbnRpdHkKYGlkYCBmaWVsZCBhcyBhIGhhc2gsIG9yIGV4dGVuZCB0aGUgZW50aXRpZXMgd2l0aCBhIGByZW1vdGVJZGAg4oCUIGRlY2lkZQpvbmNlLCBhdCB3aXJpbmcgdGltZSksIHRoZW4gaW4gYEluZGV4QXBwLm9uQ3JlYXRlKClgIGNoYW5nZSBvbmUgbGluZToKCmBgYGtvdGxpbgpyZXBvc2l0b3J5ID0gRmlyZWJhc2VSZXBvc2l0b3J5KCkKYGBgCgpUaGUgZGVtbyAicm9sZSBwcmV2aWV3IiBzd2l0Y2hlciBpbiBQcm9maWxlIGlzIHRoZW4gZGVsZXRlZDogcm9sZSBjb21lcwpmcm9tIHRoZSBzaWduZWQtaW4gbWVtYmVyIHJlY29yZC4gVGhlIGZpcnN0LXJ1biBzZXR1cCBzY3JlZW4gYmVjb21lcwoiY3JlYXRlIG9yIGpvaW4gYSBjbGFzcyI6IGNyZWF0aW5nIG1ha2VzIHRoZSBzaWduZWQtaW4gdXNlciB0aGUgT1dORVI7CmpvaW5pbmcgdXNlcyBhbiBpbnZpdGUgY29kZSB0aGUgb3duZXIgc2hhcmVzLCBhbmQgdGhlIG93bmVyL2FkbWlucyBhcHByb3ZlCmpvaW5zIChhIGBqb2luUmVxdWVzdHNgIGNvbGxlY3Rpb24gdW5kZXIgdGhlIGNsYXNzKS4KCiMjIDYuIFB1c2ggbm90aWZpY2F0aW9ucyAob3B0aW9uYWwsIHNhbWUgcHJvamVjdCkKCkZpcmViYXNlIENsb3VkIE1lc3NhZ2luZyBpcyBhbHJlYWR5IHBhcnQgb2YgdGhlIHNhbWUgcHJvamVjdC4gV2lyZSBpdCB3aGVuCnRoZSBjbGFzcyBhc2tzIGZvciBwaW5ncyBvbjogbmV3IG1hdGVyaWFsIGluIGEgc3ViamVjdCwgYSBuZXcgbm90aWNlLCBhbmQKInlvdXIgcmVxdWVzdCB3YXMgZnVsZmlsbGVkIi4gS2VlcCB0aGVtIG11dGUtYWJsZSBwZXIgc3ViamVjdCBmcm9tIGRheSBvbmUuCg==
+# Wiring INDEX to Firebase — the owner's checklist
+
+INDEX ships in **local mode**: everything works on one phone, stored in its
+own database. That is deliberate. The shared class version needs a Firebase
+project, and that project must belong to the class owner — created under the
+owner's own Google account, with the owner's own login. Nobody else should
+create it, because whoever owns the Firebase project owns the class's data.
+
+Do these steps when you are ready to go from "works on my phone" to "works
+for the whole class". No app code changes are needed until step 5.
+
+## 1. Create the project (about 10 minutes, free)
+
+1. Go to https://console.firebase.google.com and sign in with the Google
+   account that should own the class data.
+2. "Add project" → name it `index-class` (any name is fine) → continue.
+   Google Analytics is optional; skipping it keeps things simple.
+3. Inside the project: **Build → Authentication → Get started → Google**
+   → Enable. This is the sign-in: students will log in with Google, so
+   there are no new passwords to forget, and account recovery is Google's
+   problem, not yours.
+4. **Build → Firestore Database → Create database** (production mode).
+5. **Build → Storage → Get started** (default rules for now; step 4 below
+   replaces them).
+
+## 2. Connect this app
+
+1. In the Firebase project: ⚙ **Project settings → Your apps → Android**
+   → register the app with package name **`com.parth.index`** (it must
+   match exactly).
+2. Download the `google-services.json` it gives you and put it at
+   **`app/google-services.json`** in this project. It is already in
+   `.gitignore` — never commit it from a shared machine.
+3. Add the SHA-1 fingerprint of the release key (and the debug key) in the
+   same settings page, or Google sign-in will refuse to work.
+
+## 3. Turn on the plugin + libraries (build.gradle.kts)
+
+In the **root** `build.gradle.kts` add (versions known to work with the
+AGP/Kotlin versions this project already uses):
+
+```kotlin
+id("com.google.gms.google-services") version "4.4.2" apply false
+id("com.google.firebase.firebase-bom") version "33.3.0" apply false
+```
+
+In **`app/build.gradle.kts`**: apply `id("com.google.gms.google-services")`
+and add:
+
+```kotlin
+implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
+implementation("com.google.firebase:firebase-auth-ktx")
+implementation("com.google.firebase:firebase-firestore-ktx")
+implementation("com.google.firebase:firebase-storage-ktx")
+implementation("com.google.android.gms:play-services-auth:21.2.0")
+```
+
+## 4. Security rules (do this before inviting anyone)
+
+Data layout (one class per document tree):
+
+```
+classes/{classId}                      <- { name, ownerUid }
+classes/{classId}/members/{uid}        <- { name, role: OWNER|ADMIN|MEMBER }
+classes/{classId}/subjects/{id}
+classes/{classId}/files/{id}
+classes/{classId}/deadlines/{id}
+classes/{classId}/chat/{id}
+classes/{classId}/notices/{id}
+classes/{classId}/requests/{id}
+```
+
+Rules that must hold (write them in Firestore Rules / Storage Rules):
+
+- Only signed-in users who are **members of that class** can read anything.
+- Only members can create files, chat messages and requests.
+- **Deleting a subject is owner-only.** Admins can add subjects, never
+  delete one. (This is a product rule, not a suggestion.)
+- Notices can be created only by OWNER/ADMIN members.
+- Deletes inside the app are soft (a `deleted` flag + Trash for 30 days),
+  so rules only need hard delete for the permanent-empty-Trash action,
+  restricted to the file's uploader or the owner.
+
+## 5. Switch the app over
+
+`FirebaseRepository` (app/src/main/java/com/parth/index/firebase/) already
+implements the same interface as the local repository. Fill in its methods
+with Firestore/Storage calls (Firestore document ids can ride in the entity
+`id` field as a hash, or extend the entities with a `remoteId` — decide
+once, at wiring time), then in `IndexApp.onCreate()` change one line:
+
+```kotlin
+repository = FirebaseRepository()
+```
+
+The demo "role preview" switcher in Profile is then deleted: role comes
+from the signed-in member record. The first-run setup screen becomes
+"create or join a class": creating makes the signed-in user the OWNER;
+joining uses an invite code the owner shares, and the owner/admins approve
+joins (a `joinRequests` collection under the class).
+
+## 6. Push notifications (optional, same project)
+
+Firebase Cloud Messaging is already part of the same project. Wire it when
+the class asks for pings on: new material in a subject, a new notice, and
+"your request was fulfilled". Keep them mute-able per subject from day one.
