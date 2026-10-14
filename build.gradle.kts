@@ -1,1 +1,6 @@
-Ly8gVG9wLWxldmVsIGJ1aWxkIGZpbGUgZm9yIElOREVYLgpwbHVnaW5zIHsKICAgIGlkKCJjb20uYW5kcm9pZC5hcHBsaWNhdGlvbiIpIHZlcnNpb24gIjguNS4yIiBhcHBseSBmYWxzZQogICAgaWQoIm9yZy5qZXRicmFpbnMua290bGluLmFuZHJvaWQiKSB2ZXJzaW9uICIxLjkuMjQiIGFwcGx5IGZhbHNlCiAgICBpZCgib3JnLmpldGJyYWlucy5rb3RsaW4ua2FwdCIpIHZlcnNpb24gIjEuOS4yNCIgYXBwbHkgZmFsc2UKfQo=
+// Top-level build file for INDEX.
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+    id("org.jetbrains.kotlin.kapt") version "1.9.24" apply false
+}
