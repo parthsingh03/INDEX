@@ -1,1 +1,34 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPExpbmVhckxheW91dCB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJtYXRjaF9wYXJlbnQiCiAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9iYWNrZ3JvdW5kIgogICAgYW5kcm9pZDpvcmllbnRhdGlvbj0idmVydGljYWwiCiAgICBhbmRyb2lkOnBhZGRpbmc9IjE2ZHAiPgoKICAgIDxFZGl0VGV4dAogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvZXRTZWFyY2hRdWVyeSIKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6YmFja2dyb3VuZD0iQGRyYXdhYmxlL2JnX3BpbGxfc2VhcmNoIgogICAgICAgIGFuZHJvaWQ6aGludD0iU2VhcmNoIHRpdGxlcywgdGFncywgbm90ZXMsIHBlb3BsZSwgc3ViamVjdHPigKYiCiAgICAgICAgYW5kcm9pZDpwYWRkaW5nPSIxNGRwIgogICAgICAgIGFuZHJvaWQ6dGV4dENvbG9yPSJAY29sb3Ivb25fc3VyZmFjZSIKICAgICAgICBhbmRyb2lkOnRleHRDb2xvckhpbnQ9IkBjb2xvci9tdXRlZCIgLz4KCiAgICA8VGV4dFZpZXcKICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL3R2U2VhcmNoSGludCIKICAgICAgICBhbmRyb2lkOmxheW91dF93aWR0aD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2hlaWdodD0id3JhcF9jb250ZW50IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpblRvcD0iMTJkcCIKICAgICAgICBhbmRyb2lkOnRleHQ9IlN0YXJ0IHR5cGluZy4gSU5ERVggc2VhcmNoZXMgZXZlcnkgc3ViamVjdCBhdCBvbmNlIOKAlCB0aGlzIGlzIHRoZSAzMC1taW51dGUgV2hhdHNBcHAgaHVudCwgZmluaXNoZWQgaW4gc2Vjb25kcy4iCiAgICAgICAgYW5kcm9pZDp0ZXh0Q29sb3I9IkBjb2xvci9tdXRlZCIKICAgICAgICBhbmRyb2lkOnRleHRTaXplPSIxM3NwIiAvPgoKICAgIDxhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwogICAgICAgIGFuZHJvaWQ6aWQ9IkAraWQvcnZTZWFyY2hSZXN1bHRzIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJtYXRjaF9wYXJlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSIwZHAiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfbWFyZ2luVG9wPSIxMGRwIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dlaWdodD0iMSIgLz4KPC9MaW5lYXJMYXlvdXQ+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etSearchQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pill_search"
+        android:hint="Search titles, tags, notes, people, subjects…"
+        android:padding="14dp"
+        android:textColor="@color/on_surface"
+        android:textColorHint="@color/muted" />
+
+    <TextView
+        android:id="@+id/tvSearchHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Start typing. INDEX searches every subject at once — this is the 30-minute WhatsApp hunt, finished in seconds."
+        android:textColor="@color/muted"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+</LinearLayout>
