@@ -1,1 +1,144 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMKCmltcG9ydCBhbmRyb2lkLmdyYXBoaWNzLlR5cGVmYWNlCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuQ2hhdE1lc3NhZ2VFbnRpdHkKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsUmVxdWVzdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuTm90aWNlRW50aXR5CmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YWJpbmRpbmcuSXRlbUNoYXRNZXNzYWdlQmluZGluZwppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkl0ZW1Ob3RpY2VCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YWJpbmRpbmcuSXRlbVJlcXVlc3RCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudXRpbC5Gb3JtYXQKCi8qKiBHcm91cCBjaGF0IHJvd3MuIEEgZGVsZXRlZC1mb3ItZXZlcnlvbmUgbWVzc2FnZSByZW5kZXJzIGFzIHRoZSBXaGF0c0FwcAogKiAgdG9tYnN0b25lIOKAlCBpdGFsaWMgZ3JleSAiVGhpcyBtZXNzYWdlIHdhcyBkZWxldGVkIiDigJQgYmVjYXVzZSB0aGUgb3JpZ2luYWwKICogIHRleHQgd2FzIHJlcGxhY2VkIGluIHRoZSBkYXRhYmFzZSBhdCBkZWxldGUgdGltZS4gQXV0by1wb3N0ZWQgdXBsb2FkCiAqICBtZXNzYWdlcyAoc3lzdGVtRmlsZUlkID4gMCkgdGFwIHRocm91Z2ggdG8gdGhlIGZpbGUuICovCmNsYXNzIENoYXRBZGFwdGVyKAogICAgcHJpdmF0ZSB2YWwgb25DbGljazogKENoYXRNZXNzYWdlRW50aXR5KSAtPiBVbml0LAogICAgcHJpdmF0ZSB2YWwgb25Mb25nQ2xpY2s6IChDaGF0TWVzc2FnZUVudGl0eSkgLT4gVW5pdAopIDogUmVjeWNsZXJWaWV3LkFkYXB0ZXI8Q2hhdEFkYXB0ZXIuSG9sZGVyPigpIHsKCiAgICBwcml2YXRlIHZhciBpdGVtczogTGlzdDxDaGF0TWVzc2FnZUVudGl0eT4gPSBlbXB0eUxpc3QoKQoKICAgIGZ1biBzdWJtaXQobGlzdDogTGlzdDxDaGF0TWVzc2FnZUVudGl0eT4pIHsKICAgICAgICBpdGVtcyA9IGxpc3QKICAgICAgICBub3RpZnlEYXRhU2V0Q2hhbmdlZCgpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlVmlld0hvbGRlcihwYXJlbnQ6IFZpZXdHcm91cCwgdmlld1R5cGU6IEludCk6IEhvbGRlciB7CiAgICAgICAgdmFsIGJpbmRpbmcgPSBJdGVtQ2hhdE1lc3NhZ2VCaW5kaW5nLmluZmxhdGUoCiAgICAgICAgICAgIExheW91dEluZmxhdGVyLmZyb20ocGFyZW50LmNvbnRleHQpLCBwYXJlbnQsIGZhbHNlCiAgICAgICAgKQogICAgICAgIHJldHVybiBIb2xkZXIoYmluZGluZykKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gZ2V0SXRlbUNvdW50KCk6IEludCA9IGl0ZW1zLnNpemUKCiAgICBvdmVycmlkZSBmdW4gb25CaW5kVmlld0hvbGRlcihob2xkZXI6IEhvbGRlciwgcG9zaXRpb246IEludCkgewogICAgICAgIHZhbCBtZXNzYWdlID0gaXRlbXNbcG9zaXRpb25dCiAgICAgICAgd2l0aChob2xkZXIuYmluZGluZykgewogICAgICAgICAgICB0dkNoYXRUaW1lLnRleHQgPSBGb3JtYXQudGltZShtZXNzYWdlLnRpbWVzdGFtcCkKICAgICAgICAgICAgaWYgKG1lc3NhZ2UuZGVsZXRlZEZvckV2ZXJ5b25lKSB7CiAgICAgICAgICAgICAgICB0dkNoYXRTZW5kZXIudGV4dCA9IG1lc3NhZ2Uuc2VuZGVyTmFtZQogICAgICAgICAgICAgICAgdHZDaGF0VGV4dC50ZXh0ID0gIlRoaXMgbWVzc2FnZSB3YXMgZGVsZXRlZCIKICAgICAgICAgICAgICAgIHR2Q2hhdFRleHQuc2V0VHlwZWZhY2UobnVsbCwgVHlwZWZhY2UuSVRBTElDKQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgdHZDaGF0VGV4dC5zZXRUeXBlZmFjZShudWxsLCBUeXBlZmFjZS5OT1JNQUwpCiAgICAgICAgICAgICAgICB0dkNoYXRTZW5kZXIudGV4dCA9CiAgICAgICAgICAgICAgICAgICAgaWYgKG1lc3NhZ2Uuc3lzdGVtRmlsZUlkID4gMCkgIiR7bWVzc2FnZS5zZW5kZXJOYW1lfSDCtyBJTkRFWCIKICAgICAgICAgICAgICAgICAgICBlbHNlICIke21lc3NhZ2Uuc2VuZGVyTmFtZX0gwrcgJHttZXNzYWdlLnNlbmRlclJvbGV9IgogICAgICAgICAgICAgICAgdHZDaGF0VGV4dC50ZXh0ID0gbWVzc2FnZS50ZXh0CiAgICAgICAgICAgIH0KICAgICAgICAgICAgcm9vdC5zZXRPbkNsaWNrTGlzdGVuZXIgeyBvbkNsaWNrKG1lc3NhZ2UpIH0KICAgICAgICAgICAgcm9vdC5zZXRPbkxvbmdDbGlja0xpc3RlbmVyIHsgb25Mb25nQ2xpY2sobWVzc2FnZSk7IHRydWUgfQogICAgICAgIH0KICAgIH0KCiAgICBjbGFzcyBIb2xkZXIodmFsIGJpbmRpbmc6IEl0ZW1DaGF0TWVzc2FnZUJpbmRpbmcpIDogUmVjeWNsZXJWaWV3LlZpZXdIb2xkZXIoYmluZGluZy5yb290KQp9CgovKiogTm90aWNlIGNhcmRzLCBzdHlsZWQgYWZ0ZXIgdGhlIENsZWFuIENhbXB1cyBub3RpY2VzIG1vY2t1cDogYXV0aG9yIHdpdGgKICogIHJvbGUgaW4gdGhlIG5hbWUgbGluZSwgdGl0bGUsIGJvZHksIHNlZW4tYnkgY291bnQuICovCmNsYXNzIE5vdGljZUFkYXB0ZXIgOiBSZWN5Y2xlclZpZXcuQWRhcHRlcjxOb3RpY2VBZGFwdGVyLkhvbGRlcj4oKSB7CgogICAgcHJpdmF0ZSB2YXIgaXRlbXM6IExpc3Q8Tm90aWNlRW50aXR5PiA9IGVtcHR5TGlzdCgpCgogICAgZnVuIHN1Ym1pdChsaXN0OiBMaXN0PE5vdGljZUVudGl0eT4pIHsKICAgICAgICBpdGVtcyA9IGxpc3QKICAgICAgICBub3RpZnlEYXRhU2V0Q2hhbmdlZCgpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlVmlld0hvbGRlcihwYXJlbnQ6IFZpZXdHcm91cCwgdmlld1R5cGU6IEludCk6IEhvbGRlciB7CiAgICAgICAgdmFsIGJpbmRpbmcgPSBJdGVtTm90aWNlQmluZGluZy5pbmZsYXRlKAogICAgICAgICAgICBMYXlvdXRJbmZsYXRlci5mcm9tKHBhcmVudC5jb250ZXh0KSwgcGFyZW50LCBmYWxzZQogICAgICAgICkKICAgICAgICByZXR1cm4gSG9sZGVyKGJpbmRpbmcpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIGdldEl0ZW1Db3VudCgpOiBJbnQgPSBpdGVtcy5zaXplCgogICAgb3ZlcnJpZGUgZnVuIG9uQmluZFZpZXdIb2xkZXIoaG9sZGVyOiBIb2xkZXIsIHBvc2l0aW9uOiBJbnQpIHsKICAgICAgICB2YWwgbm90aWNlID0gaXRlbXNbcG9zaXRpb25dCiAgICAgICAgd2l0aChob2xkZXIuYmluZGluZykgewogICAgICAgICAgICB0dk5vdGljZUF1dGhvci50ZXh0ID0gIiR7bm90aWNlLmF1dGhvck5hbWV9IMK3ICR7bm90aWNlLmF1dGhvclJvbGV9IgogICAgICAgICAgICB0dk5vdGljZVRpbWUudGV4dCA9IEZvcm1hdC5kYXRlVGltZShub3RpY2UudGltZXN0YW1wKQogICAgICAgICAgICB0dk5vdGljZVRpdGxlLnRleHQgPSBub3RpY2UudGl0bGUKICAgICAgICAgICAgdHZOb3RpY2VCb2R5LnRleHQgPSBub3RpY2UuYm9keQogICAgICAgICAgICB0dk5vdGljZVNlZW4udGV4dCA9ICJTZWVuIGJ5ICR7bm90aWNlLnNlZW5CeUNvdW50fSBjbGFzc21hdGVzIgogICAgICAgIH0KICAgIH0KCiAgICBjbGFzcyBIb2xkZXIodmFsIGJpbmRpbmc6IEl0ZW1Ob3RpY2VCaW5kaW5nKSA6IFJlY3ljbGVyVmlldy5WaWV3SG9sZGVyKGJpbmRpbmcucm9vdCkKfQoKLyoqIFJlcXVlc3QgYm9hcmQgcm93cy4gRnVsZmlsIGJ1dHRvbiBvbmx5IHNob3dzIHdoaWxlIHRoZSByZXF1ZXN0IGlzIG9wZW4uICovCmNsYXNzIFJlcXVlc3RBZGFwdGVyKAogICAgcHJpdmF0ZSB2YWwgb25GdWxmaWw6IChNYXRlcmlhbFJlcXVlc3RFbnRpdHkpIC0+IFVuaXQsCiAgICBwcml2YXRlIHZhbCBvbk9wZW5GaWxlOiAoTWF0ZXJpYWxSZXF1ZXN0RW50aXR5KSAtPiBVbml0CikgOiBSZWN5Y2xlclZpZXcuQWRhcHRlcjxSZXF1ZXN0QWRhcHRlci5Ib2xkZXI+KCkgewoKICAgIHByaXZhdGUgdmFyIGl0ZW1zOiBMaXN0PE1hdGVyaWFsUmVxdWVzdEVudGl0eT4gPSBlbXB0eUxpc3QoKQoKICAgIGZ1biBzdWJtaXQobGlzdDogTGlzdDxNYXRlcmlhbFJlcXVlc3RFbnRpdHk+KSB7CiAgICAgICAgaXRlbXMgPSBsaXN0CiAgICAgICAgbm90aWZ5RGF0YVNldENoYW5nZWQoKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZVZpZXdIb2xkZXIocGFyZW50OiBWaWV3R3JvdXAsIHZpZXdUeXBlOiBJbnQpOiBIb2xkZXIgewogICAgICAgIHZhbCBiaW5kaW5nID0gSXRlbVJlcXVlc3RCaW5kaW5nLmluZmxhdGUoCiAgICAgICAgICAgIExheW91dEluZmxhdGVyLmZyb20ocGFyZW50LmNvbnRleHQpLCBwYXJlbnQsIGZhbHNlCiAgICAgICAgKQogICAgICAgIHJldHVybiBIb2xkZXIoYmluZGluZykKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gZ2V0SXRlbUNvdW50KCk6IEludCA9IGl0ZW1zLnNpemUKCiAgICBvdmVycmlkZSBmdW4gb25CaW5kVmlld0hvbGRlcihob2xkZXI6IEhvbGRlciwgcG9zaXRpb246IEludCkgewogICAgICAgIHZhbCByZXF1ZXN0ID0gaXRlbXNbcG9zaXRpb25dCiAgICAgICAgd2l0aChob2xkZXIuYmluZGluZykgewogICAgICAgICAgICB0dlJlcXVlc3RUaXRsZS50ZXh0ID0gcmVxdWVzdC50aXRsZQogICAgICAgICAgICB2YWwgc3ViamVjdFBhcnQgPSBpZiAocmVxdWVzdC5zdWJqZWN0TmFtZS5pc05vdEVtcHR5KCkpICIgwrcgJHtyZXF1ZXN0LnN1YmplY3ROYW1lfSIgZWxzZSAiIgogICAgICAgICAgICB0dlJlcXVlc3RNZXRhLnRleHQgPQogICAgICAgICAgICAgICAgIkFza2VkIGJ5ICR7cmVxdWVzdC5yZXF1ZXN0ZXJOYW1lfSRzdWJqZWN0UGFydCDCtyAke0Zvcm1hdC5yZWxhdGl2ZShyZXF1ZXN0LmNyZWF0ZWRBdCl9IgogICAgICAgICAgICBpZiAocmVxdWVzdC5zdGF0dXMgPT0gTWF0ZXJpYWxSZXF1ZXN0RW50aXR5LlNUQVRVU19PUEVOKSB7CiAgICAgICAgICAgICAgICB0dlJlcXVlc3RTdGF0dXMudGV4dCA9ICJPUEVOIgogICAgICAgICAgICAgICAgdHZSZXF1ZXN0U3RhdHVzLnNldFRleHRDb2xvcigweEZGMjU2M0VCLnRvSW50KCkpCiAgICAgICAgICAgICAgICBidG5GdWxmaWxSZXF1ZXN0LnZpc2liaWxpdHkgPSBWaWV3LlZJU0lCTEUKICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHR2UmVxdWVzdFN0YXR1cy50ZXh0ID0gIkZVTEZJTExFRCBieSAke3JlcXVlc3QuZnVsZmlsbGVkQnl9IgogICAgICAgICAgICAgICAgdHZSZXF1ZXN0U3RhdHVzLnNldFRleHRDb2xvcigweEZGMEQ5NDg4LnRvSW50KCkpCiAgICAgICAgICAgICAgICBidG5GdWxmaWxSZXF1ZXN0LnZpc2liaWxpdHkgPSBWaWV3LkdPTkUKICAgICAgICAgICAgfQogICAgICAgICAgICBidG5GdWxmaWxSZXF1ZXN0LnNldE9uQ2xpY2tMaXN0ZW5lciB7IG9uRnVsZmlsKHJlcXVlc3QpIH0KICAgICAgICAgICAgcm9vdC5zZXRPbkNsaWNrTGlzdGVuZXIgewogICAgICAgICAgICAgICAgaWYgKHJlcXVlc3Quc3RhdHVzICE9IE1hdGVyaWFsUmVxdWVzdEVudGl0eS5TVEFUVVNfT1BFTikgb25PcGVuRmlsZShyZXF1ZXN0KQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGNsYXNzIEhvbGRlcih2YWwgYmluZGluZzogSXRlbVJlcXVlc3RCaW5kaW5nKSA6IFJlY3ljbGVyVmlldy5WaWV3SG9sZGVyKGJpbmRpbmcucm9vdCkKfQo=
+package com.parth.index.ui.adapters
+
+import android.graphics.Typeface
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.parth.index.data.model.ChatMessageEntity
+import com.parth.index.data.model.MaterialRequestEntity
+import com.parth.index.data.model.NoticeEntity
+import com.parth.index.databinding.ItemChatMessageBinding
+import com.parth.index.databinding.ItemNoticeBinding
+import com.parth.index.databinding.ItemRequestBinding
+import com.parth.index.util.Format
+
+/** Group chat rows. A deleted-for-everyone message renders as the WhatsApp
+ *  tombstone — italic grey "This message was deleted" — because the original
+ *  text was replaced in the database at delete time. Auto-posted upload
+ *  messages (systemFileId > 0) tap through to the file. */
+class ChatAdapter(
+    private val onClick: (ChatMessageEntity) -> Unit,
+    private val onLongClick: (ChatMessageEntity) -> Unit
+) : RecyclerView.Adapter<ChatAdapter.Holder>() {
+
+    private var items: List<ChatMessageEntity> = emptyList()
+
+    fun submit(list: List<ChatMessageEntity>) {
+        items = list
+        notifyDataSetChanged()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val binding = ItemChatMessageBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return Holder(binding)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val message = items[position]
+        with(holder.binding) {
+            tvChatTime.text = Format.time(message.timestamp)
+            if (message.deletedForEveryone) {
+                tvChatSender.text = message.senderName
+                tvChatText.text = "This message was deleted"
+                tvChatText.setTypeface(null, Typeface.ITALIC)
+            } else {
+                tvChatText.setTypeface(null, Typeface.NORMAL)
+                tvChatSender.text =
+                    if (message.systemFileId > 0) "${message.senderName} · INDEX"
+                    else "${message.senderName} · ${message.senderRole}"
+                tvChatText.text = message.text
+            }
+            root.setOnClickListener { onClick(message) }
+            root.setOnLongClickListener { onLongClick(message); true }
+        }
+    }
+
+    class Holder(val binding: ItemChatMessageBinding) : RecyclerView.ViewHolder(binding.root)
+}
+
+/** Notice cards, styled after the Clean Campus notices mockup: author with
+ *  role in the name line, title, body, seen-by count. */
+class NoticeAdapter : RecyclerView.Adapter<NoticeAdapter.Holder>() {
+
+    private var items: List<NoticeEntity> = emptyList()
+
+    fun submit(list: List<NoticeEntity>) {
+        items = list
+        notifyDataSetChanged()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val binding = ItemNoticeBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return Holder(binding)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val notice = items[position]
+        with(holder.binding) {
+            tvNoticeAuthor.text = "${notice.authorName} · ${notice.authorRole}"
+            tvNoticeTime.text = Format.dateTime(notice.timestamp)
+            tvNoticeTitle.text = notice.title
+            tvNoticeBody.text = notice.body
+            tvNoticeSeen.text = "Seen by ${notice.seenByCount} classmates"
+        }
+    }
+
+    class Holder(val binding: ItemNoticeBinding) : RecyclerView.ViewHolder(binding.root)
+}
+
+/** Request board rows. Fulfil button only shows while the request is open. */
+class RequestAdapter(
+    private val onFulfil: (MaterialRequestEntity) -> Unit,
+    private val onOpenFile: (MaterialRequestEntity) -> Unit
+) : RecyclerView.Adapter<RequestAdapter.Holder>() {
+
+    private var items: List<MaterialRequestEntity> = emptyList()
+
+    fun submit(list: List<MaterialRequestEntity>) {
+        items = list
+        notifyDataSetChanged()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val binding = ItemRequestBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return Holder(binding)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val request = items[position]
+        with(holder.binding) {
+            tvRequestTitle.text = request.title
+            val subjectPart = if (request.subjectName.isNotEmpty()) " · ${request.subjectName}" else ""
+            tvRequestMeta.text =
+                "Asked by ${request.requesterName}$subjectPart · ${Format.relative(request.createdAt)}"
+            if (request.status == MaterialRequestEntity.STATUS_OPEN) {
+                tvRequestStatus.text = "OPEN"
+                tvRequestStatus.setTextColor(0xFF2563EB.toInt())
+                btnFulfilRequest.visibility = View.VISIBLE
+            } else {
+                tvRequestStatus.text = "FULFILLED by ${request.fulfilledBy}"
+                tvRequestStatus.setTextColor(0xFF0D9488.toInt())
+                btnFulfilRequest.visibility = View.GONE
+            }
+            btnFulfilRequest.setOnClickListener { onFulfil(request) }
+            root.setOnClickListener {
+                if (request.status != MaterialRequestEntity.STATUS_OPEN) onOpenFile(request)
+            }
+        }
+    }
+
+    class Holder(val binding: ItemRequestBinding) : RecyclerView.ViewHolder(binding.root)
+}
