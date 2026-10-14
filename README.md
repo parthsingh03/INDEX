@@ -1,1 +1,96 @@
-IyBJTkRFWAoKRXZlcnkgY2xhc3MgaGFzIHRoZSBzYW1lIHByb2JsZW0uIFN0dWR5IG1hdGVyaWFsIGxpdmVzIGluIGEgV2hhdHNBcHAgZ3JvdXAsCmFuZCBXaGF0c0FwcCBpcyBhIHJpdmVyIOKAlCBldmVyeXRoaW5nIGZsb3dzIGF3YXkuIEEgUERGIHNlbnQgbGFzdCBtb250aCB0YWtlcwpoYWxmIGFuIGhvdXIgb2Ygc2Nyb2xsaW5nIHRvIGZpbmQgYWdhaW4sIGlmIGl0IGlzIGZvdW5kIGF0IGFsbC4KCklOREVYIGlzIHRoZSBpbmRleCBvZiB0aGUgY2xhc3MuIExpa2UgdGhlIGluZGV4IGF0IHRoZSBiYWNrIG9mIGEgYm9vaywgaXQKZXhpc3RzIHNvIHlvdSBjYW4gZmluZCBhbnl0aGluZyBpbiBzZWNvbmRzLgoKTWF0ZXJpYWwgbGl2ZXMgaW4gc3ViamVjdCBmb2xkZXJzIOKAlCBNYXRoZW1hdGljcywgUGh5c2ljcywgTWVjaGFuaWNhbCwgYW5kCndoYXRldmVyIHN1YmplY3RzIHlvdXIgY2xhc3MgYWN0dWFsbHkgaGFzLiBBbnlvbmUgaW4gdGhlIGNsYXNzIGNhbiB1cGxvYWQgYQpQREYsIHBob3RvIG9yIGRvY3VtZW50IGludG8gdGhlIHJpZ2h0IGZvbGRlciwgd2l0aCBhIHRpdGxlIGFuZCBhIHNob3J0IG5vdGUuCkl0IHN0YXlzIHRoZXJlLCBvcmdhbmlzZWQsIGFuZCBvbmUgc2VhcmNoIGJhciBmaW5kcyBpdCBhY3Jvc3MgZXZlcnkgc3ViamVjdDoKYnkgdGl0bGUsIGJ5IHRhZywgYnkgdGhlIG5vdGUsIGJ5IHdobyB1cGxvYWRlZCBpdC4KCiMjIFdoYXQgaXMgaW5zaWRlCgotICoqU3ViamVjdCBmb2xkZXJzKiog4oCUIG9uZSBmb2xkZXIgcGVyIHN1YmplY3QsIGNyZWF0ZWQgb25jZSBieSB0aGUgY2xhc3MKICBvd25lci4gRmlsZXMgaW5zaWRlIHNob3cgdGhlIHVwbG9hZGVyJ3MgbmFtZSwgdGhlIGRhdGUsIHRoZSBzaXplLCBhbmQgdGhlCiAgdXBsb2FkZXIncyBvd24gbm90ZSAobGlrZSAiTWF0aCBob21ld29yayDigJQgVW5pdCAzIikuIFRoZXJlIGFyZSBubyBjb21tZW50cwogIG9uIGZpbGVzLCBvbiBwdXJwb3NlOiBmb2xkZXJzIHN0YXkgYSBjbGVhbiBsaWJyYXJ5LCB0YWxraW5nIGhhcHBlbnMgaW4gdGhlCiAgZ3JvdXAgY2hhdC4KLSAqKlNoYXJlIHN0cmFpZ2h0IGZyb20gV2hhdHNBcHAqKiDigJQgc2VlIGEgZG9jdW1lbnQgaW4gV2hhdHNBcHAsIEZpbGVzIG9yCiAgR2FsbGVyeT8gVGFwIFNoYXJlIOKGkiBJTkRFWC4gVGhlIGZpbGUgbGFuZHMgaW4gdGhlIHVwbG9hZCBzY3JlZW4gYWxyZWFkeQogIGF0dGFjaGVkLCB3aXRoIGl0cyBuYW1lIGZpbGxlZCBpbiBhcyB0aGUgdGl0bGUuIE5vIHNhdmluZyBpdCB0byB0aGUgcGhvbmUKICBmaXJzdCBhbmQgaHVudGluZyBmb3IgaXQgYWZ0ZXJ3YXJkcy4KLSAqKkRlYWRsaW5lcyBvbiBIb21lKiog4oCUIGFkbWlucyBjcmVhdGUgZGVhZGxpbmUgY2FyZHMgKCJNZWNoYW5pY2FsCiAgYXNzaWdubWVudCDigJQgZHVlIEZyaWRheSIpLCBhbmQgSG9tZSBzaG93cyB0aGUgZGF5cyBsZWZ0LCB3b3JrZWQgb3V0IGZyZXNoCiAgZXZlcnkgdGltZSB5b3Ugb3BlbiB0aGUgYXBwLgotICoqR3JvdXAgY2hhdCArIE5vdGljZXMqKiDigJQgb25lIGNsYXNzIGNoYXQsIHdoZXJlIGV2ZXJ5IHVwbG9hZCBhbHNvIHBvc3RzCiAgaXRzZWxmICgiQW1hbiBhZGRlZCBMYXBsYWNlIE5vdGVzIHRvIE1hdGhlbWF0aWNzIiDigJQgdGFwIGl0IHRvIG9wZW4gdGhlCiAgZmlsZSkuIEJlc2lkZSBpdCwgYSBOb3RpY2VzIHNlY3Rpb24gb25seSBhZG1pbnMgY2FuIHBvc3QgaW4sIHNvIGFuCiAgaW1wb3J0YW50IG5vdGljZSBuZXZlciBnZXRzIGJ1cmllZCB1bmRlciBjaGF0IGFnYWluLiBDaGF0IG1lc3NhZ2VzIGNhbiBiZQogIGRlbGV0ZWQgZm9yIGV2ZXJ5b25lLCBXaGF0c0FwcC1zdHlsZTogdGhlIG1lc3NhZ2UgYmVjb21lcwogICJUaGlzIG1lc3NhZ2Ugd2FzIGRlbGV0ZWQiIGZvciB0aGUgd2hvbGUgY2xhc3MuCi0gKipSZXF1ZXN0IGJvYXJkKiog4oCUIG1pc3Npbmcgc29tZXRoaW5nPyBQb3N0IGEgcmVxdWVzdC4gV2hvZXZlciBoYXMgdGhlCiAgbWF0ZXJpYWwgdXBsb2FkcyBpdCBhZ2FpbnN0IHlvdXIgcmVxdWVzdCwgYW5kIHRoZSByZXF1ZXN0IGNsb3Nlcy4KLSAqKlBERiBtYWtlcioqIOKAlCBwaG90b3Mgb2YgeW91ciBhc3NpZ25tZW50IHBhZ2VzIGluLCBvbmUgY2xlYW4gUERGIG91dC4KICBObyBhZHMsIG5vIHdhdGVybWFyay4gVGhlIFBERiBjYW4gZ28gc3RyYWlnaHQgaW50byBhIHN1YmplY3QgZm9sZGVyLgotICoqUm9sZXMqKiDigJQgdGhlIE93bmVyIHJ1bnMgdGhlIGNsYXNzLiBBZG1pbnMgKHBpY2tlZCBieSB0aGUgT3duZXIpIGNhbiBhZGQKICBzdWJqZWN0cywgcG9zdCBub3RpY2VzIGFuZCBjcmVhdGUgZGVhZGxpbmVzLiBPbmx5IHRoZSBPd25lciBjYW4gZGVsZXRlIGEKICBzdWJqZWN0LiBNZW1iZXJzIHVwbG9hZCwgY2hhdCBhbmQgcmVxdWVzdC4KLSAqKlRyYXNoKiog4oCUIG5vdGhpbmcgaXMgZGVsZXRlZCBpbnN0YW50bHkuIERlbGV0ZWQgZmlsZXMgYW5kIHN1YmplY3RzIHNpdAogIGluIFRyYXNoIGZvciAzMCBkYXlzIGFuZCBjYW4gYmUgcmVzdG9yZWQuCi0gKipEYXJrIG1vZGUqKiDigJQgb25lIG1vb24gYnV0dG9uLCBvbiBIb21lIGJlc2lkZSB5b3VyIHByb2ZpbGUgcGljdHVyZS4KICBTYW1lIGFwcCwgZGFyayBjb2xvdXJzLgotICoqVXBkYXRlcyoqIOKAlCBQcm9maWxlIGhhcyBhIENoZWNrIGZvciBVcGRhdGVzIGJ1dHRvbi4gTmV3IGJ1aWxkcyBpbnN0YWxsCiAgb3ZlciB0aGUgb2xkIG9uZSBhbmQgZXZlcnl0aGluZyBzdGF5cywgYmVjYXVzZSB0aGUgYXBwIGlzIGFsd2F5cyBzaWduZWQKICB3aXRoIHRoZSBzYW1lIGtleSBhbmQgdGhlIGNsYXNzIGRhdGEgaXMgbm90IHN0b3JlZCBpbnNpZGUgdGhlIEFQSy4KCiMjIEhvdyBpdCBydW5zIHRvZGF5CgpUaGlzIGJ1aWxkIHJ1bnMgaW4gKipsb2NhbCBtb2RlKio6IHRoZSB3aG9sZSBhcHAgd29ya3Mgb24gb25lIHBob25lLCB3aXRoCml0cyBkYXRhIGluIGEgc21hbGwgZGF0YWJhc2Ugb24gdGhlIHBob25lIGl0c2VsZi4gSXQgc3RhcnRzIHdpdGggYSBzaG9ydApzZXR1cCAoeW91ciBuYW1lLCB5b3VyIGNsYXNzIG5hbWUsIHlvdXIgc3ViamVjdHMpIGFuZCBzb21lIHN0YXJ0ZXIgY29udGVudApzbyBldmVyeSBzY3JlZW4gY2FuIGJlIHRyaWVkIHByb3Blcmx5LiBJbiBQcm9maWxlIHRoZXJlIGlzIGEgKipkZW1vIHJvbGUKcHJldmlldyoqIHN3aXRjaGVyIOKAlCBmbGlwIGJldHdlZW4gT3duZXIsIEFkbWluIGFuZCBNZW1iZXIgYW5kIHdhdGNoIHdoaWNoCmJ1dHRvbnMgYXBwZWFyIGFuZCBkaXNhcHBlYXIgYWNyb3NzIHRoZSBhcHAuIFRoYXQgaXMgZXhhY3RseSBob3cgdGhlIHJlYWwKcm9sZXMgd2lsbCBiZWhhdmUuCgpUaGUgc2hhcmVkIHZlcnNpb24g4oCUIGV2ZXJ5IGNsYXNzbWF0ZSdzIHBob25lIHNlZWluZyB0aGUgc2FtZSBmb2xkZXJzIGFuZApjaGF0IOKAlCBwbHVncyBpbnRvIEZpcmViYXNlIGJlaGluZCB0aGUgc2FtZSBzY3JlZW5zLiBBbGwgZGF0YSBhY2Nlc3MgYWxyZWFkeQpnb2VzIHRocm91Z2ggb25lIGludGVyZmFjZSAoYEluZGV4UmVwb3NpdG9yeWApLCBzbyB0aGUgY2xvdWQgdmVyc2lvbiBpcyBhCnN3YXAgdW5kZXJuZWF0aCwgbm90IGEgcmVidWlsZC4gVGhlIHN0ZXAtYnktc3RlcCBsaXZlcyBpbgpbRklSRUJBU0VfU0VUVVAubWRdKEZJUkVCQVNFX1NFVFVQLm1kKSwgaW5jbHVkaW5nIHdoeSB0aGUgRmlyZWJhc2UgcHJvamVjdAptdXN0IGJlIGNyZWF0ZWQgdW5kZXIgdGhlIGNsYXNzIG93bmVyJ3Mgb3duIEdvb2dsZSBhY2NvdW50LgoKIyMgQnVpbGRpbmcgdGhlIEFQSwoKUHVzaCB0aGlzIHByb2plY3QgdG8gR2l0SHViIGFuZCB0aGUgKipCdWlsZCBBUEsqKiB3b3JrZmxvdwooYC5naXRodWIvd29ya2Zsb3dzL2J1aWxkLWFway55bWxgKSBidWlsZHMgYSBkZWJ1ZyBBUEsgd2l0aCBKREsgMTcgYW5kCkdyYWRsZSA4Ljcg4oCUIGRvd25sb2FkIGl0IGZyb20gdGhlIEFjdGlvbnMgcnVuLgoKUmVsZWFzZSBidWlsZHMgYXJlIG1pbmlmaWVkIGFuZCByZXNvdXJjZS1zaHJ1bmsgdG8ga2VlcCB0aGUgQVBLIHNtYWxsLCBhbmQKYXJlIHNpZ25lZCB3aXRoIHRoZSBvd25lcidzIGZpeGVkIHJlbGVhc2Uga2V5IHdoZW4gaXRzIGxvY2F0aW9uIGFuZApwYXNzd29yZHMgYXJlIHByb3ZpZGVkIHRocm91Z2ggdGhlIGBJTkRFWF9TVE9SRV9GSUxFYCwKYElOREVYX1NUT1JFX1BBU1NXT1JEYCwgYElOREVYX0tFWV9BTElBU2AgYW5kIGBJTkRFWF9LRVlfUEFTU1dPUkRgCmVudmlyb25tZW50IHZhcmlhYmxlcyAob3IgdGhlIG1hdGNoaW5nIEdyYWRsZSBwcm9wZXJ0aWVzKS4gVGhlIGtleSBpdHNlbGYgaXMKbmV2ZXIgY29tbWl0dGVkIHRvIHRoaXMgcmVwby4KCiMjIEEgbm90ZSBvbiBzaXplIGFuZCBzcGVlZAoKSU5ERVggaXMgYnVpbHQgdG8gYmUgdXNlZCBvbiB3aGF0ZXZlciBwaG9uZSBhIHN0dWRlbnQgYWxyZWFkeSBoYXMuIExpc3RzCmxvYWQgc3RyYWlnaHQgZnJvbSB0aGUgZGF0YWJhc2UsIGZpbGUgY29waWVzIGFuZCBQREYgYnVpbGRpbmcgcnVuIGluIHRoZQpiYWNrZ3JvdW5kIHNvIHRoZSBzY3JlZW4gbmV2ZXIgZnJlZXplcywgdGhlIFBERiBtYWtlciBwcm9jZXNzZXMgcGhvdG9zIG9uZQphdCBhIHRpbWUgYXQgYSBzZW5zaWJsZSBzaXplIGluc3RlYWQgb2YgbG9hZGluZyBmdWxsIGNhbWVyYSBwaG90b3MgaW50bwptZW1vcnksIGFuZCBQREYgcHJldmlldyByZW5kZXJzIGEgc2luZ2xlIHBhZ2UgYXQgYSB0aW1lIGZvciB0aGUgc2FtZQpyZWFzb24uCgojIyBUZWNoLCBpbiBwbGFpbiB3b3JkcwoKS290bGluICsgcmVndWxhciBBbmRyb2lkIHNjcmVlbnMgKFhNTCBsYXlvdXRzLCBubyBoZWF2eXdlaWdodCBVSSBraXQpLCBhClJvb20gZGF0YWJhc2UgKFNRTGl0ZSwgYnVpbHQgaW50byBBbmRyb2lkKSBmb3IgbG9jYWwgbW9kZSwgYW5kIEFuZHJvaWQncyBvd24KUGRmRG9jdW1lbnQgLyBQZGZSZW5kZXJlciBmb3IgbWFraW5nIGFuZCBwcmV2aWV3aW5nIFBERnMuIEZpcmViYXNlIChBdXRoCndpdGggR29vZ2xlIHNpZ24taW4sIEZpcmVzdG9yZSwgU3RvcmFnZSkgaXMgdGhlIHBsYW5uZWQgc2hhcmVkIGJhY2tlbmQg4oCUCnNlZSBGSVJFQkFTRV9TRVRVUC5tZC4K
+# INDEX
+
+Every class has the same problem. Study material lives in a WhatsApp group,
+and WhatsApp is a river — everything flows away. A PDF sent last month takes
+half an hour of scrolling to find again, if it is found at all.
+
+INDEX is the index of the class. Like the index at the back of a book, it
+exists so you can find anything in seconds.
+
+Material lives in subject folders — Mathematics, Physics, Mechanical, and
+whatever subjects your class actually has. Anyone in the class can upload a
+PDF, photo or document into the right folder, with a title and a short note.
+It stays there, organised, and one search bar finds it across every subject:
+by title, by tag, by the note, by who uploaded it.
+
+## What is inside
+
+- **Subject folders** — one folder per subject, created once by the class
+  owner. Files inside show the uploader's name, the date, the size, and the
+  uploader's own note (like "Math homework — Unit 3"). There are no comments
+  on files, on purpose: folders stay a clean library, talking happens in the
+  group chat.
+- **Share straight from WhatsApp** — see a document in WhatsApp, Files or
+  Gallery? Tap Share → INDEX. The file lands in the upload screen already
+  attached, with its name filled in as the title. No saving it to the phone
+  first and hunting for it afterwards.
+- **Deadlines on Home** — admins create deadline cards ("Mechanical
+  assignment — due Friday"), and Home shows the days left, worked out fresh
+  every time you open the app.
+- **Group chat + Notices** — one class chat, where every upload also posts
+  itself ("Aman added Laplace Notes to Mathematics" — tap it to open the
+  file). Beside it, a Notices section only admins can post in, so an
+  important notice never gets buried under chat again. Chat messages can be
+  deleted for everyone, WhatsApp-style: the message becomes
+  "This message was deleted" for the whole class.
+- **Request board** — missing something? Post a request. Whoever has the
+  material uploads it against your request, and the request closes.
+- **PDF maker** — photos of your assignment pages in, one clean PDF out.
+  No ads, no watermark. The PDF can go straight into a subject folder.
+- **Roles** — the Owner runs the class. Admins (picked by the Owner) can add
+  subjects, post notices and create deadlines. Only the Owner can delete a
+  subject. Members upload, chat and request.
+- **Trash** — nothing is deleted instantly. Deleted files and subjects sit
+  in Trash for 30 days and can be restored.
+- **Dark mode** — one moon button, on Home beside your profile picture.
+  Same app, dark colours.
+- **Updates** — Profile has a Check for Updates button. New builds install
+  over the old one and everything stays, because the app is always signed
+  with the same key and the class data is not stored inside the APK.
+
+## How it runs today
+
+This build runs in **local mode**: the whole app works on one phone, with
+its data in a small database on the phone itself. It starts with a short
+setup (your name, your class name, your subjects) and some starter content
+so every screen can be tried properly. In Profile there is a **demo role
+preview** switcher — flip between Owner, Admin and Member and watch which
+buttons appear and disappear across the app. That is exactly how the real
+roles will behave.
+
+The shared version — every classmate's phone seeing the same folders and
+chat — plugs into Firebase behind the same screens. All data access already
+goes through one interface (`IndexRepository`), so the cloud version is a
+swap underneath, not a rebuild. The step-by-step lives in
+[FIREBASE_SETUP.md](FIREBASE_SETUP.md), including why the Firebase project
+must be created under the class owner's own Google account.
+
+## Building the APK
+
+Push this project to GitHub and the **Build APK** workflow
+(`.github/workflows/build-apk.yml`) builds a debug APK with JDK 17 and
+Gradle 8.7 — download it from the Actions run.
+
+Release builds are minified and resource-shrunk to keep the APK small, and
+are signed with the owner's fixed release key when its location and
+passwords are provided through the `INDEX_STORE_FILE`,
+`INDEX_STORE_PASSWORD`, `INDEX_KEY_ALIAS` and `INDEX_KEY_PASSWORD`
+environment variables (or the matching Gradle properties). The key itself is
+never committed to this repo.
+
+## A note on size and speed
+
+INDEX is built to be used on whatever phone a student already has. Lists
+load straight from the database, file copies and PDF building run in the
+background so the screen never freezes, the PDF maker processes photos one
+at a time at a sensible size instead of loading full camera photos into
+memory, and PDF preview renders a single page at a time for the same
+reason.
+
+## Tech, in plain words
+
+Kotlin + regular Android screens (XML layouts, no heavyweight UI kit), a
+Room database (SQLite, built into Android) for local mode, and Android's own
+PdfDocument / PdfRenderer for making and previewing PDFs. Firebase (Auth
+with Google sign-in, Firestore, Storage) is the planned shared backend —
+see FIREBASE_SETUP.md.
