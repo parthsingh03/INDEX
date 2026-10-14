@@ -1,1 +1,27 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkKCmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLnVwbG9hZC5VcGxvYWRBY3Rpdml0eQoKLyoqIFRoZSBzaGFyZS1zaGVldCB0YXJnZXQuIFdoZW4gc29tZW9uZSB0YXBzIFNoYXJlIG9uIGEgUERGIG9yIHBob3RvIGluCiAqICBXaGF0c0FwcCwgRmlsZXMgb3IgR2FsbGVyeSBhbmQgcGlja3MgSU5ERVgsIEFuZHJvaWQgc3RhcnRzIFRISVMgYWN0aXZpdHkKICogIChzZWUgdGhlIFNFTkQgLyBTRU5EX01VTFRJUExFIGludGVudCBmaWx0ZXJzIGluIHRoZSBtYW5pZmVzdCkuIEl0IGRvZXMKICogIG5vdGhpbmcgYnV0IGhhbmQgdGhlIHNoYXJlZCBmaWxlKHMpIHRvIHRoZSB1cGxvYWQgc2NyZWVuLCB3aGVyZSB0aGUgZmlsZQogKiAgaXMgYWxyZWFkeSBhdHRhY2hlZCBhbmQgaXRzIG5hbWUgaXMgcHJlLWZpbGxlZCBhcyB0aGUgdGl0bGUg4oCUIG5vCiAqICBzYXZlLXRvLXBob25lLWZpcnN0IGRldG91ci4gKi8KY2xhc3MgU2hhcmVSZWNlaXZlckFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZTogQnVuZGxlPykgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZSkKICAgICAgICB2YWwgdGFyZ2V0ID0gSW50ZW50KHRoaXMsIFVwbG9hZEFjdGl2aXR5OjpjbGFzcy5qYXZhKS5hcHBseSB7CiAgICAgICAgICAgIGFjdGlvbiA9IGludGVudC5hY3Rpb24KICAgICAgICAgICAgdHlwZSA9IGludGVudC50eXBlCiAgICAgICAgICAgIHB1dEV4dHJhcyhpbnRlbnQpCiAgICAgICAgICAgIGFkZEZsYWdzKEludGVudC5GTEFHX0dSQU5UX1JFQURfVVJJX1BFUk1JU1NJT04pCiAgICAgICAgfQogICAgICAgIHN0YXJ0QWN0aXZpdHkodGFyZ2V0KQogICAgICAgIGZpbmlzaCgpCiAgICB9Cn0K
+package com.parth.index.ui
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.parth.index.ui.upload.UploadActivity
+
+/** The share-sheet target. When someone taps Share on a PDF or photo in
+ *  WhatsApp, Files or Gallery and picks INDEX, Android starts THIS activity
+ *  (see the SEND / SEND_MULTIPLE intent filters in the manifest). It does
+ *  nothing but hand the shared file(s) to the upload screen, where the file
+ *  is already attached and its name is pre-filled as the title — no
+ *  save-to-phone-first detour. */
+class ShareReceiverActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val target = Intent(this, UploadActivity::class.java).apply {
+            action = intent.action
+            type = intent.type
+            putExtras(intent)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+        startActivity(target)
+        finish()
+    }
+}
