@@ -1,1 +1,72 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuc2VhcmNoCgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGUKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5jb3JlLndpZGdldC5kb0FmdGVyVGV4dENoYW5nZWQKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5saWZlY3ljbGVTY29wZQppbXBvcnQgYW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5MaW5lYXJMYXlvdXRNYW5hZ2VyCmltcG9ydCBjb20ucGFydGguaW5kZXguSW5kZXhBcHAKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC5kYXRhLm1vZGVsLk1hdGVyaWFsRmlsZUVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkFjdGl2aXR5U2VhcmNoQmluZGluZwppbXBvcnQgY29tLnBhcnRoLmluZGV4LnVpLmFkYXB0ZXJzLkZpbGVBZGFwdGVyCmltcG9ydCBjb20ucGFydGguaW5kZXgudXRpbC5GaWxlQWN0aW9ucwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkpvYgppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuZmlyc3QKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKCi8qKiBPbmUgc2VhcmNoIGFjcm9zcyB0aGUgd2hvbGUgY2xhc3M6IHRpdGxlcywgdGFncywgdGhlIHVwbG9hZGVyJ3Mgbm90ZSwKICogIHVwbG9hZGVyIG5hbWVzIGFuZCBzdWJqZWN0IG5hbWVzLiBFdmVyeXRoaW5nIGlzIG1hdGNoZWQgbG9jYWxseSBvdmVyIHRoZQogKiAgcmVwb3NpdG9yeSdzIGZpbGUgbGlzdCAoaW4gY2xvdWQgbW9kZSB0aGUgc2FtZSBmaWx0ZXIgcnVucyBvdmVyIHRoZQogKiAgc3luY2VkIGNhY2hlIC8gRmlyZXN0b3JlIHF1ZXJ5IOKAlCB0aGUgc2NyZWVuIGRvZXMgbm90IGNoYW5nZSkuICovCmNsYXNzIFNlYXJjaEFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgcHJpdmF0ZSBsYXRlaW5pdCB2YXIgYmluZGluZzogQWN0aXZpdHlTZWFyY2hCaW5kaW5nCiAgICBwcml2YXRlIHZhbCBhcHAgZ2V0KCkgPSBhcHBsaWNhdGlvbiBhcyBJbmRleEFwcAogICAgcHJpdmF0ZSB2YXIgc2VhcmNoSm9iOiBKb2I/ID0gbnVsbAogICAgcHJpdmF0ZSB2YXIgc3ViamVjdE5hbWVzOiBNYXA8TG9uZywgU3RyaW5nPiA9IGVtcHR5TWFwKCkKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIGJpbmRpbmcgPSBBY3Rpdml0eVNlYXJjaEJpbmRpbmcuaW5mbGF0ZShsYXlvdXRJbmZsYXRlcikKICAgICAgICBzZXRDb250ZW50VmlldyhiaW5kaW5nLnJvb3QpCgogICAgICAgIHZhbCBhZGFwdGVyID0gRmlsZUFkYXB0ZXIoCiAgICAgICAgICAgIHN1YmplY3ROYW1lcyA9IHsgc3ViamVjdE5hbWVzIH0sCiAgICAgICAgICAgIG9uQ2xpY2sgPSB7IGZpbGUgLT4gRmlsZUFjdGlvbnMub3Blbih0aGlzLCBmaWxlKSB9CiAgICAgICAgKQogICAgICAgIGJpbmRpbmcucnZTZWFyY2hSZXN1bHRzLmxheW91dE1hbmFnZXIgPSBMaW5lYXJMYXlvdXRNYW5hZ2VyKHRoaXMpCiAgICAgICAgYmluZGluZy5ydlNlYXJjaFJlc3VsdHMuYWRhcHRlciA9IGFkYXB0ZXIKCiAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgc3ViamVjdE5hbWVzID0gYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZVN1YmplY3RzKCkuZmlyc3QoKQogICAgICAgICAgICAgICAgLmFzc29jaWF0ZSB7IGl0LmlkIHRvIGl0Lm5hbWUgfQogICAgICAgIH0KCiAgICAgICAgYmluZGluZy5ldFNlYXJjaFF1ZXJ5LmRvQWZ0ZXJUZXh0Q2hhbmdlZCB7IHRleHQgLT4KICAgICAgICAgICAgdmFsIHF1ZXJ5ID0gdGV4dD8udG9TdHJpbmcoKT8udHJpbSgpPy5sb3dlcmNhc2UoKS5vckVtcHR5KCkKICAgICAgICAgICAgc2VhcmNoSm9iPy5jYW5jZWwoKQogICAgICAgICAgICBpZiAocXVlcnkuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICBhZGFwdGVyLnN1Ym1pdChlbXB0eUxpc3QoKSkKICAgICAgICAgICAgICAgIGJpbmRpbmcudHZTZWFyY2hIaW50LnZpc2liaWxpdHkgPSBWaWV3LlZJU0lCTEUKICAgICAgICAgICAgICAgIHJldHVybkBkb0FmdGVyVGV4dENoYW5nZWQKICAgICAgICAgICAgfQogICAgICAgICAgICBiaW5kaW5nLnR2U2VhcmNoSGludC52aXNpYmlsaXR5ID0gVmlldy5HT05FCiAgICAgICAgICAgIHNlYXJjaEpvYiA9IGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgICAgICB2YWwgYWxsID0gYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZUZpbGVzKCkuZmlyc3QoKQogICAgICAgICAgICAgICAgYWRhcHRlci5zdWJtaXQoYWxsLmZpbHRlciB7IGl0Lm1hdGNoZXMocXVlcnkpIH0pCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgYmluZGluZy5ldFNlYXJjaFF1ZXJ5LnJlcXVlc3RGb2N1cygpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gTWF0ZXJpYWxGaWxlRW50aXR5Lm1hdGNoZXMocXVlcnk6IFN0cmluZyk6IEJvb2xlYW4gewogICAgICAgIHZhbCBzdWJqZWN0ID0gc3ViamVjdE5hbWVzW3N1YmplY3RJZF0/Lmxvd2VyY2FzZSgpLm9yRW1wdHkoKQogICAgICAgIHJldHVybiB0aXRsZS5sb3dlcmNhc2UoKS5jb250YWlucyhxdWVyeSkgfHwKICAgICAgICAgICAgbm90ZS5sb3dlcmNhc2UoKS5jb250YWlucyhxdWVyeSkgfHwKICAgICAgICAgICAgdGFncy5sb3dlcmNhc2UoKS5jb250YWlucyhxdWVyeSkgfHwKICAgICAgICAgICAgdXBsb2FkZXJOYW1lLmxvd2VyY2FzZSgpLmNvbnRhaW5zKHF1ZXJ5KSB8fAogICAgICAgICAgICBmaWxlTmFtZS5sb3dlcmNhc2UoKS5jb250YWlucyhxdWVyeSkgfHwKICAgICAgICAgICAgc3ViamVjdC5jb250YWlucyhxdWVyeSkKICAgIH0KfQo=
+package com.parth.index.ui.search
+
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doAfterTextChanged
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.parth.index.IndexApp
+import com.parth.index.data.model.MaterialFileEntity
+import com.parth.index.databinding.ActivitySearchBinding
+import com.parth.index.ui.adapters.FileAdapter
+import com.parth.index.util.FileActions
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+
+/** One search across the whole class: titles, tags, the uploader's note,
+ *  uploader names and subject names. Everything is matched locally over the
+ *  repository's file list (in cloud mode the same filter runs over the
+ *  synced cache / Firestore query — the screen does not change). */
+class SearchActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySearchBinding
+    private val app get() = application as IndexApp
+    private var searchJob: Job? = null
+    private var subjectNames: Map<Long, String> = emptyMap()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivitySearchBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val adapter = FileAdapter(
+            subjectNames = { subjectNames },
+            onClick = { file -> FileActions.open(this, file) }
+        )
+        binding.rvSearchResults.layoutManager = LinearLayoutManager(this)
+        binding.rvSearchResults.adapter = adapter
+
+        lifecycleScope.launch {
+            subjectNames = app.repository.observeSubjects().first()
+                .associate { it.id to it.name }
+        }
+
+        binding.etSearchQuery.doAfterTextChanged { text ->
+            val query = text?.toString()?.trim()?.lowercase().orEmpty()
+            searchJob?.cancel()
+            if (query.isEmpty()) {
+                adapter.submit(emptyList())
+                binding.tvSearchHint.visibility = View.VISIBLE
+                return@doAfterTextChanged
+            }
+            binding.tvSearchHint.visibility = View.GONE
+            searchJob = lifecycleScope.launch {
+                val all = app.repository.observeFiles().first()
+                adapter.submit(all.filter { it.matches(query) })
+            }
+        }
+        binding.etSearchQuery.requestFocus()
+    }
+
+    private fun MaterialFileEntity.matches(query: String): Boolean {
+        val subject = subjectNames[subjectId]?.lowercase().orEmpty()
+        return title.lowercase().contains(query) ||
+            note.lowercase().contains(query) ||
+            tags.lowercase().contains(query) ||
+            uploaderName.lowercase().contains(query) ||
+            fileName.lowercase().contains(query) ||
+            subject.contains(query)
+    }
+}
