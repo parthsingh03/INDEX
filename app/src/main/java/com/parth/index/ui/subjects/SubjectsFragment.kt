@@ -1,1 +1,185 @@
-cGFja2FnZSBjb20ucGFydGguaW5kZXgudWkuc3ViamVjdHMKCmltcG9ydCBhbmRyb2lkLmdyYXBoaWNzLkNvbG9yCmltcG9ydCBhbmRyb2lkLmdyYXBoaWNzLmRyYXdhYmxlLkdyYWRpZW50RHJhd2FibGUKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkLndpZGdldC5FZGl0VGV4dAppbXBvcnQgYW5kcm9pZC53aWRnZXQuTGluZWFyTGF5b3V0CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZC53aWRnZXQuVG9hc3QKaW1wb3J0IGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQWxlcnREaWFsb2cKaW1wb3J0IGFuZHJvaWR4LmZyYWdtZW50LmFwcC5GcmFnbWVudAppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLkxpZmVjeWNsZQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLmxpZmVjeWNsZVNjb3BlCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUucmVwZWF0T25MaWZlY3ljbGUKaW1wb3J0IGFuZHJvaWR4LnJlY3ljbGVydmlldy53aWRnZXQuTGluZWFyTGF5b3V0TWFuYWdlcgppbXBvcnQgY29tLnBhcnRoLmluZGV4LkluZGV4QXBwCmltcG9ydCBjb20ucGFydGguaW5kZXguZGF0YS5tb2RlbC5Sb2xlcwppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGEubW9kZWwuU3ViamVjdEVudGl0eQppbXBvcnQgY29tLnBhcnRoLmluZGV4LmRhdGFiaW5kaW5nLkZyYWdtZW50U3ViamVjdHNCaW5kaW5nCmltcG9ydCBjb20ucGFydGguaW5kZXgudWkuYWRhcHRlcnMuU3ViamVjdFJvd0FkYXB0ZXIKaW1wb3J0IGNvbS5wYXJ0aC5pbmRleC51aS5zdWJqZWN0LlN1YmplY3REZXRhaWxBY3Rpdml0eQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuY29tYmluZQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmxhdW5jaAoKLyoqIFRoZSBGb2xkZXJzIHRhYjogZXZlcnkgc3ViamVjdCBhcyBhIHJvdy4gTWFuYWdlIG1vZGUgaXMgcm9sZS1zaGFwZWQg4oCUCiAqICBPd25lcjogYWRkICsgcmVuYW1lICsgZGVsZXRlLiBBZG1pbjogYWRkICsgcmVuYW1lLCBOTyBkZWxldGUgYW55d2hlcmUuCiAqICBNZW1iZXI6IHRoZSBNYW5hZ2UgYnV0dG9uIGl0c2VsZiBuZXZlciBhcHBlYXJzLiBEZWxldGluZyBhIHN1YmplY3QgaXMgYQogKiAgc29mdCBkZWxldGUgaW50byBUcmFzaCAoc2VlIFByb2ZpbGUg4oaSIFRyYXNoKSwgbmV2ZXIgYW4gaW5zdGFudCB3aXBlLiAqLwpjbGFzcyBTdWJqZWN0c0ZyYWdtZW50IDogRnJhZ21lbnQoKSB7CgogICAgcHJpdmF0ZSB2YXIgX2JpbmRpbmc6IEZyYWdtZW50U3ViamVjdHNCaW5kaW5nPyA9IG51bGwKICAgIHByaXZhdGUgdmFsIGJpbmRpbmcgZ2V0KCkgPSBfYmluZGluZyEhCiAgICBwcml2YXRlIHZhbCBhcHAgZ2V0KCkgPSByZXF1aXJlQWN0aXZpdHkoKS5hcHBsaWNhdGlvbiBhcyBJbmRleEFwcAoKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGFkYXB0ZXI6IFN1YmplY3RSb3dBZGFwdGVyCiAgICBwcml2YXRlIHZhciBtYW5hZ2VNb2RlID0gZmFsc2UKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGVWaWV3KAogICAgICAgIGluZmxhdGVyOiBMYXlvdXRJbmZsYXRlciwgY29udGFpbmVyOiBWaWV3R3JvdXA/LCBzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8KICAgICk6IFZpZXcgewogICAgICAgIF9iaW5kaW5nID0gRnJhZ21lbnRTdWJqZWN0c0JpbmRpbmcuaW5mbGF0ZShpbmZsYXRlciwgY29udGFpbmVyLCBmYWxzZSkKICAgICAgICByZXR1cm4gYmluZGluZy5yb290CiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uVmlld0NyZWF0ZWQodmlldzogVmlldywgc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25WaWV3Q3JlYXRlZCh2aWV3LCBzYXZlZEluc3RhbmNlU3RhdGUpCiAgICAgICAgdmFsIHJvbGUgPSBhcHAucHJlZnMucm9sZQogICAgICAgIHZhbCBjYW5NYW5hZ2UgPSBSb2xlcy5jYW5NYW5hZ2Uocm9sZSkKICAgICAgICB2YWwgaXNPd25lciA9IHJvbGUgPT0gUm9sZXMuT1dORVIKCiAgICAgICAgYWRhcHRlciA9IFN1YmplY3RSb3dBZGFwdGVyKAogICAgICAgICAgICBvbkNsaWNrID0geyBzdWJqZWN0IC0+CiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KFN1YmplY3REZXRhaWxBY3Rpdml0eS5pbnRlbnQocmVxdWlyZUNvbnRleHQoKSwgc3ViamVjdC5pZCkpCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIG9uUmVuYW1lID0geyBzdWJqZWN0IC0+IHNob3dSZW5hbWVEaWFsb2coc3ViamVjdCkgfSwKICAgICAgICAgICAgb25EZWxldGUgPSB7IHN1YmplY3QgLT4gY29uZmlybURlbGV0ZVN1YmplY3Qoc3ViamVjdCkgfQogICAgICAgICkKICAgICAgICBiaW5kaW5nLnJ2U3ViamVjdHNMaXN0LmxheW91dE1hbmFnZXIgPSBMaW5lYXJMYXlvdXRNYW5hZ2VyKHJlcXVpcmVDb250ZXh0KCkpCiAgICAgICAgYmluZGluZy5ydlN1YmplY3RzTGlzdC5hZGFwdGVyID0gYWRhcHRlcgoKICAgICAgICBiaW5kaW5nLmJ0bk1hbmFnZVN1YmplY3RzLnZpc2liaWxpdHkgPSBpZiAoY2FuTWFuYWdlKSBWaWV3LlZJU0lCTEUgZWxzZSBWaWV3LkdPTkUKICAgICAgICBiaW5kaW5nLmJ0bk1hbmFnZVN1YmplY3RzLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgIG1hbmFnZU1vZGUgPSAhbWFuYWdlTW9kZQogICAgICAgICAgICBiaW5kaW5nLmJ0bk1hbmFnZVN1YmplY3RzLnRleHQgPSBpZiAobWFuYWdlTW9kZSkgIkRvbmUiIGVsc2UgIk1hbmFnZSBzdWJqZWN0cyIKICAgICAgICAgICAgYmluZGluZy5idG5BZGRTdWJqZWN0LnZpc2liaWxpdHkgPQogICAgICAgICAgICAgICAgaWYgKG1hbmFnZU1vZGUgJiYgY2FuTWFuYWdlKSBWaWV3LlZJU0lCTEUgZWxzZSBWaWV3LkdPTkUKICAgICAgICAgICAgYWRhcHRlci5zZXRNYW5hZ2VNb2RlKG1hbmFnZU1vZGUsIGRlbGV0ZUFsbG93ZWQgPSBpc093bmVyKQogICAgICAgIH0KICAgICAgICBiaW5kaW5nLmJ0bkFkZFN1YmplY3Quc2V0T25DbGlja0xpc3RlbmVyIHsgc2hvd0FkZFN1YmplY3REaWFsb2coKSB9CgogICAgICAgIHZpZXdMaWZlY3ljbGVPd25lci5saWZlY3ljbGVTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2aWV3TGlmZWN5Y2xlT3duZXIucmVwZWF0T25MaWZlY3ljbGUoTGlmZWN5Y2xlLlN0YXRlLlNUQVJURUQpIHsKICAgICAgICAgICAgICAgIGNvbWJpbmUoCiAgICAgICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZVN1YmplY3RzKCksCiAgICAgICAgICAgICAgICAgICAgYXBwLnJlcG9zaXRvcnkub2JzZXJ2ZUZpbGVzKCkKICAgICAgICAgICAgICAgICkgeyBzdWJqZWN0cywgZmlsZXMgLT4gc3ViamVjdHMgdG8gZmlsZXMgfS5jb2xsZWN0IHsgKHN1YmplY3RzLCBmaWxlcykgLT4KICAgICAgICAgICAgICAgICAgICB2YWwgY291bnRzID0gZmlsZXMuZ3JvdXBpbmdCeSB7IGl0LnN1YmplY3RJZCB9LmVhY2hDb3VudCgpCiAgICAgICAgICAgICAgICAgICAgYWRhcHRlci5zdWJtaXQoc3ViamVjdHMsIGNvdW50cykKICAgICAgICAgICAgICAgICAgICBiaW5kaW5nLnR2U3ViamVjdHNFbXB0eS52aXNpYmlsaXR5ID0KICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHN1YmplY3RzLmlzRW1wdHkoKSkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gc2hvd0FkZFN1YmplY3REaWFsb2coKSB7CiAgICAgICAgdmFsIGN0eCA9IHJlcXVpcmVDb250ZXh0KCkKICAgICAgICB2YWwgY29udGFpbmVyID0gTGluZWFyTGF5b3V0KGN0eCkuYXBwbHkgewogICAgICAgICAgICBvcmllbnRhdGlvbiA9IExpbmVhckxheW91dC5WRVJUSUNBTAogICAgICAgICAgICBzZXRQYWRkaW5nKDQ4LCAyNCwgNDgsIDgpCiAgICAgICAgfQogICAgICAgIHZhbCBldE5hbWUgPSBFZGl0VGV4dChjdHgpLmFwcGx5IHsgaGludCA9ICJTdWJqZWN0IG5hbWUiIH0KICAgICAgICBjb250YWluZXIuYWRkVmlldyhldE5hbWUpCiAgICAgICAgdmFsIGNvbG9ycyA9IGxpc3RPZigKICAgICAgICAgICAgIiMyNTYzRUIiLCAiIzdDM0FFRCIsICIjRTE3MDU1IiwgIiMwRDk0ODgiLAogICAgICAgICAgICAiI0RCMjc3NyIsICIjRDk3NzA2IiwgIiMwNTk2NjkiLCAiIzYzNkU3MiIKICAgICAgICApCiAgICAgICAgdmFyIHNlbGVjdGVkID0gY29sb3JzWzBdCiAgICAgICAgdmFsIGNoaXBSb3cgPSBMaW5lYXJMYXlvdXQoY3R4KS5hcHBseSB7CiAgICAgICAgICAgIG9yaWVudGF0aW9uID0gTGluZWFyTGF5b3V0LkhPUklaT05UQUwKICAgICAgICAgICAgc2V0UGFkZGluZygwLCAyOCwgMCwgOCkKICAgICAgICB9CiAgICAgICAgdmFsIGNoaXBzID0gbXV0YWJsZUxpc3RPZjxUZXh0Vmlldz4oKQogICAgICAgIGZvciAoaGV4IGluIGNvbG9ycykgewogICAgICAgICAgICB2YWwgY2hpcCA9IFRleHRWaWV3KGN0eCkuYXBwbHkgewogICAgICAgICAgICAgICAgbGF5b3V0UGFyYW1zID0gTGluZWFyTGF5b3V0LkxheW91dFBhcmFtcyg2NCwgNjQpLmFwcGx5IHsgbWFyZ2luRW5kID0gMTQgfQogICAgICAgICAgICAgICAgYmFja2dyb3VuZCA9IEdyYWRpZW50RHJhd2FibGUoKS5hcHBseSB7CiAgICAgICAgICAgICAgICAgICAgc2hhcGUgPSBHcmFkaWVudERyYXdhYmxlLk9WQUwKICAgICAgICAgICAgICAgICAgICBzZXRDb2xvcihDb2xvci5wYXJzZUNvbG9yKGhleCkpCiAgICAgICAgICAgICAgICAgICAgaWYgKGhleCA9PSBzZWxlY3RlZCkgc2V0U3Ryb2tlKDYsIENvbG9yLkRLR1JBWSkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWQgPSBoZXgKICAgICAgICAgICAgICAgICAgICBjaGlwcy5mb3JFYWNoSW5kZXhlZCB7IGksIGMgLT4KICAgICAgICAgICAgICAgICAgICAgICAgKGMuYmFja2dyb3VuZCBhcyBHcmFkaWVudERyYXdhYmxlKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgLnNldFN0cm9rZShpZiAoY29sb3JzW2ldID09IHNlbGVjdGVkKSA2IGVsc2UgMCwgQ29sb3IuREtHUkFZKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjaGlwcy5hZGQoY2hpcCkKICAgICAgICAgICAgY2hpcFJvdy5hZGRWaWV3KGNoaXApCiAgICAgICAgfQogICAgICAgIGNvbnRhaW5lci5hZGRWaWV3KGNoaXBSb3cpCgogICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIoY3R4KQogICAgICAgICAgICAuc2V0VGl0bGUoIkFkZCBzdWJqZWN0IikKICAgICAgICAgICAgLnNldFZpZXcoY29udGFpbmVyKQogICAgICAgICAgICAuc2V0UG9zaXRpdmVCdXR0b24oIkFkZCIpIHsgXywgXyAtPgogICAgICAgICAgICAgICAgdmFsIG5hbWUgPSBldE5hbWUudGV4dC50b1N0cmluZygpLnRyaW0oKQogICAgICAgICAgICAgICAgaWYgKG5hbWUuaXNFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICAgICAgVG9hc3QubWFrZVRleHQoY3R4LCAiR2l2ZSB0aGUgc3ViamVjdCBhIG5hbWUuIiwgVG9hc3QuTEVOR1RIX1NIT1JUKS5zaG93KCkKICAgICAgICAgICAgICAgICAgICByZXR1cm5Ac2V0UG9zaXRpdmVCdXR0b24KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7IGFwcC5yZXBvc2l0b3J5LmFkZFN1YmplY3QobmFtZSwgc2VsZWN0ZWQpIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAuc2V0TmVnYXRpdmVCdXR0b24oIkNhbmNlbCIsIG51bGwpCiAgICAgICAgICAgIC5zaG93KCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBzaG93UmVuYW1lRGlhbG9nKHN1YmplY3Q6IFN1YmplY3RFbnRpdHkpIHsKICAgICAgICB2YWwgY3R4ID0gcmVxdWlyZUNvbnRleHQoKQogICAgICAgIHZhbCBldE5hbWUgPSBFZGl0VGV4dChjdHgpLmFwcGx5IHsKICAgICAgICAgICAgc2V0VGV4dChzdWJqZWN0Lm5hbWUpCiAgICAgICAgICAgIHNldFBhZGRpbmcoNDgsIDMyLCA0OCwgMTYpCiAgICAgICAgfQogICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIoY3R4KQogICAgICAgICAgICAuc2V0VGl0bGUoIlJlbmFtZSBzdWJqZWN0IikKICAgICAgICAgICAgLnNldFZpZXcoZXROYW1lKQogICAgICAgICAgICAuc2V0UG9zaXRpdmVCdXR0b24oIlNhdmUiKSB7IF8sIF8gLT4KICAgICAgICAgICAgICAgIHZhbCBuYW1lID0gZXROYW1lLnRleHQudG9TdHJpbmcoKS50cmltKCkKICAgICAgICAgICAgICAgIGlmIChuYW1lLmlzTm90RW1wdHkoKSkgewogICAgICAgICAgICAgICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7IGFwcC5yZXBvc2l0b3J5LnJlbmFtZVN1YmplY3Qoc3ViamVjdC5pZCwgbmFtZSkgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIC5zZXROZWdhdGl2ZUJ1dHRvbigiQ2FuY2VsIiwgbnVsbCkKICAgICAgICAgICAgLnNob3coKQogICAgfQoKICAgIHByaXZhdGUgZnVuIGNvbmZpcm1EZWxldGVTdWJqZWN0KHN1YmplY3Q6IFN1YmplY3RFbnRpdHkpIHsKICAgICAgICB2YWwgY3R4ID0gcmVxdWlyZUNvbnRleHQoKQogICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIHZhbCBjb3VudCA9IGFwcC5yZXBvc2l0b3J5LmZpbGVDb3VudEZvclN1YmplY3Qoc3ViamVjdC5pZCkKICAgICAgICAgICAgQWxlcnREaWFsb2cuQnVpbGRlcihjdHgpCiAgICAgICAgICAgICAgICAuc2V0VGl0bGUoIkRlbGV0ZSDigJwke3N1YmplY3QubmFtZX3igJ0/IikKICAgICAgICAgICAgICAgIC5zZXRNZXNzYWdlKAogICAgICAgICAgICAgICAgICAgICJUaGlzIHN1YmplY3QgaGFzICRjb3VudCBmaWxlJHtpZiAoY291bnQgPT0gMSkgIiIgZWxzZSAicyJ9LiAiICsKICAgICAgICAgICAgICAgICAgICAgICAgIkl0IG1vdmVzIHRvIFRyYXNoIGZvciAzMCBkYXlzIOKAlCBub3RoaW5nIGlzIHdpcGVkIGluc3RhbnRseSwgIiArCiAgICAgICAgICAgICAgICAgICAgICAgICJhbmQgdGhlIE93bmVyIGNhbiByZXN0b3JlIGl0IGZyb20gUHJvZmlsZSDihpIgVHJhc2guIgogICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgLnNldFBvc2l0aXZlQnV0dG9uKCJNb3ZlIHRvIFRyYXNoIikgeyBfLCBfIC0+CiAgICAgICAgICAgICAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsgYXBwLnJlcG9zaXRvcnkuZGVsZXRlU3ViamVjdChzdWJqZWN0LmlkKSB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAuc2V0TmVnYXRpdmVCdXR0b24oIkNhbmNlbCIsIG51bGwpCiAgICAgICAgICAgICAgICAuc2hvdygpCiAgICAgICAgfQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkRlc3Ryb3lWaWV3KCkgewogICAgICAgIHN1cGVyLm9uRGVzdHJveVZpZXcoKQogICAgICAgIF9iaW5kaW5nID0gbnVsbAogICAgfQp9Cg==
+package com.parth.index.ui.subjects
+
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.parth.index.IndexApp
+import com.parth.index.data.model.Roles
+import com.parth.index.data.model.SubjectEntity
+import com.parth.index.databinding.FragmentSubjectsBinding
+import com.parth.index.ui.adapters.SubjectRowAdapter
+import com.parth.index.ui.subject.SubjectDetailActivity
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.launch
+
+/** The Folders tab: every subject as a row. Manage mode is role-shaped —
+ *  Owner: add + rename + delete. Admin: add + rename, NO delete anywhere.
+ *  Member: the Manage button itself never appears. Deleting a subject is a
+ *  soft delete into Trash (see Profile → Trash), never an instant wipe. */
+class SubjectsFragment : Fragment() {
+
+    private var _binding: FragmentSubjectsBinding? = null
+    private val binding get() = _binding!!
+    private val app get() = requireActivity().application as IndexApp
+
+    private lateinit var adapter: SubjectRowAdapter
+    private var manageMode = false
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentSubjectsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val role = app.prefs.role
+        val canManage = Roles.canManage(role)
+        val isOwner = role == Roles.OWNER
+
+        adapter = SubjectRowAdapter(
+            onClick = { subject ->
+                startActivity(SubjectDetailActivity.intent(requireContext(), subject.id))
+            },
+            onRename = { subject -> showRenameDialog(subject) },
+            onDelete = { subject -> confirmDeleteSubject(subject) }
+        )
+        binding.rvSubjectsList.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvSubjectsList.adapter = adapter
+
+        binding.btnManageSubjects.visibility = if (canManage) View.VISIBLE else View.GONE
+        binding.btnManageSubjects.setOnClickListener {
+            manageMode = !manageMode
+            binding.btnManageSubjects.text = if (manageMode) "Done" else "Manage subjects"
+            binding.btnAddSubject.visibility =
+                if (manageMode && canManage) View.VISIBLE else View.GONE
+            adapter.setManageMode(manageMode, deleteAllowed = isOwner)
+        }
+        binding.btnAddSubject.setOnClickListener { showAddSubjectDialog() }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                combine(
+                    app.repository.observeSubjects(),
+                    app.repository.observeFiles()
+                ) { subjects, files -> subjects to files }.collect { (subjects, files) ->
+                    val counts = files.groupingBy { it.subjectId }.eachCount()
+                    adapter.submit(subjects, counts)
+                    binding.tvSubjectsEmpty.visibility =
+                        if (subjects.isEmpty()) View.VISIBLE else View.GONE
+                }
+            }
+        }
+    }
+
+    private fun showAddSubjectDialog() {
+        val ctx = requireContext()
+        val container = LinearLayout(ctx).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(48, 24, 48, 8)
+        }
+        val etName = EditText(ctx).apply { hint = "Subject name" }
+        container.addView(etName)
+        val colors = listOf(
+            "#2563EB", "#7C3AED", "#E17055", "#0D9488",
+            "#DB2777", "#D97706", "#059669", "#636E72"
+        )
+        var selected = colors[0]
+        val chipRow = LinearLayout(ctx).apply {
+            orientation = LinearLayout.HORIZONTAL
+            setPadding(0, 28, 0, 8)
+        }
+        val chips = mutableListOf<TextView>()
+        for (hex in colors) {
+            val chip = TextView(ctx).apply {
+                layoutParams = LinearLayout.LayoutParams(64, 64).apply { marginEnd = 14 }
+                background = GradientDrawable().apply {
+                    shape = GradientDrawable.OVAL
+                    setColor(Color.parseColor(hex))
+                    if (hex == selected) setStroke(6, Color.DKGRAY)
+                }
+                setOnClickListener {
+                    selected = hex
+                    chips.forEachIndexed { i, c ->
+                        (c.background as GradientDrawable)
+                            .setStroke(if (colors[i] == selected) 6 else 0, Color.DKGRAY)
+                    }
+                }
+            }
+            chips.add(chip)
+            chipRow.addView(chip)
+        }
+        container.addView(chipRow)
+
+        AlertDialog.Builder(ctx)
+            .setTitle("Add subject")
+            .setView(container)
+            .setPositiveButton("Add") { _, _ ->
+                val name = etName.text.toString().trim()
+                if (name.isEmpty()) {
+                    Toast.makeText(ctx, "Give the subject a name.", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+                lifecycleScope.launch { app.repository.addSubject(name, selected) }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
+    private fun showRenameDialog(subject: SubjectEntity) {
+        val ctx = requireContext()
+        val etName = EditText(ctx).apply {
+            setText(subject.name)
+            setPadding(48, 32, 48, 16)
+        }
+        AlertDialog.Builder(ctx)
+            .setTitle("Rename subject")
+            .setView(etName)
+            .setPositiveButton("Save") { _, _ ->
+                val name = etName.text.toString().trim()
+                if (name.isNotEmpty()) {
+                    lifecycleScope.launch { app.repository.renameSubject(subject.id, name) }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
+    private fun confirmDeleteSubject(subject: SubjectEntity) {
+        val ctx = requireContext()
+        lifecycleScope.launch {
+            val count = app.repository.fileCountForSubject(subject.id)
+            AlertDialog.Builder(ctx)
+                .setTitle("Delete “${subject.name}”?")
+                .setMessage(
+                    "This subject has $count file${if (count == 1) "" else "s"}. " +
+                        "It moves to Trash for 30 days — nothing is wiped instantly, " +
+                        "and the Owner can restore it from Profile → Trash."
+                )
+                .setPositiveButton("Move to Trash") { _, _ ->
+                    lifecycleScope.launch { app.repository.deleteSubject(subject.id) }
+                }
+                .setNegativeButton("Cancel", null)
+                .show()
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
