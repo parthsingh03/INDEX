@@ -1,1 +1,5 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHNoYXBlIHhtbG5zOmFuZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCIgYW5kcm9pZDpzaGFwZT0icmVjdGFuZ2xlIj4KICAgIDxjb3JuZXJzIGFuZHJvaWQ6cmFkaXVzPSIyOGRwIiAvPgogICAgPHNvbGlkIGFuZHJvaWQ6Y29sb3I9IkBjb2xvci9jaGlwX2JnIiAvPgo8L3NoYXBlPgo=
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="28dp" />
+    <solid android:color="@color/chip_bg" />
+</shape>
