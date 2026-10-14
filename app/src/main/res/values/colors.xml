@@ -1,1 +1,23 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlcz4KICAgIDwhLS0gQ2xlYW4gQ2FtcHVzIHBhbGV0dGUgKGxpZ2h0KS4gVGhlIG5pZ2h0IGNvcHkgb2YgdGhpcyBmaWxlIGhvbGRzIHRoZQogICAgICAgICBzYW1lIGxheW91dCBpbiBkYXJrIGNvbG91cnMg4oCUIGRhcmsgbW9kZSBpcyBhIHBhbGV0dGUgc3dhcCwgbm90IGEKICAgICAgICAgZGlmZmVyZW50IGRlc2lnbi4gLS0+CiAgICA8Y29sb3IgbmFtZT0icHJpbWFyeSI+IzI1NjNFQjwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0icHJpbWFyeV9kYXJrIj4jMUQ0RUQ4PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJwcmltYXJ5X3NvZnQiPiNFMEU5RkY8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImJhY2tncm91bmQiPiNGNkY3Rjk8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9InN1cmZhY2UiPiNGRkZGRkY8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9InN1cmZhY2VfYWx0Ij4jRjBGMkY1PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJvbl9iYWNrZ3JvdW5kIj4jMTIxODI2PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJvbl9zdXJmYWNlIj4jMTIxODI2PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJtdXRlZCI+IzZFNzc4NzwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0iZGl2aWRlciI+I0UzRTZFQjwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0iZGVhZGxpbmVfYmciPiNGRkYzRDY8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImRlYWRsaW5lX2FjY2VudCI+I0I0NkUwQTwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0iZGVhZGxpbmVfYmlnIj4jRDk3NzA2PC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJwZGZfcmVkIj4jRDYzMDMxPC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJjaGlwX2JnIj4jRTVFOUYwPC9jb2xvcj4KICAgIDxjb2xvciBuYW1lPSJ3aGl0ZSI+I0ZGRkZGRjwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0iYmxhY2siPiMwMDAwMDA8L2NvbG9yPgo8L3Jlc291cmNlcz4K
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clean Campus palette (light). The night copy of this file holds the
+         same layout in dark colours — dark mode is a palette swap, not a
+         different design. -->
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="primary_soft">#E0E9FF</color>
+    <color name="background">#F6F7F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#F0F2F5</color>
+    <color name="on_background">#121826</color>
+    <color name="on_surface">#121826</color>
+    <color name="muted">#6E7787</color>
+    <color name="divider">#E3E6EB</color>
+    <color name="deadline_bg">#FFF3D6</color>
+    <color name="deadline_accent">#B46E0A</color>
+    <color name="deadline_big">#D97706</color>
+    <color name="pdf_red">#D63031</color>
+    <color name="chip_bg">#E5E9F0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
