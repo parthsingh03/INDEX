@@ -13,19 +13,36 @@ import com.parth.index.databinding.ItemNoticeBinding
 import com.parth.index.databinding.ItemRequestBinding
 import com.parth.index.util.Format
 
-/** Group chat rows. A deleted-for-everyone message renders as the WhatsApp
- *  tombstone — italic grey "This message was deleted" — because the original
- *  text was replaced in the database at delete time. Auto-posted upload
- *  messages (systemFileId > 0) tap through to the file. */
+/** Group chat rows (v1.4 Discord pack). A deleted-for-everyone message
+ *  renders as the WhatsApp tombstone — italic grey "This message was
+ *  deleted" — because the original text was replaced in the database at
+ *  delete time. Upload auto-posts (systemFileId > 0) render as a tinted
+ *  FILE CARD and tap through to the file; quote-replies carry their
+ *  quoted strip; reactions render as tappable chips under the bubble;
+ *  one chosen row carries the "new messages" divider above it. */
 class ChatAdapter(
+    private val myUid: () -> String,
+    private val fileLookup: (Long) -> com.parth.index.data.model.MaterialFileEntity?,
     private val onClick: (ChatMessageEntity) -> Unit,
-    private val onLongClick: (ChatMessageEntity) -> Unit
+    private val onLongClick: (ChatMessageEntity) -> Unit,
+    private val onToggleReaction: (ChatMessageEntity, String) -> Unit,
+    private val onSenderClick: (ChatMessageEntity) -> Unit,
+    private val onQuoteClick: (ChatMessageEntity) -> Unit
 ) : RecyclerView.Adapter<ChatAdapter.Holder>() {
 
     private var items: List<ChatMessageEntity> = emptyList()
 
+    /** Id of the message the "new messages" divider sits above (-1: none). */
+    private var dividerBeforeId: Long = -1
+
     fun submit(list: List<ChatMessageEntity>) {
         items = list
+        notifyDataSetChanged()
+    }
+
+    fun setDividerBefore(messageId: Long) {
+        if (dividerBeforeId == messageId) return
+        dividerBeforeId = messageId
         notifyDataSetChanged()
     }
 
@@ -41,20 +58,107 @@ class ChatAdapter(
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val message = items[position]
         with(holder.binding) {
+            tvNewDivider.visibility =
+                if (message.id == dividerBeforeId && dividerBeforeId > 0) View.VISIBLE
+                else View.GONE
             tvChatTime.text = Format.time(message.timestamp)
+            tvChatSender.setOnClickListener { onSenderClick(message) }
+
             if (message.deletedForEveryone) {
                 tvChatSender.text = message.senderName
+                tvChatText.visibility = View.VISIBLE
                 tvChatText.text = "This message was deleted"
                 tvChatText.setTypeface(null, Typeface.ITALIC)
-            } else {
-                tvChatText.setTypeface(null, Typeface.NORMAL)
-                tvChatSender.text =
-                    if (message.systemFileId > 0) "${message.senderName} · INDEX"
-                    else "${message.senderName} · ${message.senderRole}"
-                tvChatText.text = message.text
+                layoutQuote.visibility = View.GONE
+                layoutFileCard.visibility = View.GONE
+                layoutReactions.visibility = View.GONE
+                root.setOnClickListener { onClick(message) }
+                root.setOnLongClickListener { onLongClick(message); true }
+                return@with
             }
+            tvChatText.setTypeface(null, Typeface.NORMAL)
+
+            val file = if (message.systemFileId > 0) fileLookup(message.systemFileId) else null
+            if (message.systemFileId > 0) {
+                // Upload auto-post: the CARD, never a text bubble.
+                tvChatSender.text = "${message.senderName} · ${message.senderRole}"
+                tvChatText.visibility = View.GONE
+                layoutQuote.visibility = View.GONE
+                layoutFileCard.visibility = View.VISIBLE
+                if (file != null) {
+                    com.parth.index.util.FileActions.styleBadge(tvCardBadge, file)
+                    tvCardTitle.text = file.title
+                    tvCardMeta.text =
+                        "${com.parth.index.util.FileActions.badge(file).first} • " +
+                            Format.size(file.sizeBytes)
+                } else {
+                    tvCardTitle.text = message.text
+                    tvCardMeta.text = "File"
+                }
+            } else {
+                tvChatSender.text = "${message.senderName} · ${message.senderRole}"
+                tvChatText.visibility = View.VISIBLE
+                tvChatText.text = message.text
+                layoutFileCard.visibility = View.GONE
+                if (message.replyToId > 0) {
+                    layoutQuote.visibility = View.VISIBLE
+                    tvQuoteSender.text = message.replyToSender
+                    tvQuoteText.text = message.replyToText
+                    layoutQuote.setOnClickListener { onQuoteClick(message) }
+                } else {
+                    layoutQuote.visibility = View.GONE
+                }
+            }
+
+            bindReactions(holder, message)
+
             root.setOnClickListener { onClick(message) }
             root.setOnLongClickListener { onLongClick(message); true }
+        }
+    }
+
+    /** One chip per emoji in use: "👍 3". My own reactions are
+     *  highlighted; tapping any chip toggles mine — that is how you
+     *  react again (or un-react) from the row itself. */
+    private fun bindReactions(holder: Holder, message: ChatMessageEntity) {
+        val reactions = com.parth.index.util.Reactions.parse(message.reactionsJson)
+        with(holder.binding.layoutReactions) {
+            removeAllViews()
+            if (reactions.isEmpty()) {
+                visibility = View.GONE
+                return
+            }
+            visibility = View.VISIBLE
+            val uid = myUid()
+            val density = context.resources.displayMetrics.density
+            for ((emoji, uids) in reactions) {
+                val mine = uids.contains(uid)
+                val chip = android.widget.TextView(context).apply {
+                    text = "$emoji ${uids.size}"
+                    textSize = 12f
+                    setPadding(
+                        (7 * density).toInt(), (3 * density).toInt(),
+                        (7 * density).toInt(), (3 * density).toInt()
+                    )
+                    setBackgroundResource(
+                        if (mine) com.parth.index.R.drawable.bg_reaction_chip_mine
+                        else com.parth.index.R.drawable.bg_reaction_chip
+                    )
+                    setTextColor(
+                        androidx.core.content.ContextCompat.getColor(
+                            context,
+                            if (mine) com.parth.index.R.color.primary
+                            else com.parth.index.R.color.on_surface
+                        )
+                    )
+                    layoutParams = android.widget.LinearLayout.LayoutParams(
+                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT
+                    ).apply { marginEnd = (5 * density).toInt() }
+                    setOnClickListener { onToggleReaction(message, emoji) }
+                }
+                addView(chip)
+            }
         }
     }
 

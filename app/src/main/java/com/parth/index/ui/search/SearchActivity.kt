@@ -33,7 +33,8 @@ class SearchActivity : AppCompatActivity() {
 
         val adapter = FileAdapter(
             subjectNames = { subjectNames },
-            onClick = { file -> FileActions.open(this, file) }
+            onClick = { file -> FileActions.open(this, file) },
+            onDownload = { file -> com.parth.index.util.FileSaver.save(this, file) }
         )
         binding.rvSearchResults.layoutManager = LinearLayoutManager(this)
         binding.rvSearchResults.adapter = adapter

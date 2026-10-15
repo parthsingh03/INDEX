@@ -108,7 +108,8 @@ class HomeFragment : Fragment() {
 
         recentAdapter = FileAdapter(
             subjectNames = { subjectNames },
-            onClick = { file -> FileActions.open(requireActivity(), file) }
+            onClick = { file -> FileActions.open(requireActivity(), file) },
+            onDownload = { file -> com.parth.index.util.FileSaver.save(requireActivity(), file) }
         )
         binding.rvRecent.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRecent.adapter = recentAdapter
