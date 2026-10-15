@@ -86,7 +86,95 @@ class ProfileActivity : AppCompatActivity() {
         binding.btnCheckUpdates.setOnClickListener { checkForUpdates() }
         binding.btnUpdate.setOnClickListener { downloadAndInstallUpdate() }
 
+        // Owner-only reset (v1.4): firestore.rules backs the UI gate —
+        // chat/notices/deadline deletes are manager-only there and file
+        // deletes owner-or-uploader, but the buttons only ever render
+        // for the Owner, exactly as specced.
+        binding.layoutDangerZone.visibility =
+            if (prefs.role == Roles.OWNER) View.VISIBLE else View.GONE
+        binding.btnClearChat.setOnClickListener { confirmClearChat() }
+        binding.btnClearEverything.setOnClickListener { confirmClearEverything() }
+
         refreshStorage()
+    }
+
+    private fun confirmClearChat() {
+        androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Clear the group chat?")
+            .setMessage(
+                "Every chat message is permanently deleted for the whole class. " +
+                    "Files, notices, deadlines, members and subjects stay."
+            )
+            .setPositiveButton("Clear chat") { _, _ ->
+                lifecycleScope.launch {
+                    runCatching { app.repository.clearChat() }
+                        .onSuccess {
+                            Toast.makeText(
+                                this@ProfileActivity, "Chat cleared.", Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                        .onFailure {
+                            Toast.makeText(
+                                this@ProfileActivity,
+                                "Could not clear the chat — check the connection and try again.",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+
+    /** The nuke gets the GitHub treatment: the confirm button stays
+     *  DISABLED until the owner types RESET — no fat-finger apocalypse. */
+    private fun confirmClearEverything() {
+        val input = android.widget.EditText(this).apply {
+            hint = "Type RESET to arm the button"
+            setPadding(48, 32, 48, 16)
+        }
+        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Clear EVERYTHING?")
+            .setMessage(
+                "This permanently deletes ALL chat messages, uploaded file records, " +
+                    "notices and deadlines for the whole class. Members and subjects " +
+                    "stay. This cannot be undone."
+            )
+            .setView(input)
+            .setPositiveButton("Delete everything") { _, _ ->
+                lifecycleScope.launch {
+                    runCatching { app.repository.clearAllContent() }
+                        .onSuccess {
+                            Toast.makeText(
+                                this@ProfileActivity,
+                                "Class content cleared. Welcome to the clean slate.",
+                                Toast.LENGTH_LONG
+                            ).show()
+                            refreshStorage()
+                        }
+                        .onFailure {
+                            Toast.makeText(
+                                this@ProfileActivity,
+                                "The clear did not finish — check the connection and try again.",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .create()
+        dialog.setOnShowListener {
+            val confirm = dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE)
+            confirm.isEnabled = false
+            input.addTextChangedListener(object : android.text.TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, c: Int) {}
+                override fun onTextChanged(s: CharSequence?, a: Int, b: Int, c: Int) {}
+                override fun afterTextChanged(s: android.text.Editable?) {
+                    confirm.isEnabled = s?.toString() == "RESET"
+                }
+            })
+        }
+        dialog.show()
     }
 
     override fun onResume() {

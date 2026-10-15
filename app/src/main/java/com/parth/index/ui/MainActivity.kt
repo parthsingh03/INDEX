@@ -1,8 +1,10 @@
 package com.parth.index.ui
 
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -34,6 +36,11 @@ class MainActivity : AppCompatActivity() {
     private val fragments = mutableMapOf<Int, Fragment>()
     private var currentTab = TAB_HOME
     private var uiBuilt = false
+
+    /** Group-chat messages newer than my read marker, not sent by me —
+     *  drives the Chat tab's badge (v1.4). Recomputed on every chat /
+     *  member snapshot; [styleNav] decides whether it shows. */
+    private var unreadChatCount = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -119,6 +126,8 @@ class MainActivity : AppCompatActivity() {
         binding.navChat.setOnClickListener { selectTab(TAB_CHAT) }
         binding.navRequests.setOnClickListener { selectTab(TAB_REQUESTS) }
 
+        watchUnreadChat()
+
         if (savedInstanceState != null) {
             // Recreation (the dark-mode toggle restarts this activity so
             // the new palette can apply, and so does rotation): the
@@ -181,14 +190,53 @@ class MainActivity : AppCompatActivity() {
     private fun styleNav() {
         val primary = ContextCompat.getColor(this, R.color.primary)
         val muted = ContextCompat.getColor(this, R.color.muted)
-        fun style(label: TextView, dot: View, selected: Boolean) {
-            label.setTextColor(if (selected) primary else muted)
-            dot.visibility = if (selected) View.VISIBLE else View.INVISIBLE
+        fun style(label: TextView, icon: ImageView, selected: Boolean) {
+            val color = if (selected) primary else muted
+            label.setTextColor(color)
+            icon.imageTintList = ColorStateList.valueOf(color)
         }
-        style(binding.labelHome, binding.dotHome, currentTab == TAB_HOME)
-        style(binding.labelFolders, binding.dotFolders, currentTab == TAB_FOLDERS)
-        style(binding.labelChat, binding.dotChat, currentTab == TAB_CHAT)
-        style(binding.labelRequests, binding.dotRequests, currentTab == TAB_REQUESTS)
+        style(binding.labelHome, binding.iconHome, currentTab == TAB_HOME)
+        style(binding.labelFolders, binding.iconFolders, currentTab == TAB_FOLDERS)
+        style(binding.labelChat, binding.iconChat, currentTab == TAB_CHAT)
+        style(binding.labelRequests, binding.iconRequests, currentTab == TAB_REQUESTS)
+        // The badge exists to pull you INTO chat — while you are in
+        // chat it has nothing to say (ChatFragment is marking read).
+        binding.badgeChat.visibility =
+            if (unreadChatCount > 0 && currentTab != TAB_CHAT) View.VISIBLE else View.GONE
+        if (unreadChatCount > 0) {
+            binding.badgeChat.text = if (unreadChatCount > 99) "99+" else unreadChatCount.toString()
+        }
+    }
+
+    /** Unread = chat messages newer than my member record's
+     *  lastReadChatAt, sent by someone else, not tombstoned. Two live
+     *  sources (chat + my member doc); whichever lands last recomputes. */
+    private fun watchUnreadChat() {
+        val app = application as IndexApp
+        var lastReadAt = 0L
+        var latestChat: List<com.parth.index.data.model.ChatMessageEntity> = emptyList()
+        fun recompute() {
+            val myUid = ClassGate.currentUid()
+            unreadChatCount = latestChat.count { message ->
+                message.timestamp > lastReadAt &&
+                    !message.deletedForEveryone &&
+                    message.senderUid.isNotEmpty() &&
+                    message.senderUid != myUid
+            }
+            if (uiBuilt) styleNav()
+        }
+        lifecycleScope.launch {
+            ClassGate.observeMyMember().collect { member ->
+                lastReadAt = member?.lastReadChatAt ?: 0L
+                recompute()
+            }
+        }
+        lifecycleScope.launch {
+            app.repository.observeChat().collect { messages ->
+                latestChat = messages
+                recompute()
+            }
+        }
     }
 
     companion object {

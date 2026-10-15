@@ -7,25 +7,41 @@ import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.graphics.RectF
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
 import com.parth.index.IndexApp
+import com.parth.index.data.model.MaterialFileEntity
 import com.parth.index.databinding.ActivityImageViewerBinding
+import com.parth.index.util.FileActions
+import com.parth.index.util.FileSaver
 import com.parth.index.util.RemoteFiles
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.FileInputStream
+import kotlin.math.abs
 import kotlin.math.min
 
 /** Full-screen photo view with pinch-to-zoom, drag-to-pan and
  *  double-tap zoom (hand-rolled on a Matrix — no image library, keeping
  *  the APK small). The photo is decoded at up to ~2048 px, big enough to
- *  zoom into, never at full camera resolution, so it still opens fast. */
+ *  zoom into, never at full camera resolution, so it still opens fast.
+ *
+ *  v1.4: the viewer is a GALLERY — it loads every photo of the same
+ *  subject folder and a quick horizontal swipe (while not zoomed) walks
+ *  to the previous/next one, zoom resetting per photo. Chrome (title,
+ *  "3 / 12", download) is a fading overlay, like the PDF reader's. */
 class ImageViewerActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityImageViewerBinding
@@ -39,26 +55,78 @@ class ImageViewerActivity : AppCompatActivity() {
     private lateinit var scaleDetector: ScaleGestureDetector
     private lateinit var gestureDetector: GestureDetector
 
+    /** The folder's photos in list order, and where we are in it. */
+    private var gallery: List<MaterialFileEntity> = emptyList()
+    private var index = 0
+    private val currentFile: MaterialFileEntity? get() = gallery.getOrNull(index)
+
+    private val fadeHandler = Handler(Looper.getMainLooper())
+    private val fadeOut = Runnable { setOverlayVisible(false) }
+    private var overlayShown = true
+
+    // Raw swipe bookkeeping (decided on ACTION_UP, detectors see every
+    // event first so pinch/pan/double-tap are untouched).
+    private var downX = 0f
+    private var downY = 0f
+    private var downTime = 0L
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityImageViewerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.systemBars())
+        controller.systemBarsBehavior =
+            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+
         binding.tvImageTitle.text = intent.getStringExtra(EXTRA_TITLE) ?: "Photo"
         val fileId = intent.getLongExtra(EXTRA_FILE_ID, -1)
 
         setUpZoom()
+        binding.btnImageDownload.setOnClickListener {
+            setOverlayVisible(true)
+            currentFile?.let { FileSaver.save(this, it) }
+        }
+        setOverlayVisible(true)
 
         lifecycleScope.launch {
             val file = app.repository.fileById(fileId)
+            if (file == null) {
+                Toast.makeText(
+                    this@ImageViewerActivity,
+                    "This is a sample entry — upload a real photo to view it here.",
+                    Toast.LENGTH_LONG
+                ).show()
+                return@launch
+            }
+            // Gallery = the photos of the same folder, in the same order
+            // the folder list shows them. Falls back to just this photo.
+            val siblings = runCatching {
+                app.repository.observeFilesForSubject(file.subjectId).first()
+                    .filter { FileActions.isImage(it) }
+            }.getOrDefault(emptyList())
+            gallery = if (siblings.any { it.id == file.id }) siblings else listOf(file)
+            index = gallery.indexOfFirst { it.id == file.id }.coerceAtLeast(0)
+            loadCurrent()
+        }
+    }
+
+    private fun loadCurrent() {
+        val file = currentFile ?: return
+        binding.tvImageTitle.text = file.title
+        binding.tvImageCounter.text =
+            if (gallery.size > 1) "${index + 1} / ${gallery.size}" else ""
+        lifecycleScope.launch {
             // Shared photos carry a Cloudinary URL: resolve (and cache) a
             // local copy before decoding, exactly like local files.
-            val local = file?.let { RemoteFiles.localCopy(this@ImageViewerActivity, it) }
+            val local = RemoteFiles.localCopy(this@ImageViewerActivity, file)
             val path = local?.absolutePath.orEmpty()
             if (path.isEmpty()) {
                 Toast.makeText(
                     this@ImageViewerActivity,
-                    if (file == null || file.localPath.isEmpty()) {
+                    if (file.localPath.isEmpty()) {
                         "This is a sample entry — upload a real photo to view it here."
                     } else {
                         "Could not download this photo — check the connection and try again."
@@ -82,9 +150,18 @@ class ImageViewerActivity : AppCompatActivity() {
                     FileInputStream(path).use { BitmapFactory.decodeStream(it, null, opts) }
                 }.getOrNull()
             }
+            // The user may have swiped on while this decoded.
+            if (currentFile?.id != file.id) return@launch
             if (bitmap != null) showBitmap(bitmap)
             else Toast.makeText(this@ImageViewerActivity, "Could not open this image.", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun moveBy(delta: Int) {
+        val next = index + delta
+        if (next !in gallery.indices) return
+        index = next
+        loadCurrent()
     }
 
     private fun showBitmap(bitmap: Bitmap) {
@@ -167,6 +244,11 @@ class ImageViewerActivity : AppCompatActivity() {
             object : GestureDetector.SimpleOnGestureListener() {
                 override fun onDown(e: MotionEvent): Boolean = true
 
+                override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
+                    setOverlayVisible(!overlayShown)
+                    return true
+                }
+
                 override fun onScroll(
                     e1: MotionEvent?, e2: MotionEvent,
                     distanceX: Float, distanceY: Float
@@ -195,13 +277,54 @@ class ImageViewerActivity : AppCompatActivity() {
         binding.ivFullImage.setOnTouchListener { _, event ->
             scaleDetector.onTouchEvent(event)
             gestureDetector.onTouchEvent(event)
+            when (event.actionMasked) {
+                MotionEvent.ACTION_DOWN -> {
+                    downX = event.x
+                    downY = event.y
+                    downTime = event.eventTime
+                }
+                MotionEvent.ACTION_UP -> {
+                    val dx = event.x - downX
+                    val dy = event.y - downY
+                    val quick = event.eventTime - downTime < SWIPE_MAX_MS
+                    if (!zoomed && gallery.size > 1 && quick &&
+                        abs(dx) > SWIPE_MIN_DP * resources.displayMetrics.density &&
+                        abs(dx) > abs(dy) * 1.4f
+                    ) {
+                        moveBy(if (dx < 0) 1 else -1)
+                    }
+                }
+            }
             true
         }
+    }
+
+    private fun setOverlayVisible(show: Boolean) {
+        overlayShown = show
+        fadeHandler.removeCallbacks(fadeOut)
+        binding.overlayImageTop.animate().cancel()
+        if (show) binding.overlayImageTop.visibility = View.VISIBLE
+        binding.overlayImageTop.animate()
+            .alpha(if (show) 1f else 0f)
+            .setDuration(250)
+            .withEndAction {
+                if (!overlayShown) binding.overlayImageTop.visibility = View.GONE
+            }
+            .start()
+        if (show) fadeHandler.postDelayed(fadeOut, OVERLAY_TIMEOUT_MS)
+    }
+
+    override fun onDestroy() {
+        fadeHandler.removeCallbacks(fadeOut)
+        super.onDestroy()
     }
 
     companion object {
         private const val MAX_ZOOM = 5f
         private const val DOUBLE_TAP_ZOOM = 2.5f
+        private const val OVERLAY_TIMEOUT_MS = 2500L
+        private const val SWIPE_MIN_DP = 80f
+        private const val SWIPE_MAX_MS = 500L
         private const val EXTRA_FILE_ID = "file_id"
         private const val EXTRA_TITLE = "title"
 

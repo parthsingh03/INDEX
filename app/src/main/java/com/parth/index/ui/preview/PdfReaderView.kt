@@ -44,6 +44,10 @@ class PdfReaderView @JvmOverloads constructor(
     /** Fired whenever the page at the centre of the viewport changes. */
     var onCurrentPageChanged: ((page: Int, pageCount: Int) -> Unit)? = null
 
+    /** Fired on a plain single tap (not a scroll, pinch or double-tap) —
+     *  the fullscreen reader uses it to show/hide its chrome overlays. */
+    var onTapAction: (() -> Unit)? = null
+
     private val renderDispatcher = Executors.newSingleThreadExecutor().asCoroutineDispatcher()
     private val scope = CoroutineScope(renderDispatcher)
     private var openJob: Job? = null
@@ -106,6 +110,11 @@ class PdfReaderView @JvmOverloads constructor(
             override fun onDown(e: MotionEvent): Boolean {
                 scroller.forceFinished(true)
                 return true
+            }
+
+            override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
+                onTapAction?.invoke()
+                return false
             }
 
             override fun onScroll(
