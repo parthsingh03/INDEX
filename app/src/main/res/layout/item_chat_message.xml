@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- One chat row (v1.4 slimming pass: roughly a third tighter than the
+     original card — WhatsApp/Discord density, same readability).
+     Parts, top to bottom: the "NEW MESSAGES" divider (shown on ONE row),
+     the quote strip (quote-replies), the sender/time header, the text,
+     the FILE CARD (upload auto-posts — never styled like a text bubble),
+     and the reactions row. The adapter shows/hides each per message. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="5dp"
     android:background="@drawable/bg_card"
     android:orientation="vertical"
-    android:padding="12dp">
+    android:paddingStart="10dp"
+    android:paddingTop="7dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="7dp">
+
+    <TextView
+        android:id="@+id/tvNewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="— NEW MESSAGES —"
+        android:textColor="#E0245E"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_input"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvQuoteSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/muted"
+            android:textSize="11sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/primary"
-            android:textSize="13sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <TextView
@@ -26,14 +78,74 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/muted"
-            android:textSize="11sp" />
+            android:textSize="10sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/tvChatText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="2dp"
         android:textColor="@color/on_surface"
-        android:textSize="14sp" />
+        android:textSize="13sp" />
+
+    <!-- Upload auto-post: a card, not a bubble. Icon + title + format/size
+         chip on a tinted background; tapping opens the file. -->
+    <LinearLayout
+        android:id="@+id/layoutFileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_file_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCardBadge"
+            android:layout_width="34dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_badge_pdf"
+            android:gravity="center"
+            android:text="PDF"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/on_surface"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCardMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/muted"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reaction chips are built by the adapter (one per emoji in use). -->
+    <LinearLayout
+        android:id="@+id/layoutReactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" />
 </LinearLayout>

@@ -154,5 +154,47 @@
             android:layout_marginTop="8dp"
             android:textColor="@color/muted"
             android:textSize="13sp" />
+
+        <!-- Owner-only danger zone (v1.4): the pre-rollout clean slate.
+             Hard deletes, not tombstones — hidden for everyone else. -->
+        <LinearLayout
+            android:id="@+id/layoutDangerZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset class data"
+                android:textColor="#C0392B"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Owner only. Use this after testing, before the real rollout: the deletions are permanent and reach every member's phone — no deleted-message placeholders, the content is simply gone. Members and subjects are never touched."
+                android:textColor="@color/muted"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnClearChat"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Clear chat only" />
+
+            <Button
+                android:id="@+id/btnClearEverything"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Clear EVERYTHING (chat, files, notices, deadlines)" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

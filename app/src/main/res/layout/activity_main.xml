@@ -11,9 +11,11 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Custom bottom bar (Clean Campus): four labelled tabs and the big
-         round MAKE PDF button in the centre. Selection is shown by the
-         blue dot + blue label, set from MainActivity. -->
+    <!-- Custom bottom bar (Clean Campus): four icon+label tabs and the
+         big round MAKE PDF button in the centre. Selection is the
+         primary tint on icon + label, set from MainActivity (v1.4
+         replaced the bare text + dot look with real icons). The Chat
+         icon also carries the unread badge. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,17 +35,18 @@
             android:orientation="vertical"
             android:padding="6dp">
 
-            <View
-                android:id="@+id/dotHome"
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:background="@drawable/bg_circle_primary" />
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:contentDescription="Home"
+                android:src="@drawable/ic_nav_home" />
 
             <TextView
                 android:id="@+id/labelHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="3dp"
                 android:text="HOME"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -58,17 +61,18 @@
             android:orientation="vertical"
             android:padding="6dp">
 
-            <View
-                android:id="@+id/dotFolders"
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:background="@drawable/bg_circle_primary" />
+            <ImageView
+                android:id="@+id/iconFolders"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:contentDescription="Folders"
+                android:src="@drawable/ic_nav_folder" />
 
             <TextView
                 android:id="@+id/labelFolders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="3dp"
                 android:text="FOLDERS"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -113,17 +117,40 @@
             android:orientation="vertical"
             android:padding="6dp">
 
-            <View
-                android:id="@+id/dotChat"
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:background="@drawable/bg_circle_primary" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconChat"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:contentDescription="Chat"
+                    android:src="@drawable/ic_nav_chat" />
+
+                <TextView
+                    android:id="@+id/badgeChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="-8dp"
+                    android:background="@drawable/bg_badge_count"
+                    android:gravity="center"
+                    android:minWidth="16dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/labelChat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="3dp"
                 android:text="CHAT"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -138,17 +165,18 @@
             android:orientation="vertical"
             android:padding="6dp">
 
-            <View
-                android:id="@+id/dotRequests"
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:background="@drawable/bg_circle_primary" />
+            <ImageView
+                android:id="@+id/iconRequests"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:contentDescription="Requests"
+                android:src="@drawable/ic_nav_flag" />
 
             <TextView
                 android:id="@+id/labelRequests"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="3dp"
                 android:text="REQUESTS"
                 android:textSize="10sp"
                 android:textStyle="bold" />
