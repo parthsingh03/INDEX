@@ -4,12 +4,15 @@ import android.app.Activity
 import android.content.Intent
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import androidx.lifecycle.lifecycleScope
 import com.parth.index.R
 import com.parth.index.data.model.MaterialFileEntity
 import com.parth.index.ui.preview.ImageViewerActivity
 import com.parth.index.ui.preview.PdfPreviewActivity
+import kotlinx.coroutines.launch
 import java.io.File
 
 /** What happens when any file row anywhere in the app is tapped: images open
@@ -54,17 +57,44 @@ object FileActions {
             ).show()
             return
         }
+        // Shared files live at a Cloudinary URL, not on this phone: fetch a
+        // local copy first (cached), then fall through to the same openers.
+        if (RemoteFiles.isRemote(file)) {
+            val scope = (activity as? AppCompatActivity)?.lifecycleScope
+            if (scope == null) {
+                Toast.makeText(activity, "Cannot open this file here.", Toast.LENGTH_SHORT).show()
+                return
+            }
+            scope.launch {
+                Toast.makeText(activity, "Fetching ${file.title}…", Toast.LENGTH_SHORT).show()
+                val local = RemoteFiles.localCopy(activity, file)
+                if (local == null) {
+                    Toast.makeText(
+                        activity,
+                        "Could not download this file — check the connection and try again.",
+                        Toast.LENGTH_LONG
+                    ).show()
+                } else {
+                    openLocal(activity, file, local)
+                }
+            }
+            return
+        }
         val local = File(file.localPath)
         if (!local.exists()) {
             Toast.makeText(activity, "The copy on this phone is missing.", Toast.LENGTH_SHORT).show()
             return
         }
+        openLocal(activity, file, local)
+    }
+
+    private fun openLocal(activity: Activity, file: MaterialFileEntity, local: File) {
         when {
             isImage(file) -> activity.startActivity(
                 ImageViewerActivity.intent(activity, file.id, file.title)
             )
             isPdf(file) -> activity.startActivity(
-                PdfPreviewActivity.intent(activity, file.id, file.title, file.localPath)
+                PdfPreviewActivity.intent(activity, file.id, file.title, local.absolutePath)
             )
             else -> {
                 runCatching {

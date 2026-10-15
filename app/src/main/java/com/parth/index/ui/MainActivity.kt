@@ -7,35 +7,94 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.parth.index.IndexApp
 import com.parth.index.R
 import com.parth.index.databinding.ActivityMainBinding
+import com.parth.index.firebase.ClassGate
+import com.parth.index.ui.auth.JoinPendingActivity
+import com.parth.index.ui.auth.SignInActivity
 import com.parth.index.ui.chat.ChatFragment
 import com.parth.index.ui.home.HomeFragment
 import com.parth.index.ui.pdf.PdfMakerFragment
 import com.parth.index.ui.requests.RequestsFragment
-import com.parth.index.ui.setup.SetupActivity
 import com.parth.index.ui.subjects.SubjectsFragment
 import com.parth.index.ui.upload.UploadActivity
+import kotlinx.coroutines.launch
 
 /** The shell: five tabs (Home, Folders, Make PDF, Chat, Requests) over one
  *  fragment container, with the Clean Campus bottom bar. Also the first
- *  stop for share-sheet intents and the gate for first-run setup. */
+ *  stop for share-sheet intents — and the member gate: only signed-in,
+ *  APPROVED class members ever see the tabs. Anyone else is handed to
+ *  SignInActivity (signed out) or JoinPendingActivity (waiting/rejected)
+ *  before a single fragment is built. */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val fragments = mutableMapOf<Int, Fragment>()
     private var currentTab = TAB_HOME
+    private var uiBuilt = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val app = application as IndexApp
 
-        // First run ever: the owner sets the class up before anything else.
-        if (!app.prefs.setupDone) {
-            startActivity(Intent(this, SetupActivity::class.java))
+        if (ClassGate.currentUser() == null) {
+            startActivity(Intent(this, SignInActivity::class.java))
             finish()
             return
+        }
+
+        // Membership is a network read the first time (Firestore cache
+        // answers after that) — build the UI only once approval is sure.
+        lifecycleScope.launch {
+            val member = runCatching { ClassGate.myMember() }.getOrNull()
+            if (member == null || !member.isApproved) {
+                startActivity(Intent(this@MainActivity, JoinPendingActivity::class.java))
+                finish()
+                return@launch
+            }
+            syncIdentity(member)
+            buildUi(savedInstanceState)
+            watchMembership()
+        }
+    }
+
+    /** The member record is the truth for who you are; Prefs is the cache
+     *  every screen already reads. Keep them in step. */
+    private fun syncIdentity(member: ClassGate.Member) {
+        val app = application as IndexApp
+        app.prefs.userName = member.name
+        app.prefs.role = member.role
+        app.prefs.setupDone = true
+    }
+
+    /** If the owner promotes/demotes or removes this user mid-session, the
+     *  next member snapshot lands here: a role change refreshes Prefs; a
+     *  lost approval leaves the app for the gate screen. */
+    private fun watchMembership() {
+        lifecycleScope.launch {
+            ClassGate.observeMyMember().collect { member ->
+                if (member == null || !member.isApproved) {
+                    startActivity(
+                        Intent(this@MainActivity, JoinPendingActivity::class.java).apply {
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                                Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        }
+                    )
+                    finish()
+                    return@collect
+                }
+                syncIdentity(member)
+            }
+        }
+    }
+
+    private fun buildUi(savedInstanceState: Bundle?) {
+        if (uiBuilt) return
+        uiBuilt = true
+        val app = application as IndexApp
+        lifecycleScope.launch {
+            ClassGate.classNameOrNull()?.let { app.prefs.className = it }
         }
 
         binding = ActivityMainBinding.inflate(layoutInflater)

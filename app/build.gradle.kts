@@ -2,12 +2,11 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.kapt")
+    // Cloud mode: the google-services plugin reads app/google-services.json
+    // (gitignored, never committed) so the app can talk to the class's own
+    // Firebase project. See FIREBASE_SETUP.md + WIRING_NOTES.md.
+    id("com.google.gms.google-services")
 }
-
-// NOTE for the next person: the google-services plugin is intentionally NOT
-// applied yet. INDEX runs fully in local mode (Room database on the phone)
-// until the Firebase project exists and google-services.json is added.
-// See FIREBASE_SETUP.md at the project root for the exact wiring steps.
 
 // --- Release signing ---------------------------------------------------------
 // INDEX is signed with ONE fixed release key for its whole life, so every
@@ -31,8 +30,11 @@ android {
         applicationId = "com.parth.index"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        // 1.1 is the cloud build — the first fixed-key release. The code
+        // must stay above the local build's 1 so the in-app update check
+        // (and Android itself) treats it as an upgrade, never a downgrade.
+        versionCode = 2
+        versionName = "1.1"
     }
 
     signingConfigs {
@@ -92,4 +94,13 @@ dependencies {
     // Coroutines — all heavy work (file copies, PDF building) runs off the
     // main thread so the app never hangs.
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Firebase — cloud mode backend: Auth (who you are) + Firestore (the
+    // shared class data). File BYTES live on Cloudinary, not Firebase
+    // Storage — uploads are plain HTTPS from FirebaseRepository, so no
+    // storage SDK and no Cloudinary SDK are added (APK size matters).
+    implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
 }

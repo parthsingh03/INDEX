@@ -5,6 +5,12 @@
          storage). Local mode itself never touches the network. -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- In-app updates: the Profile screen downloads the new APK from
+         GitHub Releases and hands it to the system installer. Android
+         routes the user through its one-time "allow installs from this
+         app" prompt — that prompt is expected behaviour, not a bug. -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
     <!-- No storage permissions on purpose: every file enters through the
          system picker (ACTION_OPEN_DOCUMENT / GetContent) or the share
          sheet, both of which grant access per-file with no prompt. -->
@@ -67,6 +73,24 @@
             </intent-filter>
         </activity>
 
+        <!-- The gate: Google sign-in, then the member check. MainActivity
+             stays the launcher and routes everyone through these two. -->
+        <activity
+            android:name=".ui.auth.SignInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.auth.JoinPendingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.members.MembersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Retired from the flow: cloud bootstrap (owner's first sign-in)
+             replaces the local first-run setup. The screen stays declared
+             so nothing dangles; nothing launches it anymore. -->
         <activity
             android:name=".ui.setup.SetupActivity"
             android:exported="false"

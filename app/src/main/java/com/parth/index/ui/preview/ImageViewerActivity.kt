@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.parth.index.IndexApp
 import com.parth.index.databinding.ActivityImageViewerBinding
+import com.parth.index.util.RemoteFiles
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.io.File
 import java.io.FileInputStream
 
 /** Full-screen image view. The photo is decoded shrunk to the screen size
@@ -33,11 +33,18 @@ class ImageViewerActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             val file = app.repository.fileById(fileId)
-            val path = file?.localPath.orEmpty()
-            if (path.isEmpty() || !File(path).exists()) {
+            // Shared photos carry a Cloudinary URL: resolve (and cache) a
+            // local copy before decoding, exactly like local files.
+            val local = file?.let { RemoteFiles.localCopy(this@ImageViewerActivity, it) }
+            val path = local?.absolutePath.orEmpty()
+            if (path.isEmpty()) {
                 Toast.makeText(
                     this@ImageViewerActivity,
-                    "This is a sample entry — upload a real photo to view it here.",
+                    if (file == null || file.localPath.isEmpty()) {
+                        "This is a sample entry — upload a real photo to view it here."
+                    } else {
+                        "Could not download this photo — check the connection and try again."
+                    },
                     Toast.LENGTH_LONG
                 ).show()
                 return@launch

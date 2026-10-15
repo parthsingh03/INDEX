@@ -29,6 +29,14 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/muted"
+            android:textSize="13sp" />
+
+        <TextView
             android:id="@+id/tvProfileClass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Demo role preview"
+            android:text="Class"
             android:textColor="@color/on_background"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -49,38 +57,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Local mode has no accounts yet, so this switch lets you preview exactly what each role sees — which buttons appear and which stay hidden. Real roles arrive with Google sign-in (see FIREBASE_SETUP.md)."
+            android:text="Your role comes from the class member list — the owner runs the class and is the only one who can delete a subject or change roles."
             android:textColor="@color/muted"
             android:textSize="12sp" />
 
-        <RadioGroup
-            android:id="@+id/rgRolePreview"
+        <Button
+            android:id="@+id/btnOpenMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Members &amp; join requests" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/rbOwner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Owner — runs the class, the only one who can delete a subject"
-                android:textColor="@color/on_surface" />
-
-            <RadioButton
-                android:id="@+id/rbAdmin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Admin — can add subjects, post notices, create deadlines"
-                android:textColor="@color/on_surface" />
-
-            <RadioButton
-                android:id="@+id/rbMember"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Member — uploads, chats, requests; no manage controls"
-                android:textColor="@color/on_surface" />
-        </RadioGroup>
+            android:text="Sign out" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -137,6 +131,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Check for updates" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Update INDEX"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tvUpdateStatus"
