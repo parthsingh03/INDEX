@@ -35,7 +35,7 @@ object RemoteFiles {
                 .ifEmpty { "file" }
             val dest = File(dir, "${file.id}_$safeName")
             if (dest.exists() && dest.length() > 0) return@withContext dest
-            runCatching { download(path, dest) }.getOrNull()
+            if (runCatching { download(path, dest) }.isSuccess) dest else null
         }
 
     private fun download(urlString: String, dest: File) {
