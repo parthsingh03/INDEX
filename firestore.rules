@@ -79,6 +79,12 @@ service cloud.firestore {
             && request.resource.data.status == 'PENDING'
             && request.resource.data.role == resource.data.role
             && request.resource.data.email == resource.data.email)
+          // v1.4: an APPROVED member may move ONLY their own chat
+          // read-marker (lastReadChatAt) — the unread badge/divider.
+          || (signedIn() && request.auth.uid == uid
+            && resource.data.status == 'APPROVED'
+            && request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['lastReadChatAt']))
           // Approval: a manager flips PENDING -> APPROVED, role untouched.
           || (isManager()
             && resource.data.status == 'PENDING'
@@ -124,6 +130,8 @@ service cloud.firestore {
           && request.resource.data.senderUid == request.auth.uid;
         // The sender and managers may tombstone/edit. Anyone may change
         // ONLY hiddenForUids, and only their own uid in it (delete-for-me).
+        // v1.4: anyone may also change ONLY the reactions map — reacting
+        // to a classmate's message is the whole point of the field.
         allow update: if isApprovedMember()
           && (resource.data.senderUid == request.auth.uid
             || isManager()
@@ -131,7 +139,9 @@ service cloud.firestore {
                   .hasOnly(['hiddenForUids'])
                 && onlyOwnUidChanged(
                      resource.data.hiddenForUids,
-                     request.resource.data.hiddenForUids)));
+                     request.resource.data.hiddenForUids))
+            || request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['reactions']));
         allow delete: if isManager();
       }
 

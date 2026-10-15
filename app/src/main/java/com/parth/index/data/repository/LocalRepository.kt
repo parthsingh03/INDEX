@@ -17,6 +17,11 @@ import java.util.Calendar
  *  FirebaseRepository takes over this same interface. */
 class LocalRepository(private val db: AppDatabase) : IndexRepository {
 
+    private companion object {
+        const val LOCAL_UID = "local-user"
+        const val REPLY_SNIPPET_MAX = 120
+    }
+
     // ---- Subjects ------------------------------------------------------------
     override fun observeSubjects(): Flow<List<SubjectEntity>> = db.subjectDao().observeAll()
     override fun observeTrashedSubjects(): Flow<List<SubjectEntity>> = db.subjectDao().observeTrashed()
@@ -65,10 +70,42 @@ class LocalRepository(private val db: AppDatabase) : IndexRepository {
     // ---- Chat ------------------------------------------------------------------
     override fun observeChat(): Flow<List<ChatMessageEntity>> = db.chatDao().observeAll()
 
-    override suspend fun sendChat(text: String, senderName: String, senderRole: String): Long =
-        db.chatDao().insert(
-            ChatMessageEntity(senderName = senderName, senderRole = senderRole, text = text)
+    override suspend fun sendChat(
+        text: String,
+        senderName: String,
+        senderRole: String,
+        replyTo: ChatMessageEntity?
+    ): Long = db.chatDao().insert(
+        ChatMessageEntity(
+            senderName = senderName,
+            senderRole = senderRole,
+            text = text,
+            replyToId = replyTo?.id ?: 0,
+            replyToSender = replyTo?.senderName.orEmpty(),
+            replyToText = replyTo?.text.orEmpty().take(REPLY_SNIPPET_MAX)
         )
+    )
+
+    /** Local mode has no accounts, so reactions key off one fixed pseudo
+     *  uid — enough for the owner to try the whole flow on one phone. */
+    override suspend fun toggleReaction(messageId: Long, emoji: String) {
+        val message = db.chatDao().byId(messageId) ?: return
+        val next = com.parth.index.util.Reactions.toggled(
+            com.parth.index.util.Reactions.parse(message.reactionsJson), emoji, LOCAL_UID
+        )
+        db.chatDao().update(
+            message.copy(reactionsJson = com.parth.index.util.Reactions.serialize(next))
+        )
+    }
+
+    override suspend fun clearChat() = db.chatDao().clearAll()
+
+    override suspend fun clearAllContent() {
+        db.chatDao().clearAll()
+        db.fileDao().clearAll()
+        db.noticeDao().clearAll()
+        db.deadlineDao().clearAll()
+    }
 
     override suspend fun postUploadNotice(file: MaterialFileEntity, subjectName: String) {
         if (file.id == 0L) return

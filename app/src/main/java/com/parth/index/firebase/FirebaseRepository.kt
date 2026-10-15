@@ -13,6 +13,7 @@ import com.parth.index.data.model.MaterialRequestEntity
 import com.parth.index.data.model.NoticeEntity
 import com.parth.index.data.model.SubjectEntity
 import com.parth.index.data.repository.IndexRepository
+import com.parth.index.util.Reactions
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.channels.awaitClose
@@ -49,6 +50,10 @@ import kotlin.random.Random
  * delete); the file is unlinked and unreachable from the app.
  */
 class FirebaseRepository : IndexRepository {
+
+    private companion object {
+        const val REPLY_SNIPPET_MAX = 120
+    }
 
     private val db: FirebaseFirestore get() = FirebaseFirestore.getInstance()
     private val auth: FirebaseAuth get() = FirebaseAuth.getInstance()
@@ -191,7 +196,12 @@ class FirebaseRepository : IndexRepository {
             timestamp = getLong("timestamp") ?: 0L,
             deletedForEveryone = getBoolean("deletedForEveryone") ?: false,
             hiddenForMe = hiddenFor.contains(myUid),
-            systemFileId = getLong("systemFileId") ?: 0L
+            systemFileId = getLong("systemFileId") ?: 0L,
+            senderUid = getString("senderUid").orEmpty(),
+            reactionsJson = Reactions.serialize(Reactions.fromFirestore(get("reactions"))),
+            replyToId = getLong("replyToId") ?: 0L,
+            replyToSender = getString("replyToSender").orEmpty(),
+            replyToText = getString("replyToText").orEmpty()
         )
     }
 
@@ -420,7 +430,12 @@ class FirebaseRepository : IndexRepository {
                 .sortedBy { it.timestamp }
         }
 
-    override suspend fun sendChat(text: String, senderName: String, senderRole: String): Long {
+    override suspend fun sendChat(
+        text: String,
+        senderName: String,
+        senderRole: String,
+        replyTo: ChatMessageEntity?
+    ): Long {
         val id = newId()
         chatRef().document(id.toString()).set(
             mapOf(
@@ -431,7 +446,11 @@ class FirebaseRepository : IndexRepository {
                 "timestamp" to System.currentTimeMillis(),
                 "deletedForEveryone" to false,
                 "hiddenForUids" to emptyList<String>(),
-                "systemFileId" to 0L
+                "systemFileId" to 0L,
+                "reactions" to emptyMap<String, List<String>>(),
+                "replyToId" to (replyTo?.id ?: 0L),
+                "replyToSender" to (replyTo?.senderName.orEmpty()),
+                "replyToText" to (replyTo?.text.orEmpty().take(REPLY_SNIPPET_MAX))
             )
         ).awaitTask()
         return id
@@ -449,9 +468,53 @@ class FirebaseRepository : IndexRepository {
                 "timestamp" to System.currentTimeMillis(),
                 "deletedForEveryone" to false,
                 "hiddenForUids" to emptyList<String>(),
-                "systemFileId" to file.id
+                "systemFileId" to file.id,
+                "reactions" to emptyMap<String, List<String>>(),
+                "replyToId" to 0L,
+                "replyToSender" to "",
+                "replyToText" to ""
             )
         ).awaitTask()
+    }
+
+    /** Read-modify-write of ONLY the reactions field. firestore.rules
+     *  lets any approved member touch that one field on anyone's message
+     *  (that is what reacting IS); the text and tombstone fields are never
+     *  part of this write. */
+    override suspend fun toggleReaction(messageId: Long, emoji: String) {
+        val uid = myUid
+        if (uid.isEmpty()) return
+        val ref = chatRef().document(messageId.toString())
+        val doc = ref.get().awaitTask()
+        if (!doc.exists()) return
+        val current = Reactions.fromFirestore(doc.get("reactions"))
+        val next = Reactions.toggled(current, emoji, uid)
+        ref.update("reactions", Reactions.toFirestore(next)).awaitTask()
+    }
+
+    // ---- Owner reset ----------------------------------------------------------------
+
+    /** Firestore caps a WriteBatch at 500 operations, so a collection is
+     *  emptied in 500-document bites until a query comes back empty. */
+    private suspend fun deleteAllIn(ref: CollectionReference) {
+        while (true) {
+            val snap = ref.limit(500).get().awaitTask()
+            if (snap.isEmpty) return
+            val batch = db.batch()
+            for (doc in snap.documents) batch.delete(doc.reference)
+            batch.commit().awaitTask()
+        }
+    }
+
+    override suspend fun clearChat() {
+        deleteAllIn(chatRef())
+    }
+
+    override suspend fun clearAllContent() {
+        deleteAllIn(chatRef())
+        deleteAllIn(filesRef())
+        deleteAllIn(noticesRef())
+        deleteAllIn(deadlinesRef())
     }
 
     /** Covers both chat actions the UI uses: tombstone (text wiped +

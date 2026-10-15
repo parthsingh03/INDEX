@@ -48,9 +48,32 @@ interface IndexRepository {
 
     // Chat
     fun observeChat(): Flow<List<ChatMessageEntity>>
-    suspend fun sendChat(text: String, senderName: String, senderRole: String): Long
+    /** [replyTo], when given, makes this a quote-reply: the message stores
+     *  a snapshot of the original (sender + text) alongside its own text. */
+    suspend fun sendChat(
+        text: String,
+        senderName: String,
+        senderRole: String,
+        replyTo: ChatMessageEntity? = null
+    ): Long
+
     suspend fun postUploadNotice(file: MaterialFileEntity, subjectName: String)
     suspend fun updateChatMessage(message: ChatMessageEntity)
+
+    /** Flip the signed-in user's [emoji] reaction on one message (v1.4). */
+    suspend fun toggleReaction(messageId: Long, emoji: String)
+
+    // Owner reset (v1.4). Both HARD-delete: the documents are gone, not
+    // tombstoned — this is the "start the class from a clean slate" tool.
+    // The Profile screen shows these only to the Owner, and firestore.rules
+    // backs that up (chat/notices/deadline deletes are manager-only, file
+    // deletes owner-or-uploader).
+    /** Delete every chat message. Nothing else is touched. */
+    suspend fun clearChat()
+
+    /** Delete chat + files + notices + deadlines. Members and subjects
+     *  are kept — the class stays enrolled, its content restarts empty. */
+    suspend fun clearAllContent()
 
     // Notices
     fun observeNotices(): Flow<List<NoticeEntity>>

@@ -15,7 +15,10 @@ import kotlinx.coroutines.channels.awaitClose
  *
  *  A member document is classes/index-class/members/{uid}:
  *      { name, email, role: OWNER|ADMIN|MEMBER, status: APPROVED|PENDING,
- *        joinedAt }
+ *        joinedAt, lastReadChatAt }
+ *  [Member.lastReadChatAt] (v1.4) is the newest group-chat timestamp this
+ *  member has seen — it powers the "new messages" divider in chat and the
+ *  unread badge on the Chat tab.
  *
  *  The lifecycle every non-owner goes through:
  *    sign in -> no member doc -> they create their own doc, PENDING
@@ -31,7 +34,8 @@ object ClassGate {
         val email: String,
         val role: String,
         val status: String,
-        val joinedAt: Long
+        val joinedAt: Long,
+        val lastReadChatAt: Long = 0L
     ) {
         val isApproved: Boolean get() = status == CloudConfig.STATUS_APPROVED
         val canManage: Boolean get() = isApproved && Roles.canManage(role)
@@ -114,7 +118,8 @@ object ClassGate {
         email = getString("email").orEmpty(),
         role = getString("role") ?: Roles.MEMBER,
         status = getString("status") ?: CloudConfig.STATUS_PENDING,
-        joinedAt = getLong("joinedAt") ?: 0L
+        joinedAt = getLong("joinedAt") ?: 0L,
+        lastReadChatAt = getLong("lastReadChatAt") ?: 0L
     )
 
     // ---- Writes -----------------------------------------------------------------
@@ -129,7 +134,8 @@ object ClassGate {
                 "email" to (user.email.orEmpty()),
                 "role" to Roles.OWNER,
                 "status" to CloudConfig.STATUS_APPROVED,
-                "joinedAt" to System.currentTimeMillis()
+                "joinedAt" to System.currentTimeMillis(),
+                "lastReadChatAt" to System.currentTimeMillis()
             )
         ).awaitTask()
     }
@@ -142,9 +148,22 @@ object ClassGate {
                 "email" to (user.email.orEmpty()),
                 "role" to Roles.MEMBER,
                 "status" to CloudConfig.STATUS_PENDING,
-                "joinedAt" to System.currentTimeMillis()
+                "joinedAt" to System.currentTimeMillis(),
+                // Joining is not "unread": what was said before you arrived
+                // is history, not news.
+                "lastReadChatAt" to System.currentTimeMillis()
             )
         ).awaitTask()
+    }
+
+    /** Mark the group chat read up to [timestamp] for the signed-in user.
+     *  Rules allow an approved member to change ONLY this field on their
+     *  own member document. Callers fire-and-forget (runCatching): a
+     *  failed mark just leaves the badge/divider where it was. */
+    suspend fun updateMyLastReadChatAt(timestamp: Long) {
+        val uid = currentUid()
+        if (uid.isEmpty()) return
+        memberRef(uid).update("lastReadChatAt", timestamp).awaitTask()
     }
 
     /** Owner/admin decision on a pending request: approve the join. */

@@ -76,6 +76,9 @@ interface FileDao {
 
     @Query("SELECT COALESCE(SUM(sizeBytes), 0) FROM files WHERE deleted = 0")
     suspend fun totalStoredBytes(): Long
+
+    @Query("DELETE FROM files")
+    suspend fun clearAll()
 }
 
 @Dao
@@ -86,6 +89,7 @@ interface DeadlineDao {
     @Insert suspend fun insert(deadline: DeadlineEntity): Long
     @Update suspend fun update(deadline: DeadlineEntity)
     @Query("DELETE FROM deadlines WHERE id = :id") suspend fun delete(id: Long)
+    @Query("DELETE FROM deadlines") suspend fun clearAll()
 }
 
 @Dao
@@ -93,8 +97,14 @@ interface ChatDao {
     @Query("SELECT * FROM chat_messages WHERE hiddenForMe = 0 ORDER BY timestamp ASC")
     fun observeAll(): Flow<List<ChatMessageEntity>>
 
+    @Query("SELECT * FROM chat_messages WHERE id = :id")
+    suspend fun byId(id: Long): ChatMessageEntity?
+
     @Insert suspend fun insert(message: ChatMessageEntity): Long
     @Update suspend fun update(message: ChatMessageEntity)
+
+    @Query("DELETE FROM chat_messages")
+    suspend fun clearAll()
 }
 
 @Dao
@@ -107,6 +117,9 @@ interface NoticeDao {
 
     @Query("UPDATE notices SET seenByMe = 1, seenByCount = seenByCount + 1 WHERE seenByMe = 0")
     suspend fun markAllSeen()
+
+    @Query("DELETE FROM notices")
+    suspend fun clearAll()
 }
 
 @Dao

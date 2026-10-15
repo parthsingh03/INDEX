@@ -69,7 +69,16 @@ data class DeadlineEntity(
  *  "This message was deleted" — the original words are gone.
  *  [hiddenForMe] is delete-for-me: only this phone hides it.
  *  [systemFileId] > 0 marks the automatic "X added <file> to <subject>"
- *  message posted on every upload; tapping it opens that file. */
+ *  message posted on every upload; tapping it opens that file — and it
+ *  renders as a file CARD, never as a plain text bubble.
+ *  v1.4 chat pack: [senderUid] is the sender's account id (cloud mode;
+ *  empty in local mode) — reactions, the unread count and the member
+ *  profile card all key off it. [reactionsJson] holds the reaction map
+ *  as JSON ({"👍":["uid1","uid2"]}) so the Room entity stays a plain
+ *  string column; Firestore stores the same data as a real map and
+ *  FirebaseRepository translates. [replyToId] > 0 marks a quote-reply:
+ *  [replyToSender] / [replyToText] are the quoted snapshot shown in the
+ *  bubble even if the original scrolls away. */
 @Entity(tableName = "chat_messages")
 data class ChatMessageEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
@@ -79,7 +88,12 @@ data class ChatMessageEntity(
     val timestamp: Long = System.currentTimeMillis(),
     val deletedForEveryone: Boolean = false,
     val hiddenForMe: Boolean = false,
-    val systemFileId: Long = 0
+    val systemFileId: Long = 0,
+    val senderUid: String = "",
+    val reactionsJson: String = "",
+    val replyToId: Long = 0,
+    val replyToSender: String = "",
+    val replyToText: String = ""
 )
 
 /** An admin-only notice. Members can read, never post. */
