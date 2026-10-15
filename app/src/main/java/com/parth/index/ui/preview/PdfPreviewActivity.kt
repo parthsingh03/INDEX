@@ -2,32 +2,20 @@ package com.parth.index.ui.preview
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.Color
-import android.graphics.pdf.PdfRenderer
 import android.os.Bundle
-import android.os.ParcelFileDescriptor
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import com.parth.index.databinding.ActivityPdfPreviewBinding
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import java.io.File
 
-/** Built-in PDF preview. PdfRenderer renders ONE page at a time and the
- *  bitmap is recycled the moment you move on — a 200-page PDF costs the
- *  same memory as a 1-page PDF. That is the whole trick, and it is why
- *  preview stays smooth on small phones. */
+/** Built-in PDF reader. All pages live in ONE continuous scroll
+ *  (PdfReaderView): drag or fling to move through the whole document,
+ *  drag the scrollbar thumb to jump, pinch or double-tap to zoom.
+ *  Pages render lazily around the viewport, so a 300-page PDF costs
+ *  the same memory as a 3-page one. */
 class PdfPreviewActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPdfPreviewBinding
-    private var renderer: PdfRenderer? = null
-    private var descriptor: ParcelFileDescriptor? = null
-    private var currentPage = 0
-    private var pageCount = 0
-    private var currentBitmap: Bitmap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,60 +31,19 @@ class PdfPreviewActivity : AppCompatActivity() {
             return
         }
 
-        lifecycleScope.launch {
-            val opened = withContext(Dispatchers.IO) {
-                runCatching {
-                    val fd = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)
-                    val r = PdfRenderer(fd)
-                    descriptor = fd
-                    renderer = r
-                    r.pageCount
-                }
-            }
-            opened.onSuccess { count ->
-                pageCount = count
-                if (count > 0) showPage(0) else {
-                    binding.tvPageInfo.text = "This PDF has no pages."
-                }
-            }.onFailure {
+        binding.tvPageInfo.text = "Opening…"
+        binding.readerView.onCurrentPageChanged = { page, count ->
+            binding.tvPageInfo.text = "Page $page of $count"
+        }
+        binding.readerView.openPdf(file) { count ->
+            if (count <= 0) {
                 binding.tvPageInfo.text = "Could not open this PDF."
             }
-        }
-
-        binding.btnPrevPage.setOnClickListener { if (currentPage > 0) showPage(currentPage - 1) }
-        binding.btnNextPage.setOnClickListener {
-            if (currentPage < pageCount - 1) showPage(currentPage + 1)
-        }
-    }
-
-    private fun showPage(index: Int) {
-        val r = renderer ?: return
-        currentPage = index
-        lifecycleScope.launch {
-            val bitmap = withContext(Dispatchers.IO) {
-                runCatching {
-                    r.openPage(index).use { page ->
-                        val bmp = Bitmap.createBitmap(page.width, page.height, Bitmap.Config.ARGB_8888)
-                        bmp.eraseColor(Color.WHITE)
-                        page.render(bmp, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
-                        bmp
-                    }
-                }.getOrNull()
-            }
-            currentBitmap?.recycle()
-            currentBitmap = bitmap
-            binding.ivPdfPage.setImageBitmap(bitmap)
-            binding.tvPageInfo.text = "Page ${index + 1} of $pageCount"
-            binding.btnPrevPage.isEnabled = index > 0
-            binding.btnNextPage.isEnabled = index < pageCount - 1
         }
     }
 
     override fun onDestroy() {
-        currentBitmap?.recycle()
-        currentBitmap = null
-        renderer?.close()
-        descriptor?.close()
+        binding.readerView.close()
         super.onDestroy()
     }
 

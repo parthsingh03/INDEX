@@ -18,46 +18,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="One page is rendered at a time — that is what keeps preview light on small phones."
+        android:text="Scroll to read the whole document — pinch to zoom, drag the scrollbar to jump."
         android:textColor="@color/muted"
         android:textSize="12sp" />
 
-    <ImageView
-        android:id="@+id/ivPdfPage"
+    <com.parth.index.ui.preview.PdfReaderView
+        android:id="@+id/readerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:layout_weight="1"
         android:background="@color/surface"
-        android:contentDescription="PDF page"
-        android:scaleType="fitCenter" />
+        android:contentDescription="PDF pages" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvPageInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnPrevPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="‹ Prev" />
-
-        <TextView
-            android:id="@+id/tvPageInfo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="@color/on_background"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/btnNextPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next ›" />
-    </LinearLayout>
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/on_background"
+        android:textSize="14sp" />
 </LinearLayout>
