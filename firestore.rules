@@ -1,0 +1,167 @@
+rules_version = '2';
+
+// INDEX — single-class Firestore rules.
+// Layout: classes/index-class/{members,subjects,files,deadlines,chat,notices,requests}
+// Deploy: Firebase console -> Firestore Database -> Rules -> paste -> Publish
+// (or `firebase deploy --only firestore:rules`). See WIRING_NOTES.md.
+//
+// Product rules encoded here:
+//   * only signed-in, APPROVED members of the class read anything;
+//   * members create files / chat / requests (as themselves);
+//   * subjects + deadlines are managed by owner/admins, and deleting a
+//     subject is OWNER-ONLY (product rule, not a suggestion);
+//   * notices are posted by owner/admins only;
+//   * a signed-in user may create/update ONLY their own PENDING member
+//     record; approvals are owner/admin, role changes + removals owner-only;
+//   * the class document can be created once, only by the owner's account.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function ownerEmail() { return 'psingh.up85@gmail.com'; }
+
+    function signedIn() { return request.auth != null; }
+
+    function myMemberRef() {
+      return /databases/$(database)/documents/classes/index-class/members/$(request.auth.uid);
+    }
+    function myMember() { return get(myMemberRef()).data; }
+    function isApprovedMember() {
+      return signedIn() && exists(myMemberRef()) && myMember().status == 'APPROVED';
+    }
+    function isManager() {
+      return isApprovedMember() &&
+        (myMember().role == 'OWNER' || myMember().role == 'ADMIN');
+    }
+    function isOwner() {
+      return isApprovedMember() && myMember().role == 'OWNER';
+    }
+    // True when the write changes [field] only by adding/removing the
+    // caller's own uid (per-user list fields: seenByUids, hiddenForUids).
+    function onlyOwnUidChanged(before, after) {
+      return after.toSet().difference(before.toSet()).hasOnly([request.auth.uid])
+        && before.toSet().difference(after.toSet()).hasOnly([request.auth.uid]);
+    }
+
+    match /classes/index-class {
+      // Any signed-in user may look (the gate needs the name before
+      // membership exists); only the owner's account may create it, once
+      // (a create on an existing document is refused by Firestore itself).
+      allow get: if signedIn();
+      allow list: if false;
+      allow create: if signedIn()
+        && request.auth.token.email == ownerEmail()
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.ownerEmail == request.auth.token.email;
+      allow update: if isOwner();
+      allow delete: if false;
+
+      match /members/{uid} {
+        allow get: if signedIn() && (request.auth.uid == uid || isApprovedMember());
+        allow list: if isManager();
+
+        // Join request (self, PENDING, MEMBER) or the owner's bootstrap
+        // (self, OWNER_EMAIL, APPROVED OWNER). Nothing else may be born.
+        allow create: if signedIn() && request.auth.uid == uid
+          && request.resource.data.email == request.auth.token.email
+          && (
+            (request.resource.data.status == 'PENDING'
+              && request.resource.data.role == 'MEMBER')
+            || (request.auth.token.email == ownerEmail()
+              && request.resource.data.status == 'APPROVED'
+              && request.resource.data.role == 'OWNER')
+          );
+
+        allow update: if
+          // Self-service while pending: profile fields only — status,
+          // role and email are frozen (no self-approval, ever).
+          (signedIn() && request.auth.uid == uid
+            && resource.data.status == 'PENDING'
+            && request.resource.data.status == 'PENDING'
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.email == resource.data.email)
+          // Approval: a manager flips PENDING -> APPROVED, role untouched.
+          || (isManager()
+            && resource.data.status == 'PENDING'
+            && request.resource.data.status == 'APPROVED'
+            && request.resource.data.role == resource.data.role
+            && request.resource.data.email == resource.data.email)
+          // The owner may change roles (and repair fields) on anyone.
+          || isOwner();
+
+        // Removal is the owner's; rejecting a PENDING request is any manager's.
+        allow delete: if isOwner()
+          || (isManager() && resource.data.status == 'PENDING');
+      }
+
+      match /subjects/{subjectId} {
+        allow read: if isApprovedMember();
+        allow create, update: if isManager();
+        allow delete: if isOwner();
+      }
+
+      match /files/{fileId} {
+        allow read: if isApprovedMember();
+        allow create: if isApprovedMember()
+          && request.resource.data.uploaderUid == request.auth.uid;
+        // Any member may pin / the uploader edits their note / managers
+        // moderate — but the file's URL and its uploader are immutable.
+        allow update: if isApprovedMember()
+          && request.resource.data.uploaderUid == resource.data.uploaderUid
+          && request.resource.data.localPath == resource.data.localPath;
+        // Hard delete (empty Trash): the uploader, or the owner.
+        allow delete: if isOwner()
+          || resource.data.uploaderUid == request.auth.uid;
+      }
+
+      match /deadlines/{deadlineId} {
+        allow read: if isApprovedMember();
+        allow create, update, delete: if isManager();
+      }
+
+      match /chat/{messageId} {
+        allow read: if isApprovedMember();
+        allow create: if isApprovedMember()
+          && request.resource.data.senderUid == request.auth.uid;
+        // The sender and managers may tombstone/edit. Anyone may change
+        // ONLY hiddenForUids, and only their own uid in it (delete-for-me).
+        allow update: if isApprovedMember()
+          && (resource.data.senderUid == request.auth.uid
+            || isManager()
+            || (request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['hiddenForUids'])
+                && onlyOwnUidChanged(
+                     resource.data.hiddenForUids,
+                     request.resource.data.hiddenForUids)));
+        allow delete: if isManager();
+      }
+
+      match /notices/{noticeId} {
+        allow read: if isApprovedMember();
+        allow create: if isManager();
+        // Members mark notices seen (own uid in seenByUids only);
+        // managers may edit freely.
+        allow update: if isManager()
+          || (isApprovedMember()
+            && request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['seenByUids'])
+            && onlyOwnUidChanged(
+                 resource.data.seenByUids,
+                 request.resource.data.seenByUids));
+        allow delete: if isManager();
+      }
+
+      match /requests/{requestId} {
+        allow read: if isApprovedMember();
+        allow create: if isApprovedMember()
+          && request.resource.data.requesterUid == request.auth.uid;
+        allow update: if isApprovedMember();
+        allow delete: if isManager();
+      }
+    }
+
+    // Nothing exists outside the one class tree in this database.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
