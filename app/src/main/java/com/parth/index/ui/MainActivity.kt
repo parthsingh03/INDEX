@@ -119,12 +119,31 @@ class MainActivity : AppCompatActivity() {
         binding.navChat.setOnClickListener { selectTab(TAB_CHAT) }
         binding.navRequests.setOnClickListener { selectTab(TAB_REQUESTS) }
 
-        // After a recreation (e.g. the dark-mode toggle restarts this
-        // activity so the new palette can apply), the FragmentManager has
-        // already restored the tab fragments — adopt them back into the map
-        // instead of adding duplicates, and restore the open tab.
-        for (tab in TAB_HOME..TAB_REQUESTS) {
-            supportFragmentManager.findFragmentByTag("tab$tab")?.let { fragments[tab] = it }
+        if (savedInstanceState != null) {
+            // Recreation (the dark-mode toggle restarts this activity so
+            // the new palette can apply, and so does rotation): the
+            // FragmentManager restores the tab fragments during onCreate,
+            // but this activity only sets its content view NOW — after
+            // the async membership check — so the restored fragments end
+            // up viewless: a black, empty container above a working tab
+            // bar (Parth's bug report, 2026-10-15). Adopting them back
+            // cannot repair their missing views, so drop them and let
+            // selectTab add fresh fragments into the live container.
+            val stale = (TAB_HOME..TAB_REQUESTS).mapNotNull {
+                supportFragmentManager.findFragmentByTag("tab$it")
+            }
+            if (stale.isNotEmpty()) {
+                val tx = supportFragmentManager.beginTransaction()
+                stale.forEach { tx.remove(it) }
+                tx.commitNowAllowingStateLoss()
+            }
+            fragments.clear()
+        } else {
+            // Fresh start: nothing to restore in practice, but adopt any
+            // fragment the manager already holds instead of duplicating it.
+            for (tab in TAB_HOME..TAB_REQUESTS) {
+                supportFragmentManager.findFragmentByTag("tab$tab")?.let { fragments[tab] = it }
+            }
         }
         selectTab(savedInstanceState?.getInt(STATE_TAB, TAB_HOME) ?: TAB_HOME)
     }

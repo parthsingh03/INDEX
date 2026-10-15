@@ -25,7 +25,11 @@ object CloudConfig {
     const val CLOUDINARY_UPLOAD_PRESET = "index_upload"
 
     /** Upload endpoint; "auto" lets Cloudinary accept PDFs, images and
-     *  other documents through the one preset. */
+     *  other documents through the one preset. NOTE: Cloudinary blocks
+     *  DELIVERY of PDF/ZIP files (HTTP 401) until the account's
+     *  Settings → Security → "Allow PDF and ZIP files delivery" switch is
+     *  on — that applies to every resource type, raw included (proven
+     *  2026-10-15). The switch is the fix; there is no code-side route. */
     const val CLOUDINARY_UPLOAD_URL =
         "https://api.cloudinary.com/v1_1/$CLOUDINARY_CLOUD_NAME/auto/upload"
 

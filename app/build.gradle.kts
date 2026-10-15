@@ -33,8 +33,8 @@ android {
         // 1.1 is the cloud build — the first fixed-key release. The code
         // must stay above the local build's 1 so the in-app update check
         // (and Android itself) treats it as an upgrade, never a downgrade.
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.2"
     }
 
     signingConfigs {
