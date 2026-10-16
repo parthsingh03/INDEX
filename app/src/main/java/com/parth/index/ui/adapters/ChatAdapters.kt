@@ -166,8 +166,11 @@ class ChatAdapter(
 }
 
 /** Notice cards, styled after the Clean Campus notices mockup: author with
- *  role in the name line, title, body, seen-by count. */
-class NoticeAdapter : RecyclerView.Adapter<NoticeAdapter.Holder>() {
+ *  role in the name line, title, body, seen-by count — and (v1.5) the
+ *  attached photo when the notice has one, tap to view fullscreen. */
+class NoticeAdapter(
+    private val onPhotoClick: (NoticeEntity) -> Unit = {}
+) : RecyclerView.Adapter<NoticeAdapter.Holder>() {
 
     private var items: List<NoticeEntity> = emptyList()
 
@@ -193,6 +196,15 @@ class NoticeAdapter : RecyclerView.Adapter<NoticeAdapter.Holder>() {
             tvNoticeTitle.text = notice.title
             tvNoticeBody.text = notice.body
             tvNoticeSeen.text = "Seen by ${notice.seenByCount} classmates"
+            if (notice.imageUrl.isNotEmpty()) {
+                ivNoticePhoto.visibility = View.VISIBLE
+                com.parth.index.util.Thumbs.loadUrlInto(ivNoticePhoto, notice.imageUrl)
+                ivNoticePhoto.setOnClickListener { onPhotoClick(notice) }
+            } else {
+                ivNoticePhoto.visibility = View.GONE
+                ivNoticePhoto.setImageBitmap(null)
+                ivNoticePhoto.setOnClickListener(null)
+            }
         }
     }
 

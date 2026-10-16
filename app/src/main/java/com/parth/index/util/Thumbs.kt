@@ -11,7 +11,9 @@ import android.os.ParcelFileDescriptor
 import android.util.LruCache
 import android.widget.ImageView
 import com.parth.index.data.model.MaterialFileEntity
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -207,5 +209,108 @@ object Thumbs {
         var sample = 1
         while (width / (sample * 2) >= TARGET_WIDTH) sample *= 2
         return sample
+    }
+
+    // ---- Notice photos (v1.5): plain URLs, not file entities -----------
+
+    private const val NOTICE_TARGET_WIDTH = 900
+
+    private val urlMemory = object : LruCache<String, Bitmap>(
+        (Runtime.getRuntime().maxMemory() / 1024 / 16).toInt()
+    ) {
+        override fun sizeOf(key: String, value: Bitmap): Int =
+            (value.byteCount / 1024).coerceAtLeast(1)
+    }
+
+    private fun urlKey(url: String): String =
+        Integer.toHexString(url.hashCode()) + "_" + url.length
+
+    /** Show a remote photo (a notice's attached picture) in [view] at
+     *  card size. Same discipline as file thumbs: memory cache, disk
+     *  cache, background pool, tag guard against recycling races. */
+    fun loadUrlInto(view: ImageView, url: String) {
+        view.tag = url
+        val cached = urlMemory.get(url)
+        if (cached != null && !cached.isRecycled) {
+            view.setImageBitmap(cached)
+            return
+        }
+        view.setImageBitmap(null)
+        val appContext = view.context.applicationContext
+        pool.execute {
+            val bmp = runCatching { produceUrl(appContext, url) }.getOrNull()
+            if (bmp != null) {
+                urlMemory.put(url, bmp)
+                main.post {
+                    if (view.tag == url) view.setImageBitmap(bmp)
+                }
+            }
+        }
+    }
+
+    private fun produceUrl(context: Context, url: String): Bitmap? {
+        val dir = File(context.cacheDir, "url_thumbs").apply { mkdirs() }
+        val diskFile = File(dir, urlKey(url) + ".jpg")
+        if (diskFile.exists() && diskFile.length() > 0) {
+            decodeFileSized(diskFile, NOTICE_TARGET_WIDTH)?.let { return it }
+        }
+        val small = cloudinaryTransform(url, "w_$NOTICE_TARGET_WIDTH,c_limit") ?: url
+        val bytes = fetchBytes(small) ?: fetchBytes(url) ?: return null
+        val bmp = decodeBytesSized(bytes, NOTICE_TARGET_WIDTH) ?: return null
+        runCatching {
+            FileOutputStream(diskFile).use { out ->
+                bmp.compress(Bitmap.CompressFormat.JPEG, 85, out)
+            }
+        }
+        return bmp
+    }
+
+    /** Download [url] once into cacheDir/notice_photos and hand back the
+     *  local file — the fullscreen viewer decodes from disk, exactly
+     *  like a regular photo. Null on any failure. */
+    suspend fun localFileForUrl(context: Context, url: String): File? =
+        withContext(Dispatchers.IO) {
+            runCatching {
+                val dir = File(context.cacheDir, "notice_photos").apply { mkdirs() }
+                val dest = File(dir, urlKey(url) + ".jpg")
+                if (dest.exists() && dest.length() > 0) return@runCatching dest
+                val conn = URL(url).openConnection() as HttpURLConnection
+                try {
+                    conn.connectTimeout = 15_000
+                    conn.readTimeout = 60_000
+                    if (conn.responseCode !in 200..299) return@runCatching null
+                    conn.inputStream.use { input ->
+                        dest.outputStream().use { input.copyTo(it) }
+                    }
+                    if (dest.length() == 0L) {
+                        dest.delete()
+                        null
+                    } else {
+                        dest
+                    }
+                } finally {
+                    conn.disconnect()
+                }
+            }.getOrNull()
+        }
+
+    private fun decodeBytesSized(bytes: ByteArray, target: Int): Bitmap? {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
+        if (bounds.outWidth <= 0) return null
+        var sample = 1
+        while (bounds.outWidth / (sample * 2) >= target) sample *= 2
+        val opts = BitmapFactory.Options().apply { inSampleSize = sample }
+        return BitmapFactory.decodeByteArray(bytes, 0, bytes.size, opts)
+    }
+
+    private fun decodeFileSized(file: File, target: Int): Bitmap? {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeFile(file.absolutePath, bounds)
+        if (bounds.outWidth <= 0) return null
+        var sample = 1
+        while (bounds.outWidth / (sample * 2) >= target) sample *= 2
+        val opts = BitmapFactory.Options().apply { inSampleSize = sample }
+        return BitmapFactory.decodeFile(file.absolutePath, opts)
     }
 }

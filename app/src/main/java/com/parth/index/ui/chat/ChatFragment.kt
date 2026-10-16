@@ -1,5 +1,6 @@
 package com.parth.index.ui.chat
 
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -25,12 +27,17 @@ import com.parth.index.data.model.NoticeEntity
 import com.parth.index.data.model.Roles
 import com.parth.index.databinding.FragmentChatBinding
 import com.parth.index.firebase.ClassGate
+import com.parth.index.firebase.CloudinaryUploader
 import com.parth.index.ui.adapters.ChatAdapter
 import com.parth.index.ui.adapters.NoticeAdapter
+import com.parth.index.ui.preview.ImageViewerActivity
 import com.parth.index.util.FileActions
 import com.parth.index.util.Format
 import com.parth.index.util.Reactions
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
 
 /** Class Space: two segmented tabs.
  *  Group Chat — everyone talks; uploads auto-post here as FILE CARDS and
@@ -72,6 +79,55 @@ class ChatFragment : Fragment() {
 
     private var replyTarget: ChatMessageEntity? = null
 
+    /** Photo waiting to ride along with the next notice (v1.5): the
+     *  picked image, copied into the cache dir so the picker grant
+     *  expiring cannot strand it. Uploaded to Cloudinary at post time —
+     *  an abandoned draft costs no storage. */
+    private var pendingPhotoFile: File? = null
+    private var postingNotice = false
+
+    private val photoPicker = registerForActivityResult(
+        ActivityResultContracts.GetContent()
+    ) { uri ->
+        if (uri == null || !isAdded) return@registerForActivityResult
+        val ctx = requireContext()
+        lifecycleScope.launch {
+            val copied = withContext(Dispatchers.IO) {
+                runCatching {
+                    val dest = File(
+                        ctx.cacheDir,
+                        "notice_photo_${System.currentTimeMillis()}.jpg"
+                    )
+                    ctx.contentResolver.openInputStream(uri)?.use { input ->
+                        dest.outputStream().use { input.copyTo(it) }
+                    } ?: return@runCatching null
+                    dest.takeIf { it.length() > 0 }
+                }.getOrNull()
+            }
+            if (copied == null) {
+                Toast.makeText(ctx, "Could not read that photo.", Toast.LENGTH_SHORT).show()
+                return@launch
+            }
+            if (_binding == null) return@launch
+            pendingPhotoFile = copied
+            val preview = withContext(Dispatchers.IO) {
+                runCatching {
+                    val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                    BitmapFactory.decodeFile(copied.absolutePath, bounds)
+                    var sample = 1
+                    while (bounds.outWidth / (sample * 2) >= 900) sample *= 2
+                    BitmapFactory.decodeFile(
+                        copied.absolutePath,
+                        BitmapFactory.Options().apply { inSampleSize = sample }
+                    )
+                }.getOrNull()
+            }
+            binding.ivNoticePhotoPreview.setImageBitmap(preview)
+            binding.ivNoticePhotoPreview.visibility = View.VISIBLE
+            binding.tvRemovePhoto.visibility = View.VISIBLE
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
@@ -106,7 +162,15 @@ class ChatFragment : Fragment() {
         binding.rvChat.layoutManager = LinearLayoutManager(requireContext())
         binding.rvChat.adapter = chatAdapter
 
-        noticeAdapter = NoticeAdapter()
+        noticeAdapter = NoticeAdapter { notice ->
+            if (notice.imageUrl.isNotEmpty()) {
+                startActivity(
+                    ImageViewerActivity.intentForUrl(
+                        requireContext(), notice.imageUrl, notice.title
+                    )
+                )
+            }
+        }
         binding.rvNotices.layoutManager = LinearLayoutManager(requireContext())
         binding.rvNotices.adapter = noticeAdapter
 
@@ -126,16 +190,47 @@ class ChatFragment : Fragment() {
         }
         binding.btnCancelReply.setOnClickListener { clearReplyTarget() }
 
+        binding.btnAttachPhoto.setOnClickListener {
+            photoPicker.launch("image/*")
+        }
+        binding.tvRemovePhoto.setOnClickListener {
+            pendingPhotoFile = null
+            binding.ivNoticePhotoPreview.setImageBitmap(null)
+            binding.ivNoticePhotoPreview.visibility = View.GONE
+            binding.tvRemovePhoto.visibility = View.GONE
+        }
+
         binding.btnPostNotice.setOnClickListener {
+            if (postingNotice) return@setOnClickListener
             val title = binding.etNoticeTitle.text.toString().trim()
             val body = binding.etNoticeBody.text.toString().trim()
             if (title.isEmpty() || body.isEmpty()) {
                 Toast.makeText(requireContext(), "A notice needs a title and a message.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            binding.etNoticeTitle.text.clear()
-            binding.etNoticeBody.text.clear()
+            val photoFile = pendingPhotoFile
+            postingNotice = true
+            binding.btnPostNotice.isEnabled = false
+            binding.btnPostNotice.text = "Posting…"
             lifecycleScope.launch {
+                var imageUrl = ""
+                if (photoFile != null) {
+                    val uploaded = runCatching {
+                        CloudinaryUploader.upload(photoFile, "notice-photo.jpg")
+                    }.getOrNull()
+                    if (uploaded == null) {
+                        Toast.makeText(
+                            requireContext(),
+                            "Photo upload failed — check the connection and try again.",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        postingNotice = false
+                        binding.btnPostNotice.isEnabled = true
+                        binding.btnPostNotice.text = "Post notice"
+                        return@launch
+                    }
+                    imageUrl = uploaded.secureUrl
+                }
                 app.repository.addNotice(
                     NoticeEntity(
                         authorName = prefs.userName,
@@ -143,9 +238,19 @@ class ChatFragment : Fragment() {
                         title = title,
                         body = body,
                         seenByCount = 1,
-                        seenByMe = true
+                        seenByMe = true,
+                        imageUrl = imageUrl
                     )
                 )
+                binding.etNoticeTitle.text.clear()
+                binding.etNoticeBody.text.clear()
+                pendingPhotoFile = null
+                binding.ivNoticePhotoPreview.setImageBitmap(null)
+                binding.ivNoticePhotoPreview.visibility = View.GONE
+                binding.tvRemovePhoto.visibility = View.GONE
+                postingNotice = false
+                binding.btnPostNotice.isEnabled = true
+                binding.btnPostNotice.text = "Post notice"
                 Toast.makeText(requireContext(), "Notice posted.", Toast.LENGTH_SHORT).show()
             }
         }
