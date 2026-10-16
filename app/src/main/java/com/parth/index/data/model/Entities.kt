@@ -96,7 +96,10 @@ data class ChatMessageEntity(
     val replyToText: String = ""
 )
 
-/** An admin-only notice. Members can read, never post. */
+/** An admin-only notice. Members can read, never post.
+ *  [imageUrl] (v1.5) is an optional photo on the notice — a Cloudinary
+ *  URL, empty when the notice is text-only. Video stays on WhatsApp by
+ *  Parth's call; this is photos only. */
 @Entity(tableName = "notices")
 data class NoticeEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
@@ -106,7 +109,8 @@ data class NoticeEntity(
     val body: String,
     val timestamp: Long = System.currentTimeMillis(),
     val seenByCount: Int = 0,
-    val seenByMe: Boolean = false
+    val seenByMe: Boolean = false,
+    val imageUrl: String = ""
 )
 
 /** "Please upload X" on the Request board. Fulfil = upload a file against

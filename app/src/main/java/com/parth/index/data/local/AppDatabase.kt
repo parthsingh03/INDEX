@@ -24,7 +24,7 @@ import com.parth.index.data.model.SubjectEntity
         NoticeEntity::class,
         MaterialRequestEntity::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -44,7 +44,12 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "index.db"
-                ).build().also { instance = it }
+                )
+                    // v2 added NoticeEntity.imageUrl. The local database
+                    // only ever holds demo data (cloud mode is the real
+                    // backend), so a schema change may simply rebuild it.
+                    .fallbackToDestructiveMigration()
+                    .build().also { instance = it }
             }
     }
 }

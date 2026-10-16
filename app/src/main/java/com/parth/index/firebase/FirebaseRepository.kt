@@ -215,7 +215,8 @@ class FirebaseRepository : IndexRepository {
             body = getString("body").orEmpty(),
             timestamp = getLong("timestamp") ?: 0L,
             seenByCount = seenBy.size,
-            seenByMe = seenBy.contains(myUid)
+            seenByMe = seenBy.contains(myUid),
+            imageUrl = getString("imageUrl").orEmpty()
         )
     }
 
@@ -549,6 +550,7 @@ class FirebaseRepository : IndexRepository {
                 "title" to notice.title,
                 "body" to notice.body,
                 "timestamp" to notice.timestamp,
+                "imageUrl" to notice.imageUrl,
                 "seenByUids" to emptyList<String>()
             )
         ).awaitTask()

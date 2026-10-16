@@ -37,6 +37,24 @@ class MainActivity : AppCompatActivity() {
     private var currentTab = TAB_HOME
     private var uiBuilt = false
 
+    /** The v1.5 loading screen: on a cold start the integrated Cursor
+     *  reveal plays (RevealView) while the member gate checks run
+     *  underneath it; routing — to the tabs, to SignIn, to JoinPending —
+     *  happens when BOTH the reveal has finished and the gate has an
+     *  answer, whichever is slower. Recreations (dark-mode toggle,
+     *  rotation) and share-sheet landings skip it entirely. */
+    private var revealView: RevealView? = null
+    private var revealFinished = false
+    private var pendingRoute: (() -> Unit)? = null
+
+    private fun routeOrDefer(action: () -> Unit) {
+        if (revealView == null || revealFinished) {
+            action()
+        } else {
+            pendingRoute = action
+        }
+    }
+
     /** Group-chat messages newer than my read marker, not sent by me —
      *  drives the Chat tab's badge (v1.4). Recomputed on every chat /
      *  member snapshot; [styleNav] decides whether it shows. */
@@ -45,9 +63,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val isShareLanding = intent?.action == Intent.ACTION_SEND ||
+            intent?.action == Intent.ACTION_SEND_MULTIPLE
+        if (savedInstanceState == null && !isShareLanding) {
+            val reveal = RevealView(this)
+            revealView = reveal
+            reveal.onFinished = {
+                revealFinished = true
+                pendingRoute?.invoke()
+                pendingRoute = null
+            }
+            setContentView(reveal)
+            reveal.start()
+        }
+
         if (ClassGate.currentUser() == null) {
-            startActivity(Intent(this, SignInActivity::class.java))
-            finish()
+            routeOrDefer {
+                startActivity(Intent(this, SignInActivity::class.java))
+                finish()
+            }
             return
         }
 
@@ -56,14 +90,23 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             val member = runCatching { ClassGate.myMember() }.getOrNull()
             if (member == null || !member.isApproved) {
-                startActivity(Intent(this@MainActivity, JoinPendingActivity::class.java))
-                finish()
+                routeOrDefer {
+                    startActivity(Intent(this@MainActivity, JoinPendingActivity::class.java))
+                    finish()
+                }
                 return@launch
             }
             syncIdentity(member)
-            buildUi(savedInstanceState)
-            watchMembership()
+            routeOrDefer {
+                buildUi(savedInstanceState)
+                watchMembership()
+            }
         }
+    }
+
+    override fun onDestroy() {
+        revealView?.halt()
+        super.onDestroy()
     }
 
     /** The member record is the truth for who you are; Prefs is the cache
