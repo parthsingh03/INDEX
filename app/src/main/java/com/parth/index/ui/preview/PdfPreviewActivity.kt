@@ -62,6 +62,10 @@ class PdfPreviewActivity : AppCompatActivity() {
                 binding.tvPageInfo.text = "Could not open this PDF."
             }
         }
+        binding.btnPdfRotate.setOnClickListener {
+            setOverlaysVisible(true)
+            binding.readerView.rotateClockwise()
+        }
         binding.btnPdfDownload.setOnClickListener {
             setOverlaysVisible(true)
             if (fileId > 0) {

@@ -66,6 +66,37 @@ class PdfReaderView @JvmOverloads constructor(
     private var scrollY = 0f
     private var zoom = 1f
 
+    /** Manual rotation (v1.5): 0 / 90 / 180 / 270 degrees clockwise,
+     *  applied at render time — for the scanned page that arrived
+     *  sideways. The activity itself may also rotate (fullSensor);
+     *  this is the in-viewer control that always works. */
+    private var rotationDeg = 0
+
+    /** Rotate every page 90° clockwise. Zoom and scroll reset: the
+     *  whole geometry changes, so the honest place to land is the top
+     *  of page 1 at fit width — the same place a fresh open lands. */
+    fun rotateClockwise() {
+        rotationDeg = (rotationDeg + 90) % 360
+        generation++
+        cache.evictAll()
+        zoom = 1f
+        scrollX = 0f
+        scrollY = 0f
+        layoutPages()
+        postInvalidateOnAnimation()
+    }
+
+    /** Page dimensions AS DISPLAYED: at 90/270 the axes swap. */
+    private fun dispW(index: Int): Int {
+        val (pw, ph) = pageSizes[index]
+        return if (rotationDeg % 180 == 0) pw else ph
+    }
+
+    private fun dispH(index: Int): Int {
+        val (pw, ph) = pageSizes[index]
+        return if (rotationDeg % 180 == 0) ph else pw
+    }
+
     private val cache = object : LruCache<Long, Bitmap>(
         (Runtime.getRuntime().maxMemory() / 1024 / 8).toInt()
     ) {
@@ -205,9 +236,9 @@ class PdfReaderView @JvmOverloads constructor(
     }
 
     private fun pageHeight(index: Int): Float {
-        val (pw, ph) = pageSizes[index]
-        if (pw == 0) return 0f
-        return width.toFloat() * ph.toFloat() / pw.toFloat()
+        val dw = dispW(index)
+        if (dw == 0) return 0f
+        return width.toFloat() * dispH(index).toFloat() / dw.toFloat()
     }
 
     private fun maxScrollX(): Float = max(0f, width - width / zoom)
@@ -335,7 +366,7 @@ class PdfReaderView @JvmOverloads constructor(
     private fun zoomBucket(): Float = (zoom * 2f).roundToInt() / 2f
 
     private fun cacheKey(page: Int): Long =
-        page.toLong() * 1000L + (zoomBucket() * 10f).roundToInt()
+        page.toLong() * 100000L + rotationDeg * 1000L + (zoomBucket() * 10f).roundToInt()
 
     private fun requestRender(page: Int) {
         val key = cacheKey(page)
@@ -363,12 +394,37 @@ class PdfReaderView @JvmOverloads constructor(
         if (pw <= 0 || ph <= 0) return null
         val displayWidth = width
         if (displayWidth <= 0) return null
+        val dw = dispW(page)
+        val dh = dispH(page)
         val targetW = min((displayWidth * bucket).roundToInt(), MAX_RENDER_WIDTH)
-        val targetH = (targetW.toFloat() * ph / pw).roundToInt().coerceAtLeast(1)
+        val targetH = (targetW.toFloat() * dh / dw).roundToInt().coerceAtLeast(1)
+        // The transform maps page points into the (possibly rotated)
+        // bitmap: rotation first, in point space, then one uniform
+        // scale into pixels. Written out per quarter-turn so the
+        // mapping is checkable at a glance.
+        val s = targetW.toFloat() / dw
+        val transform = android.graphics.Matrix()
+        when (rotationDeg) {
+            0 -> transform.setScale(s, s)
+            90 -> {
+                transform.setValues(floatArrayOf(0f, -1f, ph.toFloat(), 1f, 0f, 0f, 0f, 0f, 1f))
+                transform.postScale(s, s)
+            }
+            180 -> {
+                transform.setValues(
+                    floatArrayOf(-1f, 0f, pw.toFloat(), 0f, -1f, ph.toFloat(), 0f, 0f, 1f)
+                )
+                transform.postScale(s, s)
+            }
+            else -> { // 270
+                transform.setValues(floatArrayOf(0f, 1f, 0f, -1f, 0f, pw.toFloat(), 0f, 0f, 1f))
+                transform.postScale(s, s)
+            }
+        }
         return r.openPage(page).use { pdfPage ->
             val bmp = Bitmap.createBitmap(targetW, targetH, Bitmap.Config.ARGB_8888)
             bmp.eraseColor(Color.WHITE)
-            pdfPage.render(bmp, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+            pdfPage.render(bmp, null, transform, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
             bmp
         }
     }

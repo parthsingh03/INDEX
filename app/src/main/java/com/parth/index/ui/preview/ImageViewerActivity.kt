@@ -2,6 +2,7 @@ package com.parth.index.ui.preview
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Matrix
@@ -25,6 +26,7 @@ import com.parth.index.databinding.ActivityImageViewerBinding
 import com.parth.index.util.FileActions
 import com.parth.index.util.FileSaver
 import com.parth.index.util.RemoteFiles
+import com.parth.index.util.Thumbs
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -51,6 +53,14 @@ class ImageViewerActivity : AppCompatActivity() {
     private val baseMatrix = Matrix()
     private var bitmapSize = RectF()
     private var zoomed = false
+
+    /** The decoded photo currently on screen — the rotate button turns
+     *  THIS bitmap (v1.5), and a configuration change re-fits it. */
+    private var currentBitmap: Bitmap? = null
+
+    /** URL mode (v1.5): a single photo by URL — how notice photos open.
+     *  No gallery, no repository record, no download button. */
+    private var urlMode = false
 
     private lateinit var scaleDetector: ScaleGestureDetector
     private lateinit var gestureDetector: GestureDetector
@@ -89,7 +99,33 @@ class ImageViewerActivity : AppCompatActivity() {
             setOverlayVisible(true)
             currentFile?.let { FileSaver.save(this, it) }
         }
+        binding.btnImageRotate.setOnClickListener {
+            setOverlayVisible(true)
+            rotateCurrent()
+        }
         setOverlayVisible(true)
+
+        val imageUrl = intent.getStringExtra(EXTRA_IMAGE_URL)
+        if (!imageUrl.isNullOrEmpty()) {
+            urlMode = true
+            binding.btnImageDownload.visibility = View.GONE
+            lifecycleScope.launch {
+                val local = Thumbs.localFileForUrl(this@ImageViewerActivity, imageUrl)
+                val bitmap = local?.let {
+                    withContext(Dispatchers.IO) { decodeFromPath(it.absolutePath) }
+                }
+                if (bitmap != null) {
+                    showBitmap(bitmap)
+                } else {
+                    Toast.makeText(
+                        this@ImageViewerActivity,
+                        "Could not download this photo — check the connection and try again.",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+            return
+        }
 
         lifecycleScope.launch {
             val file = app.repository.fileById(fileId)
@@ -135,21 +171,7 @@ class ImageViewerActivity : AppCompatActivity() {
                 ).show()
                 return@launch
             }
-            val bitmap = withContext(Dispatchers.IO) {
-                runCatching {
-                    val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
-                    FileInputStream(path).use { BitmapFactory.decodeStream(it, null, bounds) }
-                    val target = 2048
-                    var sample = 1
-                    while (bounds.outWidth / (sample * 2) >= target ||
-                        bounds.outHeight / (sample * 2) >= target
-                    ) {
-                        sample *= 2
-                    }
-                    val opts = BitmapFactory.Options().apply { inSampleSize = sample }
-                    FileInputStream(path).use { BitmapFactory.decodeStream(it, null, opts) }
-                }.getOrNull()
-            }
+            val bitmap = withContext(Dispatchers.IO) { decodeFromPath(path) }
             // The user may have swiped on while this decoded.
             if (currentFile?.id != file.id) return@launch
             if (bitmap != null) showBitmap(bitmap)
@@ -164,7 +186,43 @@ class ImageViewerActivity : AppCompatActivity() {
         loadCurrent()
     }
 
+    /** Decode [path] at up to ~2048 px on the long edge — big enough to
+     *  zoom into, never full camera resolution. */
+    private fun decodeFromPath(path: String): Bitmap? = runCatching {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        FileInputStream(path).use { BitmapFactory.decodeStream(it, null, bounds) }
+        val target = 2048
+        var sample = 1
+        while (bounds.outWidth / (sample * 2) >= target ||
+            bounds.outHeight / (sample * 2) >= target
+        ) {
+            sample *= 2
+        }
+        val opts = BitmapFactory.Options().apply { inSampleSize = sample }
+        FileInputStream(path).use { BitmapFactory.decodeStream(it, null, opts) }
+    }.getOrNull()
+
+    /** Rotate the photo on screen 90° clockwise (v1.5). The bitmap
+     *  itself turns, so every zoom/pan/clamp calculation downstream
+     *  keeps working untouched; zoom resets to fit, as on a fresh open. */
+    private fun rotateCurrent() {
+        val old = currentBitmap ?: return
+        val turn = Matrix().apply { postRotate(90f) }
+        val rotated = Bitmap.createBitmap(old, 0, 0, old.width, old.height, turn, true)
+        if (rotated === old) return
+        showBitmap(rotated)
+        if (!old.isRecycled) old.recycle()
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        // The activity survives rotation (configChanges), so re-fit the
+        // photo to the new screen shape once layout settles.
+        if (currentBitmap != null) binding.ivFullImage.post { fitToView() }
+    }
+
     private fun showBitmap(bitmap: Bitmap) {
+        currentBitmap = bitmap
         binding.ivFullImage.setImageBitmap(bitmap)
         bitmapSize = RectF(0f, 0f, bitmap.width.toFloat(), bitmap.height.toFloat())
         // The view may not be laid out yet at this point — fit once it is.
@@ -327,10 +385,18 @@ class ImageViewerActivity : AppCompatActivity() {
         private const val SWIPE_MAX_MS = 500L
         private const val EXTRA_FILE_ID = "file_id"
         private const val EXTRA_TITLE = "title"
+        private const val EXTRA_IMAGE_URL = "image_url"
 
         fun intent(context: Context, fileId: Long, title: String): Intent =
             Intent(context, ImageViewerActivity::class.java).apply {
                 putExtra(EXTRA_FILE_ID, fileId)
+                putExtra(EXTRA_TITLE, title)
+            }
+
+        /** Open a lone photo straight from its URL (notice photos). */
+        fun intentForUrl(context: Context, url: String, title: String): Intent =
+            Intent(context, ImageViewerActivity::class.java).apply {
+                putExtra(EXTRA_IMAGE_URL, url)
                 putExtra(EXTRA_TITLE, title)
             }
     }
