@@ -36,6 +36,16 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/btnPdfRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="⟳"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/btnPdfDownload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

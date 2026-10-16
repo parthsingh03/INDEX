@@ -4,7 +4,8 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <!-- Deep navy field for the Cursor mark (v1.5 rebrand). -->
     <path
-        android:fillColor="#2563EB"
+        android:fillColor="#0A1428"
         android:pathData="M0,0 h108 v108 h-108 z" />
 </vector>

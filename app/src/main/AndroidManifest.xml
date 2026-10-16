@@ -115,13 +115,18 @@
             android:name=".ui.trash.TrashActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+        <!-- v1.5: the two viewers may rotate — a landscape photo or a
+             wide PDF page deserves the whole screen. Everything else
+             in the app stays portrait. -->
         <activity
             android:name=".ui.preview.PdfPreviewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".ui.preview.ImageViewerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
     </application>
 </manifest>

@@ -157,6 +157,44 @@
             android:textColor="@color/on_surface"
             android:textColorHint="@color/muted" />
 
+        <!-- Optional photo (v1.5): preview once picked; the row under it
+             attaches or removes it. Photos only — video stays on
+             WhatsApp by design. -->
+        <ImageView
+            android:id="@+id/ivNoticePhotoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:contentDescription="Attached photo preview"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAttachPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷 Attach photo" />
+
+            <TextView
+                android:id="@+id/tvRemovePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:padding="8dp"
+                android:text="✕ Remove"
+                android:textColor="@color/pdf_red"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
         <Button
             android:id="@+id/btnPostNotice"
             android:layout_width="match_parent"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="480"
+    android:viewportHeight="480">
+    <!-- THE CURSOR in brand blue, transparent background: the reusable
+         form of the app icon's mark (480-unit canvas, glyph centred). -->
+    <group
+        android:pivotX="0"
+        android:pivotY="0"
+        android:rotation="-8"
+        android:translateX="240"
+        android:translateY="240">
+        <path
+            android:fillColor="#2563EB"
+            android:pathData="M-116,-150 h232 a14,14 0 0 1 14,14 v24 a14,14 0 0 1 -14,14 h-232 a14,14 0 0 1 -14,-14 v-24 a14,14 0 0 1 14,-14 z" />
+        <path
+            android:fillColor="#2563EB"
+            android:pathData="M-26,-98 h52 v196 h-52 z" />
+        <path
+            android:fillColor="#2563EB"
+            android:pathData="M-116,98 h232 a14,14 0 0 1 14,14 v24 a14,14 0 0 1 -14,14 h-232 a14,14 0 0 1 -14,-14 v-24 a14,14 0 0 1 14,-14 z" />
+    </group>
+</vector>

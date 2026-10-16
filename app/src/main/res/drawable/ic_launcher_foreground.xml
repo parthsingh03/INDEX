@@ -4,15 +4,26 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- A page with index lines and a tab: the "In" of INDEX, drawn as paper.
-         Kept inside the adaptive-icon safe zone (centre 66dp circle). -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M36,24 h36 v60 h-36 z" />
-    <path
-        android:fillColor="#2563EB"
-        android:pathData="M36,24 h10 v16 l-5,-4 l-5,4 z" />
-    <path
-        android:fillColor="#2563EB"
-        android:pathData="M50,40 h16 v4 h-16 z M50,52 h16 v4 h-16 z M50,64 h11 v4 h-11 z" />
+    <!-- THE CURSOR (v1.5): the text I-beam, chunky, tilted -8 degrees.
+         Drawn in glyph-local coords (260 x 300 units centred on 0,0),
+         scaled into the adaptive-icon safe zone. Vector = sharp at
+         every size, no raster asset to go stale. -->
+    <group
+        android:pivotX="0"
+        android:pivotY="0"
+        android:rotation="-8"
+        android:scaleX="0.16"
+        android:scaleY="0.16"
+        android:translateX="54"
+        android:translateY="54">
+        <path
+            android:fillColor="#3B82F6"
+            android:pathData="M-116,-150 h232 a14,14 0 0 1 14,14 v24 a14,14 0 0 1 -14,14 h-232 a14,14 0 0 1 -14,-14 v-24 a14,14 0 0 1 14,-14 z" />
+        <path
+            android:fillColor="#3B82F6"
+            android:pathData="M-26,-98 h52 v196 h-52 z" />
+        <path
+            android:fillColor="#3B82F6"
+            android:pathData="M-116,98 h232 a14,14 0 0 1 14,14 v24 a14,14 0 0 1 -14,14 h-232 a14,14 0 0 1 -14,-14 v-24 a14,14 0 0 1 14,-14 z" />
+    </group>
 </vector>
