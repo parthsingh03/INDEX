@@ -132,4 +132,7 @@ interface RequestDao {
 
     @Insert suspend fun insert(request: MaterialRequestEntity): Long
     @Update suspend fun update(request: MaterialRequestEntity)
+
+    @Query("DELETE FROM requests")
+    suspend fun clearAll()
 }

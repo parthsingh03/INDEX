@@ -137,7 +137,7 @@ class ProfileActivity : AppCompatActivity() {
             .setTitle("Clear EVERYTHING?")
             .setMessage(
                 "This permanently deletes ALL chat messages, uploaded file records, " +
-                    "notices and deadlines for the whole class. Members and subjects " +
+                    "notices, deadlines and requests for the whole class. Members and subjects " +
                     "stay. This cannot be undone."
             )
             .setView(input)

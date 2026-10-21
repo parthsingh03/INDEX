@@ -516,6 +516,7 @@ class FirebaseRepository : IndexRepository {
         deleteAllIn(filesRef())
         deleteAllIn(noticesRef())
         deleteAllIn(deadlinesRef())
+        deleteAllIn(requestsRef())
     }
 
     /** Covers both chat actions the UI uses: tombstone (text wiped +

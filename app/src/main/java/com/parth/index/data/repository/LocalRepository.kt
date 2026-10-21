@@ -105,6 +105,7 @@ class LocalRepository(private val db: AppDatabase) : IndexRepository {
         db.fileDao().clearAll()
         db.noticeDao().clearAll()
         db.deadlineDao().clearAll()
+        db.requestDao().clearAll()
     }
 
     override suspend fun postUploadNotice(file: MaterialFileEntity, subjectName: String) {
